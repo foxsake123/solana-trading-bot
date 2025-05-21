@@ -56,7 +56,7 @@ class DatabaseAdapter:
     def record_trade(self, contract_address, action, amount, price, tx_hash=None, is_simulation=True):
         """
         Record a trade in the database using compatible method
-
+        
         :param contract_address: Token contract address
         :param action: Trade action (BUY/SELL)
         :param amount: Trade amount in SOL
@@ -66,24 +66,16 @@ class DatabaseAdapter:
         :return: Result of record operation
         """
         try:
-            # Call the record_trade method without the is_simulation parameter
+            # Call the record_trade method without timestamp parameter
             if hasattr(self.db, 'record_trade'):
-                # Create a copy of the parameters without is_simulation
-                params = {
-                    'contract_address': contract_address,
-                    'action': action,
-                    'amount': amount,
-                    'price': price,
-                    'tx_hash': tx_hash
-                }
-
-                # Add is_simulation only if the database method accepts it
-                import inspect
-                sig = inspect.signature(self.db.record_trade)
-                if 'is_simulation' in sig.parameters:
-                    params['is_simulation'] = is_simulation
-
-                return self.db.record_trade(**params)
+                return self.db.record_trade(
+                    contract_address=contract_address,
+                    action=action,
+                    amount=amount,
+                    price=price,
+                    tx_hash=tx_hash,
+                    is_simulation=is_simulation
+                )
             else:
                 logger.error("No record_trade method found in database")
                 return False

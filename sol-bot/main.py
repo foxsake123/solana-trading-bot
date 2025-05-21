@@ -1,160 +1,192 @@
 """
-Updated bot integration script - uses the database adapter for compatibility
+Solana Trading Bot - Main Entry Point
 """
 import os
 import sys
 import logging
 import time
-import asyncio
 from datetime import datetime
+import traceback
 
-# Configure logging
+# Configure logging with timestamps
+log_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logs')
+os.makedirs(log_dir, exist_ok=True)
+
+log_file = os.path.join(log_dir, f"bot_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log")
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S',
+    handlers=[
+        logging.FileHandler(log_file),
+        logging.StreamHandler()
+    ]
 )
-logger = logging.getLogger('bot_integration')
 
-# Make sure the simplified components and adapter are in the path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'core'))
+logger = logging.getLogger('solana_bot')
 
-def load_bot_control():
-    """Load bot control settings from bot_control.json"""
-    try:
-        control_file = 'bot_control.json'
-        if not os.path.exists(control_file):
-            control_file = os.path.join('data', 'bot_control.json')
-            
-        if os.path.exists(control_file):
-            import json
-            with open(control_file, 'r') as f:
-                return json.load(f)
-        else:
-            logger.warning(f"Bot control file not found: {control_file}")
-            return {
-                "running": True,
-                "simulation_mode": True,
-                "filter_fake_tokens": True,
-                "use_birdeye_api": True,
-                "use_machine_learning": False,
-                "take_profit_target": 2.5,
-                "stop_loss_percentage": 0.2,
-                "max_investment_per_token": 0.1,
-                "min_investment_per_token": 0.02,
-                "slippage_tolerance": 0.3,
-                "MIN_SAFETY_SCORE": 0.0,
-                "MIN_VOLUME": 10.0,
-                "MIN_LIQUIDITY": 5000.0,
-                "MIN_MCAP": 10000.0,
-                "MIN_HOLDERS": 10,
-                "MIN_PRICE_CHANGE_1H": 1.0,
-                "MIN_PRICE_CHANGE_6H": 2.0,
-                "MIN_PRICE_CHANGE_24H": 5.0
-            }
-    except Exception as e:
-        logger.error(f"Error loading bot control: {e}")
-        return {
-            "running": True,
-            "simulation_mode": True
-        }
+# Add the project root and core directory to the Python path
+project_root = os.path.dirname(os.path.abspath(__file__))
+if project_root not in sys.path:
+    sys.path.append(project_root)
 
-async def run_bot():
-    """Initialize and run the bot with simplified components"""
-    logger.info("Starting bot with simplified components and database adapter")
+core_dir = os.path.join(project_root, 'core')
+if core_dir not in sys.path:
+    sys.path.insert(0, core_dir)
+
+# Banner
+logger.info("=" * 60)
+logger.info("          SOLANA TRADING BOT - STARTING          ")
+logger.info("=" * 60)
+
+# Load control settings first
+try:
+    import json
+    control_file = os.path.join(project_root, 'bot_control.json')
+    if not os.path.exists(control_file):
+        control_file = os.path.join(project_root, 'data', 'bot_control.json')
     
-    # Import the database and adapter
-    try:
-        from database.database import Database
-        from database_adapter import DatabaseAdapter
-        from core.solana_trader import SolanaTrader
-        from core.token_scanner import TokenScanner
-        from core.trading_bot import TradingBot
-    except ImportError as e:
-        logger.error(f"Error importing required modules: {e}")
-        logger.error("Please make sure the components are available in the core directory")
-        return
-    
-    # Load control settings
-    control = load_bot_control()
-    logger.info(f"Bot control settings: running={control.get('running', True)}, simulation_mode={control.get('simulation_mode', True)}")
-    
-    # Create and initialize database
-    db = Database(db_path='data/sol_bot.db')
-    
-    # Create database adapter
-    db_adapter = DatabaseAdapter(db)
-    logger.info("Database initialized with adapter")
-    
-    # Create and initialize trader
-    trader = SolanaTrader(
-        db=db_adapter,
-        simulation_mode=control.get('simulation_mode', True)
-    )
-    logger.info(f"SolanaTrader initialized (simulation_mode={control.get('simulation_mode', True)})")
-    
-    # Connect to the Solana network (simulated)
-    await trader.connect()
-    
-    # Get wallet balance
-    balance_sol, balance_usd = await trader.get_wallet_balance()
-    logger.info(f"Wallet balance: {balance_sol:.4f} SOL (${balance_usd:.2f})")
-    
-    # Create and initialize token scanner
-    token_scanner = TokenScanner(db=db_adapter)
-    logger.info("TokenScanner initialized")
-    
-    # Create trading parameters from control settings
-    trading_params = {
-        "take_profit_target": float(control.get('take_profit_target', 2.5)),
-        "stop_loss_percentage": float(control.get('stop_loss_percentage', 0.2)),
-        "max_investment_per_token": float(control.get('max_investment_per_token', 0.1)),
-        "min_investment_per_token": float(control.get('min_investment_per_token', 0.02)),
-        "slippage_tolerance": float(control.get('slippage_tolerance', 0.3)),
-        "MIN_SAFETY_SCORE": float(control.get('MIN_SAFETY_SCORE', 0.0)),
-        "MIN_VOLUME": float(control.get('MIN_VOLUME', 10.0)),
-        "MIN_LIQUIDITY": float(control.get('MIN_LIQUIDITY', 5000.0)),
-        "MIN_MCAP": float(control.get('MIN_MCAP', 10000.0)),
-        "MIN_HOLDERS": int(control.get('MIN_HOLDERS', 10)),
-        "MIN_PRICE_CHANGE_1H": float(control.get('MIN_PRICE_CHANGE_1H', 1.0)),
-        "MIN_PRICE_CHANGE_6H": float(control.get('MIN_PRICE_CHANGE_6H', 2.0)),
-        "MIN_PRICE_CHANGE_24H": float(control.get('MIN_PRICE_CHANGE_24H', 5.0))
-    }
-    
-    # Create and initialize trading bot
-    trading_bot = TradingBot(
-        trader=trader,
-        token_scanner=token_scanner,
-        simulation_mode=control.get('simulation_mode', True),
-        params=trading_params
-    )
-    logger.info("TradingBot initialized")
-    
-    # Start the bot if running is enabled
-    if control.get('running', True):
-        logger.info("Starting TradingBot")
-        await trading_bot.start()
+    if os.path.exists(control_file):
+        with open(control_file, 'r') as f:
+            control_data = json.load(f)
         
-        # Keep the main thread running
+        BOT_RUNNING = control_data.get('running', False)
+        SIMULATION_MODE = control_data.get('simulation_mode', True)
+        logger.info(f"Bot control settings: running={BOT_RUNNING}, simulation_mode={SIMULATION_MODE}")
+    else:
+        logger.warning("Control file not found, using default settings")
+        BOT_RUNNING = False
+        SIMULATION_MODE = True
+except Exception as e:
+    logger.error(f"Error loading control settings: {e}")
+    logger.error(traceback.format_exc())
+    BOT_RUNNING = False
+    SIMULATION_MODE = True
+
+try:
+    # Try to import the SoldersAdapter class
+    try:
+        from core.SoldersAdapter import SoldersAdapter
+        logger.info("Successfully imported SoldersAdapter from core.SoldersAdapter")
+    except ImportError:
         try:
-            logger.info("Bot running. Press Ctrl+C to stop.")
+            from SoldersAdapter import SoldersAdapter
+            logger.info("Successfully imported SoldersAdapter from SoldersAdapter")
+        except ImportError as e:
+            logger.error(f"Failed to import SoldersAdapter: {e}")
+            logger.error("Please create the SoldersAdapter.py file in the core directory")
+            sys.exit(1)
+
+    # Try to import database
+    try:
+        from core.database import Database
+        logger.info("Imported Database from core.database")
+    except ImportError:
+        try:
+            from database import Database
+            logger.info("Imported Database from database")
+        except ImportError as e:
+            logger.error(f"Failed to import Database: {e}")
+            logger.error("Please make sure database.py exists")
+            sys.exit(1)
+
+    # Load environment variables
+    try:
+        from dotenv import load_dotenv
+        load_dotenv()
+    except ImportError:
+        logger.warning("python-dotenv not installed, environment variables may not be loaded")
+
+    # Initialize wallet
+    wallet_adapter = SoldersAdapter()
+    WALLET_PRIVATE_KEY = os.getenv('WALLET_PRIVATE_KEY', '')
+    MAINNET_RPC_URL = os.getenv('SOLANA_RPC_ENDPOINT', 'https://api.mainnet-beta.solana.com')
+
+    # Initialize wallet
+    wallet_initialized = wallet_adapter.init_wallet(WALLET_PRIVATE_KEY)
+    
+    if wallet_initialized:
+        wallet_address = wallet_adapter.get_wallet_address()
+        logger.info(f"Wallet initialized: {wallet_address}")
+        
+        # Get wallet balance
+        balance_sol = wallet_adapter.get_wallet_balance()
+        sol_price = wallet_adapter.get_sol_price()
+        balance_usd = balance_sol * sol_price
+        logger.info(f"Wallet balance: {balance_sol:.4f} SOL (${balance_usd:.2f})")
+    else:
+        logger.warning("Wallet not initialized. Only simulation mode will be available.")
+        SIMULATION_MODE = True
+
+    # Initialize database
+    try:
+        db = Database()
+        logger.info("Database initialized successfully")
+    except Exception as e:
+        logger.error(f"Error initializing database: {e}")
+        sys.exit(1)
+
+    # Import SolanaTrader
+    try:
+        try:
+            from core.AsyncSolanaTrader_adapter import SolanaTrader
+            logger.info("Imported SolanaTrader from AsyncSolanaTrader_adapter")
+        except ImportError:
+            try:
+                from AsyncSolanaTrader_adapter import SolanaTrader
+                logger.info("Imported SolanaTrader from AsyncSolanaTrader_adapter")
+            except ImportError:
+                try:
+                    from core.solana_trader import SolanaTrader
+                    logger.info("Imported SolanaTrader from solana_trader")
+                except ImportError:
+                    from solana_trader import SolanaTrader
+                    logger.info("Imported SolanaTrader directly")
+    except ImportError as e:
+        logger.error(f"Failed to import SolanaTrader: {e}")
+        sys.exit(1)
+
+    # Main function
+    def main():
+        logger.info("Starting bot main function")
+        
+        # Log settings
+        logger.info(f"Bot running setting: {BOT_RUNNING}")
+        logger.info(f"Simulation mode: {SIMULATION_MODE}")
+        
+        # Initialize SolanaTrader
+        try:
+            solana_trader = SolanaTrader(
+                private_key=WALLET_PRIVATE_KEY,
+                rpc_url=MAINNET_RPC_URL,
+                simulation_mode=SIMULATION_MODE,
+                db=db
+            )
+            logger.info("SolanaTrader initialized successfully")
+        except Exception as e:
+            logger.error(f"Error initializing SolanaTrader: {e}")
+            return
+        
+        # Check if bot is running
+        if not BOT_RUNNING:
+            logger.info("Bot is not running. Set 'running': true in bot_control.json to start trading.")
+            return
+        
+        # In a real implementation, this would start the trading bot
+        logger.info("Bot would start trading here. This is a placeholder implementation.")
+        
+        # Keep the process running
+        try:
+            logger.info("Bot running in monitoring mode. Press Ctrl+C to stop.")
             while True:
-                await asyncio.sleep(1)
+                time.sleep(60)
         except KeyboardInterrupt:
             logger.info("Bot stopped by user")
-            await trading_bot.stop()
-    else:
-        logger.info("Bot not started because running=False in settings")
-    
-    # Close connections
-    await trader.close()
-    logger.info("Bot shutdown complete")
 
-def main():
-    """Main function to run the bot"""
-    # Create event loop and run the bot
-    asyncio.run(run_bot())
+    if __name__ == "__main__":
+        main()
 
-if __name__ == "__main__":
-    main()
-
+except Exception as e:
+    logger.error(f"Unexpected error: {e}")
+    logger.error(traceback.format_exc())

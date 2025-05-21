@@ -1,16 +1,24 @@
 """
-Simplified token scanner for simulation mode
+Updated simplified token scanner with database adapter
 """
 import os
 import json
 import random
 import logging
 import time
-import asyncio
 from datetime import datetime, timezone
+import asyncio
 
-# Setup logging
 logger = logging.getLogger('simplified_token_scanner')
+
+# Try to import the database adapter
+try:
+    from core.database_adapter import DatabaseAdapter
+    HAS_ADAPTER = True
+    logger.info("Successfully imported DatabaseAdapter")
+except ImportError:
+    HAS_ADAPTER = False
+    logger.warning("DatabaseAdapter not available, will use direct database access")
 
 class TokenScanner:
     """
@@ -21,9 +29,20 @@ class TokenScanner:
         """
         Initialize the token scanner
         
-        :param db: Database instance or adapter
+        :param db: Database instance (optional)
         """
-        self.db = db
+        # Set up database - using adapter if available
+        if db is not None:
+            if HAS_ADAPTER:
+                self.db = DatabaseAdapter(db)
+                logger.info("Using DatabaseAdapter for database operations")
+            else:
+                self.db = db
+                logger.info("Using direct database access")
+        else:
+            self.db = None
+            logger.warning("No database provided")
+            
         self.running = False
         self.token_count = 0
         
@@ -58,8 +77,14 @@ class TokenScanner:
                     # Store token in database if available
                     if self.db is not None:
                         try:
-                            # Use the database adapter to save the token
-                            self.db.save_token(token)
+                            if hasattr(self.db, 'save_token'):
+                                # Use adapter's save_token method
+                                self.db.save_token(token)
+                            elif hasattr(self.db, 'store_token'):
+                                # Try direct store_token method
+                                self.db.store_token(token)
+                            else:
+                                logger.warning("No compatible method found to save token")
                         except Exception as e:
                             logger.error(f"Error saving token to database: {e}")
                 
@@ -101,9 +126,6 @@ class TokenScanner:
         price_change_6h = random.uniform(5.0, 30.0)
         price_change_24h = random.uniform(10.0, 50.0)
         
-        # Set safety score (between 50 and 90)
-        safety_score = random.uniform(50.0, 90.0)
-        
         # Create token data
         token = {
             'contract_address': token_address,
@@ -120,7 +142,7 @@ class TokenScanner:
             'total_supply': 1_000_000_000,
             'circulating_supply': 750_000_000,
             'is_simulation': True,
-            'safety_score': safety_score,
+            'safety_score': random.uniform(50.0, 90.0),
             'last_updated': datetime.now(timezone.utc).isoformat()
         }
         
