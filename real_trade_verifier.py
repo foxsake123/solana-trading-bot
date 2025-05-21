@@ -1,15 +1,14 @@
-"""
-Script to check and verify real trading transactions in the Solana Trading Bot database
-"""
+# real_trade_verifier.py - Verify real trades on the Solana blockchain
+
 import os
 import sys
 import sqlite3
 import pandas as pd
-import time
 import requests
-import logging
-from datetime import datetime, timezone
 import json
+import time
+from datetime import datetime, timedelta
+import logging
 
 # Configure logging
 logging.basicConfig(
@@ -17,7 +16,7 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S',
 )
-logger = logging.getLogger('real_trade_checker')
+logger = logging.getLogger('real_trade_verifier')
 
 def find_database():
     """Find the SQLite database file."""
@@ -47,14 +46,13 @@ def is_simulation_contract(address):
         'demo' in address.lower()
     )
 
-def get_recent_trades(db_file, limit=20, only_real=True):
+def get_real_trades(db_file, limit=20):
     """
-    Get recent trades from the database
+    Get real trades from the database
     
     :param db_file: Path to database file
     :param limit: Maximum number of trades to return
-    :param only_real: Whether to return only real trades
-    :return: DataFrame of trades
+    :return: DataFrame of real trades
     """
     if not db_file or not os.path.exists(db_file):
         logger.error("Database file not found")
@@ -69,20 +67,16 @@ def get_recent_trades(db_file, limit=20, only_real=True):
         cursor.execute("PRAGMA table_info(trades)")
         columns = [info[1] for info in cursor.fetchall()]
         
-        if 'is_simulation' in columns and only_real:
+        if 'is_simulation' in columns:
             # If column exists, filter by it
             query = f"SELECT * FROM trades WHERE is_simulation = 0 ORDER BY id DESC LIMIT {limit}"
             trades_df = pd.read_sql_query(query, conn)
-        elif only_real:
-            # If column doesn't exist but we want real trades, filter by contract address
+        else:
+            # If column doesn't exist, filter by contract address
             query = f"SELECT * FROM trades ORDER BY id DESC LIMIT {limit * 2}"  # Get more to filter
             all_trades = pd.read_sql_query(query, conn)
             trades_df = all_trades[~all_trades['contract_address'].apply(is_simulation_contract)]
             trades_df = trades_df.head(limit)  # Limit to requested number
-        else:
-            # If we want all trades
-            query = f"SELECT * FROM trades ORDER BY id DESC LIMIT {limit}"
-            trades_df = pd.read_sql_query(query, conn)
         
         conn.close()
         return trades_df
@@ -146,30 +140,50 @@ def verify_transaction(tx_hash, rpc_endpoint=None):
         logger.error(f"Error verifying transaction: {e}")
         return None
 
-def get_verified_trades(db_file, limit=10):
-    """
-    Get and verify recent real trades
+def verify_real_trades():
+    """Verify real trades on the Solana blockchain"""
+    db_file = find_database()
     
-    :param db_file: Path to database file
-    :param limit: Maximum number of trades to check
-    :return: Tuple of (verified_trades, unverified_trades)
-    """
-    # Get recent real trades
-    real_trades = get_recent_trades(db_file, limit, only_real=True)
+    if not db_file:
+        print("Database file not found. Please ensure the database exists.")
+        return
+    
+    print(f"Using database: {db_file}")
+    print("\nChecking real trades for blockchain verification...")
+    
+    # Get real trades
+    real_trades = get_real_trades(db_file)
     
     if real_trades is None or real_trades.empty:
-        logger.warning("No real trades found")
-        return [], []
+        print("No real trades found in database.")
+        return
+    
+    # Check if we have tx_hash column
+    if 'tx_hash' not in real_trades.columns:
+        print("No transaction hash column found in database.")
+        return
+    
+    # Count
+    total_trades = len(real_trades)
+    verified_count = 0
+    unverified_count = 0
+    
+    print(f"Found {total_trades} real trades. Verifying transactions...")
     
     verified_trades = []
     unverified_trades = []
     
+    # Verify each transaction
     for _, trade in real_trades.iterrows():
         tx_hash = trade.get('tx_hash')
         
         if not tx_hash or pd.isna(tx_hash) or not isinstance(tx_hash, str) or tx_hash.startswith('SIM_'):
             unverified_trades.append(trade)
+            unverified_count += 1
             continue
+        
+        # Print progress
+        print(f"Verifying transaction: {tx_hash}...")
         
         # Verify the transaction
         tx_details = verify_transaction(tx_hash)
@@ -178,111 +192,31 @@ def get_verified_trades(db_file, limit=10):
             # Add verification details to trade
             trade_verified = trade.copy()
             trade_verified['verified'] = True
-            trade_verified['tx_details'] = tx_details
             verified_trades.append(trade_verified)
+            verified_count += 1
+            print(f"  ✅ Verified successfully")
         else:
             # Mark as unverified
             trade_unverified = trade.copy()
             trade_unverified['verified'] = False
             unverified_trades.append(trade_unverified)
-    
-    return verified_trades, unverified_trades
-
-def print_trade_summary(trade, show_tx_details=False):
-    """Print a summary of a trade."""
-    if not isinstance(trade, dict) and not isinstance(trade, pd.Series):
-        logger.error(f"Invalid trade format: {type(trade)}")
-        return
-    
-    # Format timestamp
-    timestamp = trade.get('timestamp', 'Unknown')
-    try:
-        if isinstance(timestamp, str):
-            dt = datetime.fromisoformat(timestamp.replace('Z', '+00:00'))
-            timestamp = dt.strftime('%Y-%m-%d %H:%M:%S')
-    except:
-        pass
-    
-    # Print trade details
-    print(f"\nTrade: {trade.get('contract_address', 'Unknown')}")
-    print(f"  Action: {trade.get('action', 'Unknown')}")
-    print(f"  Amount: {trade.get('amount', 0):.6f} SOL")
-    print(f"  Price: ${trade.get('price', 0):.8f}")
-    print(f"  Time: {timestamp}")
-    print(f"  Transaction: {trade.get('tx_hash', 'None')}")
-    
-    # Print verification status
-    if 'verified' in trade:
-        print(f"  Verified: {'Yes ✅' if trade['verified'] else 'No ❌'}")
-    
-    # Print transaction details if requested
-    if show_tx_details and 'tx_details' in trade and trade['tx_details']:
-        print("\n  Transaction Details:")
-        
-        # Format the transaction details
-        tx = trade['tx_details']
-        
-        # Basic transaction info
-        if 'slot' in tx:
-            print(f"    Slot: {tx['slot']}")
-        
-        if 'blockTime' in tx:
-            block_time = datetime.fromtimestamp(tx['blockTime']).strftime('%Y-%m-%d %H:%M:%S')
-            print(f"    Block Time: {block_time}")
-        
-        # Transaction status
-        if 'meta' in tx and 'err' in tx['meta']:
-            if tx['meta']['err']:
-                print(f"    Status: Failed ❌")
-                print(f"    Error: {tx['meta']['err']}")
-            else:
-                print(f"    Status: Success ✅")
-        
-        # Transaction fee
-        if 'meta' in tx and 'fee' in tx['meta']:
-            fee_sol = tx['meta']['fee'] / 1_000_000_000  # Convert lamports to SOL
-            print(f"    Fee: {fee_sol:.9f} SOL")
-        
-        # Post balances (if available)
-        if 'meta' in tx and 'postBalances' in tx['meta'] and 'postTokenBalances' in tx['meta']:
-            print(f"    Post-Transaction Token Balances: {len(tx['meta']['postTokenBalances'])}")
-
-def main():
-    # Find the database
-    db_file = find_database()
-    
-    if not db_file:
-        print("Database file not found. Please ensure the database exists.")
-        return
-    
-    print(f"Using database: {db_file}")
-    print("\nChecking recent real trades...")
-    
-    # Get and verify recent real trades
-    verified_trades, unverified_trades = get_verified_trades(db_file, limit=10)
+            unverified_count += 1
+            print(f"  ❌ Not verified")
     
     # Print summary
-    print(f"\nFound {len(verified_trades)} verified and {len(unverified_trades)} unverified real trades.")
+    print("\n" + "="*60)
+    print(f"VERIFICATION SUMMARY: {verified_count} verified, {unverified_count} unverified")
+    print("="*60)
     
-    # Print verified trades
     if verified_trades:
-        print("\n=== VERIFIED TRADES ===")
+        print("\nVERIFIED TRANSACTIONS:")
         for trade in verified_trades:
-            print_trade_summary(trade)
-            
-        # Ask if user wants to see transaction details
-        if len(verified_trades) > 0:
-            show_details = input("\nShow transaction details for verified trades? (y/n): ")
-            if show_details.lower() == 'y':
-                print("\n=== TRANSACTION DETAILS ===")
-                for trade in verified_trades:
-                    print_trade_summary(trade, show_tx_details=True)
+            print(f"  ✅ {trade['action']} {trade['contract_address'][:8]} - {trade['amount']:.6f} SOL - {trade['tx_hash']}")
     
-    # Print unverified trades
     if unverified_trades:
-        print("\n=== UNVERIFIED TRADES ===")
+        print("\nUNVERIFIED TRANSACTIONS:")
         for trade in unverified_trades:
-            print_trade_summary(trade)
+            print(f"  ❌ {trade['action']} {trade['contract_address'][:8]} - {trade['amount']:.6f} SOL - {trade['tx_hash']}")
 
 if __name__ == "__main__":
-    main()
+    verify_real_trades()
