@@ -1,0 +1,6 @@
+2025-05-21 10:20:20 - solana_bot - INFO - ============================================================
+2025-05-21 10:20:20 - solana_bot - INFO -           SOLANA TRADING BOT - STARTING          
+2025-05-21 10:20:20 - solana_bot - INFO - ============================================================
+2025-05-21 10:20:20 - solana_bot - INFO - Bot control settings: running=True, simulation_mode=True
+2025-05-21 10:20:20 - solana_bot - ERROR - Failed to import SoldersAdapter: No module named 'SoldersAdapter'
+2025-05-21 10:20:20 - solana_bot - ERROR - Please create the SoldersAdapter.py file in the core directory
