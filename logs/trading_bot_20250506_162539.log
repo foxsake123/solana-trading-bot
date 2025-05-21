@@ -1,0 +1,15 @@
+2025-05-06 12:25:39,107 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:25:39,108 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 12:25:39,109 - trading_bot - CRITICAL - Unhandled bot initialization error: TokenAnalyzer.__init__() missing 1 required positional argument: 'db'
+2025-05-06 12:25:39,112 - trading_bot - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\main.py", line 225, in main
+    bot = TradingBot()
+  File "C:\Users\shorg\sol-bot_claude\main.py", line 43, in __init__
+    self.trader = SolanaTrader()
+                  ~~~~~~~~~~~~^^
+  File "C:\Users\shorg\sol-bot_claude\solana_trader.py", line 36, in __init__
+    self.token_analyzer = TokenAnalyzer()
+                          ~~~~~~~~~~~~~^^
+TypeError: TokenAnalyzer.__init__() missing 1 required positional argument: 'db'
+
+2025-05-06 12:25:39,113 - trading_bot - INFO - Bot execution completed

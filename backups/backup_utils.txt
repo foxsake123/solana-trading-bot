@@ -1,0 +1,230 @@
+import asyncio
+import aiohttp
+import json
+import time
+import logging
+import re
+import base64
+from typing import Dict, List, Optional, Union, Any
+from datetime import datetime, timedelta, UTC
+from solders.pubkey import Pubkey
+from config import BotConfiguration  # Make sure this import is here
+
+logger = logging.getLogger('trading_bot.utils')
+
+def is_valid_solana_address(address: str) -> bool:
+    """
+    Check if a string is a valid Solana address
+    
+    :param address: String to check
+    :return: True if valid Solana address, False otherwise
+    """
+    if not isinstance(address, str) or len(address) < 32 or len(address) > 44:
+        return False
+    
+    try:
+        Pubkey.from_string(address)
+        return True
+    except Exception:
+        return False
+
+async def fetch_with_retries(url: str, method: str = 'GET', 
+                           headers: Optional[Dict] = None,
+                           params: Optional[Dict] = None, 
+                           json_data: Optional[Dict] = None,
+                           max_retries: int = 3, 
+                           base_delay: int = 2) -> Optional[Dict]:
+    """
+    Fetch data from API with retry mechanism and rate limit handling
+    
+    :param url: URL to fetch
+    :param method: HTTP method
+    :param headers: HTTP headers
+    :param params: Query parameters
+    :param json_data: JSON data for POST requests
+    :param max_retries: Maximum retry attempts
+    :param base_delay: Base delay between retries
+    :return: API response as dictionary or None
+    """
+    # Set default headers
+    if headers is None:
+        headers = {'accept': 'application/json'}
+    
+    # Fix for DexScreener API - if using the invalid endpoint, switch to a valid one
+    if url.endswith('/pairs/solana') and 'dexscreener.com' in url:
+        # Use tokens endpoint instead which works
+        url = url.replace('/pairs/solana', '/tokens/solana')
+    
+    # Fix for DexScreener token endpoint
+    if 'dexscreener.com' in url and '/tokens/' in url:
+        # Add a User-Agent header to mimic a browser
+        headers['User-Agent'] = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+    
+    # Fix for Jupiter API - ensure amount is a string
+    if 'jup.ag' in url and params and 'amount' in params and not isinstance(params['amount'], str):
+        params['amount'] = str(params['amount'])
+    
+    # For CoinGecko, add a longer delay between retries due to rate limiting
+    if 'coingecko.com' in url:
+        base_delay = 5  # Longer delay for CoinGecko
+    
+    # Perform request with retries
+    async with aiohttp.ClientSession() as session:
+        for attempt in range(max_retries):
+            try:
+                if method.upper() == 'POST':
+                    async with session.post(
+                        url, 
+                        headers=headers, 
+                        params=params, 
+                        json=json_data, 
+                        timeout=30
+                    ) as response:
+                        # Handle rate limiting (429 responses)
+                        if response.status == 429:
+                            retry_after = int(response.headers.get('Retry-After', base_delay * (2 ** attempt)))
+                            logger.warning(f"Rate limited by {url}, waiting {retry_after} seconds")
+                            await asyncio.sleep(retry_after)
+                            continue
+                            
+                        response.raise_for_status()
+                        data = await response.json()
+                        return data
+                else:
+                    async with session.get(
+                        url, 
+                        headers=headers, 
+                        params=params, 
+                        timeout=30
+                    ) as response:
+                        # Handle rate limiting (429 responses)
+                        if response.status == 429:
+                            retry_after = int(response.headers.get('Retry-After', base_delay * (2 ** attempt)))
+                            logger.warning(f"Rate limited by {url}, waiting {retry_after} seconds")
+                            await asyncio.sleep(retry_after)
+                            continue
+                            
+                        response.raise_for_status()
+                        data = await response.json()
+                        return data
+            
+            except Exception as e:
+                logger.warning(f"Fetch attempt {attempt + 1}/{max_retries} failed for {url}: {e}")
+                if attempt < max_retries - 1:
+                    await asyncio.sleep(base_delay * (2 ** attempt))
+    
+    logger.error(f"Failed to fetch {url} after {max_retries} attempts")
+    return None
+
+def format_sol_amount(amount: float) -> str:
+    """
+    Format SOL amount with appropriate precision
+    
+    :param amount: SOL amount as float
+    :return: Formatted SOL amount string
+    """
+    if amount >= 1:
+        return f"{amount:.4f}"
+    elif amount >= 0.0001:
+        return f"{amount:.6f}"
+    else:
+        return f"{amount:.8f}"
+
+def format_price_change(change: float) -> str:
+    """
+    Format price change with color indicator
+    
+    :param change: Price change as percentage
+    :return: Formatted price change string
+    """
+    if change > 0:
+        return f"+{change:.2f}%"
+    elif change < 0:
+        return f"{change:.2f}%"
+    else:
+        return "0.00%"
+
+def parse_timeframe(timeframe: str) -> Optional[datetime]:
+    """
+    Parse human-readable timeframe to datetime
+    
+    :param timeframe: Timeframe string (e.g., '1h', '1d', '7d')
+    :return: Datetime object or None if invalid
+    """
+    try:
+        now = datetime.now(UTC)
+        value = int(timeframe[:-1])
+        unit = timeframe[-1].lower()
+        
+        if unit == 'm':
+            return now - timedelta(minutes=value)
+        elif unit == 'h':
+            return now - timedelta(hours=value)
+        elif unit == 'd':
+            return now - timedelta(days=value)
+        elif unit == 'w':
+            return now - timedelta(weeks=value)
+        else:
+            return None
+    except (ValueError, IndexError):
+        return None
+
+def truncate_address(address: str, chars: int = 4) -> str:
+    """
+    Truncate address for display
+    
+    :param address: Full address
+    :param chars: Number of characters to keep at each end
+    :return: Truncated address
+    """
+    if not address or len(address) <= chars * 2 + 2:
+        return address
+    return f"{address[:chars]}...{address[-chars:]}"
+
+def calculate_profit_loss(buy_price: float, current_price: float) -> Dict:
+    """
+    Calculate profit/loss metrics
+    
+    :param buy_price: Buy price
+    :param current_price: Current price
+    :return: Dictionary with profit/loss metrics
+    """
+    if buy_price <= 0:
+        return {'percentage': 0, 'multiple': 1}
+    
+    percentage = ((current_price - buy_price) / buy_price) * 100
+    multiple = current_price / buy_price
+    
+    return {
+        'percentage': percentage,
+        'multiple': multiple
+    }
+
+def is_fake_token(contract_address: str) -> bool:
+    """
+    Check if token address is likely a scam/fake
+    
+    :param contract_address: Token contract address
+    :return: True if likely fake, False otherwise
+    """
+    # Get control settings
+    try:
+        with open(BotConfiguration.BOT_CONTROL_FILE, 'r') as f:
+            control = json.load(f)
+            
+        # Skip filtering if disabled in settings
+        if not control.get('filter_fake_tokens', True):
+            return False
+    except Exception as e:
+        logger.debug(f"Could not load bot control settings: {e}")
+        # Default to filtering enabled if settings can't be loaded
+        pass
+    
+    # Check for common patterns in fake pump tokens ('pump' at the end)
+    if contract_address.lower().endswith('pump'):
+        return True
+    
+    if 'moon' in contract_address.lower():
+        return True
+    
+    return False

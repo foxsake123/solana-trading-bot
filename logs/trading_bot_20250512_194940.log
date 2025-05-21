@@ -1,0 +1,8 @@
+2025-05-12 19:49:41,644 - database - INFO - Database tables initialized
+2025-05-12 19:49:41,645 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:49:41,646 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:49:41,853 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:49:41,854 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:49:41,880 - database - INFO - Database tables initialized
+2025-05-12 19:49:41,895 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:49:41,905 - trading_bot.token_scanner - INFO - Twitter client initialized

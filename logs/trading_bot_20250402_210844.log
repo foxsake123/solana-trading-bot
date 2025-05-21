@@ -1,0 +1,28 @@
+2025-04-02 17:08:44,386 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 17:08:44,387 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-04-02 17:08:44,393 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-04-02 17:08:44,396 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-04-02 17:08:44,397 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 17:08:44,402 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-04-02 17:08:44,403 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 17:08:44,405 - trading_bot - INFO - ==================================================
+2025-04-02 17:08:44,405 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-04-02 17:08:44,405 - trading_bot - INFO - ==================================================
+2025-04-02 17:08:44,689 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 17:08:44,815 - trading_bot - INFO - Initial Wallet Balance: 0.0000 SOL ($0.00)
+2025-04-02 17:08:44,816 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-04-02 17:08:44,816 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 17:08:45,272 - trading_bot.token_scanner - INFO - Discovered 2 tokens from Twitter
+2025-04-02 17:08:45,273 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 17:08:45,273 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-04-02 17:08:45,275 - trading_bot - INFO - Starting token discovery and trading process
+2025-04-02 17:08:45,374 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 17:08:45,451 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-02 17:08:45,451 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 17:08:45,454 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 17:08:45,507 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 17:08:45,582 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 17:08:45,676 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 17:08:47,697 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 17:08:47,807 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 17:08:48,353 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...

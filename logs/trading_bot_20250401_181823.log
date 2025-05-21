@@ -1,0 +1,41 @@
+2025-04-01 18:18:23,882 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 18:18:23,883 - trading_bot.solana_trader - INFO - Wallet initialized: DpWxPejkHk4Hq1Gz15N2cjBYwgnAR2EuTfe8XcmGoP9k
+2025-04-01 18:18:23,891 - trading_bot.solana_trader - ERROR - Error loading control settings: name 'json' is not defined
+2025-04-01 18:18:23,892 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-04-01 18:18:23,894 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-04-01 18:18:23,895 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 18:18:23,904 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-04-01 18:18:23,905 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 18:18:23,906 - trading_bot - INFO - ==================================================
+2025-04-01 18:18:23,906 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-04-01 18:18:23,906 - trading_bot - INFO - ==================================================
+2025-04-01 18:18:24,251 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 18:18:24,252 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 18:18:24,357 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 18:18:24,409 - trading_bot - INFO - Initial Wallet Balance: 3.0000 SOL ($379.56)
+2025-04-01 18:18:24,409 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-04-01 18:18:24,410 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-01 18:18:24,799 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-01 18:18:24,799 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-01 18:18:24,800 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-04-01 18:18:24,803 - trading_bot - INFO - Starting token discovery and trading process
+2025-04-01 18:18:24,861 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 18:18:24,949 - trading_bot - INFO - Current wallet balance: 3.0000 SOL ($379.56)
+2025-04-01 18:18:24,950 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: 'TokenAnalyzer' object has no attribute 'get_top_gainers'
+2025-04-01 18:18:24,950 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'TokenAnalyzer' object has no attribute 'get_trending_tokens'
+2025-04-01 18:18:24,950 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-01 18:18:24,953 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-01 18:18:24,960 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-01 18:18:24,960 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-01 18:18:24,960 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: 'TokenAnalyzer' object has no attribute 'get_top_gainers'
+2025-04-01 18:18:24,960 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'TokenAnalyzer' object has no attribute 'get_trending_tokens'
+2025-04-01 18:18:24,961 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-01 18:18:24,963 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-01 18:18:24,963 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-01 18:19:53,594 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-04-01 18:20:24,436 - trading_bot - INFO - Closing connections
+2025-04-01 18:20:24,438 - trading_bot.solana_trader - INFO - Solana RPC client closed
+2025-04-01 18:20:24,439 - trading_bot - INFO - ==================================================
+2025-04-01 18:20:24,439 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-04-01 18:20:24,439 - trading_bot - INFO - ==================================================
+2025-04-01 18:20:24,442 - trading_bot - INFO - Bot execution completed

@@ -1,0 +1,100 @@
+2025-05-12 13:58:36,383 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 13:58:36,384 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 13:58:36,389 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 13:58:36,391 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 13:58:36,393 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 13:58:36,394 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 13:58:36,400 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 13:58:36,400 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 13:58:36,401 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 13:58:36,403 - trading_bot - INFO - ==================================================
+2025-05-12 13:58:36,403 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-05-12 13:58:36,404 - trading_bot - INFO - ==================================================
+2025-05-12 13:58:36,503 - trading_bot - INFO - Initial Wallet Balance: 5.0000 SOL ($862.15)
+2025-05-12 13:58:36,504 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-05-12 13:58:36,506 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 13:58:36,938 - trading_bot.token_scanner - INFO - Discovered 4 tokens from Twitter
+2025-05-12 13:58:36,939 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 13:58:36,940 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: 'TokenAnalyzer' object has no attribute 'get_top_gainers'
+2025-05-12 13:58:36,941 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'TokenAnalyzer' object has no attribute 'get_trending_tokens'
+2025-05-12 13:58:36,941 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 13:58:36,945 - trading_bot.token_scanner - ERROR - Error evaluating 87NX88QLu8qA2qUS56aT3u56AzsBDSdMyV2uhSowbonk: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:36,946 - trading_bot.token_scanner - ERROR - Error evaluating 5SdR5ZAXixSnp9ZbTxBYZFS4EPaTMSEhi9fz1Foboop: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:36,947 - trading_bot.token_scanner - ERROR - Error evaluating GTEudFoEJWDkjddY7EpaErX3hFQ5g3ybjLHndmaebonk: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:36,948 - trading_bot.token_scanner - ERROR - Error evaluating Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:36,950 - trading_bot.token_scanner - ERROR - Error evaluating HqWhpQvUZGbQ6qPCrY9gtMLsEG5qiYQzEbbJyUY5bonk: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:36,952 - trading_bot.token_scanner - ERROR - Error evaluating boopkpWqe68MSxLqBGogs8ZbUDN4GXaLhFwNP7mpP1i: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:36,953 - trading_bot.token_scanner - ERROR - Error evaluating 3qbHojvc62ME5YcqPw7YRRf74ZFYsBS1LSPtsKmMtb8r: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:36,954 - trading_bot.token_scanner - ERROR - Error evaluating 8YtovCPNWr1V1GzUg4co7cdv8KhzpkgFbaV2RdpbLRUb: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:36,955 - trading_bot.token_scanner - ERROR - Error evaluating 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:36,957 - trading_bot.token_scanner - ERROR - Error evaluating ECMYTGjvXWR3mb5RFEh3F1mAqFBe5EEe53A2n1F1sbpg: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:36,958 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 13:58:36,959 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-05-12 13:58:36,961 - trading_bot - INFO - Starting token discovery and trading process
+2025-05-12 13:58:37,054 - trading_bot - INFO - Current wallet balance: 5.0000 SOL ($862.15)
+2025-05-12 13:58:37,055 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: 'TokenAnalyzer' object has no attribute 'get_top_gainers'
+2025-05-12 13:58:37,055 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'TokenAnalyzer' object has no attribute 'get_trending_tokens'
+2025-05-12 13:58:37,056 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 13:58:37,062 - trading_bot.token_scanner - ERROR - Error evaluating 87NX88QLu8qA2qUS56aT3u56AzsBDSdMyV2uhSowbonk: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:37,064 - trading_bot.token_scanner - ERROR - Error evaluating 5SdR5ZAXixSnp9ZbTxBYZFS4EPaTMSEhi9fz1Foboop: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:37,066 - trading_bot.token_scanner - ERROR - Error evaluating GTEudFoEJWDkjddY7EpaErX3hFQ5g3ybjLHndmaebonk: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:37,068 - trading_bot.token_scanner - ERROR - Error evaluating Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:37,068 - trading_bot.token_scanner - ERROR - Error evaluating HqWhpQvUZGbQ6qPCrY9gtMLsEG5qiYQzEbbJyUY5bonk: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:37,069 - trading_bot.token_scanner - ERROR - Error evaluating boopkpWqe68MSxLqBGogs8ZbUDN4GXaLhFwNP7mpP1i: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:37,071 - trading_bot.token_scanner - ERROR - Error evaluating 3qbHojvc62ME5YcqPw7YRRf74ZFYsBS1LSPtsKmMtb8r: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:37,071 - trading_bot.token_scanner - ERROR - Error evaluating 8YtovCPNWr1V1GzUg4co7cdv8KhzpkgFbaV2RdpbLRUb: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:37,072 - trading_bot.token_scanner - ERROR - Error evaluating 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:58:37,075 - trading_bot.token_scanner - ERROR - Error evaluating ECMYTGjvXWR3mb5RFEh3F1mAqFBe5EEe53A2n1F1sbpg: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:59:36,962 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 13:59:37,345 - trading_bot.token_scanner - INFO - Discovered 4 tokens from Twitter
+2025-05-12 13:59:37,346 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 13:59:37,348 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: 'TokenAnalyzer' object has no attribute 'get_top_gainers'
+2025-05-12 13:59:37,349 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'TokenAnalyzer' object has no attribute 'get_trending_tokens'
+2025-05-12 13:59:37,350 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 13:59:37,360 - trading_bot.token_scanner - ERROR - Error evaluating 87NX88QLu8qA2qUS56aT3u56AzsBDSdMyV2uhSowbonk: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:59:37,363 - trading_bot.token_scanner - ERROR - Error evaluating 5SdR5ZAXixSnp9ZbTxBYZFS4EPaTMSEhi9fz1Foboop: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:59:37,365 - trading_bot.token_scanner - ERROR - Error evaluating GTEudFoEJWDkjddY7EpaErX3hFQ5g3ybjLHndmaebonk: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:59:37,368 - trading_bot.token_scanner - ERROR - Error evaluating Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:59:37,370 - trading_bot.token_scanner - ERROR - Error evaluating HqWhpQvUZGbQ6qPCrY9gtMLsEG5qiYQzEbbJyUY5bonk: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:59:37,374 - trading_bot.token_scanner - ERROR - Error evaluating boopkpWqe68MSxLqBGogs8ZbUDN4GXaLhFwNP7mpP1i: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:59:37,376 - trading_bot.token_scanner - ERROR - Error evaluating 3qbHojvc62ME5YcqPw7YRRf74ZFYsBS1LSPtsKmMtb8r: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:59:37,378 - trading_bot.token_scanner - ERROR - Error evaluating 8YtovCPNWr1V1GzUg4co7cdv8KhzpkgFbaV2RdpbLRUb: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:59:37,381 - trading_bot.token_scanner - ERROR - Error evaluating 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 13:59:37,382 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 14:00:37,400 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 14:00:37,741 - trading_bot.token_scanner - INFO - Discovered 4 tokens from Twitter
+2025-05-12 14:00:37,742 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 14:00:37,743 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: 'TokenAnalyzer' object has no attribute 'get_top_gainers'
+2025-05-12 14:00:37,744 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'TokenAnalyzer' object has no attribute 'get_trending_tokens'
+2025-05-12 14:00:37,744 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 14:00:37,749 - trading_bot.token_scanner - ERROR - Error evaluating 87NX88QLu8qA2qUS56aT3u56AzsBDSdMyV2uhSowbonk: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 14:00:37,751 - trading_bot.token_scanner - ERROR - Error evaluating 5SdR5ZAXixSnp9ZbTxBYZFS4EPaTMSEhi9fz1Foboop: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 14:00:37,752 - trading_bot.token_scanner - ERROR - Error evaluating GTEudFoEJWDkjddY7EpaErX3hFQ5g3ybjLHndmaebonk: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 14:00:37,754 - trading_bot.token_scanner - ERROR - Error evaluating Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 14:00:37,755 - trading_bot.token_scanner - ERROR - Error evaluating HqWhpQvUZGbQ6qPCrY9gtMLsEG5qiYQzEbbJyUY5bonk: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 14:00:37,758 - trading_bot.token_scanner - ERROR - Error evaluating boopkpWqe68MSxLqBGogs8ZbUDN4GXaLhFwNP7mpP1i: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 14:00:37,759 - trading_bot.token_scanner - ERROR - Error evaluating 3qbHojvc62ME5YcqPw7YRRf74ZFYsBS1LSPtsKmMtb8r: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 14:00:37,761 - trading_bot.token_scanner - ERROR - Error evaluating 8YtovCPNWr1V1GzUg4co7cdv8KhzpkgFbaV2RdpbLRUb: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 14:00:37,763 - trading_bot.token_scanner - ERROR - Error evaluating 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 14:00:37,763 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 14:01:37,781 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 14:01:38,097 - trading_bot.token_scanner - INFO - Discovered 4 tokens from Twitter
+2025-05-12 14:01:38,099 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 14:01:38,100 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: 'TokenAnalyzer' object has no attribute 'get_top_gainers'
+2025-05-12 14:01:38,101 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'TokenAnalyzer' object has no attribute 'get_trending_tokens'
+2025-05-12 14:01:38,102 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 14:01:38,109 - trading_bot.token_scanner - ERROR - Error evaluating 87NX88QLu8qA2qUS56aT3u56AzsBDSdMyV2uhSowbonk: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 14:01:38,111 - trading_bot.token_scanner - ERROR - Error evaluating 5SdR5ZAXixSnp9ZbTxBYZFS4EPaTMSEhi9fz1Foboop: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 14:01:38,113 - trading_bot.token_scanner - ERROR - Error evaluating GTEudFoEJWDkjddY7EpaErX3hFQ5g3ybjLHndmaebonk: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 14:01:38,115 - trading_bot.token_scanner - ERROR - Error evaluating Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 14:01:38,116 - trading_bot.token_scanner - ERROR - Error evaluating HqWhpQvUZGbQ6qPCrY9gtMLsEG5qiYQzEbbJyUY5bonk: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 14:01:38,118 - trading_bot.token_scanner - ERROR - Error evaluating boopkpWqe68MSxLqBGogs8ZbUDN4GXaLhFwNP7mpP1i: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 14:01:38,120 - trading_bot.token_scanner - ERROR - Error evaluating 3qbHojvc62ME5YcqPw7YRRf74ZFYsBS1LSPtsKmMtb8r: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 14:01:38,121 - trading_bot.token_scanner - ERROR - Error evaluating 8YtovCPNWr1V1GzUg4co7cdv8KhzpkgFbaV2RdpbLRUb: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 14:01:38,122 - trading_bot.token_scanner - ERROR - Error evaluating 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-05-12 14:01:38,123 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 14:02:32,182 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-05-12 14:02:36,517 - trading_bot - INFO - Closing connections
+2025-05-12 14:02:36,519 - trading_bot - INFO - ==================================================
+2025-05-12 14:02:36,520 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-05-12 14:02:36,521 - trading_bot - INFO - ==================================================

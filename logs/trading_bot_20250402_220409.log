@@ -1,0 +1,556 @@
+2025-04-02 18:04:09,145 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 18:04:09,146 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-04-02 18:04:09,152 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-04-02 18:04:09,155 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-04-02 18:04:09,157 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 18:04:09,163 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-04-02 18:04:09,164 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 18:04:09,165 - trading_bot - INFO - ==================================================
+2025-04-02 18:04:09,165 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-04-02 18:04:09,166 - trading_bot - INFO - ==================================================
+2025-04-02 18:04:09,451 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 18:04:09,595 - trading_bot - INFO - Initial Wallet Balance: 0.0000 SOL ($0.00)
+2025-04-02 18:04:09,595 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-04-02 18:04:09,596 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 18:04:09,942 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 18:04:09,942 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 18:04:09,943 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-04-02 18:04:09,944 - trading_bot - INFO - Starting token discovery and trading process
+2025-04-02 18:04:10,040 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 18:04:10,041 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-02 18:04:10,041 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 18:04:10,080 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:04:10,120 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:04:10,272 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:10,290 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:12,416 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:12,423 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:16,558 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:16,559 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:04:16,559 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 18:04:16,571 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:16,572 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:04:16,573 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 18:04:16,607 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:04:16,621 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:04:16,777 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:16,780 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:18,919 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:18,930 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:23,076 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:23,077 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:04:23,077 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 18:04:23,135 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:04:23,241 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:23,242 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:04:23,242 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 18:04:23,296 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:04:23,309 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:23,453 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:25,455 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:25,584 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:29,596 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:29,598 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:04:29,599 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 18:04:29,599 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 18:04:29,725 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:29,728 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:04:29,729 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 18:04:29,731 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 18:04:29,761 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:04:29,887 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:04:31,903 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:04:32,037 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:04:36,039 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:04:36,040 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_trending after 3 attempts
+2025-04-02 18:04:36,040 - trading_bot.token_analyzer - WARNING - No data from Birdeye token trending endpoint, trying alternative
+2025-04-02 18:04:36,183 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:04:36,183 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_trending after 3 attempts
+2025-04-02 18:04:36,184 - trading_bot.token_analyzer - WARNING - No data from Birdeye token trending endpoint, trying alternative
+2025-04-02 18:04:36,209 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:36,368 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:38,362 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:38,510 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:42,505 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:42,506 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:04:42,507 - trading_bot.token_analyzer - WARNING - No data from Birdeye token list endpoint
+2025-04-02 18:04:42,651 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:04:42,652 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:04:42,652 - trading_bot.token_analyzer - WARNING - No data from Birdeye token list endpoint
+2025-04-02 18:04:42,738 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 18:04:42,738 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 18:04:42,739 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 18:04:42,741 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 18:04:42,755 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 18:04:42,755 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 18:04:42,755 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 18:04:42,757 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 18:04:42,757 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 18:05:42,762 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 18:05:43,124 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 18:05:43,124 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 18:05:43,264 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-02 18:05:43,266 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 18:05:43,350 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:05:43,546 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:05:45,684 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:05:49,882 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:05:49,884 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:05:49,884 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 18:05:49,962 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:05:50,112 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:05:52,246 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:05:56,384 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:05:56,386 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:05:56,387 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 18:05:56,434 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:05:56,623 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:05:58,782 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:06:02,973 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:06:02,976 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:06:02,976 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 18:06:02,976 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 18:06:03,285 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:06:05,429 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:06:09,623 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:06:09,624 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_trending after 3 attempts
+2025-04-02 18:06:09,624 - trading_bot.token_analyzer - WARNING - No data from Birdeye token trending endpoint, trying alternative
+2025-04-02 18:06:09,810 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:06:11,938 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:06:16,078 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:06:16,080 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:06:16,080 - trading_bot.token_analyzer - WARNING - No data from Birdeye token list endpoint
+2025-04-02 18:06:16,227 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 18:06:16,228 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 18:06:16,229 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 18:06:16,233 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 18:06:16,234 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 18:07:16,236 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 18:07:16,566 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 18:07:16,566 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 18:07:16,712 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-02 18:07:16,713 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 18:07:16,753 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:07:16,919 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:07:19,059 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:07:23,206 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:07:23,208 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:07:23,208 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 18:07:23,244 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:07:23,406 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:07:25,548 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:07:29,695 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:07:29,697 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:07:29,697 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 18:07:29,752 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:07:29,924 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:07:32,089 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:07:36,233 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:07:36,234 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:07:36,234 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 18:07:36,234 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 18:07:36,532 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:07:38,660 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:07:42,809 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:07:42,811 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_trending after 3 attempts
+2025-04-02 18:07:42,812 - trading_bot.token_analyzer - WARNING - No data from Birdeye token trending endpoint, trying alternative
+2025-04-02 18:07:43,026 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:07:45,164 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:07:49,301 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:07:49,302 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:07:49,302 - trading_bot.token_analyzer - WARNING - No data from Birdeye token list endpoint
+2025-04-02 18:07:49,523 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 18:07:49,523 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 18:07:49,524 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 18:07:49,525 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 18:07:49,526 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 18:08:49,540 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 18:08:49,869 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 18:08:49,870 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 18:08:49,975 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-02 18:08:49,978 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 18:08:50,063 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:08:50,233 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:08:52,526 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:08:56,670 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:08:56,672 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:08:56,673 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 18:08:56,709 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:08:57,071 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:08:59,209 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:09:03,387 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:09:03,389 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:09:03,390 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 18:09:03,455 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:09:03,656 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:09:05,799 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:09:09,931 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:09:09,934 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:09:09,934 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 18:09:09,934 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 18:09:10,098 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:09:12,243 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:09:16,378 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:09:16,380 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_trending after 3 attempts
+2025-04-02 18:09:16,380 - trading_bot.token_analyzer - WARNING - No data from Birdeye token trending endpoint, trying alternative
+2025-04-02 18:09:16,560 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:09:18,695 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:09:22,836 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:09:22,838 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:09:22,838 - trading_bot.token_analyzer - WARNING - No data from Birdeye token list endpoint
+2025-04-02 18:09:22,975 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 18:09:22,976 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 18:09:22,977 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 18:09:22,978 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 18:09:22,978 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 18:09:43,128 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 18:09:43,234 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 18:09:43,333 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:09:43,501 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:09:45,642 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:09:49,790 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:09:49,793 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:09:49,794 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 18:09:49,835 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:09:50,036 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:09:52,184 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:09:56,319 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:09:56,320 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:09:56,320 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 18:09:56,384 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:09:56,543 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:09:58,691 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:10:02,837 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:10:02,840 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:10:02,841 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 18:10:02,844 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 18:10:02,997 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:10:05,133 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:10:09,281 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:10:09,282 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_trending after 3 attempts
+2025-04-02 18:10:09,282 - trading_bot.token_analyzer - WARNING - No data from Birdeye token trending endpoint, trying alternative
+2025-04-02 18:10:09,437 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:10:11,583 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:10:15,715 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:10:15,717 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:10:15,718 - trading_bot.token_analyzer - WARNING - No data from Birdeye token list endpoint
+2025-04-02 18:10:15,846 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 18:10:15,847 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 18:10:15,848 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 18:10:15,851 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 18:10:22,987 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 18:10:23,341 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 18:10:23,341 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 18:10:23,399 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-02 18:10:23,399 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 18:10:23,451 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:10:23,622 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:10:25,768 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:10:29,908 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:10:29,909 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:10:29,909 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 18:10:30,072 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:10:30,425 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:10:32,564 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:10:36,709 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:10:36,711 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:10:36,711 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 18:10:36,773 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:10:36,957 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:10:39,086 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:10:43,229 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:10:43,232 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:10:43,232 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 18:10:43,233 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 18:10:43,411 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:10:45,547 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:10:49,702 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:10:49,703 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_trending after 3 attempts
+2025-04-02 18:10:49,704 - trading_bot.token_analyzer - WARNING - No data from Birdeye token trending endpoint, trying alternative
+2025-04-02 18:10:49,846 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:10:51,976 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:10:56,125 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:10:56,127 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:10:56,127 - trading_bot.token_analyzer - WARNING - No data from Birdeye token list endpoint
+2025-04-02 18:10:56,298 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 18:10:56,299 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 18:10:56,299 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 18:10:56,301 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 18:10:56,302 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 18:11:56,317 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 18:11:56,782 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 18:11:56,783 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 18:11:56,930 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-02 18:11:56,930 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 18:11:56,991 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:11:57,160 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:11:59,316 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:12:03,477 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:12:03,477 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:12:03,478 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 18:12:03,527 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:12:03,737 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:12:05,883 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:12:10,023 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:12:10,024 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:12:10,025 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 18:12:10,099 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:12:10,237 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:12:12,361 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:12:16,490 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:12:16,492 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:12:16,492 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 18:12:16,492 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 18:12:16,828 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:12:18,965 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:12:23,109 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:12:23,111 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_trending after 3 attempts
+2025-04-02 18:12:23,112 - trading_bot.token_analyzer - WARNING - No data from Birdeye token trending endpoint, trying alternative
+2025-04-02 18:12:23,250 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:12:25,389 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:12:29,529 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:12:29,530 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:12:29,530 - trading_bot.token_analyzer - WARNING - No data from Birdeye token list endpoint
+2025-04-02 18:12:29,698 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 18:12:29,700 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 18:12:29,700 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 18:12:29,702 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 18:12:29,703 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 18:13:29,711 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 18:13:30,056 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 18:13:30,057 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 18:13:30,132 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-02 18:13:30,132 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 18:13:30,172 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:13:30,368 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:13:32,524 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:13:36,675 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:13:36,677 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:13:36,677 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 18:13:36,827 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:13:36,987 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:13:39,128 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:13:43,277 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:13:43,277 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:13:43,278 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 18:13:43,323 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:13:43,468 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:13:45,609 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:13:49,751 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:13:49,751 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:13:49,752 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 18:13:49,752 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 18:13:49,921 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:13:52,057 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:13:56,203 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:13:56,204 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_trending after 3 attempts
+2025-04-02 18:13:56,204 - trading_bot.token_analyzer - WARNING - No data from Birdeye token trending endpoint, trying alternative
+2025-04-02 18:13:56,375 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:13:58,505 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:14:02,647 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:14:02,648 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:14:02,648 - trading_bot.token_analyzer - WARNING - No data from Birdeye token list endpoint
+2025-04-02 18:14:02,782 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 18:14:02,782 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 18:14:02,782 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 18:14:02,786 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 18:14:02,787 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 18:15:02,788 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 18:15:03,159 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 18:15:03,160 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 18:15:03,250 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-02 18:15:03,250 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 18:15:03,312 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:15:03,573 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:05,735 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:09,873 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:09,874 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:15:09,874 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 18:15:09,936 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:15:10,111 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:12,251 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:16,429 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 18:15:16,496 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:16,497 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:15:16,497 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 18:15:16,530 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:15:16,538 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 18:15:16,570 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:15:16,704 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:16,916 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:18,854 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:19,053 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:22,985 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:22,986 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:15:22,986 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 18:15:22,986 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 18:15:23,167 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:15:23,196 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:23,198 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:15:23,199 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 18:15:23,245 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:15:23,448 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:25,330 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:15:25,603 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:29,477 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:15:29,479 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_trending after 3 attempts
+2025-04-02 18:15:29,479 - trading_bot.token_analyzer - WARNING - No data from Birdeye token trending endpoint, trying alternative
+2025-04-02 18:15:29,748 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:29,751 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:15:29,751 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 18:15:29,810 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:15:29,828 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:29,955 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:31,958 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:32,084 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:36,091 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:36,092 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:15:36,093 - trading_bot.token_analyzer - WARNING - No data from Birdeye token list endpoint
+2025-04-02 18:15:36,216 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 18:15:36,216 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 18:15:36,217 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 18:15:36,219 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 18:15:36,220 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 18:15:36,222 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:36,223 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:15:36,223 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 18:15:36,224 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 18:15:36,396 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:15:38,552 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:15:42,695 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:15:42,696 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_trending after 3 attempts
+2025-04-02 18:15:42,697 - trading_bot.token_analyzer - WARNING - No data from Birdeye token trending endpoint, trying alternative
+2025-04-02 18:15:42,859 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:44,990 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:49,284 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:15:49,286 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:15:49,287 - trading_bot.token_analyzer - WARNING - No data from Birdeye token list endpoint
+2025-04-02 18:15:49,395 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 18:15:49,396 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 18:15:49,397 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 18:15:49,400 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 18:16:36,225 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 18:16:36,612 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 18:16:36,614 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 18:16:36,817 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-02 18:16:36,819 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 18:16:36,899 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:16:37,041 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:16:39,177 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:16:43,306 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:16:43,307 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:16:43,308 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 18:16:43,350 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:16:43,517 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:16:45,661 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:16:49,837 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:16:49,839 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:16:49,840 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 18:16:49,905 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:16:50,048 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:16:52,248 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:16:56,381 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:16:56,383 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:16:56,384 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 18:16:56,384 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 18:16:56,534 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:16:58,667 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:17:02,828 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:17:02,830 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_trending after 3 attempts
+2025-04-02 18:17:02,830 - trading_bot.token_analyzer - WARNING - No data from Birdeye token trending endpoint, trying alternative
+2025-04-02 18:17:02,976 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:17:05,113 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:17:09,246 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:17:09,250 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:17:09,250 - trading_bot.token_analyzer - WARNING - No data from Birdeye token list endpoint
+2025-04-02 18:17:09,424 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 18:17:09,426 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 18:17:09,426 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 18:17:09,429 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 18:17:09,429 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 18:18:09,438 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 18:18:09,804 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 18:18:09,805 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 18:18:09,905 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-02 18:18:09,906 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 18:18:09,956 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:18:10,135 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:18:12,267 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:18:16,397 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:18:16,399 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:18:16,399 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 18:18:16,475 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:18:16,644 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:18:18,782 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:18:22,911 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:18:22,913 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:18:22,914 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 18:18:22,955 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:18:23,113 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:18:25,242 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:18:29,382 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:18:29,384 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:18:29,384 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 18:18:29,384 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 18:18:29,552 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:18:31,699 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:18:35,855 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:18:35,856 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_trending after 3 attempts
+2025-04-02 18:18:35,857 - trading_bot.token_analyzer - WARNING - No data from Birdeye token trending endpoint, trying alternative
+2025-04-02 18:18:36,190 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:18:38,339 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:18:42,485 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:18:42,488 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:18:42,488 - trading_bot.token_analyzer - WARNING - No data from Birdeye token list endpoint
+2025-04-02 18:18:42,696 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 18:18:42,697 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 18:18:42,697 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 18:18:42,700 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 18:18:42,701 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 18:19:42,710 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 18:19:43,032 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 18:19:43,033 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 18:19:43,214 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-02 18:19:43,215 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 18:19:43,265 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:19:43,447 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:19:45,590 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:19:49,723 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:19:49,725 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:19:49,726 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 18:19:49,790 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:19:49,948 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:19:52,081 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:19:56,231 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:19:56,234 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:19:56,235 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 18:19:56,283 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 18:19:56,446 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:19:58,577 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:20:02,731 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hChangePercent&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:20:02,733 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:20:02,734 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 18:20:02,734 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 18:20:02,946 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:20:05,095 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:20:09,224 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_trending: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_trending?sort_by=rank&sort_type=asc&offset=0&limit=10'
+2025-04-02 18:20:09,226 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_trending after 3 attempts
+2025-04-02 18:20:09,226 - trading_bot.token_analyzer - WARNING - No data from Birdeye token trending endpoint, trying alternative
+2025-04-02 18:20:09,380 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:20:11,524 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:20:15,682 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/token_list: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/token_list?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 18:20:15,683 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_list after 3 attempts
+2025-04-02 18:20:15,683 - trading_bot.token_analyzer - WARNING - No data from Birdeye token list endpoint
+2025-04-02 18:20:15,850 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 18:20:15,851 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 18:20:15,852 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 18:20:15,853 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 18:20:15,854 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 18:20:49,401 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-04-02 18:20:49,402 - trading_bot - WARNING - Task Task-6 completed unexpectedly
+2025-04-02 18:20:49,403 - trading_bot - INFO - Closing connections
+2025-04-02 18:20:49,404 - trading_bot.solana_trader - INFO - Solana RPC client closed
+2025-04-02 18:20:49,404 - trading_bot - INFO - ==================================================
+2025-04-02 18:20:49,404 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-04-02 18:20:49,404 - trading_bot - INFO - ==================================================
+2025-04-02 18:20:49,406 - trading_bot - INFO - Bot execution completed

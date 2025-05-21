@@ -1,0 +1,89 @@
+2025-05-06 12:17:29,958 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:17:29,958 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 12:17:29,966 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 12:17:29,968 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 12:17:29,969 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:17:29,975 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-06 12:17:29,977 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:17:29,979 - trading_bot - INFO - ==================================================
+2025-05-06 12:17:29,979 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-05-06 12:17:29,980 - trading_bot - INFO - ==================================================
+2025-05-06 12:17:30,418 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 12:17:30,559 - trading_bot - INFO - Initial Wallet Balance: 0.0000 SOL ($0.00)
+2025-05-06 12:17:30,562 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-05-06 12:17:30,563 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-06 12:17:31,028 - trading_bot.token_scanner - INFO - Discovered 10 tokens from Twitter
+2025-05-06 12:17:31,028 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-06 12:17:31,029 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-05-06 12:17:31,031 - trading_bot - INFO - Starting token discovery and trading process
+2025-05-06 12:17:31,141 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-05-06 12:17:31,287 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-05-06 12:17:31,404 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-05-06 12:17:31,531 - trading_bot.token_analyzer - INFO - Found 9 trending tokens
+2025-05-06 12:17:31,531 - trading_bot.token_scanner - INFO - Found 9 trending tokens
+2025-05-06 12:17:31,645 - trading_bot.token_analyzer - INFO - Found 9 trending tokens
+2025-05-06 12:17:31,646 - trading_bot.token_scanner - INFO - Found 9 trending tokens
+2025-05-06 12:17:35,140 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-06 12:17:35,181 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-06 12:18:05,590 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-06 12:19:05,604 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-06 12:19:06,046 - trading_bot.token_scanner - INFO - Discovered 12 tokens from Twitter
+2025-05-06 12:19:06,046 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-06 12:19:06,376 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-05-06 12:19:06,625 - trading_bot.token_analyzer - INFO - Found 8 trending tokens
+2025-05-06 12:19:06,625 - trading_bot.token_scanner - INFO - Found 8 trending tokens
+2025-05-06 12:19:09,985 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-06 12:19:11,439 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-06 12:20:11,454 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-06 12:20:11,883 - trading_bot.token_scanner - INFO - Discovered 12 tokens from Twitter
+2025-05-06 12:20:11,883 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-06 12:20:12,139 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-05-06 12:20:12,358 - trading_bot.token_analyzer - INFO - Found 8 trending tokens
+2025-05-06 12:20:12,359 - trading_bot.token_scanner - INFO - Found 8 trending tokens
+2025-05-06 12:20:15,716 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-06 12:20:15,719 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-06 12:21:15,735 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-06 12:21:16,205 - trading_bot.token_scanner - INFO - Discovered 12 tokens from Twitter
+2025-05-06 12:21:16,206 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-06 12:21:16,483 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-05-06 12:21:16,754 - trading_bot.token_analyzer - INFO - Found 9 trending tokens
+2025-05-06 12:21:16,755 - trading_bot.token_scanner - INFO - Found 9 trending tokens
+2025-05-06 12:21:20,611 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-06 12:21:22,161 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-06 12:22:22,172 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-06 12:22:22,552 - trading_bot.token_scanner - INFO - Discovered 11 tokens from Twitter
+2025-05-06 12:22:22,552 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-06 12:22:22,899 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-05-06 12:22:23,110 - trading_bot.token_analyzer - INFO - Found 9 trending tokens
+2025-05-06 12:22:23,110 - trading_bot.token_scanner - INFO - Found 9 trending tokens
+2025-05-06 12:22:26,928 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-06 12:22:28,408 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-06 12:23:05,794 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 12:23:05,899 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-05-06 12:23:06,206 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-05-06 12:23:06,479 - trading_bot.token_analyzer - INFO - Found 9 trending tokens
+2025-05-06 12:23:06,479 - trading_bot.token_scanner - INFO - Found 9 trending tokens
+2025-05-06 12:23:10,228 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-06 12:23:28,422 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-06 12:23:29,037 - trading_bot.token_scanner - INFO - Discovered 11 tokens from Twitter
+2025-05-06 12:23:29,038 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-06 12:23:29,413 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-05-06 12:23:29,700 - trading_bot.token_analyzer - INFO - Found 8 trending tokens
+2025-05-06 12:23:29,700 - trading_bot.token_scanner - INFO - Found 8 trending tokens
+2025-05-06 12:23:33,191 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-06 12:23:34,764 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-06 12:24:34,776 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-06 12:24:35,144 - trading_bot.token_scanner - INFO - Discovered 10 tokens from Twitter
+2025-05-06 12:24:35,145 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-06 12:24:35,442 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-05-06 12:24:35,665 - trading_bot.token_analyzer - INFO - Found 8 trending tokens
+2025-05-06 12:24:35,666 - trading_bot.token_scanner - INFO - Found 8 trending tokens
+2025-05-06 12:24:39,077 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-06 12:24:40,651 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-06 12:25:28,547 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-05-06 12:25:30,623 - trading_bot - INFO - Closing connections
+2025-05-06 12:25:30,624 - trading_bot.solana_trader - INFO - Solana RPC client closed
+2025-05-06 12:25:30,624 - trading_bot - INFO - ==================================================
+2025-05-06 12:25:30,624 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-05-06 12:25:30,625 - trading_bot - INFO - ==================================================
+2025-05-06 12:25:30,626 - trading_bot - INFO - Bot execution completed

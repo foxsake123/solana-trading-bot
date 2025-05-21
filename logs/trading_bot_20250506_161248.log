@@ -1,0 +1,17 @@
+2025-05-06 12:12:48,801 - trading_bot - CRITICAL - Unhandled bot initialization error: [WinError 3] The system cannot find the path specified: ''
+2025-05-06 12:12:48,803 - trading_bot - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\main.py", line 225, in main
+    bot = TradingBot()
+  File "C:\Users\shorg\sol-bot_claude\main.py", line 43, in __init__
+    self.trader = SolanaTrader()
+                  ~~~~~~~~~~~~^^
+  File "C:\Users\shorg\sol-bot_claude\solana_trader.py", line 30, in __init__
+    self.db = Database()
+              ~~~~~~~~^^
+  File "C:\Users\shorg\sol-bot_claude\database.py", line 24, in __init__
+    os.makedirs(os.path.dirname(self.db_path), exist_ok=True)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 227, in makedirs
+FileNotFoundError: [WinError 3] The system cannot find the path specified: ''
+
+2025-05-06 12:12:48,804 - trading_bot - INFO - Bot execution completed

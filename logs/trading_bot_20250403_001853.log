@@ -1,0 +1,116 @@
+2025-04-02 20:18:53,670 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 20:18:53,671 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-04-02 20:18:53,678 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-04-02 20:18:53,680 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-04-02 20:18:53,680 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 20:18:53,686 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-04-02 20:18:53,687 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 20:18:53,688 - trading_bot - INFO - ==================================================
+2025-04-02 20:18:53,688 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-04-02 20:18:53,688 - trading_bot - INFO - ==================================================
+2025-04-02 20:18:54,031 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 20:18:54,148 - trading_bot - INFO - Initial Wallet Balance: 0.0000 SOL ($0.00)
+2025-04-02 20:18:54,148 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-04-02 20:18:54,149 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 20:18:54,507 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 20:18:54,507 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 20:18:54,509 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-04-02 20:18:54,510 - trading_bot - INFO - Starting token discovery and trading process
+2025-04-02 20:18:54,660 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 20:18:54,819 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:18:54,935 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:18:55,079 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 20:18:55,189 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 20:18:55,303 - trading_bot.token_analyzer - INFO - Found 7 trending tokens
+2025-04-02 20:18:55,304 - trading_bot.token_scanner - INFO - Found 7 trending tokens
+2025-04-02 20:18:55,405 - trading_bot.token_analyzer - INFO - Found 7 trending tokens
+2025-04-02 20:18:55,405 - trading_bot.token_scanner - INFO - Found 7 trending tokens
+2025-04-02 20:18:58,277 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 20:18:58,603 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 20:19:08,897 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 20:20:08,901 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 20:20:09,178 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 20:20:09,178 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 20:20:09,486 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:20:09,777 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 20:20:10,031 - trading_bot.token_analyzer - INFO - Found 7 trending tokens
+2025-04-02 20:20:10,032 - trading_bot.token_scanner - INFO - Found 7 trending tokens
+2025-04-02 20:20:14,026 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 20:20:14,030 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 20:21:14,037 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 20:21:14,372 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 20:21:14,373 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 20:21:14,642 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:21:14,879 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 20:21:15,158 - trading_bot.token_analyzer - INFO - Found 7 trending tokens
+2025-04-02 20:21:15,159 - trading_bot.token_scanner - INFO - Found 7 trending tokens
+2025-04-02 20:21:18,364 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 20:21:18,370 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 20:22:18,376 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 20:22:18,662 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 20:22:18,662 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 20:22:18,996 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:22:19,299 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 20:22:19,606 - trading_bot.token_analyzer - INFO - Found 7 trending tokens
+2025-04-02 20:22:19,607 - trading_bot.token_scanner - INFO - Found 7 trending tokens
+2025-04-02 20:22:22,905 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 20:22:22,910 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 20:23:22,922 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 20:23:23,224 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 20:23:23,224 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 20:23:23,520 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:23:23,763 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 20:23:24,118 - trading_bot.token_analyzer - INFO - Found 7 trending tokens
+2025-04-02 20:23:24,119 - trading_bot.token_scanner - INFO - Found 7 trending tokens
+2025-04-02 20:23:27,450 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 20:23:27,453 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 20:24:09,441 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 20:24:09,659 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 20:24:09,914 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:24:10,124 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 20:24:10,363 - trading_bot.token_analyzer - INFO - Found 7 trending tokens
+2025-04-02 20:24:10,364 - trading_bot.token_scanner - INFO - Found 7 trending tokens
+2025-04-02 20:24:13,447 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 20:24:27,463 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 20:24:27,759 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 20:24:27,759 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 20:24:28,021 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:24:28,272 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 20:24:28,518 - trading_bot.token_analyzer - INFO - Found 7 trending tokens
+2025-04-02 20:24:28,518 - trading_bot.token_scanner - INFO - Found 7 trending tokens
+2025-04-02 20:24:31,752 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 20:24:31,756 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 20:25:31,762 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 20:25:32,052 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 20:25:32,052 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 20:25:32,364 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:25:32,621 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 20:25:32,901 - trading_bot.token_analyzer - INFO - Found 7 trending tokens
+2025-04-02 20:25:32,902 - trading_bot.token_scanner - INFO - Found 7 trending tokens
+2025-04-02 20:25:36,285 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 20:25:36,289 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 20:26:36,297 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 20:26:36,644 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 20:26:36,645 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 20:26:36,909 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:26:37,158 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 20:26:37,410 - trading_bot.token_analyzer - INFO - Found 7 trending tokens
+2025-04-02 20:26:37,410 - trading_bot.token_scanner - INFO - Found 7 trending tokens
+2025-04-02 20:26:40,413 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 20:26:40,416 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 20:27:15,759 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-04-02 20:27:40,430 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 20:27:40,746 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 20:27:40,747 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 20:27:41,054 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:27:41,271 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 20:27:41,517 - trading_bot.token_analyzer - INFO - Found 7 trending tokens
+2025-04-02 20:27:41,518 - trading_bot.token_scanner - INFO - Found 7 trending tokens
+2025-04-02 20:27:44,807 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 20:27:46,286 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 20:27:54,193 - trading_bot - INFO - Closing connections
+2025-04-02 20:27:54,194 - trading_bot.solana_trader - INFO - Solana RPC client closed
+2025-04-02 20:27:54,195 - trading_bot - INFO - ==================================================
+2025-04-02 20:27:54,196 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-04-02 20:27:54,196 - trading_bot - INFO - ==================================================
+2025-04-02 20:27:54,199 - trading_bot - INFO - Bot execution completed

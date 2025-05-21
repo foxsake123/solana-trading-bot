@@ -1,0 +1,277 @@
+2025-05-06 14:41:38,728 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:41:38,729 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 14:41:38,734 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 14:41:38,735 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 14:41:38,739 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 14:41:38,742 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:41:38,756 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 14:41:38,756 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-06 14:41:38,757 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:41:38,759 - trading_bot - INFO - ==================================================
+2025-05-06 14:41:38,759 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-05-06 14:41:38,759 - trading_bot - INFO - ==================================================
+2025-05-06 14:41:38,812 - trading_bot - INFO - Initial Wallet Balance: 5.0000 SOL ($722.10)
+2025-05-06 14:41:38,812 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-05-06 14:41:38,813 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-06 14:41:39,194 - trading_bot.token_scanner - INFO - Discovered 4 tokens from Twitter
+2025-05-06 14:41:39,195 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-06 14:41:39,196 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-05-06 14:41:39,199 - trading_bot - INFO - Starting token discovery and trading process
+2025-05-06 14:41:39,251 - trading_bot - INFO - Current wallet balance: 5.0000 SOL ($722.10)
+2025-05-06 14:41:40,011 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-06 14:41:40,011 - trading_bot.birdeye_api - WARNING - No tokens found for top gainers (24h)
+2025-05-06 14:41:40,183 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-06 14:41:40,183 - trading_bot.birdeye_api - WARNING - No tokens found for top gainers (24h)
+2025-05-06 14:41:40,437 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-05-06 14:41:40,438 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-05-06 14:41:40,858 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-05-06 14:41:40,858 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-05-06 14:41:41,042 - trading_bot.birdeye_api - WARNING - Invalid token data from Birdeye
+2025-05-06 14:41:41,570 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-06 14:41:41,571 - trading_bot.birdeye_api - WARNING - No tokens found for trending tokens
+2025-05-06 14:41:41,945 - trading_bot.birdeye_api - WARNING - Invalid token data from Birdeye
+2025-05-06 14:41:42,193 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-05-06 14:41:42,193 - trading_bot.token_scanner - INFO - No trending tokens found
+2025-05-06 14:41:42,194 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-06 14:41:42,389 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-06 14:41:42,389 - trading_bot.birdeye_api - WARNING - No tokens found for trending tokens
+2025-05-06 14:41:42,554 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:41:42,555 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:41:42,957 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-05-06 14:41:42,957 - trading_bot.token_scanner - INFO - No trending tokens found
+2025-05-06 14:41:42,958 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-06 14:41:43,011 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:41:43,013 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:41:43,218 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:41:43,377 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:41:45,135 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:41:45,358 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:41:48,683 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:41:48,962 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:41:55,103 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:41:58,361 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:10,902 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:10,903 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:42:10,903 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:42:10,907 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:42:11,274 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:11,274 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:42:11,275 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:42:11,279 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:42:11,619 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:11,799 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:13,438 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:13,493 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:16,755 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:17,361 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:24,274 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:24,936 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:40,600 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:40,602 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:42:40,602 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:42:40,604 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:42:41,330 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:42:41,333 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:42:41,963 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:43,381 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:43,382 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:42:43,382 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:42:43,383 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:42:43,809 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:42:43,812 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:42:43,897 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:44,457 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:46,180 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:47,439 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:50,029 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:55,821 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:42:57,803 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:08,840 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:08,841 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:43:08,842 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:43:08,848 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:43:09,413 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:11,631 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:14,946 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:16,812 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:16,814 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:43:16,815 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:43:16,822 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:43:17,183 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:18,830 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:22,108 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:22,345 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:31,182 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:35,342 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:35,348 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:43:35,349 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:43:35,480 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:43:35,489 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:43:36,013 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:43:36,015 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:43:36,584 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:38,704 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:42,089 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:48,793 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:48,798 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:43:48,798 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:43:48,885 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:43:48,890 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:43:49,506 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:43:49,513 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:43:49,980 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:50,196 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:52,419 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:43:56,162 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:03,218 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:03,220 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:44:03,220 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:44:03,223 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:44:03,560 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:04,015 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:05,347 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:08,686 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:16,849 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:21,296 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:21,296 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:44:21,297 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:44:21,299 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:44:21,909 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:23,733 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:27,224 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:33,902 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:34,401 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:34,405 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:44:34,406 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:44:34,409 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:44:35,227 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:44:35,229 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:44:35,907 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:38,075 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:42,599 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:47,749 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:47,751 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:44:47,751 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:44:47,755 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:44:48,247 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:44:48,249 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:44:48,862 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:49,203 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:50,813 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:44:54,115 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:00,803 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:02,995 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:02,996 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:45:02,997 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:45:03,000 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:45:03,694 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:05,614 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:09,172 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:15,141 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:15,141 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:45:15,142 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:45:15,143 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:45:15,739 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:16,120 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:17,609 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:22,263 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:29,851 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:33,914 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:33,920 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:45:33,920 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:45:34,025 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:45:34,142 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:45:34,144 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:45:34,938 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:45:34,940 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:45:35,377 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:37,444 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:41,335 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:44,938 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:44,942 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:45:44,942 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:45:45,053 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:45:45,170 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:45:45,178 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:45:45,854 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:45:45,857 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:45:46,354 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:48,451 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:50,446 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:52,613 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:45:59,846 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:46:07,182 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:46:07,183 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:46:07,183 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:46:07,186 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:46:07,869 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:46:10,208 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:46:14,703 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:46:15,671 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:46:15,672 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:46:15,672 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:46:15,674 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:46:16,161 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:46:17,934 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:46:21,692 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:46:22,313 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:46:28,653 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:46:38,840 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:46:38,844 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:46:38,845 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:46:38,847 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:46:39,592 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:46:39,600 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: argument of type 'float' is not iterable
+2025-05-06 14:46:40,155 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:46:41,840 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:46:46,152 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:46:47,305 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:46:47,309 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:46:47,309 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:46:47,340 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://public-api.birdeye.so/defi/token_overview: maximum recursion depth exceeded
+2025-05-06 14:46:49,354 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://public-api.birdeye.so/defi/token_overview: maximum recursion depth exceeded
+2025-05-06 14:46:52,982 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:46:53,690 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://public-api.birdeye.so/defi/token_overview: maximum recursion depth exceeded
+2025-05-06 14:47:02,824 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://public-api.birdeye.so/defi/token_overview: maximum recursion depth exceeded
+2025-05-06 14:47:06,163 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:47:06,163 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon after 5 attempts
+2025-05-06 14:47:06,164 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:47:06,165 - trading_bot.birdeye_api - ERROR - Error getting data from Birdeye: maximum recursion depth exceeded
+2025-05-06 14:47:06,870 - trading_bot.birdeye_api - ERROR - Error getting token from DexScreener: maximum recursion depth exceeded
+2025-05-06 14:47:06,870 - trading_bot.birdeye_api - WARNING - Failed to get token info for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:47:06,871 - trading_bot.birdeye_api - ERROR - Error getting data from Birdeye: maximum recursion depth exceeded
+2025-05-06 14:47:07,309 - trading_bot.birdeye_api - ERROR - Error getting token from DexScreener: maximum recursion depth exceeded
+2025-05-06 14:47:07,309 - trading_bot.birdeye_api - WARNING - Failed to get token info for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:47:07,310 - trading_bot.birdeye_api - ERROR - Error getting data from Birdeye: maximum recursion depth exceeded
+2025-05-06 14:47:07,310 - trading_bot.birdeye_api - WARNING - Too many Birdeye API failures (3). Switching to DexScreener fallback.
+2025-05-06 14:47:07,680 - trading_bot.birdeye_api - ERROR - Error getting token from DexScreener: maximum recursion depth exceeded
+2025-05-06 14:47:07,682 - trading_bot.birdeye_api - WARNING - Failed to get token info for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:47:07,993 - trading_bot.birdeye_api - ERROR - Error getting token from DexScreener: maximum recursion depth exceeded
+2025-05-06 14:47:07,994 - trading_bot.birdeye_api - WARNING - Failed to get token info for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:47:08,620 - trading_bot.birdeye_api - ERROR - Error getting token from DexScreener: maximum recursion depth exceeded
+2025-05-06 14:47:08,620 - trading_bot.birdeye_api - WARNING - Failed to get token info for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:47:09,303 - trading_bot.birdeye_api - ERROR - Error getting token from DexScreener: maximum recursion depth exceeded
+2025-05-06 14:47:09,303 - trading_bot.birdeye_api - WARNING - Failed to get token info for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:47:10,004 - trading_bot.birdeye_api - ERROR - Error getting token from DexScreener: maximum recursion depth exceeded
+2025-05-06 14:47:10,005 - trading_bot.birdeye_api - WARNING - Failed to get token info for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:47:10,505 - trading_bot.birdeye_api - ERROR - Error getting token from DexScreener: maximum recursion depth exceeded
+2025-05-06 14:47:10,506 - trading_bot.birdeye_api - WARNING - Failed to get token info for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon
+2025-05-06 14:47:10,506 - trading_bot.token_analyzer - ERROR - Error fetching data from Birdeye for 3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: 'float' object has no attribute 'get'
+2025-05-06 14:47:11,188 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:47:13,579 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:47:17,416 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:47:18,941 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://public-api.birdeye.so/defi/token_overview: maximum recursion depth exceeded
+2025-05-06 14:47:18,943 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/token_overview after 5 attempts
+2025-05-06 14:47:18,943 - trading_bot.birdeye_api - WARNING - Birdeye API failure: None
+2025-05-06 14:47:18,943 - trading_bot.birdeye_api - WARNING - Too many Birdeye API failures (4). Switching to DexScreener fallback.
+2025-05-06 14:47:19,631 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:47:21,542 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:47:25,671 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:47:26,058 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:47:31,155 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-05-06 14:47:34,094 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://api.dexscreener.com/latest/dex/tokens/3pGyE8coXwBy8rx71zjtHDRrSA5TvKmuRgqwhK3Xmoon: maximum recursion depth exceeded
+2025-05-06 14:47:38,874 - trading_bot - INFO - Closing connections
+2025-05-06 14:47:38,875 - trading_bot - INFO - ==================================================
+2025-05-06 14:47:38,875 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-05-06 14:47:38,875 - trading_bot - INFO - ==================================================
+2025-05-06 14:47:38,877 - trading_bot - INFO - Bot execution completed

@@ -1,0 +1,14 @@
+2025-05-06 12:28:40,107 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:28:40,107 - trading_bot - CRITICAL - Unhandled bot initialization error: 'SolanaTrader' object has no attribute '_setup_wallet'
+2025-05-06 12:28:40,109 - trading_bot - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\main.py", line 225, in main
+    bot = TradingBot()
+  File "C:\Users\shorg\sol-bot_claude\main.py", line 43, in __init__
+    self.trader = SolanaTrader()
+                  ~~~~~~~~~~~~^^
+  File "C:\Users\shorg\sol-bot_claude\solana_trader.py", line 32, in __init__
+    self.keypair = self._setup_wallet()
+                   ^^^^^^^^^^^^^^^^^^
+AttributeError: 'SolanaTrader' object has no attribute '_setup_wallet'
+
+2025-05-06 12:28:40,109 - trading_bot - INFO - Bot execution completed

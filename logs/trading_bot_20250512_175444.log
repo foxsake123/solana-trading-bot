@@ -1,0 +1,72 @@
+2025-05-12 17:54:44,918 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 17:54:44,920 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:54:44,933 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:54:44,945 - trading_bot.solana_trader - INFO - Loaded 21 active orders
+2025-05-12 17:54:44,946 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:54:44,946 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:54:45,064 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 17:54:45,065 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 17:54:53,170 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 17:54:53,172 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:54:53,203 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:54:53,227 - trading_bot.solana_trader - INFO - Loaded 21 active orders
+2025-05-12 17:54:53,231 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:54:53,232 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:54:53,363 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 17:54:53,364 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 17:54:54,992 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 17:54:54,996 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:54:55,013 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:54:55,030 - trading_bot.solana_trader - INFO - Loaded 21 active orders
+2025-05-12 17:54:55,034 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:54:55,036 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:54:57,015 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 17:54:57,016 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 17:55:11,792 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 17:55:11,796 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:55:11,811 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:55:11,834 - trading_bot.solana_trader - INFO - Loaded 21 active orders
+2025-05-12 17:55:11,838 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:55:11,840 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:55:12,014 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 17:55:12,016 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 17:55:12,587 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 17:55:12,592 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:55:12,603 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:55:12,616 - trading_bot.solana_trader - INFO - Loaded 21 active orders
+2025-05-12 17:55:12,621 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:55:12,622 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:55:12,796 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 17:55:12,797 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 17:55:30,909 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 17:55:30,914 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:55:30,933 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:55:30,949 - trading_bot.solana_trader - INFO - Loaded 21 active orders
+2025-05-12 17:55:30,951 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:55:30,952 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:55:31,228 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 17:55:31,229 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 17:55:48,294 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 17:55:48,296 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:55:48,302 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:55:48,326 - trading_bot.solana_trader - INFO - Loaded 21 active orders
+2025-05-12 17:55:48,328 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:55:48,329 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:55:48,526 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 17:55:48,528 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:55:48,542 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:55:48,555 - trading_bot.solana_trader - INFO - Loaded 21 active orders
+2025-05-12 17:55:48,557 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:55:48,558 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:55:48,857 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 17:55:48,857 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 17:55:48,967 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 17:55:49,076 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 17:55:53,911 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 17:55:53,913 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:55:53,922 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:55:53,945 - trading_bot.solana_trader - INFO - Loaded 21 active orders
+2025-05-12 17:55:53,948 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:55:53,949 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:55:54,101 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 17:55:54,103 - trading_bot.birdeye_api - INFO - Found 2 trending tokens

@@ -1,0 +1,295 @@
+2025-05-06 14:13:35,907 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:13:35,908 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 14:13:35,915 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 14:13:35,916 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 14:13:35,919 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 14:13:35,920 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:13:35,940 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 14:13:35,941 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-06 14:13:35,942 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:13:35,943 - trading_bot - INFO - ==================================================
+2025-05-06 14:13:35,943 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-05-06 14:13:35,943 - trading_bot - INFO - ==================================================
+2025-05-06 14:13:36,023 - trading_bot - INFO - Initial Wallet Balance: 5.0000 SOL ($718.85)
+2025-05-06 14:13:36,023 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-05-06 14:13:36,025 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-06 14:13:36,529 - trading_bot.token_scanner - INFO - Discovered 8 tokens from Twitter
+2025-05-06 14:13:36,529 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-06 14:13:36,530 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-05-06 14:13:36,531 - trading_bot - INFO - Starting token discovery and trading process
+2025-05-06 14:13:36,574 - trading_bot - INFO - Current wallet balance: 5.0000 SOL ($718.85)
+2025-05-06 14:13:36,754 - trading_bot.utils - WARNING - Request error on attempt 1/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:13:36,820 - trading_bot.utils - WARNING - Request error on attempt 1/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:13:38,863 - trading_bot.utils - WARNING - Request error on attempt 2/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:13:38,996 - trading_bot.utils - WARNING - Request error on attempt 2/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:13:43,384 - trading_bot.utils - WARNING - Request error on attempt 3/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:13:43,518 - trading_bot.utils - WARNING - Request error on attempt 3/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:13:51,457 - trading_bot.utils - WARNING - Request error on attempt 4/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:13:52,531 - trading_bot.utils - WARNING - Request error on attempt 4/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:14:04,912 - trading_bot.utils - WARNING - Request error on attempt 5/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:14:04,913 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/v1/defi/gainers_losers/solana after 5 attempts
+2025-05-06 14:14:05,617 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-06 14:14:05,618 - trading_bot.birdeye_api - WARNING - No tokens found for top gainers (24h)
+2025-05-06 14:14:06,038 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-05-06 14:14:06,038 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-05-06 14:14:06,265 - trading_bot.utils - WARNING - Request error on attempt 1/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:14:08,519 - trading_bot.utils - WARNING - Request error on attempt 2/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:14:10,984 - trading_bot.utils - WARNING - Request error on attempt 5/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:14:10,986 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/v1/defi/gainers_losers/solana after 5 attempts
+2025-05-06 14:14:11,546 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-06 14:14:11,547 - trading_bot.birdeye_api - WARNING - No tokens found for top gainers (24h)
+2025-05-06 14:14:11,997 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-05-06 14:14:11,999 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-05-06 14:14:12,160 - trading_bot.utils - WARNING - Request error on attempt 1/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:14:13,439 - trading_bot.utils - WARNING - Request error on attempt 3/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:14:13,917 - trading_bot.utils - WARNING - Request error on attempt 2/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:14:18,246 - trading_bot.utils - WARNING - Request error on attempt 3/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:14:22,367 - trading_bot.utils - WARNING - Request error on attempt 4/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:14:24,846 - trading_bot.utils - WARNING - Request error on attempt 4/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:14:38,108 - trading_bot.utils - WARNING - Request error on attempt 5/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:14:38,108 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/v1/trending after 5 attempts
+2025-05-06 14:14:38,108 - trading_bot.birdeye_api - WARNING - Too many Birdeye API failures (3). Switching to DexScreener fallback.
+2025-05-06 14:14:38,454 - trading_bot.utils - WARNING - Request error on attempt 5/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:14:38,456 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/v1/trending after 5 attempts
+2025-05-06 14:14:38,456 - trading_bot.birdeye_api - WARNING - Too many Birdeye API failures (4). Switching to DexScreener fallback.
+2025-05-06 14:14:38,767 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-06 14:14:38,768 - trading_bot.birdeye_api - WARNING - No tokens found for trending tokens
+2025-05-06 14:14:39,021 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-06 14:14:39,021 - trading_bot.birdeye_api - WARNING - No tokens found for trending tokens
+2025-05-06 14:14:39,273 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-05-06 14:14:39,274 - trading_bot.token_scanner - INFO - No trending tokens found
+2025-05-06 14:14:39,274 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-06 14:14:39,694 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-05-06 14:14:39,695 - trading_bot.token_scanner - INFO - No trending tokens found
+2025-05-06 14:14:39,695 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-06 14:14:40,080 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:14:40,082 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:14:40,093 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:14:40,197 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:14:40,291 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:14:40,381 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:14:40,497 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:40,634 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:40,721 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:40,820 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:40,906 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:41,003 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:41,089 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:41,177 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:41,269 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:41,363 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:41,451 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:41,548 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:41,628 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:41,725 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:41,833 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:41,941 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:42,051 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:42,161 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:42,252 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:42,338 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:42,436 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:42,530 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:42,610 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:42,699 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:42,779 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:42,865 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:42,953 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:43,035 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:43,123 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:43,219 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:43,301 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:43,395 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:43,500 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:43,584 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:43,683 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:43,780 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:43,882 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:43,962 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:44,058 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:44,157 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:44,246 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:44,342 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:44,436 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:44,546 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:44,642 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:44,769 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:44,871 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:45,002 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:45,135 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:45,244 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:45,330 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:45,424 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:45,510 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:45,602 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:45,693 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:45,798 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-06 14:14:45,874 - trading_bot.token_analyzer - WARNING - Twitter API rate limit exceeded for pop
+2025-05-06 14:14:45,875 - trading_bot.token_analyzer - WARNING - Rate limited by Twitter API. Backing off for 8 seconds.
+2025-05-06 14:14:45,890 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 7eQY4Q9WC1XU1SD4HghaJqEmipniCqKCW1Lv3Ejgpump: 20.928921
+2025-05-06 14:14:45,986 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:14:45,999 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 7eQY4Q9WC1XU1SD4HghaJqEmipniCqKCW1Lv3Ejgpump: 20.928921
+2025-05-06 14:14:47,700 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:14:47,706 - trading_bot.token_analyzer - INFO - Using Birdeye security score for ECMYTGjvXWR3mb5RFEh3F1mAqFBe5EEe53A2n1F1sbpg: 5.023686
+2025-05-06 14:14:47,713 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:14:47,724 - trading_bot.token_analyzer - INFO - Using Birdeye security score for ECMYTGjvXWR3mb5RFEh3F1mAqFBe5EEe53A2n1F1sbpg: 5.023686
+2025-05-06 14:14:49,297 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:14:49,302 - trading_bot.token_analyzer - INFO - Using Birdeye security score for CHETQYMAfLSj2hDrBqNzhMcMcvcMSeGr7c6CYFB2pump: 32.210183
+2025-05-06 14:14:49,369 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:14:49,376 - trading_bot.token_analyzer - INFO - Using Birdeye security score for CHETQYMAfLSj2hDrBqNzhMcMcvcMSeGr7c6CYFB2pump: 32.210183
+2025-05-06 14:14:50,795 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:14:50,800 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 83mCRQJzvKMeQd9wJbZDUCTPgRbZMDoPdMSx5Sf1pump: 70.0
+2025-05-06 14:14:51,034 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:14:51,037 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 83mCRQJzvKMeQd9wJbZDUCTPgRbZMDoPdMSx5Sf1pump: 70.0
+2025-05-06 14:14:52,600 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:14:52,605 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 6m2SeubvmKc1MGqGxQToy9i7tdbkxhnMxqgEhtgFpump: 2.810314
+2025-05-06 14:14:52,608 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:14:52,613 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 6m2SeubvmKc1MGqGxQToy9i7tdbkxhnMxqgEhtgFpump: 2.810314
+2025-05-06 14:14:54,193 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:14:54,194 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:14:54,195 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:14:54,273 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:14:54,380 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:14:54,502 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:14:54,619 - trading_bot.token_analyzer - WARNING - Twitter API rate limit exceeded for Itoken
+2025-05-06 14:14:54,620 - trading_bot.token_analyzer - WARNING - Rate limited by Twitter API. Backing off for 22 seconds.
+2025-05-06 14:14:54,625 - trading_bot.token_analyzer - INFO - Using Birdeye security score for vv6EBaeRszGE7MBHi9fctyABuU2R299EfeJJspBpump: 0.246102
+2025-05-06 14:14:54,630 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:14:54,636 - trading_bot.token_analyzer - INFO - Using Birdeye security score for vv6EBaeRszGE7MBHi9fctyABuU2R299EfeJJspBpump: 0.246102
+2025-05-06 14:14:56,180 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:14:56,185 - trading_bot.token_analyzer - INFO - Using Birdeye security score for F83qesR5cuCkc4ZgdeLsTQorHhE4xKHYMV4Uj69Upump: 40.972015
+2025-05-06 14:14:56,190 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:14:56,194 - trading_bot.token_analyzer - INFO - Using Birdeye security score for F83qesR5cuCkc4ZgdeLsTQorHhE4xKHYMV4Uj69Upump: 40.972015
+2025-05-06 14:14:57,689 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:14:57,696 - trading_bot.token_analyzer - INFO - Using Birdeye security score for DS622cHargAtcc3SbBhoJ8WkekHesBHMQPVa7Wq9aTQy: 0.7739389999999999
+2025-05-06 14:14:57,783 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:14:57,786 - trading_bot.token_analyzer - INFO - Using Birdeye security score for DS622cHargAtcc3SbBhoJ8WkekHesBHMQPVa7Wq9aTQy: 0.7739389999999999
+2025-05-06 14:14:59,186 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:14:59,196 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 85rvBbnKk9jBHgMwyQWbAuSuHsZPUmzXinJyteh9pump: 1.465028
+2025-05-06 14:14:59,251 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:14:59,258 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 85rvBbnKk9jBHgMwyQWbAuSuHsZPUmzXinJyteh9pump: 1.465028
+2025-05-06 14:15:00,811 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:15:00,814 - trading_bot.token_analyzer - INFO - Using Birdeye security score for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ: 1.6602129999999997
+2025-05-06 14:15:00,823 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:15:00,825 - trading_bot.token_analyzer - INFO - Using Birdeye security score for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ: 1.6602129999999997
+2025-05-06 14:15:02,341 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:15:02,344 - trading_bot.token_analyzer - INFO - Using Birdeye security score for EQi5AW5CEDpKg6tyinU5H5WeW2o5aSdqRTxV8nV2pump: 15.927104
+2025-05-06 14:15:02,532 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:15:02,536 - trading_bot.token_analyzer - INFO - Using Birdeye security score for EQi5AW5CEDpKg6tyinU5H5WeW2o5aSdqRTxV8nV2pump: 15.927104
+2025-05-06 14:15:04,019 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:15:04,022 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 52jTVbrvYqPxKQvT2dxBfmrHcBWBm8Rq1cgM1yTjpump: 36.91561
+2025-05-06 14:15:04,031 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:15:04,034 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 52jTVbrvYqPxKQvT2dxBfmrHcBWBm8Rq1cgM1yTjpump: 36.91561
+2025-05-06 14:15:05,040 - trading_bot.utils - WARNING - Approaching rate limit for dexscreener. Sleeping 33.1 seconds.
+2025-05-06 14:15:05,529 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:15:05,534 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 366fdi7HiHbgGfC63Fycixvgo4Eb41JSUf6PYSAnpump: 30.878321
+2025-05-06 14:15:06,548 - trading_bot.utils - WARNING - Approaching rate limit for dexscreener. Sleeping 31.6 seconds.
+2025-05-06 14:15:38,612 - trading_bot.birdeye_api - WARNING - No DexScreener data for 5KGwFRsxpXnDs2d2RampWvRyRdGcomc4N4tp1Az1cvfC
+2025-05-06 14:15:38,614 - trading_bot.birdeye_api - WARNING - Failed to get token info for 5KGwFRsxpXnDs2d2RampWvRyRdGcomc4N4tp1Az1cvfC
+2025-05-06 14:15:38,776 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:15:38,777 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:15:38,778 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:15:38,853 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:15:38,968 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:15:39,059 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:15:39,146 - trading_bot.token_analyzer - WARNING - Twitter API rate limit exceeded for Ewon
+2025-05-06 14:15:39,146 - trading_bot.token_analyzer - WARNING - Rate limited by Twitter API. Backing off for 32 seconds.
+2025-05-06 14:15:39,150 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 366fdi7HiHbgGfC63Fycixvgo4Eb41JSUf6PYSAnpump: 30.740286
+2025-05-06 14:15:39,320 - trading_bot.token_analyzer - WARNING - No DexScreener data for 5KGwFRsxpXnDs2d2RampWvRyRdGcomc4N4tp1Az1cvfC
+2025-05-06 14:15:40,612 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:15:40,615 - trading_bot.token_analyzer - INFO - Using Birdeye security score for FcAFbQzMrR4y66YNgVJcZGmXZzx8rAccqThrHrTYpump: 32.929409
+2025-05-06 14:15:40,981 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:15:40,984 - trading_bot.token_analyzer - INFO - Using Birdeye security score for FcAFbQzMrR4y66YNgVJcZGmXZzx8rAccqThrHrTYpump: 32.929409
+2025-05-06 14:15:42,279 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:15:42,291 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 26sjdbTX2BPHaAYhjZXaaPsgPrducsvRqx8buYnzPump: 30.000146
+2025-05-06 14:15:42,586 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:15:42,590 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 26sjdbTX2BPHaAYhjZXaaPsgPrducsvRqx8buYnzPump: 30.000146
+2025-05-06 14:15:44,147 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:15:44,162 - trading_bot.token_analyzer - INFO - Using Birdeye security score for J3ctW5wdZVjmbf2TbbMWWfnqzynggYjpQhdQkMWBHcom: 12.462834999999998
+2025-05-06 14:15:44,263 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:15:44,268 - trading_bot.token_analyzer - INFO - Using Birdeye security score for J3ctW5wdZVjmbf2TbbMWWfnqzynggYjpQhdQkMWBHcom: 12.462834999999998
+2025-05-06 14:15:45,898 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:15:45,905 - trading_bot.token_analyzer - INFO - Using Birdeye security score for HAirPmVtL1e2shLQAvPnsQmmtbvxXoqKZbdfosTPpump: 1.8452080000000002
+2025-05-06 14:15:45,942 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:15:45,947 - trading_bot.token_analyzer - INFO - Using Birdeye security score for HAirPmVtL1e2shLQAvPnsQmmtbvxXoqKZbdfosTPpump: 1.8452080000000002
+2025-05-06 14:15:47,676 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:15:47,681 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 79eXoT1aR7qhBMGKXzVNdV4ZcLqHsupqj2WTFvDumpSZ: 10.164528
+2025-05-06 14:15:47,706 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:15:47,709 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 79eXoT1aR7qhBMGKXzVNdV4ZcLqHsupqj2WTFvDumpSZ: 10.164528
+2025-05-06 14:15:49,102 - trading_bot.birdeye_api - WARNING - No DexScreener data for JvQyj2DjbQkL4CCocnn4ryydf4pkca6stNo8vB78US1
+2025-05-06 14:15:49,102 - trading_bot.birdeye_api - WARNING - Failed to get token info for JvQyj2DjbQkL4CCocnn4ryydf4pkca6stNo8vB78US1
+2025-05-06 14:15:49,225 - trading_bot.birdeye_api - WARNING - No DexScreener data for JvQyj2DjbQkL4CCocnn4ryydf4pkca6stNo8vB78US1
+2025-05-06 14:15:49,226 - trading_bot.birdeye_api - WARNING - Failed to get token info for JvQyj2DjbQkL4CCocnn4ryydf4pkca6stNo8vB78US1
+2025-05-06 14:15:49,581 - trading_bot.token_analyzer - WARNING - No DexScreener data for JvQyj2DjbQkL4CCocnn4ryydf4pkca6stNo8vB78US1
+2025-05-06 14:15:49,987 - trading_bot.token_analyzer - WARNING - No DexScreener data for JvQyj2DjbQkL4CCocnn4ryydf4pkca6stNo8vB78US1
+2025-05-06 14:15:50,596 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-06 14:16:50,607 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-06 14:16:50,684 - trading_bot.token_scanner - ERROR - Twitter scan failed: 429 Too Many Requests
+Too Many Requests
+2025-05-06 14:16:50,685 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-06 14:16:51,233 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-06 14:16:51,234 - trading_bot.birdeye_api - WARNING - No tokens found for top gainers (24h)
+2025-05-06 14:16:51,862 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-05-06 14:16:51,862 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-05-06 14:16:52,351 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-06 14:16:52,352 - trading_bot.birdeye_api - WARNING - No tokens found for trending tokens
+2025-05-06 14:16:52,929 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-05-06 14:16:52,930 - trading_bot.token_scanner - INFO - No trending tokens found
+2025-05-06 14:16:52,931 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-06 14:16:52,933 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan

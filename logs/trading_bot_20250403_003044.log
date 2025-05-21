@@ -1,0 +1,103 @@
+2025-04-02 20:30:44,465 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 20:30:44,465 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-04-02 20:30:44,472 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-04-02 20:30:44,475 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-04-02 20:30:44,476 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 20:30:44,482 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-04-02 20:30:44,494 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 20:30:44,495 - trading_bot - INFO - ==================================================
+2025-04-02 20:30:44,495 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-04-02 20:30:44,496 - trading_bot - INFO - ==================================================
+2025-04-02 20:30:44,861 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 20:30:45,017 - trading_bot - INFO - Initial Wallet Balance: 0.0000 SOL ($0.00)
+2025-04-02 20:30:45,018 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-04-02 20:30:45,018 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 20:30:45,352 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 20:30:45,352 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 20:30:45,353 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-04-02 20:30:45,354 - trading_bot - INFO - Starting token discovery and trading process
+2025-04-02 20:30:45,462 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 20:30:45,603 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:30:45,743 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:30:45,859 - trading_bot.token_analyzer - INFO - Found 9 trending tokens
+2025-04-02 20:30:45,860 - trading_bot.token_scanner - INFO - Found 9 trending tokens
+2025-04-02 20:30:45,978 - trading_bot.token_analyzer - INFO - Found 9 trending tokens
+2025-04-02 20:30:45,979 - trading_bot.token_scanner - INFO - Found 9 trending tokens
+2025-04-02 20:30:49,684 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 20:30:49,776 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 20:31:03,459 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 20:32:03,466 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 20:32:03,791 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 20:32:03,791 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 20:32:04,031 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:32:04,298 - trading_bot.token_analyzer - INFO - Found 9 trending tokens
+2025-04-02 20:32:04,299 - trading_bot.token_scanner - INFO - Found 9 trending tokens
+2025-04-02 20:32:08,551 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 20:32:10,087 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 20:33:10,096 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 20:33:10,416 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 20:33:10,417 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 20:33:10,715 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:33:10,965 - trading_bot.token_analyzer - INFO - Found 9 trending tokens
+2025-04-02 20:33:10,966 - trading_bot.token_scanner - INFO - Found 9 trending tokens
+2025-04-02 20:33:14,892 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 20:33:16,371 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 20:34:16,388 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 20:34:16,683 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 20:34:16,683 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 20:34:17,031 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:34:17,339 - trading_bot.token_analyzer - INFO - Found 9 trending tokens
+2025-04-02 20:34:17,340 - trading_bot.token_scanner - INFO - Found 9 trending tokens
+2025-04-02 20:34:20,912 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 20:34:22,467 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 20:35:22,480 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 20:35:22,767 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 20:35:22,767 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 20:35:23,055 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:35:23,325 - trading_bot.token_analyzer - INFO - Found 9 trending tokens
+2025-04-02 20:35:23,325 - trading_bot.token_scanner - INFO - Found 9 trending tokens
+2025-04-02 20:35:27,118 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 20:35:28,644 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 20:36:03,943 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 20:36:04,068 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 20:36:04,437 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:36:04,769 - trading_bot.token_analyzer - INFO - Found 9 trending tokens
+2025-04-02 20:36:04,771 - trading_bot.token_scanner - INFO - Found 9 trending tokens
+2025-04-02 20:36:09,109 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 20:36:28,648 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 20:36:28,972 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 20:36:28,973 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 20:36:29,363 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:36:29,690 - trading_bot.token_analyzer - INFO - Found 9 trending tokens
+2025-04-02 20:36:29,691 - trading_bot.token_scanner - INFO - Found 9 trending tokens
+2025-04-02 20:36:33,954 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 20:36:33,958 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 20:37:33,972 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 20:37:34,257 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 20:37:34,258 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 20:37:34,542 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:37:34,938 - trading_bot.token_analyzer - INFO - Found 9 trending tokens
+2025-04-02 20:37:34,941 - trading_bot.token_scanner - INFO - Found 9 trending tokens
+2025-04-02 20:37:38,845 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 20:37:38,855 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 20:38:38,872 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 20:38:39,200 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 20:38:39,201 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 20:38:39,549 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:38:39,811 - trading_bot.token_analyzer - INFO - Found 9 trending tokens
+2025-04-02 20:38:39,812 - trading_bot.token_scanner - INFO - Found 9 trending tokens
+2025-04-02 20:38:43,947 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 20:38:43,951 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 20:38:53,482 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-04-02 20:39:43,965 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 20:39:44,291 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 20:39:44,291 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 20:39:44,629 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 20:39:44,866 - trading_bot.token_analyzer - INFO - Found 9 trending tokens
+2025-04-02 20:39:44,867 - trading_bot.token_scanner - INFO - Found 9 trending tokens
+2025-04-02 20:39:45,078 - trading_bot - INFO - Closing connections
+2025-04-02 20:39:45,080 - trading_bot.solana_trader - INFO - Solana RPC client closed
+2025-04-02 20:39:45,081 - trading_bot - INFO - ==================================================
+2025-04-02 20:39:45,081 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-04-02 20:39:45,082 - trading_bot - INFO - ==================================================
+2025-04-02 20:39:45,087 - trading_bot - INFO - Bot execution completed

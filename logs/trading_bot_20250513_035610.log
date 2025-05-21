@@ -1,0 +1,339 @@
+2025-05-12 23:56:11,381 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:56:11,382 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:56:11,383 - trading_bot - INFO - Trading bot initialized in REAL TRADING mode
+2025-05-12 23:56:11,386 - trading_bot - INFO - ==================================================
+2025-05-12 23:56:11,387 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-05-12 23:56:11,387 - trading_bot - INFO - ==================================================
+2025-05-12 23:56:11,599 - trading_bot - INFO - Initial Wallet Balance: 1.0000 SOL ($167.69)
+2025-05-12 23:56:11,600 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-05-12 23:56:11,601 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 23:56:12,194 - trading_bot.token_scanner - INFO - Discovered 16 tokens from Twitter
+2025-05-12 23:56:12,195 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 23:56:12,623 - trading_bot - INFO - Starting token discovery and trading process
+2025-05-12 23:56:12,659 - trading_bot - INFO - Current wallet balance: 1.0000 SOL ($167.69)
+2025-05-12 23:56:12,683 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:56:12,684 - trading_bot.birdeye_api - INFO - Found 0 top gainers for 24h
+2025-05-12 23:56:12,844 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-05-12 23:56:12,846 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-05-12 23:56:13,125 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:56:13,127 - trading_bot.birdeye_api - INFO - Found 0 top gainers for 24h
+2025-05-12 23:56:13,393 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-05-12 23:56:13,396 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-05-12 23:56:13,507 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 23:56:13,649 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim0TopGainer1747108572
+2025-05-12 23:56:13,651 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim0TopGainer1747108572
+2025-05-12 23:56:13,709 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim0TopGainer1747108572
+2025-05-12 23:56:13,710 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim0TopGainer1747108572
+2025-05-12 23:56:13,899 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 23:56:14,326 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim0TopGainer1747108573
+2025-05-12 23:56:14,328 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim0TopGainer1747108573
+2025-05-12 23:56:14,375 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim0TopGainer1747108573
+2025-05-12 23:56:14,376 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim0TopGainer1747108573
+2025-05-12 23:56:14,537 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim1TopGainer1747108572
+2025-05-12 23:56:14,538 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim1TopGainer1747108572
+2025-05-12 23:56:14,577 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim1TopGainer1747108572
+2025-05-12 23:56:14,578 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim1TopGainer1747108572
+2025-05-12 23:56:15,021 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim2TopGainer1747108572
+2025-05-12 23:56:15,023 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim2TopGainer1747108572
+2025-05-12 23:56:15,044 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim1TopGainer1747108573
+2025-05-12 23:56:15,046 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim1TopGainer1747108573
+2025-05-12 23:56:15,061 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim2TopGainer1747108572
+2025-05-12 23:56:15,062 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim2TopGainer1747108572
+2025-05-12 23:56:15,125 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim1TopGainer1747108573
+2025-05-12 23:56:15,127 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim1TopGainer1747108573
+2025-05-12 23:56:15,826 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim2TopGainer1747108573
+2025-05-12 23:56:15,827 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim2TopGainer1747108573
+2025-05-12 23:56:15,863 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim3TopGainer1747108572
+2025-05-12 23:56:15,865 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim3TopGainer1747108572
+2025-05-12 23:56:15,878 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim2TopGainer1747108573
+2025-05-12 23:56:15,879 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim2TopGainer1747108573
+2025-05-12 23:56:15,902 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim3TopGainer1747108572
+2025-05-12 23:56:15,903 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim3TopGainer1747108572
+2025-05-12 23:56:16,505 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim3TopGainer1747108573
+2025-05-12 23:56:16,506 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim3TopGainer1747108573
+2025-05-12 23:56:16,526 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim4TopGainer1747108572
+2025-05-12 23:56:16,528 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim4TopGainer1747108572
+2025-05-12 23:56:16,542 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim3TopGainer1747108573
+2025-05-12 23:56:16,543 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim3TopGainer1747108573
+2025-05-12 23:56:16,591 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim4TopGainer1747108572
+2025-05-12 23:56:16,592 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim4TopGainer1747108572
+2025-05-12 23:56:17,340 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim4TopGainer1747108573
+2025-05-12 23:56:17,341 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim4TopGainer1747108573
+2025-05-12 23:56:17,377 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim4TopGainer1747108573
+2025-05-12 23:56:17,378 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim4TopGainer1747108573
+2025-05-12 23:56:17,968 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 23:56:17,969 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 23:56:17,998 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 23:56:18,044 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 23:56:18,534 - trading_bot.birdeye_api - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 23:56:18,536 - trading_bot.birdeye_api - WARNING - Failed to get token info for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 23:56:18,695 - trading_bot.token_analyzer - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 23:56:18,922 - trading_bot.birdeye_api - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 23:56:18,923 - trading_bot.birdeye_api - WARNING - Failed to get token info for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 23:56:18,976 - trading_bot.token_analyzer - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 23:56:19,287 - trading_bot.birdeye_api - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 23:56:19,289 - trading_bot.birdeye_api - WARNING - Failed to get token info for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 23:56:19,333 - trading_bot.token_analyzer - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 23:56:19,896 - trading_bot.birdeye_api - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 23:56:19,897 - trading_bot.birdeye_api - WARNING - Failed to get token info for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 23:56:19,958 - trading_bot.token_analyzer - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 23:56:19,959 - trading_bot.token_scanner - INFO - Running machine learning analysis on discovered tokens...
+2025-05-12 23:56:19,960 - trading_bot.token_scanner - INFO - Training ML model with historical data
+2025-05-12 23:56:19,971 - trading_bot.ml_model - ERROR - Error training model: "['price_change_24h', 'price_change_6h', 'price_change_1h', 'social_media_score'] not in index"
+2025-05-12 23:56:19,975 - trading_bot.ml_model - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\ml_model.py", line 132, in train
+    X = merged_df[self.features].fillna(0)
+        ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6252, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['price_change_24h', 'price_change_6h', 'price_change_1h', 'social_media_score'] not in index"
+
+2025-05-12 23:56:19,976 - trading_bot.token_scanner - WARNING - ML model training failed, using existing model
+2025-05-12 23:56:19,976 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 23:56:20,517 - trading_bot.birdeye_api - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 23:56:20,517 - trading_bot.birdeye_api - WARNING - Failed to get token info for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 23:56:20,561 - trading_bot.token_analyzer - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 23:56:20,644 - trading_bot.birdeye_api - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 23:56:20,646 - trading_bot.birdeye_api - WARNING - Failed to get token info for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 23:56:20,685 - trading_bot.token_analyzer - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 23:56:21,620 - trading_bot.birdeye_api - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 23:56:21,622 - trading_bot.birdeye_api - WARNING - Failed to get token info for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 23:56:21,930 - trading_bot.token_analyzer - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 23:56:22,378 - trading_bot.birdeye_api - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 23:56:22,379 - trading_bot.birdeye_api - WARNING - Failed to get token info for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 23:56:22,414 - trading_bot.token_analyzer - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 23:56:22,935 - trading_bot.token_analyzer - INFO - Using Birdeye security score for fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP: 7.732523
+2025-05-12 23:56:22,936 - trading_bot.token_scanner - INFO - Tradable token found: SOLANA (fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP)
+2025-05-12 23:56:23,465 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim4TopGainer1747108573
+2025-05-12 23:56:23,466 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim4TopGainer1747108573
+2025-05-12 23:56:23,545 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim4TopGainer1747108573
+2025-05-12 23:56:23,546 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim4TopGainer1747108573
+2025-05-12 23:56:23,547 - trading_bot.token_analyzer - INFO - Generated simulation safety score for Sim4TopGainer1747108573: 54.38133971147938
+2025-05-12 23:56:23,548 - trading_bot.token_scanner - INFO - Tradable token found: TOP4 (Sim4TopGainer1747108573)
+2025-05-12 23:56:24,074 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim3TopGainer1747108573
+2025-05-12 23:56:24,075 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim3TopGainer1747108573
+2025-05-12 23:56:24,228 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim3TopGainer1747108573
+2025-05-12 23:56:24,229 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim3TopGainer1747108573
+2025-05-12 23:56:24,231 - trading_bot.token_analyzer - INFO - Generated simulation safety score for Sim3TopGainer1747108573: 71.59503108582598
+2025-05-12 23:56:24,231 - trading_bot.token_scanner - INFO - Tradable token found: TOP3 (Sim3TopGainer1747108573)
+2025-05-12 23:56:24,614 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim2TopGainer1747108573
+2025-05-12 23:56:24,615 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim2TopGainer1747108573
+2025-05-12 23:56:24,658 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim2TopGainer1747108573
+2025-05-12 23:56:24,658 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim2TopGainer1747108573
+2025-05-12 23:56:24,660 - trading_bot.token_analyzer - INFO - Generated simulation safety score for Sim2TopGainer1747108573: 72.74419390567473
+2025-05-12 23:56:24,660 - trading_bot.token_scanner - INFO - Tradable token found: TOP2 (Sim2TopGainer1747108573)
+2025-05-12 23:56:25,284 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim1TopGainer1747108573
+2025-05-12 23:56:25,285 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim1TopGainer1747108573
+2025-05-12 23:56:25,320 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim1TopGainer1747108573
+2025-05-12 23:56:25,320 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim1TopGainer1747108573
+2025-05-12 23:56:25,321 - trading_bot.token_analyzer - INFO - Generated simulation safety score for Sim1TopGainer1747108573: 75.03609517802848
+2025-05-12 23:56:25,322 - trading_bot.token_scanner - INFO - Tradable token found: TOP1 (Sim1TopGainer1747108573)
+2025-05-12 23:56:25,917 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim0TopGainer1747108573
+2025-05-12 23:56:25,918 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim0TopGainer1747108573
+2025-05-12 23:56:25,960 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim0TopGainer1747108573
+2025-05-12 23:56:25,961 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim0TopGainer1747108573
+2025-05-12 23:56:25,963 - trading_bot.token_analyzer - INFO - Generated simulation safety score for Sim0TopGainer1747108573: 78.5731900528128
+2025-05-12 23:56:25,964 - trading_bot.token_scanner - INFO - Tradable token found: TOP0 (Sim0TopGainer1747108573)
+2025-05-12 23:56:26,581 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim4TopGainer1747108572
+2025-05-12 23:56:26,583 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim4TopGainer1747108572
+2025-05-12 23:56:26,628 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim4TopGainer1747108572
+2025-05-12 23:56:26,629 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim4TopGainer1747108572
+2025-05-12 23:56:26,630 - trading_bot.token_analyzer - INFO - Generated simulation safety score for Sim4TopGainer1747108572: 65.70604416976184
+2025-05-12 23:56:26,631 - trading_bot.token_scanner - INFO - Tradable token found: TOP4 (Sim4TopGainer1747108572)
+2025-05-12 23:56:27,287 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim3TopGainer1747108572
+2025-05-12 23:56:27,288 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim3TopGainer1747108572
+2025-05-12 23:56:27,330 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim3TopGainer1747108572
+2025-05-12 23:56:27,331 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim3TopGainer1747108572
+2025-05-12 23:56:27,332 - trading_bot.token_analyzer - INFO - Generated simulation safety score for Sim3TopGainer1747108572: 72.27871503816655
+2025-05-12 23:56:27,333 - trading_bot.token_scanner - INFO - Tradable token found: TOP3 (Sim3TopGainer1747108572)
+2025-05-12 23:56:28,217 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim2TopGainer1747108572
+2025-05-12 23:56:28,218 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim2TopGainer1747108572
+2025-05-12 23:56:28,260 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim2TopGainer1747108572
+2025-05-12 23:56:28,261 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim2TopGainer1747108572
+2025-05-12 23:56:28,262 - trading_bot.token_analyzer - INFO - Generated simulation safety score for Sim2TopGainer1747108572: 72.16911029445215
+2025-05-12 23:56:28,263 - trading_bot.token_scanner - INFO - Tradable token found: TOP2 (Sim2TopGainer1747108572)
+2025-05-12 23:56:28,585 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim1TopGainer1747108572
+2025-05-12 23:56:28,586 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim1TopGainer1747108572
+2025-05-12 23:56:28,625 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim1TopGainer1747108572
+2025-05-12 23:56:28,626 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim1TopGainer1747108572
+2025-05-12 23:56:28,627 - trading_bot.token_analyzer - INFO - Generated simulation safety score for Sim1TopGainer1747108572: 56.41162689699425
+2025-05-12 23:56:28,628 - trading_bot.token_scanner - INFO - Tradable token found: TOP1 (Sim1TopGainer1747108572)
+2025-05-12 23:56:29,388 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim0TopGainer1747108572
+2025-05-12 23:56:29,390 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim0TopGainer1747108572
+2025-05-12 23:56:29,438 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim0TopGainer1747108572
+2025-05-12 23:56:29,438 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim0TopGainer1747108572
+2025-05-12 23:56:29,439 - trading_bot.token_analyzer - INFO - Generated simulation safety score for Sim0TopGainer1747108572: 68.6324311752782
+2025-05-12 23:56:29,440 - trading_bot.token_scanner - INFO - Tradable token found: TOP0 (Sim0TopGainer1747108572)
+2025-05-12 23:56:30,122 - trading_bot.birdeye_api - WARNING - No DexScreener data for DJbDY8q4bKWRXBegJrbAkeHbJk6ZkGM8yCeAy4KR52nv
+2025-05-12 23:56:30,123 - trading_bot.birdeye_api - WARNING - Failed to get token info for DJbDY8q4bKWRXBegJrbAkeHbJk6ZkGM8yCeAy4KR52nv
+2025-05-12 23:56:30,158 - trading_bot.token_analyzer - WARNING - No DexScreener data for DJbDY8q4bKWRXBegJrbAkeHbJk6ZkGM8yCeAy4KR52nv
+2025-05-12 23:56:31,022 - trading_bot.token_analyzer - INFO - Using Birdeye security score for B2pqdzCmmmzHJFYuLJkzrGiYRpLUcpmrfzPMx97MgiYP: 30.001002
+2025-05-12 23:56:31,023 - trading_bot.token_scanner - INFO - Tradable token found: Trump (B2pqdzCmmmzHJFYuLJkzrGiYRpLUcpmrfzPMx97MgiYP)
+2025-05-12 23:56:31,591 - trading_bot.birdeye_api - WARNING - No DexScreener data for 4WdJa4taXTmRDpprihKHNP2n6hEueRbpbnvxd1RwwhbT
+2025-05-12 23:56:31,592 - trading_bot.birdeye_api - WARNING - Failed to get token info for 4WdJa4taXTmRDpprihKHNP2n6hEueRbpbnvxd1RwwhbT
+2025-05-12 23:56:31,634 - trading_bot.token_analyzer - WARNING - No DexScreener data for 4WdJa4taXTmRDpprihKHNP2n6hEueRbpbnvxd1RwwhbT
+2025-05-12 23:56:32,596 - trading_bot.token_analyzer - INFO - Using Birdeye security score for G8Yae9JBRYtWFBWUMbrKo8aRmb9bX9S9reA9Tne4bonk: 35.416315
+2025-05-12 23:56:32,597 - trading_bot.token_scanner - INFO - Tradable token found: TELEGRAM (G8Yae9JBRYtWFBWUMbrKo8aRmb9bX9S9reA9Tne4bonk)
+2025-05-12 23:56:32,641 - trading_bot - INFO - Calculated investment for SIMSim4 (0.02 SOL) is below minimum threshold (0.1 SOL), adjusting to minimum
+2025-05-12 23:56:32,694 - trading_bot - INFO - Token SIMSim4 qualified for trading:
+2025-05-12 23:56:32,695 - trading_bot - INFO -   - Volume 24h: $50,000.00
+2025-05-12 23:56:32,696 - trading_bot - INFO -   - Liquidity: $25,000.00
+2025-05-12 23:56:32,696 - trading_bot - INFO -   - Market Cap: $500,000.00
+2025-05-12 23:56:32,696 - trading_bot - INFO -   - Holders: 100
+2025-05-12 23:56:32,696 - trading_bot - INFO -   - Price Change 24h: 20.00%
+2025-05-12 23:56:32,697 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 23:56:32,697 - trading_bot - INFO - Trading SIMSim4 (Sim4TopGainer1747108573) for 0.1 SOL
+2025-05-12 23:56:32,708 - trading_bot - INFO - Successfully traded SIMSim4: REAL_BUY_Sim4TopG_1747108592
+2025-05-12 23:56:32,708 - trading_bot - INFO - Calculated investment for SIMSim2 (0.02 SOL) is below minimum threshold (0.1 SOL), adjusting to minimum
+2025-05-12 23:56:32,755 - trading_bot - INFO - Token SIMSim2 qualified for trading:
+2025-05-12 23:56:32,756 - trading_bot - INFO -   - Volume 24h: $50,000.00
+2025-05-12 23:56:32,757 - trading_bot - INFO -   - Liquidity: $25,000.00
+2025-05-12 23:56:32,758 - trading_bot - INFO -   - Market Cap: $500,000.00
+2025-05-12 23:56:32,758 - trading_bot - INFO -   - Holders: 100
+2025-05-12 23:56:32,758 - trading_bot - INFO -   - Price Change 24h: 20.00%
+2025-05-12 23:56:32,758 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 23:56:32,759 - trading_bot - INFO - Trading SIMSim2 (Sim2TopGainer1747108573) for 0.1 SOL
+2025-05-12 23:56:32,768 - trading_bot - INFO - Successfully traded SIMSim2: REAL_BUY_Sim2TopG_1747108592
+2025-05-12 23:56:32,769 - trading_bot - INFO - Calculated investment for SIMSim0 (0.02 SOL) is below minimum threshold (0.1 SOL), adjusting to minimum
+2025-05-12 23:56:32,821 - trading_bot - INFO - Token SIMSim0 qualified for trading:
+2025-05-12 23:56:32,822 - trading_bot - INFO -   - Volume 24h: $50,000.00
+2025-05-12 23:56:32,823 - trading_bot - INFO -   - Liquidity: $25,000.00
+2025-05-12 23:56:32,824 - trading_bot - INFO -   - Market Cap: $500,000.00
+2025-05-12 23:56:32,824 - trading_bot - INFO -   - Holders: 100
+2025-05-12 23:56:32,825 - trading_bot - INFO -   - Price Change 24h: 20.00%
+2025-05-12 23:56:32,825 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 23:56:32,826 - trading_bot - INFO - Trading SIMSim0 (Sim0TopGainer1747108573) for 0.1 SOL
+2025-05-12 23:56:32,838 - trading_bot - INFO - Successfully traded SIMSim0: REAL_BUY_Sim0TopG_1747108592
+2025-05-12 23:56:32,839 - trading_bot - INFO - Calculated investment for SIMSim3 (0.02 SOL) is below minimum threshold (0.1 SOL), adjusting to minimum
+2025-05-12 23:56:32,896 - trading_bot - INFO - Token SIMSim3 qualified for trading:
+2025-05-12 23:56:32,896 - trading_bot - INFO -   - Volume 24h: $50,000.00
+2025-05-12 23:56:32,897 - trading_bot - INFO -   - Liquidity: $25,000.00
+2025-05-12 23:56:32,897 - trading_bot - INFO -   - Market Cap: $500,000.00
+2025-05-12 23:56:32,898 - trading_bot - INFO -   - Holders: 100
+2025-05-12 23:56:32,899 - trading_bot - INFO -   - Price Change 24h: 20.00%
+2025-05-12 23:56:32,899 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 23:56:32,900 - trading_bot - INFO - Trading SIMSim3 (Sim3TopGainer1747108572) for 0.1 SOL
+2025-05-12 23:56:32,913 - trading_bot - INFO - Successfully traded SIMSim3: REAL_BUY_Sim3TopG_1747108592
+2025-05-12 23:56:32,914 - trading_bot - INFO - Calculated investment for SIMSim1 (0.02 SOL) is below minimum threshold (0.1 SOL), adjusting to minimum
+2025-05-12 23:56:32,973 - trading_bot - INFO - Token SIMSim1 qualified for trading:
+2025-05-12 23:56:32,973 - trading_bot - INFO -   - Volume 24h: $50,000.00
+2025-05-12 23:56:32,974 - trading_bot - INFO -   - Liquidity: $25,000.00
+2025-05-12 23:56:32,974 - trading_bot - INFO -   - Market Cap: $500,000.00
+2025-05-12 23:56:32,975 - trading_bot - INFO -   - Holders: 100
+2025-05-12 23:56:32,975 - trading_bot - INFO -   - Price Change 24h: 20.00%
+2025-05-12 23:56:32,975 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 23:56:32,976 - trading_bot - INFO - Trading SIMSim1 (Sim1TopGainer1747108572) for 0.1 SOL
+2025-05-12 23:56:32,987 - trading_bot - INFO - Successfully traded SIMSim1: REAL_BUY_Sim1TopG_1747108592
+2025-05-12 23:56:33,606 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 23:57:33,617 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 23:57:34,037 - trading_bot.token_scanner - INFO - Discovered 10 tokens from Twitter
+2025-05-12 23:57:34,037 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 23:57:34,106 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-05-12 23:57:34,109 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-05-12 23:57:35,035 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 23:57:35,143 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim0TopGainer1747108654
+2025-05-12 23:57:35,145 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim0TopGainer1747108654
+2025-05-12 23:57:35,181 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim0TopGainer1747108654
+2025-05-12 23:57:35,183 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim0TopGainer1747108654
+2025-05-12 23:57:35,847 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim1TopGainer1747108654
+2025-05-12 23:57:35,848 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim1TopGainer1747108654
+2025-05-12 23:57:35,892 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim1TopGainer1747108654
+2025-05-12 23:57:35,893 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim1TopGainer1747108654
+2025-05-12 23:57:36,614 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim2TopGainer1747108654
+2025-05-12 23:57:36,616 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim2TopGainer1747108654
+2025-05-12 23:57:36,678 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim2TopGainer1747108654
+2025-05-12 23:57:36,679 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim2TopGainer1747108654
+2025-05-12 23:57:37,324 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim3TopGainer1747108654
+2025-05-12 23:57:37,326 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim3TopGainer1747108654
+2025-05-12 23:57:37,394 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim3TopGainer1747108654
+2025-05-12 23:57:37,395 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim3TopGainer1747108654
+2025-05-12 23:57:38,241 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim4TopGainer1747108654
+2025-05-12 23:57:38,243 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim4TopGainer1747108654
+2025-05-12 23:57:38,293 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim4TopGainer1747108654
+2025-05-12 23:57:38,294 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim4TopGainer1747108654
+2025-05-12 23:57:38,296 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 23:57:38,297 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 23:57:38,331 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 23:57:38,622 - trading_bot.birdeye_api - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 23:57:38,623 - trading_bot.birdeye_api - WARNING - Failed to get token info for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 23:57:38,678 - trading_bot.token_analyzer - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 23:57:39,341 - trading_bot.birdeye_api - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 23:57:39,343 - trading_bot.birdeye_api - WARNING - Failed to get token info for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 23:57:39,410 - trading_bot.token_analyzer - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 23:57:40,016 - trading_bot.birdeye_api - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 23:57:40,017 - trading_bot.birdeye_api - WARNING - Failed to get token info for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 23:57:40,057 - trading_bot.token_analyzer - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 23:57:40,058 - trading_bot.token_scanner - INFO - Running machine learning analysis on discovered tokens...
+2025-05-12 23:57:40,059 - trading_bot.token_scanner - INFO - Training ML model with historical data
+2025-05-12 23:57:40,072 - trading_bot.ml_model - ERROR - Error training model: "['price_change_24h', 'price_change_6h', 'price_change_1h', 'social_media_score'] not in index"
+2025-05-12 23:57:40,073 - trading_bot.ml_model - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\ml_model.py", line 132, in train
+    X = merged_df[self.features].fillna(0)
+        ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6252, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['price_change_24h', 'price_change_6h', 'price_change_1h', 'social_media_score'] not in index"
+
+2025-05-12 23:57:40,073 - trading_bot.token_scanner - WARNING - ML model training failed, using existing model
+2025-05-12 23:57:40,074 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 23:57:40,685 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim4TopGainer1747108654
+2025-05-12 23:57:40,688 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim4TopGainer1747108654
+2025-05-12 23:57:40,749 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim4TopGainer1747108654
+2025-05-12 23:57:40,750 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim4TopGainer1747108654
+2025-05-12 23:57:40,751 - trading_bot.token_analyzer - INFO - Generated simulation safety score for Sim4TopGainer1747108654: 77.34123657216294
+2025-05-12 23:57:40,752 - trading_bot.token_scanner - INFO - Tradable token found: TOP4 (Sim4TopGainer1747108654)
+2025-05-12 23:57:41,801 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim3TopGainer1747108654
+2025-05-12 23:57:41,803 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim3TopGainer1747108654
+2025-05-12 23:57:41,841 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim3TopGainer1747108654
+2025-05-12 23:57:41,842 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim3TopGainer1747108654
+2025-05-12 23:57:41,843 - trading_bot.token_analyzer - INFO - Generated simulation safety score for Sim3TopGainer1747108654: 68.12006410472742
+2025-05-12 23:57:41,844 - trading_bot.token_scanner - INFO - Tradable token found: TOP3 (Sim3TopGainer1747108654)
+2025-05-12 23:57:42,900 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim2TopGainer1747108654
+2025-05-12 23:57:42,901 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim2TopGainer1747108654
+2025-05-12 23:57:42,949 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim2TopGainer1747108654
+2025-05-12 23:57:42,950 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim2TopGainer1747108654
+2025-05-12 23:57:42,951 - trading_bot.token_analyzer - INFO - Generated simulation safety score for Sim2TopGainer1747108654: 56.95072306343359
+2025-05-12 23:57:42,952 - trading_bot.token_scanner - INFO - Tradable token found: TOP2 (Sim2TopGainer1747108654)
+2025-05-12 23:57:44,004 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim1TopGainer1747108654
+2025-05-12 23:57:44,005 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim1TopGainer1747108654
+2025-05-12 23:57:44,049 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim1TopGainer1747108654
+2025-05-12 23:57:44,052 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim1TopGainer1747108654
+2025-05-12 23:57:44,053 - trading_bot.token_analyzer - INFO - Generated simulation safety score for Sim1TopGainer1747108654: 73.48139204849095
+2025-05-12 23:57:44,054 - trading_bot.token_scanner - INFO - Tradable token found: TOP1 (Sim1TopGainer1747108654)
+2025-05-12 23:57:45,102 - trading_bot.birdeye_api - WARNING - No DexScreener data for Sim0TopGainer1747108654
+2025-05-12 23:57:45,104 - trading_bot.birdeye_api - WARNING - Failed to get token info for Sim0TopGainer1747108654
+2025-05-12 23:57:45,165 - trading_bot.token_analyzer - WARNING - No DexScreener data for Sim0TopGainer1747108654
+2025-05-12 23:57:45,166 - trading_bot.token_analyzer - INFO - Creating minimal simulation data for Sim0TopGainer1747108654
+2025-05-12 23:57:45,168 - trading_bot.token_analyzer - INFO - Generated simulation safety score for Sim0TopGainer1747108654: 56.443637990992755
+2025-05-12 23:57:45,168 - trading_bot.token_scanner - INFO - Tradable token found: TOP0 (Sim0TopGainer1747108654)
+2025-05-12 23:57:46,294 - trading_bot.birdeye_api - WARNING - No DexScreener data for 25bsYDu5vCkJrfb5g9ZAFdti4QgzUjNx4dqtyW5gbonk
+2025-05-12 23:57:46,296 - trading_bot.birdeye_api - WARNING - Failed to get token info for 25bsYDu5vCkJrfb5g9ZAFdti4QgzUjNx4dqtyW5gbonk
+2025-05-12 23:57:46,330 - trading_bot.token_analyzer - WARNING - No DexScreener data for 25bsYDu5vCkJrfb5g9ZAFdti4QgzUjNx4dqtyW5gbonk
+2025-05-12 23:57:47,705 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2: 70.0
+2025-05-12 23:57:47,706 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2)
+2025-05-12 23:57:49,013 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 48byic6b7gPp9mhSi2nhHznsSazg11YvMknbTFXrmJ9u: 4.083916
+2025-05-12 23:57:49,015 - trading_bot.token_scanner - INFO - Tradable token found: GYAT (48byic6b7gPp9mhSi2nhHznsSazg11YvMknbTFXrmJ9u)
+2025-05-12 23:57:49,746 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-05-12 23:57:50,095 - trading_bot.birdeye_api - WARNING - No DexScreener data for 8SVtqPzZmErXjZQ58PJi8WpKggbCcAhxFif7VVbibonk
+2025-05-12 23:57:50,097 - trading_bot.birdeye_api - WARNING - Failed to get token info for 8SVtqPzZmErXjZQ58PJi8WpKggbCcAhxFif7VVbibonk
+2025-05-12 23:57:50,153 - trading_bot.token_analyzer - WARNING - No DexScreener data for 8SVtqPzZmErXjZQ58PJi8WpKggbCcAhxFif7VVbibonk
+2025-05-12 23:57:51,257 - trading_bot.token_analyzer - INFO - Using Birdeye security score for EeguLg7Zh6F86ZSJtcsDgsxUsA3t5Gci5Kr85AvkxA4B: 70.0
+2025-05-12 23:57:51,258 - trading_bot.token_scanner - INFO - Tradable token found: RIP (EeguLg7Zh6F86ZSJtcsDgsxUsA3t5Gci5Kr85AvkxA4B)
+2025-05-12 23:57:52,275 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 23:57:55,043 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-05-12 23:58:11,627 - trading_bot - INFO - Closing connections
+2025-05-12 23:58:11,630 - trading_bot - INFO - ==================================================
+2025-05-12 23:58:11,630 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-05-12 23:58:11,631 - trading_bot - INFO - ==================================================

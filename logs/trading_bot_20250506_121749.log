@@ -1,0 +1,64 @@
+2025-05-06 12:17:49,928 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:17:49,929 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 12:17:49,944 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 12:17:49,949 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 12:17:49,951 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:17:50,424 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 12:17:50,426 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 12:17:50,517 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 12:18:51,855 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:18:51,856 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 12:18:51,864 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 12:18:51,865 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 12:18:51,866 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:18:52,239 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 12:18:52,240 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 12:18:52,286 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 12:19:53,592 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:19:53,592 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 12:19:53,599 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 12:19:53,601 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 12:19:53,602 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:19:54,014 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 12:19:54,015 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 12:19:54,061 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 12:20:55,402 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:20:55,402 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 12:20:55,410 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 12:20:55,413 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 12:20:55,414 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:20:55,794 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 12:20:55,795 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 12:20:55,848 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 12:21:57,163 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:21:57,164 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 12:21:57,170 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 12:21:57,172 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 12:21:57,173 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:21:57,598 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 12:21:57,599 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 12:21:57,688 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 12:22:59,010 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:22:59,011 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 12:22:59,018 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 12:22:59,020 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 12:22:59,021 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:22:59,570 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 12:22:59,571 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 12:22:59,621 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 12:24:00,946 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:24:00,946 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 12:24:00,953 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 12:24:00,957 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 12:24:00,959 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:24:01,497 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 12:24:01,498 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 12:24:01,581 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 12:25:02,870 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:25:02,871 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 12:25:02,878 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 12:25:02,879 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 12:25:02,880 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:25:03,237 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 12:25:03,238 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 12:25:03,304 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"

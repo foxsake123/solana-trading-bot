@@ -1,0 +1,83 @@
+import os
+import json
+import logging
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+logger = logging.getLogger('trading_bot.config')
+
+class BotConfiguration:
+    """
+    Configuration settings for the trading bot
+    """
+    
+    # Load API keys from environment variables
+    API_KEYS = {
+        'WALLET_PRIVATE_KEY': os.getenv('WALLET_PRIVATE_KEY', ''),
+        'BIRDEYE_API_KEY': os.getenv('BIRDEYE_API_KEY', ''),
+        'TWITTER_BEARER_TOKEN': os.getenv('TWITTER_BEARER_TOKEN', ''),
+        'SOLANA_RPC_ENDPOINT': os.getenv('SOLANA_RPC_ENDPOINT', 'https://api.mainnet-beta.solana.com'),
+        'DEXSCREENER_BASE_URL': os.getenv('DEXSCREENER_BASE_URL', 'https://api.dexscreener.com'),
+        'JUPITER_QUOTE_API': os.getenv('JUPITER_QUOTE_API', 'https://quote-api.jup.ag/v6/quote'),
+        'JUPITER_SWAP_API': os.getenv('JUPITER_SWAP_API', 'https://quote-api.jup.ag/v6/swap'),
+    }
+    
+    DB_PATH = 'trading_bot.db'
+    BOT_CONTROL_FILE = 'bot_control.json'
+    
+    # Load trading parameters from environment variables with defaults
+    TRADING_PARAMETERS = {
+        'MAX_BUY_RETRIES': int(os.getenv('MAX_BUY_RETRIES', 3)),
+        'MAX_SELL_RETRIES': int(os.getenv('MAX_SELL_RETRIES', 3)),
+        'SLIPPAGE_TOLERANCE': float(os.getenv('SLIPPAGE_TOLERANCE', 0.05)),
+        'TAKE_PROFIT_TARGET': float(os.getenv('TAKE_PROFIT_TARGET', 1.5)),
+        'STOP_LOSS_PERCENTAGE': float(os.getenv('STOP_LOSS_PERCENTAGE', 0.25)),
+        'MOONBAG_PERCENTAGE': float(os.getenv('MOONBAG_PERCENTAGE', 0.1)),
+        'MAX_INVESTMENT_PER_TOKEN': float(os.getenv('MAX_INVESTMENT_PER_TOKEN', 1.0)),
+        'MIN_SAFETY_SCORE': float(os.getenv('MIN_SAFETY_SCORE', 60.0)),
+        'MIN_VOLUME': float(os.getenv('MIN_VOLUME_24H', 50000)),
+        'MIN_LIQUIDITY': float(os.getenv('MIN_LIQUIDITY', 250000)),
+        'MIN_MCAP': float(os.getenv('MIN_MCAP', 500000)),
+        'MIN_HOLDERS': int(os.getenv('MIN_HOLDERS', 100)),
+        'MIN_PRICE_CHANGE_1H': float(os.getenv('MIN_PRICE_CHANGE_1H', 5.0)),
+        'MIN_PRICE_CHANGE_6H': float(os.getenv('MIN_PRICE_CHANGE_6H', 10.0)),
+        'MIN_PRICE_CHANGE_24H': float(os.getenv('MIN_PRICE_CHANGE_24H', 20.0)),
+        'SCAN_INTERVAL': int(os.getenv('SCAN_INTERVAL', 300)),
+        'TWITTER_RATE_LIMIT_BUFFER': int(os.getenv('TWITTER_RATE_LIMIT_BUFFER', 25)),
+    }
+    
+    @staticmethod
+    def load_trading_parameters() -> bool:
+        """
+        Load trading parameters and bot control settings
+        
+        :return: True if bot should run, False if paused
+        """
+        try:
+            with open(BotConfiguration.BOT_CONTROL_FILE, 'r') as f:
+                control = json.load(f)
+                if not control.get('running', True):
+                    return False
+                if 'trading_parameters' in control:
+                    BotConfiguration.TRADING_PARAMETERS.update(control['trading_parameters'])
+            return True
+        except Exception as e:
+            logger.error(f"Error loading trading parameters: {e}")
+            return True
+    
+    @staticmethod
+    def setup_bot_controls():
+        """
+        Setup bot control file if it doesn't exist
+        """
+        if not os.path.exists(BotConfiguration.BOT_CONTROL_FILE):
+            default_controls = {
+                'running': True,
+                'simulation_mode': True,
+                'trading_parameters': {}
+            }
+            with open(BotConfiguration.BOT_CONTROL_FILE, 'w') as f:
+                json.dump(default_controls, f, indent=2)
+            logger.info(f"Created default bot control file at {BotConfiguration.BOT_CONTROL_FILE}")

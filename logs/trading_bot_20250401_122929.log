@@ -1,0 +1,17 @@
+2025-04-01 12:29:35,193 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 12:29:35,193 - trading_bot.solana_trader - CRITICAL - Wallet setup failed: Wallet private key not provided
+2025-04-01 12:29:35,194 - trading_bot - CRITICAL - Unhandled bot initialization error: Wallet private key not provided
+2025-04-01 12:29:35,196 - trading_bot - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\main.py", line 192, in main
+    bot = TradingBot()
+  File "C:\Users\shorg\sol-bot_claude\main.py", line 25, in __init__
+    self.trader = SolanaTrader()
+                  ~~~~~~~~~~~~^^
+  File "C:\Users\shorg\sol-bot_claude\solana_trader.py", line 29, in __init__
+    self.keypair = self._setup_wallet()
+                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\shorg\sol-bot_claude\solana_trader.py", line 44, in _setup_wallet
+    raise ValueError("Wallet private key not provided")
+ValueError: Wallet private key not provided
+
+2025-04-01 12:29:35,197 - trading_bot - INFO - Bot execution completed

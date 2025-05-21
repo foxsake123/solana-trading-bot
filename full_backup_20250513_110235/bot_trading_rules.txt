@@ -1,0 +1,58 @@
+# Solana Trading Bot: Current Screening Criteria
+
+The trading bot implements a multi-layered screening framework to identify potential tokens for trading. Here's a comprehensive overview of the current criteria:
+
+## Core Financial Criteria
+
+1. **Liquidity Requirements**
+   - Minimum liquidity: $250,000
+   - This ensures tokens have sufficient market depth to enter and exit positions
+
+2. **Volume Thresholds**
+   - Minimum 24-hour trading volume: $50,000
+   - Helps filter out inactive tokens with insufficient trading activity
+
+3. **Market Capitalization**
+   - Minimum market cap: $500,000
+   - Filters out extremely small-cap tokens that may be more prone to manipulation
+
+4. **Holder Count**
+   - Minimum holders: 100
+   - Protects against tokens concentrated in few wallets
+
+## Momentum & Trend Criteria
+
+5. **Price Movement Thresholds**
+   - Minimum 1-hour price change: 5%
+   - Minimum 6-hour price change: 10%
+   - Minimum 24-hour price change: 20%
+   - Bot prioritizes tokens showing consistent upward momentum
+
+## Safety & Quality Measures
+
+6. **Safety Score System**
+   - Minimum safety score: 50/100
+   - Composite score based on:
+     - Liquidity (40% weight)
+     - Volume (20% weight)
+     - Holder distribution (20% weight)
+     - Social media activity (20% weight)
+
+7. **Fake Token Detection**
+   - Optional filter for addresses containing "pump" or "moon"
+   - Helps avoid common scam tokens
+
+8. **Social Media Analysis**
+   - Evaluates Twitter engagement metrics
+   - Performs sentiment analysis on related tweets
+   - Calculates a social activity score
+
+## Risk Management Parameters
+
+9. **Trading Controls**
+   - Take profit target: 1.5x (50% profit)
+   - Stop loss: 25% maximum loss
+   - Maximum investment per token: 0.1 SOL
+   - Moonbag percentage: 15% (portion kept after taking profits)
+
+The bot dynamically evaluates these criteria with each token scan, creating a comprehensive risk profile before executing trades. All parameters are configurable through the dashboard interface.

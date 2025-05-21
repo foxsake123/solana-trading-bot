@@ -1,0 +1,19 @@
+# Core dependencies
+solders>=0.18.0
+solana>=0.30.0
+tweepy>=4.14.0
+python-dotenv>=1.0.0
+aiohttp>=3.8.5
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.25.0
+
+# Analysis
+vaderSentiment>=3.3.2
+scikit-learn>=1.3.0
+joblib>=1.3.0
+
+# Dashboard (optional)
+streamlit>=1.27.0
+plotly>=5.16.0

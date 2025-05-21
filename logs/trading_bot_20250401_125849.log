@@ -1,0 +1,7 @@
+2025-04-01 12:58:50,138 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 12:58:50,139 - trading_bot.solana_trader - INFO - Wallet initialized: DpWxPejkHk4Hq1Gz15N2cjBYwgnAR2EuTfe8XcmGoP9k
+2025-04-01 12:58:50,143 - trading_bot.solana_trader - INFO - Loaded 3 active orders
+2025-04-01 12:58:50,144 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 12:58:50,552 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 12:58:50,554 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 12:58:50,604 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"

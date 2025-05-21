@@ -1,0 +1,7 @@
+SOLANA KEYPAIR BACKUP - KEEP SECURE
+Generated on: simplified_generate_keypair.py
+
+Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+Hex format:     76e730adfff1c4cbc9c66aa362b374704d28123dcd73d7577e2858e4471b9247
+Base58 format:  919aJD5UBi4T9hJBu2JoarFBu1jEkCL7ihhJQzck8k4e
+Array format:   [118, 231, 48, 173, 255, 241, 196, 203, 201, 198, 106, 163, 98, 179, 116, 112, 77, 40, 18, 61, 205, 115, 215, 87, 126, 40, 88, 228, 71, 27, 146, 71]

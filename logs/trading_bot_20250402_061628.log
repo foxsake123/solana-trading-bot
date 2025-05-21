@@ -1,0 +1,24 @@
+2025-04-02 02:16:28,583 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 02:16:28,585 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-04-02 02:16:28,591 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 02:16:28,591 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-04-02 02:16:28,593 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-04-02 02:16:28,593 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 02:16:28,599 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 02:16:28,599 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-04-02 02:16:28,601 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 02:16:28,602 - trading_bot - INFO - ==================================================
+2025-04-02 02:16:28,603 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-04-02 02:16:28,605 - trading_bot - INFO - ==================================================
+2025-04-02 02:16:28,606 - trading_bot - CRITICAL - Bot execution failed: type object 'BotConfiguration' has no attribute 'setup_bot_controls'
+2025-04-02 02:16:28,608 - trading_bot - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\main.py", line 145, in run
+    BotConfiguration.setup_bot_controls()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'BotConfiguration' has no attribute 'setup_bot_controls'
+
+2025-04-02 02:16:28,609 - trading_bot - INFO - Closing connections
+2025-04-02 02:16:28,611 - trading_bot - INFO - ==================================================
+2025-04-02 02:16:28,613 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-04-02 02:16:28,614 - trading_bot - INFO - ==================================================
+2025-04-02 02:16:28,616 - trading_bot - INFO - Bot execution completed

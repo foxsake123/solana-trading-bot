@@ -1,0 +1,201 @@
+2025-05-06 14:17:40,466 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:17:40,466 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 14:17:40,474 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 14:17:40,475 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 14:17:40,477 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 14:17:40,479 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:17:40,495 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 14:17:40,495 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-06 14:17:40,496 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:17:40,498 - trading_bot - INFO - ==================================================
+2025-05-06 14:17:40,498 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-05-06 14:17:40,498 - trading_bot - INFO - ==================================================
+2025-05-06 14:17:40,579 - trading_bot - INFO - Initial Wallet Balance: 5.0000 SOL ($719.30)
+2025-05-06 14:17:40,580 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-05-06 14:17:40,581 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-06 14:17:40,762 - trading_bot.token_scanner - ERROR - Twitter scan failed: 429 Too Many Requests
+Too Many Requests
+2025-05-06 14:17:40,763 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-06 14:17:40,764 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-05-06 14:17:40,767 - trading_bot - INFO - Starting token discovery and trading process
+2025-05-06 14:17:40,843 - trading_bot - INFO - Current wallet balance: 5.0000 SOL ($719.30)
+2025-05-06 14:17:40,954 - trading_bot.utils - WARNING - Request error on attempt 1/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:17:41,077 - trading_bot.utils - WARNING - Request error on attempt 1/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:17:42,933 - trading_bot.utils - WARNING - Request error on attempt 2/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:17:43,622 - trading_bot.utils - WARNING - Request error on attempt 2/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:17:47,580 - trading_bot.utils - WARNING - Request error on attempt 3/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:17:47,857 - trading_bot.utils - WARNING - Request error on attempt 3/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:17:56,114 - trading_bot.utils - WARNING - Request error on attempt 4/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:17:57,434 - trading_bot.utils - WARNING - Request error on attempt 4/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:18:11,350 - trading_bot.utils - WARNING - Request error on attempt 5/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:18:11,350 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/v1/defi/gainers_losers/solana after 5 attempts
+2025-05-06 14:18:12,049 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-06 14:18:12,050 - trading_bot.birdeye_api - WARNING - No tokens found for top gainers (24h)
+2025-05-06 14:18:12,480 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-05-06 14:18:12,480 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-05-06 14:18:12,667 - trading_bot.utils - WARNING - Request error on attempt 1/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:18:14,016 - trading_bot.utils - WARNING - Request error on attempt 5/5 for https://public-api.birdeye.so/v1/defi/gainers_losers/solana: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:18:14,017 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/v1/defi/gainers_losers/solana after 5 attempts
+2025-05-06 14:18:14,543 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-06 14:18:14,543 - trading_bot.birdeye_api - WARNING - No tokens found for top gainers (24h)
+2025-05-06 14:18:14,988 - trading_bot.utils - WARNING - Request error on attempt 2/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:18:15,185 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-05-06 14:18:15,185 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-05-06 14:18:15,569 - trading_bot.utils - WARNING - Request error on attempt 1/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:18:17,800 - trading_bot.utils - WARNING - Request error on attempt 2/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:18:19,654 - trading_bot.utils - WARNING - Request error on attempt 3/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:18:21,965 - trading_bot.utils - WARNING - Request error on attempt 3/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:18:29,069 - trading_bot.utils - WARNING - Request error on attempt 4/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:18:30,898 - trading_bot.utils - WARNING - Request error on attempt 4/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:18:44,033 - trading_bot.utils - WARNING - Request error on attempt 5/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:18:44,034 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/v1/trending after 5 attempts
+2025-05-06 14:18:44,034 - trading_bot.birdeye_api - WARNING - Too many Birdeye API failures (3). Switching to DexScreener fallback.
+2025-05-06 14:18:44,687 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-06 14:18:44,687 - trading_bot.birdeye_api - WARNING - No tokens found for trending tokens
+2025-05-06 14:18:45,240 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-05-06 14:18:45,241 - trading_bot.token_scanner - INFO - No trending tokens found
+2025-05-06 14:18:45,242 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-06 14:18:45,691 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:18:45,692 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:18:45,711 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:18:45,811 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:18:45,912 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:18:45,987 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:18:46,075 - trading_bot.token_analyzer - WARNING - Twitter API rate limit exceeded for pop
+2025-05-06 14:18:46,075 - trading_bot.token_analyzer - WARNING - Rate limited by Twitter API. Backing off for 9 seconds.
+2025-05-06 14:18:46,080 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 7eQY4Q9WC1XU1SD4HghaJqEmipniCqKCW1Lv3Ejgpump: 20.929820999999997
+2025-05-06 14:18:46,806 - trading_bot.utils - WARNING - Request error on attempt 5/5 for https://public-api.birdeye.so/v1/trending: 200, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://docs.birdeye.so'
+2025-05-06 14:18:46,806 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/v1/trending after 5 attempts
+2025-05-06 14:18:46,807 - trading_bot.birdeye_api - WARNING - Too many Birdeye API failures (4). Switching to DexScreener fallback.
+2025-05-06 14:18:47,332 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-06 14:18:47,333 - trading_bot.birdeye_api - WARNING - No tokens found for trending tokens
+2025-05-06 14:18:47,785 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:18:47,791 - trading_bot.token_analyzer - INFO - Using Birdeye security score for ECMYTGjvXWR3mb5RFEh3F1mAqFBe5EEe53A2n1F1sbpg: 5.023686
+2025-05-06 14:18:47,826 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-05-06 14:18:47,826 - trading_bot.token_scanner - INFO - No trending tokens found
+2025-05-06 14:18:47,827 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-06 14:18:48,458 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:18:48,462 - trading_bot.token_analyzer - INFO - Using Birdeye security score for CHETQYMAfLSj2hDrBqNzhMcMcvcMSeGr7c6CYFB2pump: 32.274115
+2025-05-06 14:18:49,507 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:18:49,510 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 83mCRQJzvKMeQd9wJbZDUCTPgRbZMDoPdMSx5Sf1pump: 70.0
+2025-05-06 14:18:49,952 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:18:49,956 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 83mCRQJzvKMeQd9wJbZDUCTPgRbZMDoPdMSx5Sf1pump: 70.0
+2025-05-06 14:18:51,239 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:18:51,242 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 6m2SeubvmKc1MGqGxQToy9i7tdbkxhnMxqgEhtgFpump: 2.810314
+2025-05-06 14:18:51,600 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:18:51,603 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 6m2SeubvmKc1MGqGxQToy9i7tdbkxhnMxqgEhtgFpump: 2.810314
+2025-05-06 14:18:52,851 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:18:52,859 - trading_bot.token_analyzer - INFO - Using Birdeye security score for vv6EBaeRszGE7MBHi9fctyABuU2R299EfeJJspBpump: 0.246102
+2025-05-06 14:18:53,260 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:18:53,263 - trading_bot.token_analyzer - INFO - Using Birdeye security score for vv6EBaeRszGE7MBHi9fctyABuU2R299EfeJJspBpump: 0.246102
+2025-05-06 14:18:54,662 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:18:54,667 - trading_bot.token_analyzer - INFO - Using Birdeye security score for F83qesR5cuCkc4ZgdeLsTQorHhE4xKHYMV4Uj69Upump: 40.592397
+2025-05-06 14:18:54,964 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:18:54,979 - trading_bot.token_analyzer - INFO - Using Birdeye security score for F83qesR5cuCkc4ZgdeLsTQorHhE4xKHYMV4Uj69Upump: 40.592397
+2025-05-06 14:18:56,429 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:18:56,430 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:18:56,432 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:18:56,479 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:18:56,573 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:18:56,684 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:18:56,805 - trading_bot.token_analyzer - WARNING - Twitter API rate limit exceeded for TROLLD
+2025-05-06 14:18:56,805 - trading_bot.token_analyzer - WARNING - Rate limited by Twitter API. Backing off for 21 seconds.
+2025-05-06 14:18:56,811 - trading_bot.token_analyzer - INFO - Using Birdeye security score for DS622cHargAtcc3SbBhoJ8WkekHesBHMQPVa7Wq9aTQy: 0.7739389999999999
+2025-05-06 14:18:56,814 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:18:56,819 - trading_bot.token_analyzer - INFO - Using Birdeye security score for DS622cHargAtcc3SbBhoJ8WkekHesBHMQPVa7Wq9aTQy: 0.7739389999999999
+2025-05-06 14:18:58,295 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:18:58,301 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 85rvBbnKk9jBHgMwyQWbAuSuHsZPUmzXinJyteh9pump: 1.469466
+2025-05-06 14:18:58,522 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:18:58,525 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 85rvBbnKk9jBHgMwyQWbAuSuHsZPUmzXinJyteh9pump: 1.469466
+2025-05-06 14:19:00,080 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:19:00,083 - trading_bot.token_analyzer - INFO - Using Birdeye security score for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ: 1.6602129999999997
+2025-05-06 14:19:00,109 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:19:00,113 - trading_bot.token_analyzer - INFO - Using Birdeye security score for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ: 1.6602129999999997
+2025-05-06 14:19:01,550 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:19:01,556 - trading_bot.token_analyzer - INFO - Using Birdeye security score for EQi5AW5CEDpKg6tyinU5H5WeW2o5aSdqRTxV8nV2pump: 16.244239999999998
+2025-05-06 14:19:01,647 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:19:01,654 - trading_bot.token_analyzer - INFO - Using Birdeye security score for EQi5AW5CEDpKg6tyinU5H5WeW2o5aSdqRTxV8nV2pump: 16.244239999999998
+2025-05-06 14:19:03,306 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:19:03,315 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 52jTVbrvYqPxKQvT2dxBfmrHcBWBm8Rq1cgM1yTjpump: 36.558897
+2025-05-06 14:19:03,319 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:19:03,323 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 52jTVbrvYqPxKQvT2dxBfmrHcBWBm8Rq1cgM1yTjpump: 36.558897
+2025-05-06 14:19:04,937 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:19:04,941 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 366fdi7HiHbgGfC63Fycixvgo4Eb41JSUf6PYSAnpump: 30.686566
+2025-05-06 14:19:05,089 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:19:05,093 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 366fdi7HiHbgGfC63Fycixvgo4Eb41JSUf6PYSAnpump: 30.686566
+2025-05-06 14:19:06,484 - trading_bot.birdeye_api - WARNING - No DexScreener data for 5KGwFRsxpXnDs2d2RampWvRyRdGcomc4N4tp1Az1cvfC
+2025-05-06 14:19:06,488 - trading_bot.birdeye_api - WARNING - Failed to get token info for 5KGwFRsxpXnDs2d2RampWvRyRdGcomc4N4tp1Az1cvfC
+2025-05-06 14:19:06,489 - trading_bot.utils - WARNING - Approaching rate limit for dexscreener. Sleeping 37.5 seconds.
+2025-05-06 14:19:06,878 - trading_bot.birdeye_api - WARNING - No DexScreener data for 5KGwFRsxpXnDs2d2RampWvRyRdGcomc4N4tp1Az1cvfC
+2025-05-06 14:19:06,878 - trading_bot.birdeye_api - WARNING - Failed to get token info for 5KGwFRsxpXnDs2d2RampWvRyRdGcomc4N4tp1Az1cvfC
+2025-05-06 14:19:06,879 - trading_bot.utils - WARNING - Approaching rate limit for dexscreener. Sleeping 37.2 seconds.
+2025-05-06 14:19:44,494 - trading_bot.token_analyzer - WARNING - No DexScreener data for 5KGwFRsxpXnDs2d2RampWvRyRdGcomc4N4tp1Az1cvfC
+2025-05-06 14:19:44,677 - trading_bot.token_analyzer - WARNING - No DexScreener data for 5KGwFRsxpXnDs2d2RampWvRyRdGcomc4N4tp1Az1cvfC
+2025-05-06 14:19:46,161 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:19:46,162 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:19:46,165 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:19:46,240 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:19:46,362 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:19:46,467 - trading_bot.token_analyzer - ERROR - Twitter API error: maximum recursion depth exceeded
+2025-05-06 14:19:46,580 - trading_bot.token_analyzer - WARNING - Twitter API rate limit exceeded for autistick
+2025-05-06 14:19:46,581 - trading_bot.token_analyzer - WARNING - Rate limited by Twitter API. Backing off for 35 seconds.
+2025-05-06 14:19:46,584 - trading_bot.token_analyzer - INFO - Using Birdeye security score for FcAFbQzMrR4y66YNgVJcZGmXZzx8rAccqThrHrTYpump: 33.113896
+2025-05-06 14:19:46,649 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:19:46,653 - trading_bot.token_analyzer - INFO - Using Birdeye security score for FcAFbQzMrR4y66YNgVJcZGmXZzx8rAccqThrHrTYpump: 33.113896
+2025-05-06 14:19:48,253 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:19:48,257 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 26sjdbTX2BPHaAYhjZXaaPsgPrducsvRqx8buYnzPump: 30.000146
+2025-05-06 14:19:48,258 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:19:48,262 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 26sjdbTX2BPHaAYhjZXaaPsgPrducsvRqx8buYnzPump: 30.000146
+2025-05-06 14:19:49,907 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:19:49,918 - trading_bot.token_analyzer - INFO - Using Birdeye security score for J3ctW5wdZVjmbf2TbbMWWfnqzynggYjpQhdQkMWBHcom: 12.506765
+2025-05-06 14:19:49,993 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:19:50,001 - trading_bot.token_analyzer - INFO - Using Birdeye security score for J3ctW5wdZVjmbf2TbbMWWfnqzynggYjpQhdQkMWBHcom: 12.506765
+2025-05-06 14:19:51,495 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:19:51,500 - trading_bot.token_analyzer - INFO - Using Birdeye security score for HAirPmVtL1e2shLQAvPnsQmmtbvxXoqKZbdfosTPpump: 1.8452080000000002
+2025-05-06 14:19:51,633 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:19:51,639 - trading_bot.token_analyzer - INFO - Using Birdeye security score for HAirPmVtL1e2shLQAvPnsQmmtbvxXoqKZbdfosTPpump: 1.8452080000000002
+2025-05-06 14:19:53,492 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:19:53,499 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 79eXoT1aR7qhBMGKXzVNdV4ZcLqHsupqj2WTFvDumpSZ: 10.164528
+2025-05-06 14:19:53,550 - trading_bot.token_analyzer - ERROR - Error calculating social media score: maximum recursion depth exceeded
+2025-05-06 14:19:53,562 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 79eXoT1aR7qhBMGKXzVNdV4ZcLqHsupqj2WTFvDumpSZ: 10.164528
+2025-05-06 14:19:55,176 - trading_bot.birdeye_api - WARNING - No DexScreener data for JvQyj2DjbQkL4CCocnn4ryydf4pkca6stNo8vB78US1
+2025-05-06 14:19:55,177 - trading_bot.birdeye_api - WARNING - Failed to get token info for JvQyj2DjbQkL4CCocnn4ryydf4pkca6stNo8vB78US1
+2025-05-06 14:19:55,334 - trading_bot.birdeye_api - WARNING - No DexScreener data for JvQyj2DjbQkL4CCocnn4ryydf4pkca6stNo8vB78US1
+2025-05-06 14:19:55,335 - trading_bot.birdeye_api - WARNING - Failed to get token info for JvQyj2DjbQkL4CCocnn4ryydf4pkca6stNo8vB78US1
+2025-05-06 14:19:55,658 - trading_bot.token_analyzer - WARNING - No DexScreener data for JvQyj2DjbQkL4CCocnn4ryydf4pkca6stNo8vB78US1
+2025-05-06 14:19:56,055 - trading_bot.token_analyzer - WARNING - No DexScreener data for JvQyj2DjbQkL4CCocnn4ryydf4pkca6stNo8vB78US1
+2025-05-06 14:19:57,059 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-06 14:20:57,072 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-06 14:20:57,156 - trading_bot.token_scanner - ERROR - Twitter scan failed: 429 Too Many Requests
+Too Many Requests
+2025-05-06 14:20:57,157 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-06 14:20:57,595 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-06 14:20:57,596 - trading_bot.birdeye_api - WARNING - No tokens found for top gainers (24h)
+2025-05-06 14:20:58,127 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-05-06 14:20:58,127 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-05-06 14:20:58,771 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-06 14:20:58,771 - trading_bot.birdeye_api - WARNING - No tokens found for trending tokens
+2025-05-06 14:20:59,414 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-05-06 14:20:59,414 - trading_bot.token_scanner - INFO - No trending tokens found
+2025-05-06 14:20:59,414 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-06 14:20:59,417 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-06 14:21:59,421 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-06 14:21:59,756 - trading_bot.token_scanner - ERROR - Twitter scan failed: 429 Too Many Requests
+Too Many Requests
+2025-05-06 14:21:59,756 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-06 14:22:00,277 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-06 14:22:00,278 - trading_bot.birdeye_api - WARNING - No tokens found for top gainers (24h)
+2025-05-06 14:22:00,820 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-05-06 14:22:00,821 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-05-06 14:22:01,230 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-06 14:22:01,231 - trading_bot.birdeye_api - WARNING - No tokens found for trending tokens
+2025-05-06 14:22:01,721 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-05-06 14:22:01,721 - trading_bot.token_scanner - INFO - No trending tokens found
+2025-05-06 14:22:01,722 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-06 14:22:01,729 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-06 14:22:22,495 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-05-06 14:22:40,609 - trading_bot - INFO - Closing connections
+2025-05-06 14:22:40,610 - trading_bot - INFO - ==================================================
+2025-05-06 14:22:40,611 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-05-06 14:22:40,611 - trading_bot - INFO - ==================================================
+2025-05-06 14:22:40,614 - trading_bot - INFO - Bot execution completed

@@ -1,0 +1,53 @@
+2025-04-01 12:32:12,312 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 12:32:12,313 - trading_bot.solana_trader - INFO - Wallet initialized: DpWxPejkHk4Hq1Gz15N2cjBYwgnAR2EuTfe8XcmGoP9k
+2025-04-01 12:32:12,317 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-04-01 12:32:12,319 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 12:32:12,329 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-04-01 12:32:12,331 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 12:32:12,332 - trading_bot - INFO - ==================================================
+2025-04-01 12:32:12,343 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-04-01 12:32:12,344 - trading_bot - INFO - ==================================================
+2025-04-01 12:32:12,678 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 12:32:12,680 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 12:32:12,815 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 12:32:12,881 - trading_bot - INFO - Initial Wallet Balance: 3.0000 SOL ($384.90)
+2025-04-01 12:32:12,882 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-04-01 12:32:12,882 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-01 12:32:13,255 - trading_bot.token_scanner - INFO - Discovered 3 tokens from Twitter
+2025-04-01 12:32:13,255 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-01 12:32:13,256 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-04-01 12:32:13,258 - trading_bot - INFO - Starting token discovery and trading process
+2025-04-01 12:32:13,281 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 12:32:13,327 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://api.dexscreener.com/latest/dex/pairs/solana: 404, message='Not Found', url='https://api.dexscreener.com/latest/dex/pairs/solana'
+2025-04-01 12:32:13,328 - trading_bot - INFO - Current wallet balance: 3.0000 SOL ($384.90)
+2025-04-01 12:32:13,798 - trading_bot.token_scanner - INFO - Tradable token found: CA (Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ)
+2025-04-01 12:32:15,166 - trading_bot.token_scanner - INFO - Tradable token found: IFOYCIC (4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump)
+2025-04-01 12:32:15,353 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://api.dexscreener.com/latest/dex/pairs/solana: 404, message='Not Found', url='https://api.dexscreener.com/latest/dex/pairs/solana'
+2025-04-01 12:32:16,553 - trading_bot.token_scanner - INFO - Tradable token found: CA (8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump)
+2025-04-01 12:32:17,556 - trading_bot - INFO - Trading BABYPURPE (Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ) for 0.1 SOL
+2025-04-01 12:32:17,578 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 12:32:17,917 - trading_bot.database - INFO - Recorded BUY trade for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ: 0.1 at 1.751784945194328e-07
+2025-04-01 12:32:17,918 - trading_bot.solana_trader - INFO - Buy executed: 1111111111111111111111111111111111111111111111111111111111111111 for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ - 0.1 SOL
+2025-04-01 12:32:17,918 - trading_bot - INFO - Successfully traded BABYPURPE: 1111111111111111111111111111111111111111111111111111111111111111
+2025-04-01 12:32:17,920 - trading_bot - INFO - Trading IFOYCIC (4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump) for 0.1 SOL
+2025-04-01 12:32:17,952 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 12:32:18,269 - trading_bot.database - INFO - Recorded BUY trade for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: 0.1 at 0.0002481795575551532
+2025-04-01 12:32:18,269 - trading_bot.solana_trader - INFO - Buy executed: 1111111111111111111111111111111111111111111111111111111111111111 for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump - 0.1 SOL
+2025-04-01 12:32:18,270 - trading_bot - INFO - Successfully traded IFOYCIC: 1111111111111111111111111111111111111111111111111111111111111111
+2025-04-01 12:32:18,272 - trading_bot - INFO - Trading JOKE (8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump) for 0.1 SOL
+2025-04-01 12:32:18,301 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 12:32:18,700 - trading_bot.database - INFO - Recorded BUY trade for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: 0.1 at 0.002119225494462375
+2025-04-01 12:32:18,700 - trading_bot.solana_trader - INFO - Buy executed: 1111111111111111111111111111111111111111111111111111111111111111 for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump - 0.1 SOL
+2025-04-01 12:32:18,700 - trading_bot - INFO - Successfully traded JOKE: 1111111111111111111111111111111111111111111111111111111111111111
+2025-04-01 12:32:19,396 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://api.dexscreener.com/latest/dex/pairs/solana: 404, message='Not Found', url='https://api.dexscreener.com/latest/dex/pairs/solana'
+2025-04-01 12:32:19,397 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/pairs/solana after 3 attempts
+2025-04-01 12:32:19,397 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-01 12:32:19,398 - trading_bot.token_scanner - INFO - Analyzing discovered tokens...
+2025-04-01 12:32:19,401 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-01 12:33:03,949 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-04-01 12:33:12,888 - trading_bot - INFO - Closing connections
+2025-04-01 12:33:12,889 - trading_bot.solana_trader - INFO - Solana RPC client closed
+2025-04-01 12:33:12,890 - trading_bot - INFO - ==================================================
+2025-04-01 12:33:12,890 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-04-01 12:33:12,890 - trading_bot - INFO - ==================================================
+2025-04-01 12:33:12,893 - trading_bot - INFO - Bot execution completed

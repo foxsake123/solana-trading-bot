@@ -1,0 +1,661 @@
+2025-05-12 15:43:06,005 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:43:06,005 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:43:06,013 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:43:06,014 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:43:06,019 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:43:06,020 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:43:06,037 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:43:06,037 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 15:43:06,038 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:43:06,040 - trading_bot - INFO - ==================================================
+2025-05-12 15:43:06,041 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-05-12 15:43:06,041 - trading_bot - INFO - ==================================================
+2025-05-12 15:43:06,574 - trading_bot - INFO - Initial Wallet Balance: 5.0000 SOL ($851.90)
+2025-05-12 15:43:06,576 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-05-12 15:43:06,578 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:43:07,081 - trading_bot.token_scanner - INFO - Discovered 16 tokens from Twitter
+2025-05-12 15:43:07,082 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:43:07,082 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-05-12 15:43:07,086 - trading_bot - INFO - Starting token discovery and trading process
+2025-05-12 15:43:07,086 - trading_bot - INFO - Current wallet balance: 5.0000 SOL ($851.90)
+2025-05-12 15:43:07,215 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:43:07,216 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 15:43:07,217 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:43:07,218 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:43:07,799 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:43:07,800 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 15:43:07,801 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:43:07,803 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:43:07,871 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:43:08,451 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:43:09,349 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:43:09,350 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 15:43:09,375 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 15:43:09,376 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:43:09,860 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 15:43:09,933 - trading_bot.birdeye_api - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 15:43:09,935 - trading_bot.birdeye_api - WARNING - Failed to get token info for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 15:43:09,971 - trading_bot.token_analyzer - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 15:43:10,728 - trading_bot.birdeye_api - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 15:43:10,729 - trading_bot.birdeye_api - WARNING - Failed to get token info for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 15:43:11,046 - trading_bot.token_analyzer - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 15:43:11,330 - trading_bot.birdeye_api - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 15:43:11,332 - trading_bot.birdeye_api - WARNING - Failed to get token info for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 15:43:11,373 - trading_bot.token_analyzer - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 15:43:12,182 - trading_bot.birdeye_api - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 15:43:12,184 - trading_bot.birdeye_api - WARNING - Failed to get token info for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 15:43:12,267 - trading_bot.token_analyzer - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 15:43:12,385 - trading_bot.token_analyzer - INFO - Using Birdeye security score for fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP: 7.815426000000001
+2025-05-12 15:43:13,320 - trading_bot.birdeye_api - WARNING - No DexScreener data for BXFxh9WRZ9aSRW8JGiwHrLD7PYBCFFDAPAUygr9bbonk
+2025-05-12 15:43:13,322 - trading_bot.birdeye_api - WARNING - Failed to get token info for BXFxh9WRZ9aSRW8JGiwHrLD7PYBCFFDAPAUygr9bbonk
+2025-05-12 15:43:13,420 - trading_bot.token_analyzer - WARNING - No DexScreener data for BXFxh9WRZ9aSRW8JGiwHrLD7PYBCFFDAPAUygr9bbonk
+2025-05-12 15:43:14,134 - trading_bot.birdeye_api - WARNING - No DexScreener data for BXFxh9WRZ9aSRW8JGiwHrLD7PYBCFFDAPAUygr9bbonk
+2025-05-12 15:43:14,135 - trading_bot.birdeye_api - WARNING - Failed to get token info for BXFxh9WRZ9aSRW8JGiwHrLD7PYBCFFDAPAUygr9bbonk
+2025-05-12 15:43:14,167 - trading_bot.token_analyzer - WARNING - No DexScreener data for BXFxh9WRZ9aSRW8JGiwHrLD7PYBCFFDAPAUygr9bbonk
+2025-05-12 15:43:15,034 - trading_bot.token_analyzer - INFO - Using Birdeye security score for Cr2mM4szbt8286XMn7iTpY5A8S17LbGAu1UyodkyEwn4: 56.887096
+2025-05-12 15:43:15,815 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 92zh8CkBj78ZzVAXHbTZe9mYxksDzVMfvkMoox5aNUr8: 40.445582
+2025-05-12 15:43:16,270 - trading_bot.token_analyzer - INFO - Using Birdeye security score for HSZSQ9L16RM3WfzpxotV16vQa3rNdyKygtJunEpvbonk: 11.556959
+2025-05-12 15:43:16,947 - trading_bot.birdeye_api - WARNING - No DexScreener data for 5X9m5hiS2WcDzMnoMmnvwp8QVaryixtMi3YPv79dbonk
+2025-05-12 15:43:16,949 - trading_bot.birdeye_api - WARNING - Failed to get token info for 5X9m5hiS2WcDzMnoMmnvwp8QVaryixtMi3YPv79dbonk
+2025-05-12 15:43:17,008 - trading_bot.token_analyzer - WARNING - No DexScreener data for 5X9m5hiS2WcDzMnoMmnvwp8QVaryixtMi3YPv79dbonk
+2025-05-12 15:43:17,983 - trading_bot.token_analyzer - INFO - Using Birdeye security score for EoTft8hdyqEaHNm5ecBM5EksrGrpVPdPEZkqBcY3sHR5: 14.870422
+2025-05-12 15:43:18,012 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:44:18,030 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:44:18,615 - trading_bot.token_scanner - INFO - Discovered 10 tokens from Twitter
+2025-05-12 15:44:18,616 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:44:18,617 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:44:18,618 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:44:19,439 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:44:19,461 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:44:19,462 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 15:44:19,491 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 15:44:19,492 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:44:19,612 - trading_bot.birdeye_api - WARNING - No DexScreener data for 2i6i7BcmhH3k5VXM87vRQ8z5qR6oVsh3kx5ZAh5Fbonk
+2025-05-12 15:44:19,614 - trading_bot.birdeye_api - WARNING - Failed to get token info for 2i6i7BcmhH3k5VXM87vRQ8z5qR6oVsh3kx5ZAh5Fbonk
+2025-05-12 15:44:19,718 - trading_bot.token_analyzer - WARNING - No DexScreener data for 2i6i7BcmhH3k5VXM87vRQ8z5qR6oVsh3kx5ZAh5Fbonk
+2025-05-12 15:44:21,054 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 9ZXz124YTiVYFy7bPw2514zzF55RXKig27NNZEqebonk: 24.19098
+2025-05-12 15:44:22,504 - trading_bot.token_analyzer - INFO - Using Birdeye security score for EtmTWbFxhxXiPPLsKUYVoFaH6Sr2AcEx4FBVCVLVxrah: 33.222525
+2025-05-12 15:44:23,856 - trading_bot.token_analyzer - INFO - Using Birdeye security score for Ey59PH7Z4BFU4HjyKnyMdWt5GGN76KazTAwQihoUXRnk: 70.0
+2025-05-12 15:44:25,030 - trading_bot.birdeye_api - WARNING - No DexScreener data for 3qJkAviJKjtaW6p6RCBJ9phHwBjggZruRoU9yu9Tbonk
+2025-05-12 15:44:25,032 - trading_bot.birdeye_api - WARNING - Failed to get token info for 3qJkAviJKjtaW6p6RCBJ9phHwBjggZruRoU9yu9Tbonk
+2025-05-12 15:44:25,144 - trading_bot.token_analyzer - WARNING - No DexScreener data for 3qJkAviJKjtaW6p6RCBJ9phHwBjggZruRoU9yu9Tbonk
+2025-05-12 15:44:26,159 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:45:26,164 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:45:26,797 - trading_bot.token_scanner - INFO - Discovered 12 tokens from Twitter
+2025-05-12 15:45:26,798 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:45:26,798 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:45:26,800 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:45:27,539 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:45:27,572 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:45:27,573 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 15:45:27,608 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 15:45:27,610 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:45:27,974 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 148KWpXuD977susP59kuP7DgRViqUzE9d1QTdN8Nbonk: 38.204691
+2025-05-12 15:45:28,987 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:46:29,005 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:46:29,537 - trading_bot.token_scanner - INFO - Discovered 14 tokens from Twitter
+2025-05-12 15:46:29,539 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:46:29,539 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:46:29,540 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:46:30,052 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:46:30,072 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:46:30,073 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 15:46:30,098 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 15:46:30,099 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:46:30,444 - trading_bot.token_analyzer - INFO - Using Birdeye security score for BXjjznSFV4JHQu5KQRn6xCD4mgtWgNzhVM1VQoXieQp4: 15.157340999999999
+2025-05-12 15:46:31,806 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 9LNW5xdo5wQ4aSGjqsqJFPWB3QFGPiB7SXH1Uf6qbonk: 8.897786
+2025-05-12 15:46:32,822 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:47:32,824 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:47:33,298 - trading_bot.token_scanner - INFO - Discovered 10 tokens from Twitter
+2025-05-12 15:47:33,300 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:47:33,300 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:47:33,302 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:47:33,985 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:47:34,010 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:47:34,011 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 15:47:34,044 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 15:47:34,044 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:47:34,128 - trading_bot.birdeye_api - WARNING - No DexScreener data for pXc5ton45XcDQ84bTFK63Fm64aNazyKY9s8UNc9bonk
+2025-05-12 15:47:34,130 - trading_bot.birdeye_api - WARNING - Failed to get token info for pXc5ton45XcDQ84bTFK63Fm64aNazyKY9s8UNc9bonk
+2025-05-12 15:47:34,167 - trading_bot.token_analyzer - WARNING - No DexScreener data for pXc5ton45XcDQ84bTFK63Fm64aNazyKY9s8UNc9bonk
+2025-05-12 15:47:35,182 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:48:19,001 - trading_bot - INFO - Current wallet balance: 5.0000 SOL ($851.90)
+2025-05-12 15:48:19,066 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:48:19,067 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 15:48:19,068 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:48:19,068 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:48:19,604 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:48:20,472 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 15:48:35,192 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:48:35,564 - trading_bot.token_scanner - INFO - Discovered 11 tokens from Twitter
+2025-05-12 15:48:35,565 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:48:35,566 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:48:35,566 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:48:36,129 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:48:36,153 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:48:36,153 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 15:48:36,182 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 15:48:36,183 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:48:36,520 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 8bDKUREoasKcG19hTaKNJp2u6xTBJFeoRigGuCDfbonk: 35.471589
+2025-05-12 15:48:37,992 - trading_bot.token_analyzer - INFO - Using Birdeye security score for AtpNJ7mtMCYPCeXkZCshGKtU98gcbHvyorbo8dptWoxk: 4.7623370000000005
+2025-05-12 15:48:39,226 - trading_bot.token_analyzer - INFO - Using Birdeye security score for A74HZEYkopno1YmxhCgUg9vA49wwjoSB4d3mU82xhRTN: 8.745467999999999
+2025-05-12 15:48:40,240 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:49:40,254 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:49:40,716 - trading_bot.token_scanner - INFO - Discovered 12 tokens from Twitter
+2025-05-12 15:49:40,716 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:49:40,717 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:49:40,717 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:49:41,225 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:49:41,247 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:49:41,247 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 15:49:41,273 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 15:49:41,274 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:49:41,366 - trading_bot.birdeye_api - WARNING - No DexScreener data for DFZwSdpJcAC96CLxNQPqLZ6m5eKfbtWzZr6qgTbAbonk
+2025-05-12 15:49:41,367 - trading_bot.birdeye_api - WARNING - Failed to get token info for DFZwSdpJcAC96CLxNQPqLZ6m5eKfbtWzZr6qgTbAbonk
+2025-05-12 15:49:41,431 - trading_bot.token_analyzer - WARNING - No DexScreener data for DFZwSdpJcAC96CLxNQPqLZ6m5eKfbtWzZr6qgTbAbonk
+2025-05-12 15:49:42,749 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 6S9sEpVTunuyJYsaXwsVpVxtJZff8V9nW3j2sDrcbonk: 34.777478
+2025-05-12 15:49:44,118 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 9Nc7qznSyhq1YV2r9EeNJgsfH7yjKVd6Zty3Suzibonk: 39.555461
+2025-05-12 15:49:45,130 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:50:45,134 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:50:45,551 - trading_bot.token_scanner - INFO - Discovered 9 tokens from Twitter
+2025-05-12 15:50:45,552 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:50:45,552 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:50:45,553 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:50:45,957 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:50:45,987 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:50:45,987 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 15:50:46,024 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 15:50:46,024 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:50:46,027 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:51:46,037 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:51:46,458 - trading_bot.token_scanner - INFO - Discovered 14 tokens from Twitter
+2025-05-12 15:51:46,458 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:51:46,458 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:51:46,459 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:51:47,350 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:51:47,375 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:51:47,376 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 15:51:47,404 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 15:51:47,404 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:51:47,994 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 22xNtspSA6PNPqV8k5shJXYG5x98L4BPRqC6SGWLTFGu: 7.544578
+2025-05-12 15:51:49,252 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 8eSFnZofx9vd5acjMCK4m8vHqUviDmDpQHgwW6gLinwX: 7.581006
+2025-05-12 15:51:50,346 - trading_bot.birdeye_api - WARNING - No DexScreener data for 6BVqroeZvoxW2XM5XUSh2eMYegtFGmKEtkPT5VK4bonk
+2025-05-12 15:51:50,347 - trading_bot.birdeye_api - WARNING - Failed to get token info for 6BVqroeZvoxW2XM5XUSh2eMYegtFGmKEtkPT5VK4bonk
+2025-05-12 15:51:50,509 - trading_bot.token_analyzer - WARNING - No DexScreener data for 6BVqroeZvoxW2XM5XUSh2eMYegtFGmKEtkPT5VK4bonk
+2025-05-12 15:51:51,946 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 2uuAiJvBTUJs83YyZcDoGwNiz1xya4P4pMbxQk4q2W3j: 12.153132000000001
+2025-05-12 15:51:52,948 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:52:52,954 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:52:53,477 - trading_bot.token_scanner - INFO - Discovered 14 tokens from Twitter
+2025-05-12 15:52:53,478 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:52:53,479 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:52:53,481 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:52:54,232 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:52:54,268 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:52:54,269 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 15:52:54,312 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 15:52:54,315 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:52:54,493 - trading_bot.birdeye_api - WARNING - No DexScreener data for 4ErK48qHKzMDbBQB4HsqSyAEPffnG9X8kPo7aNJJbonk
+2025-05-12 15:52:54,495 - trading_bot.birdeye_api - WARNING - Failed to get token info for 4ErK48qHKzMDbBQB4HsqSyAEPffnG9X8kPo7aNJJbonk
+2025-05-12 15:52:54,558 - trading_bot.token_analyzer - WARNING - No DexScreener data for 4ErK48qHKzMDbBQB4HsqSyAEPffnG9X8kPo7aNJJbonk
+2025-05-12 15:52:55,704 - trading_bot.birdeye_api - WARNING - No DexScreener data for HgZSLqm8mEe2CKXP59sgM2Ex1ezepWeBv2EdBU1Bbonk
+2025-05-12 15:52:55,707 - trading_bot.birdeye_api - WARNING - Failed to get token info for HgZSLqm8mEe2CKXP59sgM2Ex1ezepWeBv2EdBU1Bbonk
+2025-05-12 15:52:55,747 - trading_bot.token_analyzer - WARNING - No DexScreener data for HgZSLqm8mEe2CKXP59sgM2Ex1ezepWeBv2EdBU1Bbonk
+2025-05-12 15:52:56,959 - trading_bot.token_analyzer - ERROR - Twitter API error: 400 Bad Request
+There were errors processing your request: Reference to invalid operator 'cashtag'. Operator is not available in current product or product packaging. Please refer to complete available operator list at http://t.co/operators. (at position 1)
+2025-05-12 15:52:56,962 - trading_bot.token_analyzer - INFO - Using Birdeye security score for FDXc9bqXNkcH8higPBjrNDrBd4w6RpzTg6dPRY7JLkN2: 15.796593
+2025-05-12 15:52:57,977 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:53:21,237 - trading_bot - INFO - Current wallet balance: 5.0000 SOL ($853.55)
+2025-05-12 15:53:21,284 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:53:21,285 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 15:53:21,285 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:53:21,286 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:53:21,684 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:53:23,445 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 15:53:57,983 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:53:58,442 - trading_bot.token_scanner - INFO - Discovered 14 tokens from Twitter
+2025-05-12 15:53:58,443 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:53:58,443 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:53:58,444 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:53:58,851 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:53:58,890 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:53:58,892 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 15:53:58,933 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 15:53:58,933 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:53:59,436 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 79eXoT1aR7qhBMGKXzVNdV4ZcLqHsupqj2WTFvDumpSZ: 10.395050000000001
+2025-05-12 15:54:00,628 - trading_bot.birdeye_api - WARNING - No DexScreener data for 9Gb4e9Mh18cHgehEjs2kc4HokqrKyPib4rMUuSCmQzLj
+2025-05-12 15:54:00,629 - trading_bot.birdeye_api - WARNING - Failed to get token info for 9Gb4e9Mh18cHgehEjs2kc4HokqrKyPib4rMUuSCmQzLj
+2025-05-12 15:54:00,724 - trading_bot.token_analyzer - WARNING - No DexScreener data for 9Gb4e9Mh18cHgehEjs2kc4HokqrKyPib4rMUuSCmQzLj
+2025-05-12 15:54:01,741 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:55:01,751 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:55:02,252 - trading_bot.token_scanner - INFO - Discovered 15 tokens from Twitter
+2025-05-12 15:55:02,252 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:55:02,253 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:55:02,254 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:55:03,020 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:55:03,048 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:55:03,048 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 15:55:03,089 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 15:55:03,089 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:55:03,408 - trading_bot.birdeye_api - WARNING - No DexScreener data for 7vtQbz3a9Z5dfpNDWsVkFEyv1BjJ5SrsHx2C7G2hbonk
+2025-05-12 15:55:03,409 - trading_bot.birdeye_api - WARNING - Failed to get token info for 7vtQbz3a9Z5dfpNDWsVkFEyv1BjJ5SrsHx2C7G2hbonk
+2025-05-12 15:55:03,508 - trading_bot.token_analyzer - WARNING - No DexScreener data for 7vtQbz3a9Z5dfpNDWsVkFEyv1BjJ5SrsHx2C7G2hbonk
+2025-05-12 15:55:04,671 - trading_bot.birdeye_api - WARNING - No DexScreener data for AjvVvUbh1uVF2EquWQEw2hP4AEpT3ThEQW5G9Nvsbonk
+2025-05-12 15:55:04,672 - trading_bot.birdeye_api - WARNING - Failed to get token info for AjvVvUbh1uVF2EquWQEw2hP4AEpT3ThEQW5G9Nvsbonk
+2025-05-12 15:55:04,787 - trading_bot.token_analyzer - WARNING - No DexScreener data for AjvVvUbh1uVF2EquWQEw2hP4AEpT3ThEQW5G9Nvsbonk
+2025-05-12 15:55:05,913 - trading_bot.birdeye_api - WARNING - No DexScreener data for 7RF85haVwm8Pi4zDPwwHUxzkREkwZRjaSWw4Z6dpXray
+2025-05-12 15:55:05,914 - trading_bot.birdeye_api - WARNING - Failed to get token info for 7RF85haVwm8Pi4zDPwwHUxzkREkwZRjaSWw4Z6dpXray
+2025-05-12 15:55:06,082 - trading_bot.token_analyzer - WARNING - No DexScreener data for 7RF85haVwm8Pi4zDPwwHUxzkREkwZRjaSWw4Z6dpXray
+2025-05-12 15:55:07,237 - trading_bot.birdeye_api - WARNING - No DexScreener data for 61VkFHw5e7xNeVex4xkZF9zx7DC6QN1X3DLaYhgPbonk
+2025-05-12 15:55:07,244 - trading_bot.birdeye_api - WARNING - Failed to get token info for 61VkFHw5e7xNeVex4xkZF9zx7DC6QN1X3DLaYhgPbonk
+2025-05-12 15:55:07,302 - trading_bot.token_analyzer - WARNING - No DexScreener data for 61VkFHw5e7xNeVex4xkZF9zx7DC6QN1X3DLaYhgPbonk
+2025-05-12 15:55:08,311 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:56:08,323 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:56:08,802 - trading_bot.token_scanner - INFO - Discovered 15 tokens from Twitter
+2025-05-12 15:56:08,802 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:56:08,802 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:56:08,803 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:56:09,296 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:56:09,320 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:56:09,321 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 15:56:09,347 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 15:56:09,347 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:56:09,828 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 4GrvtAsJy7ycsHesxDc71YBTWKAAA4yM16KJVMDCh6z3: 20.615216999999998
+2025-05-12 15:56:10,999 - trading_bot.token_analyzer - INFO - Using Birdeye security score for B39dDsWu2sUZJQKpX91B3LuuJNkxHDUEFR99XcBBaREV: 17.47692
+2025-05-12 15:56:12,045 - trading_bot.birdeye_api - WARNING - No DexScreener data for CZLGjg8YimjMh1mCeWgNYzaNCuD9jkTffCgWi8yFbonk
+2025-05-12 15:56:12,046 - trading_bot.birdeye_api - WARNING - Failed to get token info for CZLGjg8YimjMh1mCeWgNYzaNCuD9jkTffCgWi8yFbonk
+2025-05-12 15:56:12,096 - trading_bot.token_analyzer - WARNING - No DexScreener data for CZLGjg8YimjMh1mCeWgNYzaNCuD9jkTffCgWi8yFbonk
+2025-05-12 15:56:13,111 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:57:13,123 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:57:13,595 - trading_bot.token_scanner - INFO - Discovered 18 tokens from Twitter
+2025-05-12 15:57:13,596 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:57:13,596 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:57:13,597 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:57:14,306 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:57:14,332 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:57:14,333 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 15:57:14,361 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 15:57:14,362 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:57:14,399 - trading_bot.birdeye_api - WARNING - No DexScreener data for BFTRu57iuyFE4knBpkWSAnzNNbgBa5jfYYpfwxWybonk
+2025-05-12 15:57:14,401 - trading_bot.birdeye_api - WARNING - Failed to get token info for BFTRu57iuyFE4knBpkWSAnzNNbgBa5jfYYpfwxWybonk
+2025-05-12 15:57:14,442 - trading_bot.token_analyzer - WARNING - No DexScreener data for BFTRu57iuyFE4knBpkWSAnzNNbgBa5jfYYpfwxWybonk
+2025-05-12 15:57:15,838 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 9wK8yN6iz1ie5kEJkvZCTxyN1x5sTdNfx8yeMY8Ebonk: 70.0
+2025-05-12 15:57:16,852 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:58:16,872 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:58:17,385 - trading_bot.token_scanner - INFO - Discovered 16 tokens from Twitter
+2025-05-12 15:58:17,386 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:58:17,387 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:58:17,388 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:58:18,130 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:58:18,152 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:58:18,152 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 15:58:18,178 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 15:58:18,178 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:58:18,483 - trading_bot.token_analyzer - INFO - Using Birdeye security score for AtortPA9SVbkKmdzu5zg4jxgkR4howvPshorA9jYbonk: 70.0
+2025-05-12 15:58:19,921 - trading_bot.token_analyzer - INFO - Using Birdeye security score for G5cHSYorxBt4vcNL8vz8YAvS4ojbfQgjcg1h49sbZoh6: 36.241406
+2025-05-12 15:58:20,941 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:58:23,462 - trading_bot - INFO - Current wallet balance: 5.0000 SOL ($853.55)
+2025-05-12 15:58:23,535 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:58:23,536 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 15:58:23,536 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:58:23,537 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:58:24,267 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:58:25,006 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 15:59:20,948 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:59:21,014 - trading_bot.token_scanner - ERROR - Twitter scan failed: 503 Service Unavailable
+Service Unavailable
+2025-05-12 15:59:21,015 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:59:21,015 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:59:21,016 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:59:21,652 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:59:21,683 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:59:21,684 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 15:59:21,715 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 15:59:21,716 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:59:21,719 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:00:21,733 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:00:22,315 - trading_bot.token_scanner - INFO - Discovered 10 tokens from Twitter
+2025-05-12 16:00:22,317 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:00:22,319 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:00:22,321 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:00:22,801 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:00:22,837 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:00:22,839 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:00:22,885 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:00:22,886 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:00:22,994 - trading_bot.birdeye_api - WARNING - No DexScreener data for 52nYuHsoDVdaW2st17YjQsupaeaC5vXRMDP2D4Ymbonk
+2025-05-12 16:00:22,995 - trading_bot.birdeye_api - WARNING - Failed to get token info for 52nYuHsoDVdaW2st17YjQsupaeaC5vXRMDP2D4Ymbonk
+2025-05-12 16:00:23,033 - trading_bot.token_analyzer - WARNING - No DexScreener data for 52nYuHsoDVdaW2st17YjQsupaeaC5vXRMDP2D4Ymbonk
+2025-05-12 16:00:24,175 - trading_bot.birdeye_api - WARNING - No DexScreener data for 2K5V3FY7Tdwv1vJmrZEZi1ZDj9rmXRjwnNLb8Jgnbonk
+2025-05-12 16:00:24,177 - trading_bot.birdeye_api - WARNING - Failed to get token info for 2K5V3FY7Tdwv1vJmrZEZi1ZDj9rmXRjwnNLb8Jgnbonk
+2025-05-12 16:00:24,230 - trading_bot.token_analyzer - WARNING - No DexScreener data for 2K5V3FY7Tdwv1vJmrZEZi1ZDj9rmXRjwnNLb8Jgnbonk
+2025-05-12 16:00:25,542 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 4wMcBFhYm54qLxEwEVN3XV9FWvPqwmqhoJGgfMCsBAGS: 1.5662749999999999
+2025-05-12 16:00:26,945 - trading_bot.token_analyzer - ERROR - Twitter API error: 503 Service Unavailable
+Service Unavailable
+2025-05-12 16:00:26,948 - trading_bot.token_analyzer - INFO - Using Birdeye security score for Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk: 70.0
+2025-05-12 16:00:27,952 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:01:27,959 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:01:28,486 - trading_bot.token_scanner - INFO - Discovered 15 tokens from Twitter
+2025-05-12 16:01:28,486 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:01:28,487 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:01:28,488 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:01:29,224 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:01:29,249 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:01:29,249 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:01:29,281 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:01:29,282 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:01:29,329 - trading_bot.birdeye_api - WARNING - No DexScreener data for jh5gWho3YnFwk3fpZkMeZCbUmmZqNaH2udGTYTDbonk
+2025-05-12 16:01:29,331 - trading_bot.birdeye_api - WARNING - Failed to get token info for jh5gWho3YnFwk3fpZkMeZCbUmmZqNaH2udGTYTDbonk
+2025-05-12 16:01:29,368 - trading_bot.token_analyzer - WARNING - No DexScreener data for jh5gWho3YnFwk3fpZkMeZCbUmmZqNaH2udGTYTDbonk
+2025-05-12 16:01:30,461 - trading_bot.birdeye_api - WARNING - No DexScreener data for CDjz6HszYqtq6spnfmrbhMk51J4atz77RPaFnTsHGWjn
+2025-05-12 16:01:30,463 - trading_bot.birdeye_api - WARNING - Failed to get token info for CDjz6HszYqtq6spnfmrbhMk51J4atz77RPaFnTsHGWjn
+2025-05-12 16:01:30,563 - trading_bot.token_analyzer - WARNING - No DexScreener data for CDjz6HszYqtq6spnfmrbhMk51J4atz77RPaFnTsHGWjn
+2025-05-12 16:01:31,610 - trading_bot.birdeye_api - WARNING - No DexScreener data for D2BKk6GPPXK6JzZpgvjz8EdtXzKePs5uvobvAUMXFYYT
+2025-05-12 16:01:31,611 - trading_bot.birdeye_api - WARNING - Failed to get token info for D2BKk6GPPXK6JzZpgvjz8EdtXzKePs5uvobvAUMXFYYT
+2025-05-12 16:01:32,401 - trading_bot.token_analyzer - INFO - Using Birdeye security score for D2BKk6GPPXK6JzZpgvjz8EdtXzKePs5uvobvAUMXFYYT: 39.886792
+2025-05-12 16:01:33,843 - trading_bot.token_analyzer - INFO - Using Birdeye security score for CoRAitPvr9seu5F9Hk39vbjqA1o1XuoryHjSk1Z1q2mo: 70.0
+2025-05-12 16:01:34,849 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:02:34,854 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:02:35,264 - trading_bot.token_scanner - INFO - Discovered 7 tokens from Twitter
+2025-05-12 16:02:35,264 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:02:35,264 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:02:35,265 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:02:35,810 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:02:35,832 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:02:35,833 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:02:35,859 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:02:35,859 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:02:35,862 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:03:25,452 - trading_bot - INFO - Current wallet balance: 5.0000 SOL ($854.95)
+2025-05-12 16:03:25,499 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 16:03:25,500 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 16:03:25,501 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:03:25,502 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:03:26,112 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:03:26,900 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 16:03:35,871 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:03:36,267 - trading_bot.token_scanner - INFO - Discovered 7 tokens from Twitter
+2025-05-12 16:03:36,267 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:03:36,267 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:03:36,267 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:03:36,900 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:03:36,937 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:03:36,937 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:03:36,969 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:03:36,969 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:03:37,282 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr: 70.0
+2025-05-12 16:03:38,299 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:04:38,315 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:04:38,713 - trading_bot.token_scanner - INFO - Discovered 9 tokens from Twitter
+2025-05-12 16:04:38,713 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:04:38,713 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:04:38,714 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:04:39,502 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:04:39,530 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:04:39,530 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:04:39,555 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:04:39,556 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:04:39,847 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 2Jw1eW44K7GQYG9F4hgGiNdYpaEd2Li77E4qprpvUtBi: 38.430186
+2025-05-12 16:04:40,849 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:36:35,383 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:36:54,574 - trading_bot.token_scanner - ERROR - Twitter scan failed: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+2025-05-12 16:36:54,574 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:36:55,186 - trading_bot - INFO - Current wallet balance: 5.0000 SOL ($860.10)
+2025-05-12 16:36:55,530 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 16:36:55,531 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 16:36:55,531 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:36:55,533 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:36:55,828 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 16:36:55,830 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 16:36:55,830 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:36:55,832 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:36:55,986 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:36:56,525 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:36:56,614 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:36:56,615 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:36:56,648 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:36:56,649 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:36:56,652 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:36:56,779 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 16:37:56,660 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:37:57,151 - trading_bot.token_scanner - INFO - Discovered 7 tokens from Twitter
+2025-05-12 16:37:57,152 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:37:57,153 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:37:57,154 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:37:57,818 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:37:57,840 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:37:57,841 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:37:57,871 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:37:57,871 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:38:17,291 - trading_bot.token_analyzer - ERROR - Twitter API error: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+2025-05-12 16:38:17,293 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ: 2.404811
+2025-05-12 16:38:18,763 - trading_bot.token_analyzer - INFO - Using Birdeye security score for CwpPGq1eHKnzL4bEJtqRYSwhQPwKzeGcESdtXwPHbonk: 30.731714
+2025-05-12 16:38:19,903 - trading_bot.birdeye_api - WARNING - No DexScreener data for 84HqeAR9gSBLkwFV8QSwZMUXLCypqsrPgBR5C9ATbonk
+2025-05-12 16:38:19,905 - trading_bot.birdeye_api - WARNING - Failed to get token info for 84HqeAR9gSBLkwFV8QSwZMUXLCypqsrPgBR5C9ATbonk
+2025-05-12 16:38:20,079 - trading_bot.token_analyzer - WARNING - No DexScreener data for 84HqeAR9gSBLkwFV8QSwZMUXLCypqsrPgBR5C9ATbonk
+2025-05-12 16:38:21,087 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:39:21,103 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:39:21,538 - trading_bot.token_scanner - INFO - Discovered 4 tokens from Twitter
+2025-05-12 16:39:21,539 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:39:21,539 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:39:21,539 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:39:22,191 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:39:22,217 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:39:22,217 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:39:22,249 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:39:22,250 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:39:23,426 - trading_bot.token_analyzer - INFO - Using Birdeye security score for EcvCuNjTPsTdQS7rupbhtVPircSEnes1NLZg6LWTbonk: 38.510006000000004
+2025-05-12 16:39:24,809 - trading_bot.token_analyzer - INFO - Using Birdeye security score for w131jbryFvFEmtqmZvx42Meiuc4Drmu3nodTdVgkREV: 1.4537950000000002
+2025-05-12 16:39:25,820 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:40:25,827 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:40:26,245 - trading_bot.token_scanner - INFO - Discovered 6 tokens from Twitter
+2025-05-12 16:40:26,246 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:40:26,246 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:40:26,248 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:40:27,007 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:40:27,029 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:40:27,029 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:40:27,056 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:40:27,057 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:40:27,265 - trading_bot.birdeye_api - WARNING - No DexScreener data for 6r1pi6yH6wKphSapgWijBsUg4a5CFitmDPU5i8Wybonk
+2025-05-12 16:40:27,266 - trading_bot.birdeye_api - WARNING - Failed to get token info for 6r1pi6yH6wKphSapgWijBsUg4a5CFitmDPU5i8Wybonk
+2025-05-12 16:40:27,363 - trading_bot.token_analyzer - WARNING - No DexScreener data for 6r1pi6yH6wKphSapgWijBsUg4a5CFitmDPU5i8Wybonk
+2025-05-12 16:40:28,561 - trading_bot.birdeye_api - WARNING - No DexScreener data for J7cqRfkzJaWD8NqFy38wMeJ1nVeYro88jt6sfLMQbonk
+2025-05-12 16:40:28,562 - trading_bot.birdeye_api - WARNING - Failed to get token info for J7cqRfkzJaWD8NqFy38wMeJ1nVeYro88jt6sfLMQbonk
+2025-05-12 16:40:28,608 - trading_bot.token_analyzer - WARNING - No DexScreener data for J7cqRfkzJaWD8NqFy38wMeJ1nVeYro88jt6sfLMQbonk
+2025-05-12 16:40:29,973 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 5urRXK7X9XCRfEQvyH4PXGjhP6pnCVPjin1RmVotbonk: 20.110036
+2025-05-12 16:40:30,989 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:41:30,999 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:41:31,371 - trading_bot.token_scanner - INFO - Discovered 5 tokens from Twitter
+2025-05-12 16:41:31,372 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:41:31,373 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:41:31,374 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:41:31,985 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:41:32,023 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:41:32,024 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:41:32,060 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:41:32,060 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:41:32,064 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:41:56,786 - trading_bot - INFO - Current wallet balance: 5.0000 SOL ($860.10)
+2025-05-12 16:41:56,839 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 16:41:56,841 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 16:41:56,842 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:41:56,844 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:41:57,394 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:41:58,322 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 16:42:32,069 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:42:32,444 - trading_bot.token_scanner - INFO - Discovered 6 tokens from Twitter
+2025-05-12 16:42:32,445 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:42:32,445 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:42:32,446 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:42:33,032 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:42:33,064 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:42:33,064 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:42:33,100 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:42:33,101 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:42:33,863 - trading_bot.token_analyzer - INFO - Using Birdeye security score for GPq9Jj5ir65Kxkp7PajUDpq2EuqvNwS8vmvK9kPiQaiP: 1.733261
+2025-05-12 16:42:34,964 - trading_bot.birdeye_api - WARNING - No DexScreener data for 66ARm4MxZdk5mhwPzdYHcTyNVXUddRPgwiyxEDe4aF9D
+2025-05-12 16:42:34,966 - trading_bot.birdeye_api - WARNING - Failed to get token info for 66ARm4MxZdk5mhwPzdYHcTyNVXUddRPgwiyxEDe4aF9D
+2025-05-12 16:42:35,107 - trading_bot.token_analyzer - WARNING - No DexScreener data for 66ARm4MxZdk5mhwPzdYHcTyNVXUddRPgwiyxEDe4aF9D
+2025-05-12 16:42:36,116 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:43:36,131 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:43:36,671 - trading_bot.token_scanner - INFO - Discovered 8 tokens from Twitter
+2025-05-12 16:43:36,672 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:43:36,672 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:43:36,673 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:43:37,044 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:43:37,065 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:43:37,066 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:43:37,100 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:43:37,101 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:43:37,255 - trading_bot.birdeye_api - WARNING - No DexScreener data for 6RiWpH3HhNWHFTjpMWVvv4mKiNoDTa8k3rYa47bPbonk
+2025-05-12 16:43:37,256 - trading_bot.birdeye_api - WARNING - Failed to get token info for 6RiWpH3HhNWHFTjpMWVvv4mKiNoDTa8k3rYa47bPbonk
+2025-05-12 16:43:37,339 - trading_bot.token_analyzer - WARNING - No DexScreener data for 6RiWpH3HhNWHFTjpMWVvv4mKiNoDTa8k3rYa47bPbonk
+2025-05-12 16:43:38,352 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:44:38,369 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:44:38,793 - trading_bot.token_scanner - INFO - Discovered 8 tokens from Twitter
+2025-05-12 16:44:38,793 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:44:38,794 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:44:38,794 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:44:39,270 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:44:39,295 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:44:39,296 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:44:39,324 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:44:39,324 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:44:39,327 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:45:39,333 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:45:39,736 - trading_bot.token_scanner - INFO - Discovered 5 tokens from Twitter
+2025-05-12 16:45:39,737 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:45:39,737 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:45:39,737 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:45:40,240 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:45:40,261 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:45:40,261 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:45:40,290 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:45:40,291 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:45:40,611 - trading_bot.token_analyzer - INFO - Using Birdeye security score for oWLxDYPQfG6kgSzA6XyWKs8D3W2yVDm6EW6yodJnv1L: 1.4395970000000002
+2025-05-12 16:45:41,622 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:46:41,632 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:46:42,031 - trading_bot.token_scanner - INFO - Discovered 6 tokens from Twitter
+2025-05-12 16:46:42,032 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:46:42,032 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:46:42,033 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:46:42,807 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:46:42,843 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:46:42,844 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:46:42,882 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:46:42,883 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:46:42,888 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:46:58,700 - trading_bot - INFO - Current wallet balance: 5.0000 SOL ($860.60)
+2025-05-12 16:46:58,796 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 16:46:58,797 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 16:46:58,797 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:46:58,798 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:46:59,201 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:46:59,990 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 16:47:42,906 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:47:43,308 - trading_bot.token_scanner - INFO - Discovered 8 tokens from Twitter
+2025-05-12 16:47:43,308 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:47:43,308 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:47:43,309 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:47:44,040 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:47:44,060 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:47:44,060 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:47:44,088 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:47:44,089 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:47:44,160 - trading_bot.birdeye_api - WARNING - No DexScreener data for 6FVHTRE64wNxyMptfbFtZErzvMtSzoM4pQxzKTv7bonk
+2025-05-12 16:47:44,162 - trading_bot.birdeye_api - WARNING - Failed to get token info for 6FVHTRE64wNxyMptfbFtZErzvMtSzoM4pQxzKTv7bonk
+2025-05-12 16:47:44,201 - trading_bot.token_analyzer - WARNING - No DexScreener data for 6FVHTRE64wNxyMptfbFtZErzvMtSzoM4pQxzKTv7bonk
+2025-05-12 16:47:45,205 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:48:45,218 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:48:45,656 - trading_bot.token_scanner - INFO - Discovered 7 tokens from Twitter
+2025-05-12 16:48:45,657 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:48:45,658 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:48:45,660 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:48:46,370 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:48:46,412 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:48:46,412 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:48:46,442 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:48:46,442 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:48:46,445 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:49:46,455 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:49:46,799 - trading_bot.token_scanner - INFO - Discovered 3 tokens from Twitter
+2025-05-12 16:49:46,800 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:49:46,800 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:49:46,800 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:49:47,501 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:49:47,532 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:49:47,532 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:49:47,558 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:49:47,558 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:49:47,560 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:50:47,562 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:50:47,949 - trading_bot.token_scanner - INFO - Discovered 3 tokens from Twitter
+2025-05-12 16:50:47,950 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:50:47,950 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:50:47,950 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:50:48,682 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:50:48,715 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:50:48,715 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:50:48,753 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:50:48,753 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:50:48,895 - trading_bot.birdeye_api - WARNING - No DexScreener data for BFJKYgsNVy1hvaWFnbGos1HbX1Qo7rTsoV39HHE8bonk
+2025-05-12 16:50:48,896 - trading_bot.birdeye_api - WARNING - Failed to get token info for BFJKYgsNVy1hvaWFnbGos1HbX1Qo7rTsoV39HHE8bonk
+2025-05-12 16:50:48,969 - trading_bot.token_analyzer - WARNING - No DexScreener data for BFJKYgsNVy1hvaWFnbGos1HbX1Qo7rTsoV39HHE8bonk
+2025-05-12 16:50:49,976 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:51:49,987 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:51:50,388 - trading_bot.token_scanner - INFO - Discovered 4 tokens from Twitter
+2025-05-12 16:51:50,389 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:51:50,389 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:51:50,390 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:51:50,991 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:51:51,017 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:51:51,018 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:51:51,046 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:51:51,046 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:51:51,049 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:52:00,009 - trading_bot - INFO - Current wallet balance: 5.0000 SOL ($860.60)
+2025-05-12 16:52:00,064 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 16:52:00,065 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 16:52:00,066 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:52:00,066 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:52:00,653 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:52:01,449 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 16:52:51,053 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:52:51,466 - trading_bot.token_scanner - INFO - Discovered 9 tokens from Twitter
+2025-05-12 16:52:51,467 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:52:51,468 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:52:51,469 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:52:52,026 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:52:52,053 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:52:52,054 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:52:52,090 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:52:52,091 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:52:52,523 - trading_bot.token_analyzer - INFO - Using Birdeye security score for GjFwj3zYYAPbR4avYNrJYV4VRnZ6CyoL8Az7rZ8NH3V4: 13.29845
+2025-05-12 16:52:53,541 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:53:53,554 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:53:53,963 - trading_bot.token_scanner - INFO - Discovered 10 tokens from Twitter
+2025-05-12 16:53:53,964 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:53:53,964 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:53:53,964 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:53:54,713 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:53:54,734 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:53:54,734 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:53:54,759 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:53:54,760 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:53:54,763 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:54:54,768 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 16:54:55,245 - trading_bot.token_scanner - INFO - Discovered 9 tokens from Twitter
+2025-05-12 16:54:55,245 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 16:54:55,246 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 16:54:55,246 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 16:54:56,004 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 16:54:56,028 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 16:54:56,029 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 16:54:56,054 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 16:54:56,054 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 16:54:56,056 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 16:55:45,955 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-05-12 16:55:54,727 - trading_bot - INFO - Closing connections
+2025-05-12 16:55:54,728 - trading_bot - INFO - ==================================================
+2025-05-12 16:55:54,729 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-05-12 16:55:54,731 - trading_bot - INFO - ==================================================

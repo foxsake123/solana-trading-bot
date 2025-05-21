@@ -1,0 +1,21 @@
+2025-05-19 15:53:40 - solana_bot - INFO - ============================================================
+2025-05-19 15:53:40 - solana_bot - INFO -           SOLANA TRADING BOT - STARTING          
+2025-05-19 15:53:40 - solana_bot - INFO - ============================================================
+2025-05-19 15:53:40 - solana_bot - INFO - Bot control settings: running=False, simulation_mode=False
+2025-05-19 15:53:40 - core.SoldersAdapter - INFO - Successfully imported Solders packages
+2025-05-19 15:53:40 - solana_bot - INFO - Successfully imported SoldersAdapter from core.SoldersAdapter
+2025-05-19 15:53:41 - solana_bot - INFO - Imported Database from core.database
+2025-05-19 15:53:41 - core.SoldersAdapter - INFO - Wallet initialized with address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-19 15:53:41 - solana_bot - INFO - Wallet initialized: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-19 15:53:41 - solana_bot - INFO - Wallet balance: 1.0000 SOL ($166.03)
+2025-05-19 15:53:41 - core.database - INFO - Database tables initialized
+2025-05-19 15:53:41 - solana_bot - INFO - Database initialized successfully
+2025-05-19 15:53:41 - simplified_async_adapter - INFO - Successfully imported simplified SolanaTrader
+2025-05-19 15:53:41 - solana_bot - INFO - Imported SolanaTrader from AsyncSolanaTrader_adapter
+2025-05-19 15:53:41 - solana_bot - INFO - Starting bot main function
+2025-05-19 15:53:41 - solana_bot - INFO - Bot running setting: False
+2025-05-19 15:53:41 - solana_bot - INFO - Simulation mode: False
+2025-05-19 15:53:41 - simplified_solana_trader - INFO - Initialized simplified SolanaTrader (simulation_mode=False)
+2025-05-19 15:53:41 - simplified_async_adapter - INFO - Initialized simplified AsyncSolanaTrader adapter (simulation_mode=False)
+2025-05-19 15:53:41 - solana_bot - INFO - SolanaTrader initialized successfully
+2025-05-19 15:53:41 - solana_bot - INFO - Bot is not running. Set 'running': true in bot_control.json to start trading.

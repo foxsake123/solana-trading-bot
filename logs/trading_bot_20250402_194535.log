@@ -1,0 +1,25 @@
+2025-04-02 15:45:35,993 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 15:45:35,994 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-04-02 15:45:35,999 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-04-02 15:45:36,001 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-04-02 15:45:36,002 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 15:45:36,007 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-04-02 15:45:36,009 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 15:45:36,010 - trading_bot - INFO - ==================================================
+2025-04-02 15:45:36,010 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-04-02 15:45:36,010 - trading_bot - INFO - ==================================================
+2025-04-02 15:45:36,296 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 15:45:36,568 - trading_bot - INFO - Initial Wallet Balance: 0.0000 SOL ($0.00)
+2025-04-02 15:45:36,568 - trading_bot - CRITICAL - Bot execution failed: 'TokenScanner' object has no attribute 'start_scanning'
+2025-04-02 15:45:36,570 - trading_bot - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\main.py", line 153, in run
+    asyncio.create_task(self.scanner.start_scanning()),
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TokenScanner' object has no attribute 'start_scanning'
+
+2025-04-02 15:45:36,570 - trading_bot - INFO - Closing connections
+2025-04-02 15:45:36,570 - trading_bot.solana_trader - INFO - Solana RPC client closed
+2025-04-02 15:45:36,570 - trading_bot - INFO - ==================================================
+2025-04-02 15:45:36,570 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-04-02 15:45:36,570 - trading_bot - INFO - ==================================================
+2025-04-02 15:45:36,572 - trading_bot - INFO - Bot execution completed

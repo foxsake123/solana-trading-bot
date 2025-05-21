@@ -1,0 +1,13 @@
+2025-05-12 19:32:25,311 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:32:25,313 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:32:25,316 - trading_bot - INFO - ==================================================
+2025-05-12 19:32:25,318 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-05-12 19:32:25,319 - trading_bot - INFO - ==================================================
+2025-05-12 19:32:25,321 - trading_bot - CRITICAL - Bot execution failed: 'SolanaTrader' object has no attribute 'get_wallet_balance'
+2025-05-12 19:32:25,323 - trading_bot - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\trading_bot.py", line 160, in run
+    balance_sol, balance_usd = await self.trader.get_wallet_balance()
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SolanaTrader' object has no attribute 'get_wallet_balance'
+
+2025-05-12 19:32:25,325 - trading_bot - INFO - Closing connections

@@ -1,0 +1,526 @@
+2025-05-12 15:36:44,970 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:36:44,971 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:36:44,980 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:36:44,981 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:36:44,987 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:36:44,989 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:36:44,992 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:36:45,492 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:36:45,493 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:36:45,921 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:36:45,922 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:37:06,706 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:06,707 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:06,718 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:06,719 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:06,722 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:06,724 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:06,724 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:07,333 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:07,333 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:07,436 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:07,437 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:07,447 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:07,449 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:07,457 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:07,462 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:07,464 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:07,608 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:07,609 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:07,625 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:07,627 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:07,631 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:07,636 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:07,636 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:07,682 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:37:07,684 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:37:07,809 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:07,810 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:07,828 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:07,829 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:07,835 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:07,837 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:07,838 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:07,947 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:07,955 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:07,968 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:07,969 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:07,973 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:07,976 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:07,976 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:08,328 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:08,328 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:08,425 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:08,425 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:08,641 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:08,645 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:08,675 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:37:08,676 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:37:08,770 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:08,772 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:08,838 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:37:08,839 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:37:08,905 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:09,278 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:37:09,279 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:37:10,933 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:13,047 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:13,047 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:13,062 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:13,063 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:13,068 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:13,071 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:13,071 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:13,287 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:13,288 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:13,307 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:13,308 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:13,313 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:13,315 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:13,316 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:13,471 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:13,473 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:13,484 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:13,486 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:13,492 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:13,495 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:13,497 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:13,655 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:13,656 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:13,676 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:13,678 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:13,685 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:13,687 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:13,687 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:13,844 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:13,846 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:13,847 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:13,848 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:13,862 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:13,864 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:13,869 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:13,871 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:13,871 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:13,902 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:14,000 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:14,001 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:14,019 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:14,021 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:14,225 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:14,227 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:14,236 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:14,279 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:14,280 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:14,292 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:14,324 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:14,326 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:14,344 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:14,349 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:14,355 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:14,356 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:14,357 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:14,373 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:14,373 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:14,374 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:14,375 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:14,381 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:14,383 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:14,384 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:14,494 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:14,496 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:14,531 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:14,811 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:14,812 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:14,842 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:14,843 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:14,849 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:14,904 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:14,968 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:15,186 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:15,187 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:15,190 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:15,192 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:15,193 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:15,194 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:15,249 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:15,265 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:15,472 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:37:15,473 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:37:15,931 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:16,314 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:16,548 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:16,874 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:16,940 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:17,290 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:17,311 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:17,926 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:17,927 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:17,948 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:17,949 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:17,958 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:17,960 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:17,961 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:18,528 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:18,530 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:18,544 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:18,545 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:18,553 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:18,556 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:18,557 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:18,792 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:18,794 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:18,872 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:19,324 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:19,325 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:19,357 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:19,884 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:19,885 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:19,897 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:19,898 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:19,905 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:19,907 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:19,908 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:19,971 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:20,066 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:20,067 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:20,081 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:20,083 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:20,092 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:20,097 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:20,098 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:20,352 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:20,487 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:20,489 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:20,506 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:20,507 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:20,513 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:20,515 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:20,516 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:20,567 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:20,670 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:20,671 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:20,721 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:20,864 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:20,865 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:20,890 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:20,896 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:20,902 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:20,977 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:21,194 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:21,195 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:21,255 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:21,258 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:21,260 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:21,275 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:21,277 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:21,282 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:21,284 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:21,285 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:21,317 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:21,332 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:21,377 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:21,409 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:21,411 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:37:21,424 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:21,424 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:37:21,430 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:37:21,432 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:37:21,433 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:37:21,977 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:21,978 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:22,012 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:22,133 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:37:22,134 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:37:22,174 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:22,747 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:22,921 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:22,998 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:23,283 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:24,027 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:24,204 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:24,938 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:25,404 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:26,776 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:26,944 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:27,310 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:28,002 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:28,054 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:28,226 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:28,598 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:28,610 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:28,916 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:29,001 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:29,351 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:29,595 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:32,961 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:33,423 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:34,794 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:34,963 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:35,350 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:36,079 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:36,257 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:39,260 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:37:39,261 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:37:44,046 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:44,657 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:44,723 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:44,977 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:45,036 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:45,419 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:45,653 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:46,750 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:49,045 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:49,459 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:50,782 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:50,844 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:51,010 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:51,402 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:52,157 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:52,319 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:37:58,821 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:38:15,119 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:38:15,121 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:38:16,061 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:38:16,075 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:16,669 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:38:16,673 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:16,980 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:38:16,983 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:17,042 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:38:17,044 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:17,432 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:38:17,436 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:17,666 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:38:17,671 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:17,808 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:18,737 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:18,768 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:19,380 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:19,459 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:19,679 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:21,050 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:38:21,058 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:21,175 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:21,473 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:38:21,475 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:22,142 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:22,626 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:22,854 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:38:22,856 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:23,012 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:38:23,016 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:23,107 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:23,262 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:23,416 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:38:23,420 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:23,527 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:23,885 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:23,996 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:24,167 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:38:24,170 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:24,324 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:38:24,326 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:24,800 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:25,294 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:25,396 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:26,225 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:26,380 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:27,287 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:28,154 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:28,902 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:29,417 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:29,759 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:29,821 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:30,240 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:30,240 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:30,709 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:31,174 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:31,267 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:32,268 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:33,266 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:34,310 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:35,749 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:35,836 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:36,271 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:36,922 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:37,748 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:38,562 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:39,604 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:38:39,605 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:38:39,616 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:38:39,617 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:38:39,622 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:38:39,624 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:38:39,624 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:38:40,102 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:38:40,104 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:38:40,383 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:38:40,384 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:38:45,724 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:45,724 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:38:45,933 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:38:45,934 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:38:46,766 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:46,766 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:38:47,122 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:38:47,123 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:38:48,159 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:48,159 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:38:48,190 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:48,190 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:38:48,315 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:38:48,315 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:38:48,392 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:48,393 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:38:48,423 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:38:48,423 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:38:48,642 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:48,642 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:38:48,688 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:38:48,689 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:38:48,893 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:38:48,893 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:38:50,590 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:50,590 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:38:50,770 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:38:50,770 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:38:51,879 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:51,880 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:38:52,125 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:38:52,126 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:38:53,375 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:53,375 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:38:53,508 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:38:53,775 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:53,776 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:38:53,872 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:38:55,418 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:55,418 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:38:55,535 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:38:55,548 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:38:55,549 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:38:55,897 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:38:56,014 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:56,015 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:38:56,099 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:38:57,664 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:38:57,665 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:38:57,771 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:38:58,127 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:38:59,566 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:38:59,799 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:38:59,921 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:02,155 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:03,873 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:07,592 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:07,949 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:10,181 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:11,584 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:39:11,584 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:39:11,596 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:39:11,600 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:39:11,604 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:39:11,606 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:39:11,607 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:39:11,911 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:12,127 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:39:12,127 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:39:12,156 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:14,177 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:18,210 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:21,967 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:39:21,968 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:39:21,981 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:39:21,982 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:39:21,986 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:39:21,988 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:39:21,989 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:39:22,441 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:39:22,442 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:39:22,490 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:23,633 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:23,983 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:24,512 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:26,224 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:26,224 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:27,951 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:28,535 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:36,562 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:42,299 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:52,627 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:39:55,648 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:39:55,659 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:39:55,993 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:39:55,996 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:39:57,728 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:39:57,981 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:39:58,228 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:39:58,230 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:39:59,956 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:39:59,959 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:00,207 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:00,960 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:01,342 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:02,103 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:03,480 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:06,014 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:08,530 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:10,099 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:12,152 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:13,447 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:14,301 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:40:14,304 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:16,152 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:18,750 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:40:18,751 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:40:18,760 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:40:18,761 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:40:18,769 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:40:18,772 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:40:18,772 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:40:19,212 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:40:19,213 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:40:19,463 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:40:19,463 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:40:20,197 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:23,245 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:23,246 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:40:23,394 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:40:23,396 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:40:24,640 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:40:24,654 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:26,308 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:26,310 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:40:26,557 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:40:26,558 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:40:26,964 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:27,586 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:27,588 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:40:27,736 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:40:27,738 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:40:28,182 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:30,266 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:31,278 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:31,279 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:40:31,480 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:40:31,482 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:40:38,423 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:43,496 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:43,497 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:40:43,754 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:40:43,755 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:40:50,754 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:40:50,756 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:40:50,777 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:40:50,780 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:40:50,792 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:40:50,805 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:40:50,807 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:40:51,306 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:40:51,307 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:40:51,487 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:40:51,489 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 15:40:51,648 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:40:51,649 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:40:51,893 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:40:51,894 - trading_bot.birdeye_api - INFO - Found 2 trending tokens

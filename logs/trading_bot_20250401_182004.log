@@ -1,0 +1,71 @@
+2025-04-01 18:20:04,931 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 18:20:04,932 - trading_bot.solana_trader - INFO - Wallet initialized: DpWxPejkHk4Hq1Gz15N2cjBYwgnAR2EuTfe8XcmGoP9k
+2025-04-01 18:20:04,938 - trading_bot.solana_trader - ERROR - Error loading control settings: name 'json' is not defined
+2025-04-01 18:20:04,938 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-04-01 18:20:04,941 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-04-01 18:20:04,942 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 18:20:04,957 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-04-01 18:20:04,958 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 18:20:04,960 - trading_bot - INFO - ==================================================
+2025-04-01 18:20:04,960 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-04-01 18:20:04,960 - trading_bot - INFO - ==================================================
+2025-04-01 18:20:05,248 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 18:20:05,250 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 18:20:05,289 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 18:20:05,328 - trading_bot - INFO - Initial Wallet Balance: 3.0000 SOL ($379.44)
+2025-04-01 18:20:05,329 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-04-01 18:20:05,329 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-01 18:20:05,660 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-01 18:20:05,661 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-01 18:20:05,661 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-04-01 18:20:05,664 - trading_bot - INFO - Starting token discovery and trading process
+2025-04-01 18:20:05,690 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 18:20:05,758 - trading_bot - INFO - Current wallet balance: 3.0000 SOL ($379.44)
+2025-04-01 18:20:05,771 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-01 18:20:05,771 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-01 18:20:05,800 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 18:20:05,851 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 18:20:05,878 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 18:20:05,901 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 18:20:05,936 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 18:20:05,937 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-01 18:20:05,937 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'TokenAnalyzer' object has no attribute 'get_trending_tokens'
+2025-04-01 18:20:05,938 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-01 18:20:05,940 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-01 18:20:05,943 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 18:20:05,943 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-01 18:20:05,944 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'TokenAnalyzer' object has no attribute 'get_trending_tokens'
+2025-04-01 18:20:05,944 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-01 18:20:05,946 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-01 18:20:05,946 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-01 18:25:05,953 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-01 18:25:06,275 - trading_bot.token_scanner - INFO - Discovered 2 tokens from Twitter
+2025-04-01 18:25:06,275 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-01 18:25:06,547 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 18:25:06,547 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 18:25:06,575 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 18:25:06,587 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-01 18:25:06,588 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-01 18:25:06,615 - trading_bot - INFO - Current wallet balance: 3.0000 SOL ($379.32)
+2025-04-01 18:25:06,647 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 18:25:06,665 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 18:25:06,707 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 18:25:06,724 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 18:25:06,763 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 18:25:06,764 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-01 18:25:06,764 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'TokenAnalyzer' object has no attribute 'get_trending_tokens'
+2025-04-01 18:25:06,764 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-01 18:25:06,767 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-01 18:25:06,767 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-01 18:25:06,768 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 18:25:06,769 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-01 18:25:06,769 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'TokenAnalyzer' object has no attribute 'get_trending_tokens'
+2025-04-01 18:25:06,769 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-01 18:25:06,770 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-01 18:27:07,584 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-04-01 18:28:05,397 - trading_bot - INFO - Closing connections
+2025-04-01 18:28:05,398 - trading_bot.solana_trader - INFO - Solana RPC client closed
+2025-04-01 18:28:05,399 - trading_bot - INFO - ==================================================
+2025-04-01 18:28:05,399 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-04-01 18:28:05,399 - trading_bot - INFO - ==================================================
+2025-04-01 18:28:05,402 - trading_bot - INFO - Bot execution completed

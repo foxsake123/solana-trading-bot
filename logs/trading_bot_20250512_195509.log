@@ -1,0 +1,162 @@
+2025-05-12 19:55:10,142 - database - INFO - Database tables initialized
+2025-05-12 19:55:10,143 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:55:10,144 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:55:10,222 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:55:10,223 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:55:10,261 - database - INFO - Database tables initialized
+2025-05-12 19:55:10,271 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:55:10,273 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:55:10,274 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 19:55:41,999 - database - INFO - Database tables initialized
+2025-05-12 19:55:42,003 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:55:42,004 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:55:42,112 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:55:42,116 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:55:42,156 - database - INFO - Database tables initialized
+2025-05-12 19:55:42,187 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:55:42,188 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:55:42,190 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 19:56:13,172 - database - INFO - Database tables initialized
+2025-05-12 19:56:13,173 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:13,175 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:56:13,288 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:56:13,290 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:56:13,322 - database - INFO - Database tables initialized
+2025-05-12 19:56:13,340 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:13,340 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:56:13,341 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 19:56:13,777 - database - INFO - Database tables initialized
+2025-05-12 19:56:13,777 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:13,778 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:56:13,928 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:56:13,930 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:56:13,956 - database - INFO - Database tables initialized
+2025-05-12 19:56:13,972 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:13,973 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:56:13,974 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 19:56:14,251 - database - INFO - Database tables initialized
+2025-05-12 19:56:14,252 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:14,252 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:56:14,351 - database - INFO - Database tables initialized
+2025-05-12 19:56:14,352 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:14,352 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:56:14,370 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:56:14,372 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:56:14,400 - database - INFO - Database tables initialized
+2025-05-12 19:56:14,415 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:14,416 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:56:14,417 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 19:56:14,585 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:56:14,586 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:56:14,617 - database - INFO - Database tables initialized
+2025-05-12 19:56:14,617 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:14,618 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:56:14,619 - database - INFO - Database tables initialized
+2025-05-12 19:56:14,648 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:14,649 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:56:14,649 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 19:56:14,938 - database - INFO - Database tables initialized
+2025-05-12 19:56:14,939 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:14,939 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:56:14,986 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:56:14,988 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:56:15,019 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:56:15,019 - database - INFO - Database tables initialized
+2025-05-12 19:56:15,020 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:56:15,048 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:15,053 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:56:15,054 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 19:56:15,054 - database - INFO - Database tables initialized
+2025-05-12 19:56:15,068 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:15,069 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:56:15,190 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 19:56:16,301 - database - INFO - Database tables initialized
+2025-05-12 19:56:16,302 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:16,303 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:56:16,531 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:56:16,532 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:56:16,551 - database - INFO - Database tables initialized
+2025-05-12 19:56:16,570 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:16,571 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:56:16,571 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 19:56:17,614 - database - INFO - Database tables initialized
+2025-05-12 19:56:17,614 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:17,615 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:56:17,693 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:56:17,695 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:56:17,733 - database - INFO - Database tables initialized
+2025-05-12 19:56:17,745 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:17,869 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:56:17,870 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 19:56:20,272 - database - INFO - Database tables initialized
+2025-05-12 19:56:20,274 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:20,275 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:56:20,424 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:56:20,426 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:56:20,469 - database - INFO - Database tables initialized
+2025-05-12 19:56:20,486 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:20,487 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:56:20,488 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 19:56:23,300 - database - INFO - Database tables initialized
+2025-05-12 19:56:23,301 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:23,302 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:56:23,409 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:56:23,411 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:56:23,461 - database - INFO - Database tables initialized
+2025-05-12 19:56:23,480 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:23,481 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:56:23,482 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 19:56:26,614 - database - INFO - Database tables initialized
+2025-05-12 19:56:26,615 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:26,615 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:56:26,711 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:56:26,712 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:56:26,734 - database - INFO - Database tables initialized
+2025-05-12 19:56:26,748 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:26,749 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:56:26,750 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 19:56:28,129 - database - INFO - Database tables initialized
+2025-05-12 19:56:28,130 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:28,131 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:56:28,220 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:56:28,222 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:56:28,251 - database - INFO - Database tables initialized
+2025-05-12 19:56:28,262 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:28,263 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:56:28,264 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 19:56:34,629 - database - INFO - Database tables initialized
+2025-05-12 19:56:34,630 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:34,630 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:56:34,700 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:56:34,702 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:56:34,739 - database - INFO - Database tables initialized
+2025-05-12 19:56:34,750 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:34,751 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:56:34,752 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 19:56:36,393 - database - INFO - Database tables initialized
+2025-05-12 19:56:36,393 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:36,394 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:56:36,520 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:56:36,522 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:56:36,552 - database - INFO - Database tables initialized
+2025-05-12 19:56:36,566 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:36,567 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:56:36,568 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 19:56:40,580 - database - INFO - Database tables initialized
+2025-05-12 19:56:40,580 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:40,580 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:56:40,664 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:56:40,666 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:56:40,707 - database - INFO - Database tables initialized
+2025-05-12 19:56:40,722 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:40,838 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:56:40,839 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 19:56:48,397 - database - INFO - Database tables initialized
+2025-05-12 19:56:48,398 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:48,398 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 19:56:48,557 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:56:48,559 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 19:56:48,578 - database - INFO - Database tables initialized
+2025-05-12 19:56:48,593 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:56:48,594 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:56:48,594 - solana_trader - INFO - Closing SolanaTrader connections

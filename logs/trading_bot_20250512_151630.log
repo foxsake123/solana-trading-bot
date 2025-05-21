@@ -1,0 +1,124 @@
+2025-05-12 15:16:31,311 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:16:31,313 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:16:31,332 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:16:31,334 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:16:31,345 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:16:31,347 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:16:32,048 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:16:32,049 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:16:32,161 - trading_bot.database - ERROR - Error getting tokens: Execution failed on sql '
+            SELECT * FROM tokens 
+            WHERE safety_score >= 0
+              AND volume_24h >= 0
+              AND liquidity_usd >= 0
+            ORDER BY last_updated DESC
+            LIMIT 30
+            ': no such column: liquidity_usd
+2025-05-12 15:16:54,093 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:16:54,094 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:16:54,107 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:16:54,109 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:16:54,113 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:16:54,116 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:16:54,416 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:16:54,417 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:16:54,430 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:16:54,431 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:16:54,436 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:16:54,438 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:16:54,549 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:16:54,550 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:16:54,622 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:16:54,850 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:16:54,851 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:16:55,021 - trading_bot.database - ERROR - Error getting tokens: Execution failed on sql '
+            SELECT * FROM tokens 
+            WHERE safety_score >= 0
+              AND volume_24h >= 0
+              AND liquidity_usd >= 0
+            ORDER BY last_updated DESC
+            LIMIT 30
+            ': no such column: liquidity_usd
+2025-05-12 15:16:56,644 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:16:56,688 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:16:56,690 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:16:56,704 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:16:56,705 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:16:56,712 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:16:56,716 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:16:57,333 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:16:57,333 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:16:57,367 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:16:57,992 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:16:57,995 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:16:58,015 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:16:58,016 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:16:58,019 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:16:58,021 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:16:58,604 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:16:58,605 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:16:58,709 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:16:59,388 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:17:00,676 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:17:00,731 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:17:03,422 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:17:04,751 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:17:08,708 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:17:11,449 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:17:12,786 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:17:24,808 - trading_bot.database - ERROR - Error getting tokens: Execution failed on sql '
+            SELECT * FROM tokens 
+            WHERE safety_score >= 0
+              AND volume_24h >= 0
+              AND liquidity_usd >= 0
+            ORDER BY last_updated DESC
+            LIMIT 30
+            ': no such column: liquidity_usd
+2025-05-12 15:17:27,493 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:17:28,829 - trading_bot.utils - WARNING - Rate limited by https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd, waiting for retry
+2025-05-12 15:17:59,501 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:17:59,539 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:18:00,834 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 5 attempts
+2025-05-12 15:18:00,836 - trading_bot.utils - WARNING - Fetch attempt 1/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:18:01,610 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:18:03,150 - trading_bot.utils - WARNING - Fetch attempt 2/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:18:05,738 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:18:07,335 - trading_bot.utils - WARNING - Fetch attempt 3/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:18:13,587 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:18:16,175 - trading_bot.utils - WARNING - Fetch attempt 4/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:18:30,469 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:18:30,470 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:18:30,591 - trading_bot.database - ERROR - Error getting tokens: Execution failed on sql '
+            SELECT * FROM tokens 
+            WHERE safety_score >= 0
+              AND volume_24h >= 0
+              AND liquidity_usd >= 0
+            ORDER BY last_updated DESC
+            LIMIT 30
+            ': no such column: liquidity_usd
+2025-05-12 15:18:34,966 - trading_bot.utils - WARNING - Fetch attempt 5/5 failed for https://price.jup.ag/v4/price?ids=SOL: Cannot connect to host price.jup.ag:443 ssl:default [getaddrinfo failed]
+2025-05-12 15:18:34,968 - trading_bot.utils - ERROR - Failed to fetch https://price.jup.ag/v4/price?ids=SOL after 5 attempts
+2025-05-12 15:18:35,016 - trading_bot.database - ERROR - Error getting tokens: Execution failed on sql '
+            SELECT * FROM tokens 
+            WHERE safety_score >= 0
+              AND volume_24h >= 0
+              AND liquidity_usd >= 0
+            ORDER BY last_updated DESC
+            LIMIT 30
+            ': no such column: liquidity_usd
+2025-05-12 15:19:06,127 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:19:06,128 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:19:06,138 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:19:06,139 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:19:06,141 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:19:06,142 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:19:06,805 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-12 15:19:06,806 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-12 15:19:06,984 - trading_bot.database - ERROR - Error getting tokens: Execution failed on sql '
+            SELECT * FROM tokens 
+            WHERE safety_score >= 0
+              AND volume_24h >= 0
+              AND liquidity_usd >= 0
+            ORDER BY last_updated DESC
+            LIMIT 30
+            ': no such column: liquidity_usd

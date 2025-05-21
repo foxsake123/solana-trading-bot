@@ -1,0 +1,122 @@
+2025-05-12 14:10:32,482 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 14:10:32,482 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 14:10:32,489 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 14:10:32,490 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 14:10:32,494 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 14:10:32,495 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 14:10:32,500 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 14:10:32,500 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 14:10:32,501 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 14:10:32,503 - trading_bot - INFO - ==================================================
+2025-05-12 14:10:32,503 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-05-12 14:10:32,503 - trading_bot - INFO - ==================================================
+2025-05-12 14:10:32,630 - trading_bot - INFO - Initial Wallet Balance: 5.0000 SOL ($858.00)
+2025-05-12 14:10:32,632 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-05-12 14:10:32,633 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 14:10:33,248 - trading_bot.token_scanner - INFO - Discovered 5 tokens from Twitter
+2025-05-12 14:10:33,251 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 14:10:33,253 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-05-12 14:10:33,259 - trading_bot - INFO - Starting token discovery and trading process
+2025-05-12 14:10:33,326 - trading_bot - INFO - Current wallet balance: 5.0000 SOL ($858.00)
+2025-05-12 14:10:33,400 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-12 14:10:33,402 - trading_bot.birdeye_api - WARNING - No tokens found for top gainers (24h)
+2025-05-12 14:10:33,508 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-12 14:10:33,511 - trading_bot.birdeye_api - WARNING - No tokens found for top gainers (24h)
+2025-05-12 14:10:33,572 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-05-12 14:10:33,575 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-05-12 14:10:33,592 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-05-12 14:10:33,592 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-05-12 14:10:33,610 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-12 14:10:33,611 - trading_bot.birdeye_api - WARNING - No tokens found for trending tokens
+2025-05-12 14:10:33,674 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-12 14:10:33,674 - trading_bot.birdeye_api - WARNING - No tokens found for trending tokens
+2025-05-12 14:10:33,702 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-05-12 14:10:33,703 - trading_bot.token_scanner - INFO - No trending tokens found
+2025-05-12 14:10:33,703 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 14:10:33,729 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-05-12 14:10:33,729 - trading_bot.token_scanner - INFO - No trending tokens found
+2025-05-12 14:10:33,729 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 14:10:33,834 - trading_bot.birdeye_api - WARNING - No DexScreener data for CmGYVa75gdNo1insSTwo5LUMQckg6oVwsr23BNYpaXx2
+2025-05-12 14:10:33,836 - trading_bot.birdeye_api - WARNING - Failed to get token info for CmGYVa75gdNo1insSTwo5LUMQckg6oVwsr23BNYpaXx2
+2025-05-12 14:10:33,840 - trading_bot.birdeye_api - WARNING - No DexScreener data for CmGYVa75gdNo1insSTwo5LUMQckg6oVwsr23BNYpaXx2
+2025-05-12 14:10:33,841 - trading_bot.birdeye_api - WARNING - Failed to get token info for CmGYVa75gdNo1insSTwo5LUMQckg6oVwsr23BNYpaXx2
+2025-05-12 14:10:33,895 - trading_bot.token_analyzer - WARNING - No DexScreener data for CmGYVa75gdNo1insSTwo5LUMQckg6oVwsr23BNYpaXx2
+2025-05-12 14:10:33,919 - trading_bot.token_analyzer - WARNING - No DexScreener data for CmGYVa75gdNo1insSTwo5LUMQckg6oVwsr23BNYpaXx2
+2025-05-12 14:10:35,033 - trading_bot.birdeye_api - WARNING - No DexScreener data for A3y6nS44rjskBUuTFteGsoUpj2VCSJWTm2N6zLn7NUAw
+2025-05-12 14:10:35,034 - trading_bot.birdeye_api - WARNING - Failed to get token info for A3y6nS44rjskBUuTFteGsoUpj2VCSJWTm2N6zLn7NUAw
+2025-05-12 14:10:35,056 - trading_bot.birdeye_api - WARNING - No DexScreener data for A3y6nS44rjskBUuTFteGsoUpj2VCSJWTm2N6zLn7NUAw
+2025-05-12 14:10:35,057 - trading_bot.birdeye_api - WARNING - Failed to get token info for A3y6nS44rjskBUuTFteGsoUpj2VCSJWTm2N6zLn7NUAw
+2025-05-12 14:10:35,132 - trading_bot.token_analyzer - WARNING - No DexScreener data for A3y6nS44rjskBUuTFteGsoUpj2VCSJWTm2N6zLn7NUAw
+2025-05-12 14:10:35,148 - trading_bot.token_analyzer - WARNING - No DexScreener data for A3y6nS44rjskBUuTFteGsoUpj2VCSJWTm2N6zLn7NUAw
+2025-05-12 14:10:36,301 - trading_bot.birdeye_api - WARNING - No DexScreener data for 5SdR5ZAXixSnp9ZbTxBYZFS4EPaTMSEhi9fz1Foboop
+2025-05-12 14:10:36,306 - trading_bot.birdeye_api - WARNING - Failed to get token info for 5SdR5ZAXixSnp9ZbTxBYZFS4EPaTMSEhi9fz1Foboop
+2025-05-12 14:10:36,309 - trading_bot.birdeye_api - WARNING - No DexScreener data for 5SdR5ZAXixSnp9ZbTxBYZFS4EPaTMSEhi9fz1Foboop
+2025-05-12 14:10:36,311 - trading_bot.birdeye_api - WARNING - Failed to get token info for 5SdR5ZAXixSnp9ZbTxBYZFS4EPaTMSEhi9fz1Foboop
+2025-05-12 14:10:36,354 - trading_bot.token_analyzer - WARNING - No DexScreener data for 5SdR5ZAXixSnp9ZbTxBYZFS4EPaTMSEhi9fz1Foboop
+2025-05-12 14:10:36,377 - trading_bot.token_analyzer - WARNING - No DexScreener data for 5SdR5ZAXixSnp9ZbTxBYZFS4EPaTMSEhi9fz1Foboop
+2025-05-12 14:10:37,783 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 87NX88QLu8qA2qUS56aT3u56AzsBDSdMyV2uhSowbonk: 33.402106
+2025-05-12 14:10:38,174 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 87NX88QLu8qA2qUS56aT3u56AzsBDSdMyV2uhSowbonk: 33.402106
+2025-05-12 14:10:39,208 - trading_bot.token_analyzer - INFO - Using Birdeye security score for GTEudFoEJWDkjddY7EpaErX3hFQ5g3ybjLHndmaebonk: 33.326233
+2025-05-12 14:10:39,569 - trading_bot.token_analyzer - INFO - Using Birdeye security score for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ: 3.756105
+2025-05-12 14:10:40,334 - trading_bot.birdeye_api - WARNING - No DexScreener data for HqWhpQvUZGbQ6qPCrY9gtMLsEG5qiYQzEbbJyUY5bonk
+2025-05-12 14:10:40,337 - trading_bot.birdeye_api - WARNING - Failed to get token info for HqWhpQvUZGbQ6qPCrY9gtMLsEG5qiYQzEbbJyUY5bonk
+2025-05-12 14:10:40,440 - trading_bot.token_analyzer - WARNING - No DexScreener data for HqWhpQvUZGbQ6qPCrY9gtMLsEG5qiYQzEbbJyUY5bonk
+2025-05-12 14:10:40,936 - trading_bot.token_analyzer - INFO - Using Birdeye security score for boopkpWqe68MSxLqBGogs8ZbUDN4GXaLhFwNP7mpP1i: 70.0
+2025-05-12 14:10:41,445 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 14:11:41,463 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 14:11:42,157 - trading_bot.token_scanner - INFO - Discovered 6 tokens from Twitter
+2025-05-12 14:11:42,158 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 14:11:42,302 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-12 14:11:42,304 - trading_bot.birdeye_api - WARNING - No tokens found for top gainers (24h)
+2025-05-12 14:11:42,360 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-05-12 14:11:42,361 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-05-12 14:11:42,426 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-12 14:11:42,427 - trading_bot.birdeye_api - WARNING - No tokens found for trending tokens
+2025-05-12 14:11:42,459 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-05-12 14:11:42,461 - trading_bot.token_scanner - INFO - No trending tokens found
+2025-05-12 14:11:42,461 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 14:11:42,466 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 14:12:42,470 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 14:12:42,906 - trading_bot.token_scanner - INFO - Discovered 6 tokens from Twitter
+2025-05-12 14:12:42,908 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 14:12:43,142 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-12 14:12:43,143 - trading_bot.birdeye_api - WARNING - No tokens found for top gainers (24h)
+2025-05-12 14:12:43,260 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-05-12 14:12:43,262 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-05-12 14:12:43,468 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-12 14:12:43,469 - trading_bot.birdeye_api - WARNING - No tokens found for trending tokens
+2025-05-12 14:12:43,585 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-05-12 14:12:43,593 - trading_bot.token_scanner - INFO - No trending tokens found
+2025-05-12 14:12:43,595 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 14:12:43,605 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 14:13:43,622 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 14:13:43,992 - trading_bot.token_scanner - INFO - Discovered 6 tokens from Twitter
+2025-05-12 14:13:43,993 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 14:13:44,078 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-12 14:13:44,079 - trading_bot.birdeye_api - WARNING - No tokens found for top gainers (24h)
+2025-05-12 14:13:44,139 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-05-12 14:13:44,140 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-05-12 14:13:44,210 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-12 14:13:44,212 - trading_bot.birdeye_api - WARNING - No tokens found for trending tokens
+2025-05-12 14:13:44,275 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-05-12 14:13:44,277 - trading_bot.token_scanner - INFO - No trending tokens found
+2025-05-12 14:13:44,278 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 14:13:44,284 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 14:14:44,294 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 14:14:44,745 - trading_bot.token_scanner - INFO - Discovered 6 tokens from Twitter
+2025-05-12 14:14:44,751 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 14:14:44,962 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-12 14:14:44,963 - trading_bot.birdeye_api - WARNING - No tokens found for top gainers (24h)
+2025-05-12 14:14:45,052 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-05-12 14:14:45,053 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-05-12 14:14:45,137 - trading_bot.birdeye_api - WARNING - No tokens data from DexScreener
+2025-05-12 14:14:45,138 - trading_bot.birdeye_api - WARNING - No tokens found for trending tokens
+2025-05-12 14:14:45,180 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-05-12 14:14:45,182 - trading_bot.token_scanner - INFO - No trending tokens found
+2025-05-12 14:14:45,183 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 14:14:45,193 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 14:14:53,709 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-05-12 14:15:32,662 - trading_bot - INFO - Closing connections
+2025-05-12 14:15:32,664 - trading_bot - INFO - ==================================================
+2025-05-12 14:15:32,664 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-05-12 14:15:32,665 - trading_bot - INFO - ==================================================

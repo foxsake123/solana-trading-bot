@@ -1,0 +1,15 @@
+2025-05-06 12:04:51,945 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:04:51,946 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 12:04:51,954 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 12:04:51,957 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 12:04:51,960 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 12:04:52,479 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 12:04:52,482 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 12:04:52,565 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 12:04:52,730 - trading_bot - ERROR - Error fetching dashboard data: 'Database' object has no attribute 'get_trading_history'
+2025-05-06 12:04:52,731 - trading_bot - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\dashboard.py", line 88, in fetch_dashboard_data
+    trades_df = db.get_trading_history(limit=50)
+                ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Database' object has no attribute 'get_trading_history'
+

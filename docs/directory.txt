@@ -1,0 +1,199 @@
+
+PS C:\Users\shorg> cd C:\Users\shorg\sol-bot_claude
+PS C:\Users\shorg\sol-bot_claude> dir
+
+
+    Directory: C:\Users\shorg\sol-bot_claude
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         5/13/2025  11:02 AM                backups
+d-----         5/19/2025   2:34 PM                backup_20250519_143415
+d-----         5/20/2025   5:02 PM                core
+d-----         5/19/2025   3:29 PM                dashboard
+d-----         5/20/2025   5:05 PM                data
+d-----         5/13/2025  11:02 AM                docs
+d-----         5/13/2025  11:02 AM                full_backup_20250513_110235
+d-----         5/19/2025   4:01 PM                logs
+d-----         5/13/2025   1:29 PM                new_venv
+d-----         5/13/2025  11:02 AM                old_files
+d-----         5/13/2025  11:02 AM                patches
+d-----         5/13/2025  11:02 AM                temp
+d-----         5/19/2025   3:29 PM                tests
+d-----         5/19/2025   3:29 PM                utils
+d-----          4/1/2025  12:29 PM                venv
+d-----         5/13/2025  12:41 PM                __pycache__
+-a----         5/12/2025  11:14 PM            861 .env
+-a----          4/2/2025   1:01 AM             14 .gitignore
+-a----          5/6/2025   2:07 PM          17707 advanced_dashboard.py
+-a----         5/12/2025   5:34 PM          22199 birdeye.py
+-a----         5/20/2025   4:40 PM           5452 bot_integration.py
+-a----         5/20/2025   5:03 PM           8388 check_positions.py
+-a----         5/19/2025   1:50 PM            889 check_real_trades.py
+-a----         5/19/2025   1:37 PM           1447 check_trades.py
+-a----         5/19/2025   2:31 PM           2907 cleanup.py
+-a----         5/13/2025  12:09 PM           9080 complete_dashboard_fix.py
+-a----         5/12/2025   7:23 PM           8600 config.py
+-a----         5/19/2025   4:00 PM           5252 config_check.py
+-a----         5/12/2025   7:39 PM          17853 database.py
+-a----         5/19/2025   4:00 PM           4733 find_config.py
+-a----         5/13/2025   5:50 PM            560 find_simulation_override.py
+-a----         5/13/2025   1:04 AM           6652 fix-timestamp-formats.py
+-a----         5/13/2025  12:52 AM          14890 fix-wallet-balance.py
+-a----         5/13/2025   5:45 PM           2846 fix_control_file.py
+-a----         5/13/2025  12:01 PM          10546 fix_dashboard.py
+-a----         5/13/2025   5:54 PM           1361 fix_docstring.py
+-a----         5/13/2025   1:40 PM           1294 fix_indentation.py
+-a----         5/13/2025   1:38 PM           3469 fix_keypair_and_client.py
+-a----         5/19/2025   1:46 PM           1921 fix_new_dashboard.py
+-a----         5/13/2025  11:52 AM          18168 fix_solana_ascii.py
+-a----         5/13/2025  11:46 AM          30767 fix_solana_connection_clean.p
+                                                  y
+-a----         5/13/2025  11:40 AM          20283 fix_solana_connection_simple.
+                                                  py
+-a----         5/13/2025  11:48 AM          17832 fix_solana_simple.py
+-a----         5/13/2025   1:35 PM            619 fix_solana_trader.py
+-a----         5/13/2025   1:36 PM           1362 fix_solana_trader2.py
+-a----         5/13/2025  11:50 AM              0 improved_solana_test.py
+-a----         5/13/2025   1:14 PM           1640 inspect_solana.py
+-a----         5/19/2025   3:33 PM           6697 main.py
+-a----         5/13/2025   1:21 AM           2594 minimal_fix.py
+-a----         5/12/2025   7:23 PM          10274 ml_model.py
+-a----         5/13/2025  10:43 AM           1604 ml_model_patch.py
+-a----         5/19/2025   3:29 PM           4825 organize_project_root.py
+-a----         5/13/2025  12:03 PM           6654 quick_dashboard_fix.py
+-a----         5/13/2025  11:02 AM           1059 README.md
+-a----         5/12/2025  10:41 PM            429 requirements.txt
+-a----         5/12/2025   8:40 PM            106 requirements_solana.txt
+-a----         5/19/2025   4:08 PM           5452 run_bot.py
+-a----         5/20/2025   4:55 PM           5878 run_bot_updated.py
+-a----         5/19/2025   2:41 PM           2151 setup-real-trading-py.py
+-a----         5/13/2025  11:02 AM           2861 setup.py
+-a----         5/19/2025   2:41 PM           2151 setup_real_trading.py
+-a----         5/19/2025   1:48 PM           6264 simple_status.py
+-a----         5/12/2025  10:39 PM           1584 solana_connection_test.py
+-a----         5/12/2025  11:11 PM           7060 solana_diagnostic.py
+-a----         5/13/2025  11:52 AM           1008 SOLANA_FIX_README.md
+-a----         5/12/2025   3:02 PM         179015 solana_memecoin_trader.py
+-a----         5/13/2025  11:50 AM            112 solana_requirements.txt
+-a----         5/13/2025  11:52 AM          16580 solana_trader.py
+-a----         5/13/2025   8:37 AM          15898 solana_trader.py.bak
+-a----         5/12/2025   8:41 PM          17571 solana_trader_sim_only.py
+-a----         5/13/2025  11:52 AM           6689 solana_wrapper.py
+-a----         5/19/2025   2:49 PM          27056 solders_adapter.py
+-a----         5/19/2025   2:40 PM           7675 status_monitor.py
+-a----         5/19/2025   2:41 PM           5797 test_real_trading.py
+-a----         5/13/2025   1:13 PM            410 test_solana.py
+-a----         5/13/2025   1:15 PM            460 test_solders.py
+-a----         5/13/2025   8:41 AM          11441 token_analyzer.py
+-a----         5/13/2025   8:38 AM          15944 token_scanner.py
+-a----          4/2/2025   3:54 PM          19514 token_scanner_backup.py
+-a----         5/13/2025   8:38 AM          13900 trading_bot.py
+-a----         5/19/2025   1:41 PM            612 update_settings.py
+-a----         5/12/2025   3:41 PM          20483 utils.py
+-a----         5/13/2025   5:34 PM           1049 wallet_fix.py
+-a----         5/13/2025   8:04 PM           6123 wallet_test.py
+
+
+PS C:\Users\shorg\sol-bot_claude> cd C:\Users\shorg\sol-bot_claude\core
+PS C:\Users\shorg\sol-bot_claude\core> dir
+
+
+    Directory: C:\Users\shorg\sol-bot_claude\core
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         5/20/2025   5:03 PM                __pycache__
+-a----         5/12/2025  11:14 PM            861 .env
+-a----          4/2/2025   1:01 AM             14 .gitignore
+-a----          5/6/2025   2:07 PM          17707 advanced_dashboard.py
+-a----         5/19/2025   3:49 PM           4930 AsyncSolanaTrader_adapter.py
+-a----         5/13/2025   7:41 PM          10810 AsyncSolanaTrader_adapter.py.
+                                                  bak
+-a----         5/12/2025   5:34 PM          22199 birdeye.py
+-a----         5/13/2025   6:39 PM           4838 birdeye_tester.py
+-a----         5/19/2025   4:00 PM            567 bot_control.json
+-a----         5/19/2025   2:42 PM           5198 check_trades.py
+-a----         5/12/2025   7:23 PM           8600 config.py
+-a----         5/13/2025   7:29 PM           6640 config_adapter.py
+-a----         5/12/2025   7:39 PM          17853 database.py
+-a----         5/20/2025   5:02 PM           4081 database_adapter.py
+-a----         5/13/2025   1:04 AM           6652 fix-timestamp-formats.py
+-a----         5/13/2025  12:52 AM          14890 fix-wallet-balance.py
+-a----         5/19/2025   3:32 PM           4430 jupiter_client.py
+-a----         5/19/2025   3:52 PM          11501 main.py
+-a----         5/13/2025   7:37 PM          11786 main.py.bak
+-a----         5/13/2025   5:46 PM           5361 main.py.original
+-a----         5/13/2025   6:14 PM           1695 manual_trade.py
+-a----         5/13/2025   1:21 AM           2594 minimal_fix.py
+-a----         5/12/2025   7:23 PM          10274 ml_model.py
+-a----         5/13/2025  10:43 AM           1604 ml_model_patch.py
+-a----         5/19/2025   2:42 PM           2680 README.md
+-a----         5/19/2025   2:43 PM            139 requirements.txt
+-a----         5/12/2025   8:40 PM            106 requirements_solana.txt
+-a----         5/19/2025   2:41 PM           2151 setup_real_trading.py
+-a----         5/13/2025   1:06 PM           8003 simple_solana_wrapper.py
+-a----         5/13/2025   6:25 PM           5236 simple_trading_bot.py
+-a----         5/20/2025   4:58 PM           8345 simplified_solana_trader.py
+-a----         5/20/2025   4:54 PM           5514 simplified_token_scanner.py
+-a----         5/20/2025   4:58 PM          12718 simplified_trading_bot.py
+-a----         5/13/2025   7:37 PM           4815 SolanaTrader_adapter.py
+-a----         5/12/2025  10:39 PM           1584 solana_connection_test.py
+-a----         5/12/2025  11:11 PM           7060 solana_diagnostic.py
+-a----         5/12/2025   3:02 PM         179015 solana_memecoin_trader.py
+-a----         5/19/2025   3:41 PM          17717 solana_trader.py
+-a----         5/13/2025   1:41 PM          16626 solana_trader.py.bak
+-a----         5/12/2025   8:41 PM          17571 solana_trader_sim_only.py
+-a----         5/13/2025  11:52 AM           6689 solana_wrapper.py
+-a----         5/19/2025   3:31 PM           6037 SoldersAdapter.py
+-a----         5/19/2025   2:49 PM          27056 solders_adapter.py
+-a----         5/13/2025   8:41 AM          11441 token_analyzer.py
+-a----         5/20/2025   4:47 PM           6520 token_scanner.py
+-a----          4/2/2025   3:54 PM          19514 token_scanner_backup.py
+-a----         5/13/2025   6:36 PM           4240 token_scanner_wrapper.py
+-a----         5/19/2025   3:17 PM          13562 TradingBot_adapter.py
+-a----         5/13/2025   8:38 AM          13900 trading_bot.py
+-a----         5/13/2025   6:37 PM           5681 trading_parameters.py
+-a----         5/12/2025   3:41 PM          20483 utils.py
+-a----         5/19/2025   3:21 PM             16 __init__.py
+
+
+PS C:\Users\shorg\sol-bot_claude\core> cd C:\Users\shorg\sol-bot_claude\data
+PS C:\Users\shorg\sol-bot_claude\data> dir
+
+
+    Directory: C:\Users\shorg\sol-bot_claude\data
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         5/20/2025   4:43 PM            566 bot_control.json
+-a----         5/20/2025   5:17 PM         393216 sol_bot.db
+-a----         5/12/2025   7:07 PM         159744 trading_bot.db
+-a----         5/19/2025   3:29 PM             16 __init__.py
+
+
+PS C:\Users\shorg\sol-bot_claude\data> cd C:\Users\shorg\sol-bot_claude\tests
+PS C:\Users\shorg\sol-bot_claude\tests> dir
+
+
+    Directory: C:\Users\shorg\sol-bot_claude\tests
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         5/19/2025   1:37 PM           1447 check_trades.py
+-a----         5/12/2025  10:39 PM           1584 solana_connection_test.py
+-a----          4/2/2025   1:09 AM            346 test_keypair.py
+-a----         5/12/2025  10:52 PM           7005 test_private_key.py
+-a----         5/19/2025   3:33 PM           4004 test_real_trading.py
+-a----         5/13/2025   1:13 PM            410 test_solana.py
+-a----         5/12/2025  10:05 PM           5475 test_solana_packages.py
+-a----         5/13/2025   1:15 PM            460 test_solders.py
+-a----          4/2/2025   7:32 PM           1829 test_token_analyzer.py
+-a----         5/19/2025   3:21 PM             17 __init__.py
+
+
+PS C:\Users\shorg\sol-bot_claude\tests>

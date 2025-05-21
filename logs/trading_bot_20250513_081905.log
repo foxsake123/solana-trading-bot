@@ -1,0 +1,717 @@
+2025-05-13 08:19:05,987 - database - INFO - Database tables initialized
+2025-05-13 08:19:06,293 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 08:19:06,294 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 08:19:06,297 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 08:19:06,298 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:19:06,547 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 08:19:06,659 - solana_trader - INFO - Got SOL price from CoinGecko: $173.61
+2025-05-13 08:19:06,836 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.61
+2025-05-13 08:19:06,877 - trading_bot.dashboard - INFO - Updated 78 positions with proper USD values
+2025-05-13 08:19:07,024 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:19:07,024 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:19:07,025 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:19:07,025 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:19:07,026 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:19:07,026 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:19:07,029 - database - INFO - Database tables initialized
+2025-05-13 08:19:07,039 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:19:07,040 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:19:07,041 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:19:38,643 - database - INFO - Database tables initialized
+2025-05-13 08:19:38,962 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 08:19:38,963 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 08:19:38,963 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 08:19:38,964 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:19:39,128 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 08:19:39,284 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.61
+2025-05-13 08:19:39,331 - trading_bot.dashboard - INFO - Updated 83 positions with proper USD values
+2025-05-13 08:19:39,455 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:19:39,456 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:19:39,456 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:19:39,456 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:19:39,457 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:19:39,457 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:19:39,458 - database - INFO - Database tables initialized
+2025-05-13 08:19:39,466 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:19:39,466 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:19:39,466 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:20:10,701 - database - INFO - Database tables initialized
+2025-05-13 08:20:11,043 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 08:20:11,044 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 08:20:11,045 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 08:20:11,045 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:20:11,179 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 08:20:11,397 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.61
+2025-05-13 08:20:11,449 - trading_bot.dashboard - INFO - Updated 83 positions with proper USD values
+2025-05-13 08:20:11,487 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:20:11,488 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:20:11,488 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:20:11,489 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:20:11,490 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:20:11,490 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:20:11,492 - database - INFO - Database tables initialized
+2025-05-13 08:20:11,499 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:20:11,500 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:20:11,501 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:20:35,269 - database - INFO - Database tables initialized
+2025-05-13 08:20:35,944 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 08:20:35,944 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 08:20:35,945 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 08:20:35,946 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:20:36,043 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 08:20:36,382 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.61
+2025-05-13 08:20:36,477 - trading_bot.dashboard - INFO - Updated 83 positions with proper USD values
+2025-05-13 08:20:36,641 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:20:36,642 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:20:36,643 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:20:36,643 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:20:36,644 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:20:36,644 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:20:36,647 - database - INFO - Database tables initialized
+2025-05-13 08:20:36,659 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:20:36,660 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:20:36,661 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:20:36,834 - database - INFO - Database tables initialized
+2025-05-13 08:20:37,508 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 08:20:37,509 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 08:20:37,510 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 08:20:37,511 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:20:37,758 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 08:20:38,102 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.61
+2025-05-13 08:20:38,231 - trading_bot.dashboard - INFO - Updated 83 positions with proper USD values
+2025-05-13 08:20:38,290 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:20:38,291 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:20:38,292 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:20:38,292 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:20:38,294 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:20:38,294 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:20:38,297 - database - INFO - Database tables initialized
+2025-05-13 08:20:38,315 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:20:38,316 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:20:38,316 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:21:09,816 - database - INFO - Database tables initialized
+2025-05-13 08:21:10,442 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 08:21:10,443 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 08:21:10,443 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 08:21:10,443 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:21:10,632 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 08:21:10,893 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.61
+2025-05-13 08:21:10,967 - trading_bot.dashboard - INFO - Updated 83 positions with proper USD values
+2025-05-13 08:21:11,009 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:21:11,010 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:21:11,011 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:21:11,011 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:21:11,012 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:21:11,012 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:21:11,014 - database - INFO - Database tables initialized
+2025-05-13 08:21:11,025 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:21:11,025 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:21:11,026 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:21:42,376 - database - INFO - Database tables initialized
+2025-05-13 08:21:43,009 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 08:21:43,010 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 08:21:43,010 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 08:21:43,011 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:21:43,182 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 08:21:43,419 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.61
+2025-05-13 08:21:43,488 - trading_bot.dashboard - INFO - Updated 83 positions with proper USD values
+2025-05-13 08:21:43,604 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:21:43,604 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:21:43,605 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:21:43,605 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:21:43,606 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:21:43,606 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:21:43,607 - database - INFO - Database tables initialized
+2025-05-13 08:21:43,613 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:21:43,613 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:21:43,613 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:22:14,963 - database - INFO - Database tables initialized
+2025-05-13 08:22:15,583 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 08:22:15,584 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 08:22:15,585 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 08:22:15,585 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:22:15,765 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 08:22:16,004 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.61
+2025-05-13 08:22:16,090 - trading_bot.dashboard - INFO - Updated 83 positions with proper USD values
+2025-05-13 08:22:16,195 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:22:16,195 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:22:16,196 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:22:16,196 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:22:16,198 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:22:16,198 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:22:16,200 - database - INFO - Database tables initialized
+2025-05-13 08:22:16,207 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:22:16,207 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:22:16,208 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:22:47,591 - database - INFO - Database tables initialized
+2025-05-13 08:22:48,220 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 08:22:48,221 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 08:22:48,222 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 08:22:48,223 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:22:48,383 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 08:22:48,586 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.61
+2025-05-13 08:22:48,642 - trading_bot.dashboard - INFO - Updated 83 positions with proper USD values
+2025-05-13 08:22:48,697 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:22:48,698 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:22:48,699 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:22:48,700 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:22:48,702 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:22:48,703 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:22:48,705 - database - INFO - Database tables initialized
+2025-05-13 08:22:48,716 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:22:48,716 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:22:48,716 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:23:20,189 - database - INFO - Database tables initialized
+2025-05-13 08:23:20,789 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 08:23:20,790 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 08:23:20,790 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 08:23:20,790 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:23:20,896 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 08:23:21,062 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.61
+2025-05-13 08:23:21,146 - trading_bot.dashboard - INFO - Updated 83 positions with proper USD values
+2025-05-13 08:23:21,257 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:23:21,257 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:23:21,258 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:23:21,258 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:23:21,260 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:23:21,260 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:23:21,262 - database - INFO - Database tables initialized
+2025-05-13 08:23:21,279 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:23:21,279 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:23:21,280 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:23:52,592 - database - INFO - Database tables initialized
+2025-05-13 08:23:53,398 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 08:23:53,399 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 08:23:53,399 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 08:23:53,399 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:23:53,531 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 08:23:53,755 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.61
+2025-05-13 08:23:53,823 - trading_bot.dashboard - INFO - Updated 83 positions with proper USD values
+2025-05-13 08:23:53,955 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:23:53,956 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:23:53,957 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:23:53,957 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:23:53,958 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:23:53,958 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:23:53,960 - database - INFO - Database tables initialized
+2025-05-13 08:23:53,973 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:23:53,974 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:23:53,974 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:24:25,329 - database - INFO - Database tables initialized
+2025-05-13 08:24:25,840 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 08:24:25,841 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 08:24:25,841 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 08:24:25,841 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:24:25,913 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 08:24:26,001 - solana_trader - INFO - Got SOL price from CoinGecko: $173.6
+2025-05-13 08:24:26,346 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.6
+2025-05-13 08:24:26,447 - trading_bot.dashboard - INFO - Updated 84 positions with proper USD values
+2025-05-13 08:24:26,556 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:24:26,556 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:24:26,558 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:24:26,558 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:24:26,559 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:24:26,559 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:24:26,561 - database - INFO - Database tables initialized
+2025-05-13 08:24:26,581 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:24:26,581 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:24:26,583 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:24:37,947 - database - INFO - Database tables initialized
+2025-05-13 08:24:38,468 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 08:24:38,468 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 08:24:38,468 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 08:24:38,468 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:24:38,649 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 08:24:38,990 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.6
+2025-05-13 08:24:39,050 - trading_bot.dashboard - INFO - Updated 88 positions with proper USD values
+2025-05-13 08:24:39,097 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:24:39,097 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:24:39,098 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:24:39,098 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:24:39,099 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:24:39,099 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:24:39,100 - database - INFO - Database tables initialized
+2025-05-13 08:24:39,107 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:24:39,107 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:24:39,108 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:25:10,506 - database - INFO - Database tables initialized
+2025-05-13 08:25:10,507 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:25:10,507 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:25:10,718 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 15.60000000000001 SOL in active positions
+2025-05-13 08:25:10,718 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:25:10,718 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.6
+2025-05-13 08:25:10,784 - trading_bot.dashboard - INFO - Updated 88 positions with proper USD values
+2025-05-13 08:25:10,895 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:25:10,895 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:25:10,896 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:25:10,896 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:25:10,898 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:25:10,899 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:25:10,905 - database - INFO - Database tables initialized
+2025-05-13 08:25:10,920 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:25:10,921 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:25:10,921 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:25:42,281 - database - INFO - Database tables initialized
+2025-05-13 08:25:42,282 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:25:42,282 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:25:42,483 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 15.60000000000001 SOL in active positions
+2025-05-13 08:25:42,483 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:25:42,484 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.6
+2025-05-13 08:25:42,556 - trading_bot.dashboard - INFO - Updated 88 positions with proper USD values
+2025-05-13 08:25:42,608 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:25:42,609 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:25:42,609 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:25:42,610 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:25:42,611 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:25:42,611 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:25:42,613 - database - INFO - Database tables initialized
+2025-05-13 08:25:42,625 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:25:42,625 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:25:42,625 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:26:13,965 - database - INFO - Database tables initialized
+2025-05-13 08:26:13,966 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:26:13,966 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:26:14,125 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 15.60000000000001 SOL in active positions
+2025-05-13 08:26:14,125 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:26:14,125 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.6
+2025-05-13 08:26:14,189 - trading_bot.dashboard - INFO - Updated 88 positions with proper USD values
+2025-05-13 08:26:14,305 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:26:14,305 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:26:14,306 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:26:14,306 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:26:14,306 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:26:14,307 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:26:14,310 - database - INFO - Database tables initialized
+2025-05-13 08:26:14,318 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:26:14,318 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:26:14,319 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:26:45,623 - database - INFO - Database tables initialized
+2025-05-13 08:26:45,624 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:26:45,624 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:26:45,779 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 15.60000000000001 SOL in active positions
+2025-05-13 08:26:45,779 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:26:45,779 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.6
+2025-05-13 08:26:45,867 - trading_bot.dashboard - INFO - Updated 88 positions with proper USD values
+2025-05-13 08:26:45,920 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:26:45,920 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:26:45,921 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:26:45,921 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:26:45,922 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:26:45,923 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:26:45,925 - database - INFO - Database tables initialized
+2025-05-13 08:26:45,935 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:26:45,935 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:26:45,935 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:27:17,261 - database - INFO - Database tables initialized
+2025-05-13 08:27:17,262 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:27:17,262 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:27:17,496 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 15.60000000000001 SOL in active positions
+2025-05-13 08:27:17,497 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:27:17,497 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.6
+2025-05-13 08:27:17,591 - trading_bot.dashboard - INFO - Updated 88 positions with proper USD values
+2025-05-13 08:27:17,634 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:27:17,634 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:27:17,635 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:27:17,635 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:27:17,636 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:27:17,636 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:27:17,639 - database - INFO - Database tables initialized
+2025-05-13 08:27:17,646 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:27:17,646 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:27:17,646 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:27:48,955 - database - INFO - Database tables initialized
+2025-05-13 08:27:48,956 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:27:48,956 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:27:49,067 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 15.60000000000001 SOL in active positions
+2025-05-13 08:27:49,068 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:27:49,068 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.6
+2025-05-13 08:27:49,124 - trading_bot.dashboard - INFO - Updated 88 positions with proper USD values
+2025-05-13 08:27:49,195 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:27:49,196 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:27:49,196 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:27:49,196 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:27:49,198 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:27:49,199 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:27:49,201 - database - INFO - Database tables initialized
+2025-05-13 08:27:49,211 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:27:49,211 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:27:49,211 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:28:20,482 - database - INFO - Database tables initialized
+2025-05-13 08:28:20,482 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:28:20,482 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:28:20,609 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 15.60000000000001 SOL in active positions
+2025-05-13 08:28:20,610 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:28:20,610 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.6
+2025-05-13 08:28:20,663 - trading_bot.dashboard - INFO - Updated 88 positions with proper USD values
+2025-05-13 08:28:20,722 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:28:20,722 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:28:20,723 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:28:20,723 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:28:20,724 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:28:20,724 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:28:20,725 - database - INFO - Database tables initialized
+2025-05-13 08:28:20,731 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:28:20,732 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:28:20,732 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:28:51,980 - database - INFO - Database tables initialized
+2025-05-13 08:28:51,981 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:28:51,981 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:28:52,137 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 15.60000000000001 SOL in active positions
+2025-05-13 08:28:52,138 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:28:52,138 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.6
+2025-05-13 08:28:52,196 - trading_bot.dashboard - INFO - Updated 88 positions with proper USD values
+2025-05-13 08:28:52,401 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:28:52,401 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:28:52,402 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:28:52,402 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:28:52,403 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:28:52,403 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:28:52,406 - database - INFO - Database tables initialized
+2025-05-13 08:28:52,415 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:28:52,416 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:28:52,416 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:29:23,679 - database - INFO - Database tables initialized
+2025-05-13 08:29:23,679 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:29:23,680 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:29:23,829 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 15.60000000000001 SOL in active positions
+2025-05-13 08:29:23,830 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:29:23,832 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.6
+2025-05-13 08:29:23,890 - trading_bot.dashboard - INFO - Updated 88 positions with proper USD values
+2025-05-13 08:29:23,932 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:29:23,933 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:29:23,933 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:29:23,934 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:29:23,934 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:29:23,935 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:29:23,939 - database - INFO - Database tables initialized
+2025-05-13 08:29:23,946 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:29:23,948 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:29:23,948 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:29:55,258 - database - INFO - Database tables initialized
+2025-05-13 08:29:55,258 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:29:55,259 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:29:55,408 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 16.600000000000005 SOL in active positions
+2025-05-13 08:29:55,409 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:29:55,410 - trading_bot.dashboard - INFO - Current SOL price for calculations: $144.59589451600738
+2025-05-13 08:29:55,478 - trading_bot.dashboard - INFO - Updated 93 positions with proper USD values
+2025-05-13 08:29:55,735 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:29:55,735 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:29:55,736 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:29:55,737 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:29:55,739 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:29:55,739 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:29:55,741 - database - INFO - Database tables initialized
+2025-05-13 08:29:55,753 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:29:55,754 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:29:55,754 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:30:27,042 - database - INFO - Database tables initialized
+2025-05-13 08:30:27,043 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:30:27,043 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:30:27,207 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 16.600000000000005 SOL in active positions
+2025-05-13 08:30:27,208 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:30:27,208 - trading_bot.dashboard - INFO - Current SOL price for calculations: $144.59589451600738
+2025-05-13 08:30:27,272 - trading_bot.dashboard - INFO - Updated 93 positions with proper USD values
+2025-05-13 08:30:27,536 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:30:27,536 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:30:27,536 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:30:27,537 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:30:27,538 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:30:27,538 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:30:27,540 - database - INFO - Database tables initialized
+2025-05-13 08:30:27,548 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:30:27,548 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:30:27,548 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:30:58,879 - database - INFO - Database tables initialized
+2025-05-13 08:30:58,881 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:30:58,881 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:30:59,063 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 16.600000000000005 SOL in active positions
+2025-05-13 08:30:59,063 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:30:59,064 - trading_bot.dashboard - INFO - Current SOL price for calculations: $144.59589451600738
+2025-05-13 08:30:59,132 - trading_bot.dashboard - INFO - Updated 93 positions with proper USD values
+2025-05-13 08:30:59,412 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:30:59,412 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:30:59,413 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:30:59,414 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:30:59,415 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:30:59,415 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:30:59,417 - database - INFO - Database tables initialized
+2025-05-13 08:30:59,423 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:30:59,423 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:30:59,423 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:31:30,712 - database - INFO - Database tables initialized
+2025-05-13 08:31:30,713 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:31:30,715 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:31:30,921 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 16.600000000000005 SOL in active positions
+2025-05-13 08:31:30,921 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:31:30,922 - trading_bot.dashboard - INFO - Current SOL price for calculations: $144.59589451600738
+2025-05-13 08:31:31,006 - trading_bot.dashboard - INFO - Updated 93 positions with proper USD values
+2025-05-13 08:31:31,044 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:31:31,045 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:31:31,045 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:31:31,045 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:31:31,046 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:31:31,046 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:31:31,049 - database - INFO - Database tables initialized
+2025-05-13 08:31:31,057 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:31:31,058 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:31:31,058 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:32:02,352 - database - INFO - Database tables initialized
+2025-05-13 08:32:02,353 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:32:02,354 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:32:02,482 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 16.600000000000005 SOL in active positions
+2025-05-13 08:32:02,482 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:32:02,483 - trading_bot.dashboard - INFO - Current SOL price for calculations: $144.59589451600738
+2025-05-13 08:32:02,580 - trading_bot.dashboard - INFO - Updated 93 positions with proper USD values
+2025-05-13 08:32:02,685 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:32:02,685 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:32:02,686 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:32:02,686 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:32:02,687 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:32:02,688 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:32:02,690 - database - INFO - Database tables initialized
+2025-05-13 08:32:02,699 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:32:02,700 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:32:02,700 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:32:34,016 - database - INFO - Database tables initialized
+2025-05-13 08:32:34,017 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:32:34,018 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:32:34,168 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 16.600000000000005 SOL in active positions
+2025-05-13 08:32:34,169 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:32:34,170 - trading_bot.dashboard - INFO - Current SOL price for calculations: $144.59589451600738
+2025-05-13 08:32:34,244 - trading_bot.dashboard - INFO - Updated 93 positions with proper USD values
+2025-05-13 08:32:34,409 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:32:34,409 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:32:34,411 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:32:34,412 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:32:34,413 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:32:34,414 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:32:34,416 - database - INFO - Database tables initialized
+2025-05-13 08:32:34,425 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:32:34,425 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:32:34,426 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:33:05,700 - database - INFO - Database tables initialized
+2025-05-13 08:33:05,701 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:33:05,701 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:33:05,836 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 16.600000000000005 SOL in active positions
+2025-05-13 08:33:05,838 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:33:05,838 - trading_bot.dashboard - INFO - Current SOL price for calculations: $144.59589451600738
+2025-05-13 08:33:05,892 - trading_bot.dashboard - INFO - Updated 93 positions with proper USD values
+2025-05-13 08:33:06,031 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:33:06,032 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:33:06,032 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:33:06,033 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:33:06,034 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:33:06,035 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:33:06,038 - database - INFO - Database tables initialized
+2025-05-13 08:33:06,044 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:33:06,045 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:33:06,045 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:33:37,314 - database - INFO - Database tables initialized
+2025-05-13 08:33:37,315 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:33:37,315 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:33:37,452 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 16.600000000000005 SOL in active positions
+2025-05-13 08:33:37,453 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:33:37,454 - trading_bot.dashboard - INFO - Current SOL price for calculations: $144.59589451600738
+2025-05-13 08:33:37,514 - trading_bot.dashboard - INFO - Updated 93 positions with proper USD values
+2025-05-13 08:33:37,558 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:33:37,558 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:33:37,559 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:33:37,559 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:33:37,560 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:33:37,560 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:33:37,562 - database - INFO - Database tables initialized
+2025-05-13 08:33:37,570 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:33:37,570 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:33:37,571 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:34:08,843 - database - INFO - Database tables initialized
+2025-05-13 08:34:08,843 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:34:08,844 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:34:08,977 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 16.600000000000005 SOL in active positions
+2025-05-13 08:34:08,978 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:34:08,979 - trading_bot.dashboard - INFO - Current SOL price for calculations: $144.59589451600738
+2025-05-13 08:34:09,041 - trading_bot.dashboard - INFO - Updated 93 positions with proper USD values
+2025-05-13 08:34:09,169 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:34:09,169 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:34:09,170 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:34:09,170 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:34:09,171 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:34:09,171 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:34:09,173 - database - INFO - Database tables initialized
+2025-05-13 08:34:09,180 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:34:09,181 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:34:09,181 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:34:40,532 - database - INFO - Database tables initialized
+2025-05-13 08:34:40,533 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:34:40,533 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:34:40,702 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 17.60000000000001 SOL in active positions
+2025-05-13 08:34:40,702 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:34:40,703 - trading_bot.dashboard - INFO - Current SOL price for calculations: $144.59589451600738
+2025-05-13 08:34:40,764 - trading_bot.dashboard - INFO - Updated 98 positions with proper USD values
+2025-05-13 08:34:40,822 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:34:40,822 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:34:40,822 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:34:40,823 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:34:40,824 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:34:40,824 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:34:40,826 - database - INFO - Database tables initialized
+2025-05-13 08:34:40,835 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:34:40,836 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:34:40,837 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:35:12,123 - database - INFO - Database tables initialized
+2025-05-13 08:35:12,125 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:35:12,125 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:35:12,280 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 17.60000000000001 SOL in active positions
+2025-05-13 08:35:12,280 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:35:12,281 - trading_bot.dashboard - INFO - Current SOL price for calculations: $144.60773002383613
+2025-05-13 08:35:12,350 - trading_bot.dashboard - INFO - Updated 98 positions with proper USD values
+2025-05-13 08:35:12,478 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:35:12,479 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:35:12,479 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:35:12,479 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:35:12,480 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:35:12,481 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:35:12,483 - database - INFO - Database tables initialized
+2025-05-13 08:35:12,491 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:35:12,491 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:35:12,491 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:35:43,809 - database - INFO - Database tables initialized
+2025-05-13 08:35:43,810 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:35:43,810 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:35:43,987 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 17.60000000000001 SOL in active positions
+2025-05-13 08:35:43,988 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:35:43,988 - trading_bot.dashboard - INFO - Current SOL price for calculations: $144.60773002383613
+2025-05-13 08:35:44,075 - trading_bot.dashboard - INFO - Updated 98 positions with proper USD values
+2025-05-13 08:35:44,176 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:35:44,176 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:35:44,177 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:35:44,177 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:35:44,178 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:35:44,178 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:35:44,181 - database - INFO - Database tables initialized
+2025-05-13 08:35:44,191 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:35:44,192 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:35:44,192 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:36:15,517 - database - INFO - Database tables initialized
+2025-05-13 08:36:15,518 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:36:15,518 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:36:15,716 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 17.60000000000001 SOL in active positions
+2025-05-13 08:36:15,717 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:36:15,717 - trading_bot.dashboard - INFO - Current SOL price for calculations: $144.60773002383613
+2025-05-13 08:36:15,778 - trading_bot.dashboard - INFO - Updated 98 positions with proper USD values
+2025-05-13 08:36:15,906 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:36:15,907 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:36:15,907 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:36:15,908 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:36:15,909 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:36:15,909 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:36:15,911 - database - INFO - Database tables initialized
+2025-05-13 08:36:15,917 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:36:15,917 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:36:15,917 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:36:47,237 - database - INFO - Database tables initialized
+2025-05-13 08:36:47,238 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:36:47,238 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:36:47,403 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 17.60000000000001 SOL in active positions
+2025-05-13 08:36:47,403 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:36:47,404 - trading_bot.dashboard - INFO - Current SOL price for calculations: $144.60773002383613
+2025-05-13 08:36:47,494 - trading_bot.dashboard - INFO - Updated 98 positions with proper USD values
+2025-05-13 08:36:47,627 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:36:47,627 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:36:47,628 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:36:47,629 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:36:47,631 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:36:47,632 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:36:47,635 - database - INFO - Database tables initialized
+2025-05-13 08:36:47,647 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:36:47,648 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:36:47,648 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:37:18,997 - database - INFO - Database tables initialized
+2025-05-13 08:37:18,998 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:37:18,998 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:37:19,194 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 17.60000000000001 SOL in active positions
+2025-05-13 08:37:19,195 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:37:19,195 - trading_bot.dashboard - INFO - Current SOL price for calculations: $144.60773002383613
+2025-05-13 08:37:19,262 - trading_bot.dashboard - INFO - Updated 98 positions with proper USD values
+2025-05-13 08:37:19,312 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:37:19,312 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:37:19,313 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:37:19,313 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:37:19,314 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:37:19,314 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:37:19,318 - database - INFO - Database tables initialized
+2025-05-13 08:37:19,325 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:37:19,325 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:37:19,325 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:37:50,606 - database - INFO - Database tables initialized
+2025-05-13 08:37:50,607 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:37:50,607 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-13 08:37:50,741 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 10.0 SOL, 17.60000000000001 SOL in active positions
+2025-05-13 08:37:50,742 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:37:50,743 - trading_bot.dashboard - INFO - Current SOL price for calculations: $144.60773002383613
+2025-05-13 08:37:50,805 - trading_bot.dashboard - INFO - Updated 98 positions with proper USD values
+2025-05-13 08:37:51,296 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:37:51,297 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:37:51,298 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:37:51,299 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:37:51,300 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:37:51,301 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:37:51,303 - database - INFO - Database tables initialized
+2025-05-13 08:37:51,309 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:37:51,309 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 08:37:51,310 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 08:38:22,655 - database - INFO - Database tables initialized
+2025-05-13 08:38:22,656 - solana_trader - WARNING - Solana libraries not available, wallet initialization skipped
+2025-05-13 08:38:22,656 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:38:22,656 - solana_trader - WARNING - Solana libraries not available, using simulated connection
+2025-05-13 08:38:23,190 - solana_trader - INFO - Got SOL price from CoinGecko: $173.97
+2025-05-13 08:38:24,015 - solana_trader - INFO - Got SOL price from CoinGecko: $173.97
+2025-05-13 08:38:24,016 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 0 SOL, 17.60000000000001 SOL in active positions
+2025-05-13 08:38:24,017 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:38:24,425 - solana_trader - INFO - Got SOL price from CoinGecko: $173.97
+2025-05-13 08:38:24,426 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.97
+2025-05-13 08:38:24,485 - trading_bot.dashboard - INFO - Updated 98 positions with proper USD values
+2025-05-13 08:38:24,573 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:38:24,574 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:38:24,574 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:38:24,575 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:38:24,576 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:38:24,576 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:38:24,586 - trading_bot.token_scanner - INFO - ML model initialized
+2025-05-13 08:38:24,586 - trading_bot.dashboard - ERROR - Error getting ML stats: 'MLModel' object has no attribute 'get_recent_predictions'
+2025-05-13 08:38:55,882 - database - INFO - Database tables initialized
+2025-05-13 08:38:55,883 - solana_trader - WARNING - Solana libraries not available, wallet initialization skipped
+2025-05-13 08:38:55,884 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:38:55,884 - solana_trader - WARNING - Solana libraries not available, using simulated connection
+2025-05-13 08:38:56,388 - solana_trader - INFO - Got SOL price from CoinGecko: $173.97
+2025-05-13 08:38:57,136 - solana_trader - INFO - Got SOL price from CoinGecko: $173.97
+2025-05-13 08:38:57,137 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 0 SOL, 17.60000000000001 SOL in active positions
+2025-05-13 08:38:57,137 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:38:57,584 - solana_trader - INFO - Got SOL price from CoinGecko: $173.97
+2025-05-13 08:38:57,584 - trading_bot.dashboard - INFO - Current SOL price for calculations: $173.97
+2025-05-13 08:38:57,654 - trading_bot.dashboard - INFO - Updated 98 positions with proper USD values
+2025-05-13 08:38:57,728 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:38:57,729 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:38:57,730 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:38:57,730 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:38:57,731 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:38:57,732 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:38:57,733 - trading_bot.token_scanner - INFO - ML model initialized
+2025-05-13 08:38:57,734 - trading_bot.dashboard - ERROR - Error getting ML stats: 'MLModel' object has no attribute 'get_recent_predictions'
+2025-05-13 08:39:29,054 - database - INFO - Database tables initialized
+2025-05-13 08:39:29,056 - solana_trader - WARNING - Solana libraries not available, wallet initialization skipped
+2025-05-13 08:39:29,056 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:39:29,056 - solana_trader - WARNING - Solana libraries not available, using simulated connection
+2025-05-13 08:39:29,529 - solana_trader - INFO - Got SOL price from CoinGecko: $174.04
+2025-05-13 08:39:30,199 - solana_trader - INFO - Got SOL price from CoinGecko: $174.04
+2025-05-13 08:39:30,200 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 0 SOL, 17.60000000000001 SOL in active positions
+2025-05-13 08:39:30,201 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:39:30,603 - solana_trader - INFO - Got SOL price from CoinGecko: $174.04
+2025-05-13 08:39:30,604 - trading_bot.dashboard - INFO - Current SOL price for calculations: $174.04
+2025-05-13 08:39:30,667 - trading_bot.dashboard - INFO - Updated 98 positions with proper USD values
+2025-05-13 08:39:30,673 - trading_bot.birdeye_api - ERROR - Error fetching tokens from DexScreener: cannot schedule new futures after shutdown
+2025-05-13 08:39:30,674 - trading_bot.birdeye_api - WARNING - No tokens found for trending tokens
+2025-05-13 08:39:30,675 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:39:30,676 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:39:30,677 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:39:30,679 - trading_bot.token_scanner - INFO - ML model initialized
+2025-05-13 08:39:30,680 - trading_bot.dashboard - ERROR - Error getting ML stats: 'MLModel' object has no attribute 'get_recent_predictions'

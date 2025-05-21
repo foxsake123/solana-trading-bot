@@ -1,0 +1,257 @@
+2025-04-02 02:34:20,842 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 02:34:20,842 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-04-02 02:34:20,848 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 02:34:20,849 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-04-02 02:34:20,851 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-04-02 02:34:20,852 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 02:34:20,858 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 02:34:20,859 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-04-02 02:34:20,859 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 02:34:20,861 - trading_bot - INFO - ==================================================
+2025-04-02 02:34:20,861 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-04-02 02:34:20,862 - trading_bot - INFO - ==================================================
+2025-04-02 02:34:21,191 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 02:34:21,274 - trading_bot - INFO - Initial Wallet Balance: 0.0000 SOL ($0.00)
+2025-04-02 02:34:21,275 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-04-02 02:34:21,275 - trading_bot.token_scanner - INFO - Scanning Birdeye for tokens...
+2025-04-02 02:34:21,275 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-04-02 02:34:21,276 - trading_bot - INFO - Starting token discovery and trading process
+2025-04-02 02:34:21,343 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 02:34:21,970 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 02:34:21,971 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:34:22,141 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: 'str' object has no attribute 'get'
+2025-04-02 02:34:22,184 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/search
+2025-04-02 02:34:22,184 - trading_bot.token_analyzer - INFO - Found 2 trending tokens from DexScreener
+2025-04-02 02:34:22,185 - trading_bot.token_analyzer - INFO -   Top token 1: SOL - Score: 70.9
+2025-04-02 02:34:22,185 - trading_bot.token_analyzer - INFO -   Top token 2: SOL - Score: 70.9
+2025-04-02 02:34:22,185 - trading_bot.token_analyzer - INFO - Found 2 trending tokens
+2025-04-02 02:34:22,185 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-04-02 02:34:22,185 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:34:22,186 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 02:34:22,187 - trading_bot.token_scanner - INFO - No tokens to analyze
+2025-04-02 02:34:22,205 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Birdeye search
+2025-04-02 02:34:22,206 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 02:34:22,275 - trading_bot.token_scanner - INFO - Discovered 2 tokens from DexScreener
+2025-04-02 02:34:22,275 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 02:34:22,892 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 02:34:22,893 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:34:23,095 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: 'str' object has no attribute 'get'
+2025-04-02 02:34:23,136 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/search
+2025-04-02 02:34:23,136 - trading_bot.token_analyzer - INFO - Found 2 trending tokens from DexScreener
+2025-04-02 02:34:23,136 - trading_bot.token_analyzer - INFO -   Top token 1: SOL - Score: 70.9
+2025-04-02 02:34:23,137 - trading_bot.token_analyzer - INFO -   Top token 2: SOL - Score: 70.9
+2025-04-02 02:34:23,137 - trading_bot.token_analyzer - INFO - Found 2 trending tokens
+2025-04-02 02:34:23,137 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-04-02 02:34:23,137 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:34:23,137 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 02:34:25,987 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-02 02:39:23,061 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 02:39:23,148 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 02:39:23,909 - trading_bot.token_scanner - INFO - Found 4 top gainer tokens
+2025-04-02 02:39:23,910 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:39:24,099 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: 'str' object has no attribute 'get'
+2025-04-02 02:39:24,146 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/search
+2025-04-02 02:39:24,147 - trading_bot.token_analyzer - INFO - Found 2 trending tokens from DexScreener
+2025-04-02 02:39:24,147 - trading_bot.token_analyzer - INFO -   Top token 1: SOL - Score: 71.0
+2025-04-02 02:39:24,148 - trading_bot.token_analyzer - INFO -   Top token 2: SOL - Score: 70.9
+2025-04-02 02:39:24,148 - trading_bot.token_analyzer - INFO - Found 2 trending tokens
+2025-04-02 02:39:24,149 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-04-02 02:39:24,149 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:39:24,149 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 02:39:25,993 - trading_bot.token_scanner - INFO - Scanning Birdeye for tokens...
+2025-04-02 02:39:26,418 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Birdeye search
+2025-04-02 02:39:26,419 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 02:39:26,501 - trading_bot.token_scanner - INFO - Discovered 2 tokens from DexScreener
+2025-04-02 02:39:26,502 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 02:39:27,369 - trading_bot.token_scanner - INFO - Found 4 top gainer tokens
+2025-04-02 02:39:27,370 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:39:27,557 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: 'str' object has no attribute 'get'
+2025-04-02 02:39:27,601 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/search
+2025-04-02 02:39:27,602 - trading_bot.token_analyzer - INFO - Found 2 trending tokens from DexScreener
+2025-04-02 02:39:27,603 - trading_bot.token_analyzer - INFO -   Top token 1: SOL - Score: 71.0
+2025-04-02 02:39:27,604 - trading_bot.token_analyzer - INFO -   Top token 2: SOL - Score: 70.9
+2025-04-02 02:39:27,604 - trading_bot.token_analyzer - INFO - Found 2 trending tokens
+2025-04-02 02:39:27,605 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-04-02 02:39:27,606 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:39:27,606 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 02:39:27,611 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-02 02:44:25,058 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 02:44:25,173 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 02:44:25,941 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 02:44:25,942 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:44:26,139 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: 'str' object has no attribute 'get'
+2025-04-02 02:44:26,189 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/search
+2025-04-02 02:44:26,190 - trading_bot.token_analyzer - INFO - Found 2 trending tokens from DexScreener
+2025-04-02 02:44:26,190 - trading_bot.token_analyzer - INFO -   Top token 1: SOL - Score: 71.0
+2025-04-02 02:44:26,191 - trading_bot.token_analyzer - INFO -   Top token 2: SOL - Score: 70.9
+2025-04-02 02:44:26,192 - trading_bot.token_analyzer - INFO - Found 2 trending tokens
+2025-04-02 02:44:26,192 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-04-02 02:44:26,192 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:44:26,193 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 02:44:27,617 - trading_bot.token_scanner - INFO - Scanning Birdeye for tokens...
+2025-04-02 02:44:28,210 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Birdeye search
+2025-04-02 02:44:28,210 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 02:44:28,316 - trading_bot.token_scanner - INFO - Discovered 2 tokens from DexScreener
+2025-04-02 02:44:28,317 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 02:44:29,371 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 02:44:29,372 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:44:29,710 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: 'str' object has no attribute 'get'
+2025-04-02 02:44:29,766 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/search
+2025-04-02 02:44:29,767 - trading_bot.token_analyzer - INFO - Found 2 trending tokens from DexScreener
+2025-04-02 02:44:29,768 - trading_bot.token_analyzer - INFO -   Top token 1: SOL - Score: 71.0
+2025-04-02 02:44:29,768 - trading_bot.token_analyzer - INFO -   Top token 2: SOL - Score: 70.9
+2025-04-02 02:44:29,769 - trading_bot.token_analyzer - INFO - Found 2 trending tokens
+2025-04-02 02:44:29,769 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-04-02 02:44:29,770 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:44:29,770 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 02:44:29,774 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-02 02:49:26,946 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 02:49:27,045 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 02:49:27,852 - trading_bot.token_scanner - INFO - Found 4 top gainer tokens
+2025-04-02 02:49:27,853 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:49:28,081 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: 'str' object has no attribute 'get'
+2025-04-02 02:49:28,126 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/search
+2025-04-02 02:49:28,127 - trading_bot.token_analyzer - INFO - Found 2 trending tokens from DexScreener
+2025-04-02 02:49:28,127 - trading_bot.token_analyzer - INFO -   Top token 1: SOL - Score: 71.0
+2025-04-02 02:49:28,128 - trading_bot.token_analyzer - INFO -   Top token 2: SOL - Score: 71.0
+2025-04-02 02:49:28,128 - trading_bot.token_analyzer - INFO - Found 2 trending tokens
+2025-04-02 02:49:28,128 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-04-02 02:49:28,129 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:49:28,130 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 02:49:29,791 - trading_bot.token_scanner - INFO - Scanning Birdeye for tokens...
+2025-04-02 02:49:30,235 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Birdeye search
+2025-04-02 02:49:30,236 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 02:49:30,312 - trading_bot.token_scanner - INFO - Discovered 2 tokens from DexScreener
+2025-04-02 02:49:30,313 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 02:49:31,108 - trading_bot.token_scanner - INFO - Found 4 top gainer tokens
+2025-04-02 02:49:31,109 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:49:31,294 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: 'str' object has no attribute 'get'
+2025-04-02 02:49:31,343 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/search
+2025-04-02 02:49:31,344 - trading_bot.token_analyzer - INFO - Found 2 trending tokens from DexScreener
+2025-04-02 02:49:31,344 - trading_bot.token_analyzer - INFO -   Top token 1: SOL - Score: 71.0
+2025-04-02 02:49:31,344 - trading_bot.token_analyzer - INFO -   Top token 2: SOL - Score: 71.0
+2025-04-02 02:49:31,345 - trading_bot.token_analyzer - INFO - Found 2 trending tokens
+2025-04-02 02:49:31,345 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-04-02 02:49:31,345 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:49:31,346 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 02:49:31,348 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-02 02:54:28,377 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 02:54:28,493 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 02:54:29,392 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 02:54:29,393 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:54:29,653 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: 'str' object has no attribute 'get'
+2025-04-02 02:54:29,701 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/search
+2025-04-02 02:54:29,702 - trading_bot.token_analyzer - INFO - Found 2 trending tokens from DexScreener
+2025-04-02 02:54:29,702 - trading_bot.token_analyzer - INFO -   Top token 1: SOL - Score: 71.1
+2025-04-02 02:54:29,703 - trading_bot.token_analyzer - INFO -   Top token 2: SOL - Score: 71.0
+2025-04-02 02:54:29,704 - trading_bot.token_analyzer - INFO - Found 2 trending tokens
+2025-04-02 02:54:29,705 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-04-02 02:54:29,705 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:54:29,705 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 02:54:31,352 - trading_bot.token_scanner - INFO - Scanning Birdeye for tokens...
+2025-04-02 02:54:31,906 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Birdeye search
+2025-04-02 02:54:31,908 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 02:54:31,992 - trading_bot.token_scanner - INFO - Discovered 2 tokens from DexScreener
+2025-04-02 02:54:31,993 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 02:54:32,667 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 02:54:32,668 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:54:32,932 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: 'str' object has no attribute 'get'
+2025-04-02 02:54:32,978 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/search
+2025-04-02 02:54:32,979 - trading_bot.token_analyzer - INFO - Found 2 trending tokens from DexScreener
+2025-04-02 02:54:32,979 - trading_bot.token_analyzer - INFO -   Top token 1: SOL - Score: 71.1
+2025-04-02 02:54:32,979 - trading_bot.token_analyzer - INFO -   Top token 2: SOL - Score: 71.0
+2025-04-02 02:54:32,980 - trading_bot.token_analyzer - INFO - Found 2 trending tokens
+2025-04-02 02:54:32,980 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-04-02 02:54:32,980 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:54:32,980 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 02:54:32,982 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-02 02:59:30,544 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 02:59:30,637 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 02:59:31,477 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 02:59:31,479 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:59:31,733 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: 'str' object has no attribute 'get'
+2025-04-02 02:59:31,798 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/search
+2025-04-02 02:59:31,799 - trading_bot.token_analyzer - INFO - Found 2 trending tokens from DexScreener
+2025-04-02 02:59:31,800 - trading_bot.token_analyzer - INFO -   Top token 1: SOL - Score: 71.1
+2025-04-02 02:59:31,800 - trading_bot.token_analyzer - INFO -   Top token 2: SOL - Score: 71.0
+2025-04-02 02:59:31,801 - trading_bot.token_analyzer - INFO - Found 2 trending tokens
+2025-04-02 02:59:31,801 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-04-02 02:59:31,801 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:59:31,801 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 02:59:32,989 - trading_bot.token_scanner - INFO - Scanning Birdeye for tokens...
+2025-04-02 02:59:33,577 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Birdeye search
+2025-04-02 02:59:33,577 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 02:59:33,666 - trading_bot.token_scanner - INFO - Discovered 2 tokens from DexScreener
+2025-04-02 02:59:33,667 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 02:59:34,541 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 02:59:34,543 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:59:34,805 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: 'str' object has no attribute 'get'
+2025-04-02 02:59:34,843 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/search
+2025-04-02 02:59:34,843 - trading_bot.token_analyzer - INFO - Found 2 trending tokens from DexScreener
+2025-04-02 02:59:34,843 - trading_bot.token_analyzer - INFO -   Top token 1: SOL - Score: 71.1
+2025-04-02 02:59:34,844 - trading_bot.token_analyzer - INFO -   Top token 2: SOL - Score: 71.0
+2025-04-02 02:59:34,844 - trading_bot.token_analyzer - INFO - Found 2 trending tokens
+2025-04-02 02:59:34,845 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-04-02 02:59:34,845 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 02:59:34,845 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 02:59:34,848 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-02 03:04:32,731 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 03:04:32,840 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 03:04:33,584 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 03:04:33,585 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 03:04:33,795 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: 'str' object has no attribute 'get'
+2025-04-02 03:04:33,847 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/search
+2025-04-02 03:04:33,849 - trading_bot.token_analyzer - INFO - Found 2 trending tokens from DexScreener
+2025-04-02 03:04:33,850 - trading_bot.token_analyzer - INFO -   Top token 1: SOL - Score: 71.1
+2025-04-02 03:04:33,850 - trading_bot.token_analyzer - INFO -   Top token 2: SOL - Score: 71.0
+2025-04-02 03:04:33,850 - trading_bot.token_analyzer - INFO - Found 2 trending tokens
+2025-04-02 03:04:33,851 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-04-02 03:04:33,851 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 03:04:33,851 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 03:04:34,858 - trading_bot.token_scanner - INFO - Scanning Birdeye for tokens...
+2025-04-02 03:04:35,355 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Birdeye search
+2025-04-02 03:04:35,356 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 03:04:35,433 - trading_bot.token_scanner - INFO - Discovered 2 tokens from DexScreener
+2025-04-02 03:04:35,434 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 03:04:36,098 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 03:04:36,099 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 03:04:36,306 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: 'str' object has no attribute 'get'
+2025-04-02 03:04:36,375 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/search
+2025-04-02 03:04:36,375 - trading_bot.token_analyzer - INFO - Found 2 trending tokens from DexScreener
+2025-04-02 03:04:36,376 - trading_bot.token_analyzer - INFO -   Top token 1: SOL - Score: 71.1
+2025-04-02 03:04:36,376 - trading_bot.token_analyzer - INFO -   Top token 2: SOL - Score: 71.0
+2025-04-02 03:04:36,377 - trading_bot.token_analyzer - INFO - Found 2 trending tokens
+2025-04-02 03:04:36,377 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-04-02 03:04:36,378 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 03:04:36,378 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 03:04:36,381 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-02 03:09:34,760 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 03:09:34,887 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 03:09:35,630 - trading_bot.token_scanner - INFO - Found 4 top gainer tokens
+2025-04-02 03:09:35,631 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 03:09:35,832 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: 'str' object has no attribute 'get'
+2025-04-02 03:09:35,890 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/search
+2025-04-02 03:09:35,891 - trading_bot.token_analyzer - INFO - Found 2 trending tokens from DexScreener
+2025-04-02 03:09:35,892 - trading_bot.token_analyzer - INFO -   Top token 1: SOL - Score: 71.1
+2025-04-02 03:09:35,892 - trading_bot.token_analyzer - INFO -   Top token 2: SOL - Score: 71.1
+2025-04-02 03:09:35,893 - trading_bot.token_analyzer - INFO - Found 2 trending tokens
+2025-04-02 03:09:35,893 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-04-02 03:09:35,894 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 03:09:35,894 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 03:09:36,389 - trading_bot.token_scanner - INFO - Scanning Birdeye for tokens...
+2025-04-02 03:09:36,922 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Birdeye search
+2025-04-02 03:09:36,923 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 03:09:37,015 - trading_bot.token_scanner - INFO - Discovered 2 tokens from DexScreener
+2025-04-02 03:09:37,015 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 03:09:37,677 - trading_bot.token_scanner - INFO - Found 4 top gainer tokens
+2025-04-02 03:09:37,678 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 03:09:37,862 - trading_bot.token_analyzer - ERROR - Error fetching trending tokens from Birdeye: 'str' object has no attribute 'get'
+2025-04-02 03:09:37,907 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/search
+2025-04-02 03:09:37,908 - trading_bot.token_analyzer - INFO - Found 2 trending tokens from DexScreener
+2025-04-02 03:09:37,908 - trading_bot.token_analyzer - INFO -   Top token 1: SOL - Score: 71.1
+2025-04-02 03:09:37,908 - trading_bot.token_analyzer - INFO -   Top token 2: SOL - Score: 71.1
+2025-04-02 03:09:37,909 - trading_bot.token_analyzer - INFO - Found 2 trending tokens
+2025-04-02 03:09:37,910 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-04-02 03:09:37,910 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() missing 1 required positional argument: 'liquidity_locked'
+2025-04-02 03:09:37,911 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 03:09:37,913 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan

@@ -1,0 +1,552 @@
+2025-04-01 12:58:43,004 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 12:58:43,005 - trading_bot.solana_trader - INFO - Wallet initialized: DpWxPejkHk4Hq1Gz15N2cjBYwgnAR2EuTfe8XcmGoP9k
+2025-04-01 12:58:43,007 - trading_bot.solana_trader - INFO - Loaded 3 active orders
+2025-04-01 12:58:43,008 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 12:58:43,016 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-04-01 12:58:43,017 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 12:58:43,019 - trading_bot - INFO - ==================================================
+2025-04-01 12:58:43,019 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-04-01 12:58:43,019 - trading_bot - INFO - ==================================================
+2025-04-01 12:58:43,380 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 12:58:43,381 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 12:58:43,481 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 12:58:43,562 - trading_bot - INFO - Initial Wallet Balance: 3.0000 SOL ($385.62)
+2025-04-01 12:58:43,563 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-04-01 12:58:43,563 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-01 12:58:43,966 - trading_bot.token_scanner - INFO - Discovered 4 tokens from Twitter
+2025-04-01 12:58:43,967 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-01 12:58:43,967 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-04-01 12:58:43,970 - trading_bot - INFO - Starting token discovery and trading process
+2025-04-01 12:58:44,025 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 12:58:44,081 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://api.dexscreener.com/latest/dex/pairs/solana: 404, message='Not Found', url='https://api.dexscreener.com/latest/dex/pairs/solana'
+2025-04-01 12:58:44,082 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 12:58:44,126 - trading_bot - INFO - Current wallet balance: 3.0000 SOL ($385.53)
+2025-04-01 12:58:44,442 - trading_bot.token_scanner - INFO - Tradable token found: MC (FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump)
+2025-04-01 12:58:45,861 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon)
+2025-04-01 12:58:46,130 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://api.dexscreener.com/latest/dex/pairs/solana: 404, message='Not Found', url='https://api.dexscreener.com/latest/dex/pairs/solana'
+2025-04-01 12:58:46,152 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 12:58:47,252 - trading_bot.token_scanner - INFO - Tradable token found: CA (ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump)
+2025-04-01 12:58:48,658 - trading_bot.token_scanner - INFO - Tradable token found: ANN (4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump)
+2025-04-01 12:58:50,125 - trading_bot.token_scanner - INFO - Tradable token found: CA (Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ)
+2025-04-01 12:58:50,162 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://api.dexscreener.com/latest/dex/pairs/solana: 404, message='Not Found', url='https://api.dexscreener.com/latest/dex/pairs/solana'
+2025-04-01 12:58:50,163 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/pairs/solana after 3 attempts
+2025-04-01 12:58:50,163 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-01 12:58:50,163 - trading_bot.token_scanner - INFO - Analyzing discovered tokens...
+2025-04-01 12:58:50,217 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 12:58:50,218 - trading_bot.utils - ERROR - Failed to fetch https://quote-api.jup.ag/v6/quote after 3 attempts
+2025-04-01 12:58:50,218 - trading_bot.solana_trader - WARNING - Failed to get price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 12:58:50,218 - trading_bot.solana_trader - WARNING - Could not get current price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 12:58:50,420 - trading_bot.solana_trader - INFO - Stop loss triggered for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: -99.95%
+2025-04-01 12:58:50,420 - trading_bot.solana_trader - ERROR - Error getting token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: 'dict' object has no attribute 'encoding'
+2025-04-01 12:58:50,420 - trading_bot.solana_trader - WARNING - No token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump
+2025-04-01 12:58:50,498 - trading_bot.token_scanner - INFO - Tradable token found: IFOYCIC (4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump)
+2025-04-01 12:58:50,521 - trading_bot.solana_trader - INFO - Stop loss triggered for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: -99.87%
+2025-04-01 12:58:50,521 - trading_bot.solana_trader - ERROR - Error getting token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: 'dict' object has no attribute 'encoding'
+2025-04-01 12:58:50,522 - trading_bot.solana_trader - WARNING - No token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump
+2025-04-01 12:58:51,553 - trading_bot.token_scanner - INFO - Tradable token found: CA (8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump)
+2025-04-01 12:58:51,641 - trading_bot.token_scanner - INFO - Tradable token found: CA (8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump)
+2025-04-01 12:58:52,557 - trading_bot - INFO - Trading Alterya (FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump) for 0.1 SOL
+2025-04-01 12:58:52,628 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 12:58:52,647 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-01 12:58:53,023 - trading_bot.database - INFO - Recorded BUY trade for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: 0.1 at 0.00026783806271995315
+2025-04-01 12:58:53,023 - trading_bot.solana_trader - INFO - Buy executed: 1111111111111111111111111111111111111111111111111111111111111111 for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump - 0.1 SOL
+2025-04-01 12:58:53,023 - trading_bot - INFO - Successfully traded Alterya: 1111111111111111111111111111111111111111111111111111111111111111
+2025-04-01 12:58:53,026 - trading_bot - INFO - Trading FIT (CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon) for 0.1 SOL
+2025-04-01 12:58:53,052 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 12:58:53,460 - trading_bot.database - INFO - Recorded BUY trade for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: 0.1 at 2.6688562750863633e-06
+2025-04-01 12:58:53,460 - trading_bot.solana_trader - INFO - Buy executed: 1111111111111111111111111111111111111111111111111111111111111111 for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon - 0.1 SOL
+2025-04-01 12:58:53,460 - trading_bot - INFO - Successfully traded FIT: 1111111111111111111111111111111111111111111111111111111111111111
+2025-04-01 12:58:53,463 - trading_bot - INFO - Trading H2O (ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump) for 0.1 SOL
+2025-04-01 12:58:53,488 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 12:58:53,859 - trading_bot.database - INFO - Recorded BUY trade for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: 0.1 at 0.0029370824104286864
+2025-04-01 12:58:53,859 - trading_bot.solana_trader - INFO - Buy executed: 1111111111111111111111111111111111111111111111111111111111111111 for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump - 0.1 SOL
+2025-04-01 12:58:53,860 - trading_bot - INFO - Successfully traded H2O: 1111111111111111111111111111111111111111111111111111111111111111
+2025-04-01 12:58:53,862 - trading_bot - INFO - Trading ANN (4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump) for 0.1 SOL
+2025-04-01 12:58:53,883 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 12:58:54,180 - trading_bot.database - INFO - Recorded BUY trade for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: 0.1 at 0.00013534666863778989
+2025-04-01 12:58:54,180 - trading_bot.solana_trader - INFO - Buy executed: 1111111111111111111111111111111111111111111111111111111111111111 for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump - 0.1 SOL
+2025-04-01 12:58:54,181 - trading_bot - INFO - Successfully traded ANN: 1111111111111111111111111111111111111111111111111111111111111111
+2025-04-01 12:58:54,183 - trading_bot - INFO - Already have position in BABYPURPE (Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ), skipping
+2025-04-01 12:58:54,185 - trading_bot - INFO - Already have position in JOKE (8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump), skipping
+2025-04-01 12:59:50,631 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 12:59:52,709 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 12:59:56,798 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 12:59:56,801 - trading_bot.utils - ERROR - Failed to fetch https://quote-api.jup.ag/v6/quote after 3 attempts
+2025-04-01 12:59:56,802 - trading_bot.solana_trader - WARNING - Failed to get price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 12:59:56,803 - trading_bot.solana_trader - WARNING - Could not get current price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 12:59:56,896 - trading_bot.solana_trader - INFO - Stop loss triggered for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: -99.95%
+2025-04-01 12:59:57,278 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 12:59:57,279 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 12:59:57,279 - trading_bot.solana_trader - ERROR - Error getting token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: 'dict' object has no attribute 'encoding'
+2025-04-01 12:59:57,280 - trading_bot.solana_trader - WARNING - No token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump
+2025-04-01 12:59:57,344 - trading_bot.solana_trader - INFO - Stop loss triggered for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: -99.88%
+2025-04-01 12:59:57,344 - trading_bot.solana_trader - ERROR - Error getting token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: 'dict' object has no attribute 'encoding'
+2025-04-01 12:59:57,344 - trading_bot.solana_trader - WARNING - No token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump
+2025-04-01 12:59:57,396 - trading_bot.solana_trader - INFO - Stop loss triggered for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: -99.91%
+2025-04-01 12:59:57,396 - trading_bot.solana_trader - ERROR - Error getting token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: 'dict' object has no attribute 'encoding'
+2025-04-01 12:59:57,397 - trading_bot.solana_trader - WARNING - No token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump
+2025-04-01 12:59:57,521 - trading_bot.solana_trader - INFO - Stop loss triggered for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: -99.93%
+2025-04-01 12:59:57,522 - trading_bot.solana_trader - ERROR - Error getting token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: 'dict' object has no attribute 'encoding'
+2025-04-01 12:59:57,522 - trading_bot.solana_trader - WARNING - No token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon
+2025-04-01 12:59:57,600 - trading_bot.solana_trader - INFO - Stop loss triggered for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: -99.90%
+2025-04-01 12:59:57,601 - trading_bot.solana_trader - ERROR - Error getting token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: 'dict' object has no attribute 'encoding'
+2025-04-01 12:59:57,602 - trading_bot.solana_trader - WARNING - No token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump
+2025-04-01 12:59:57,684 - trading_bot.solana_trader - INFO - Stop loss triggered for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: -99.92%
+2025-04-01 12:59:57,685 - trading_bot.solana_trader - ERROR - Error getting token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: 'dict' object has no attribute 'encoding'
+2025-04-01 12:59:57,685 - trading_bot.solana_trader - WARNING - No token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump
+2025-04-01 13:00:57,779 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:00:59,873 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:01:03,938 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:01:03,939 - trading_bot.utils - ERROR - Failed to fetch https://quote-api.jup.ag/v6/quote after 3 attempts
+2025-04-01 13:01:03,940 - trading_bot.solana_trader - WARNING - Failed to get price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:01:03,941 - trading_bot.solana_trader - WARNING - Could not get current price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:01:04,048 - trading_bot.solana_trader - INFO - Stop loss triggered for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: -99.96%
+2025-04-01 13:01:04,960 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 13:01:04,962 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 13:01:04,963 - trading_bot.solana_trader - ERROR - Error getting token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:01:04,964 - trading_bot.solana_trader - WARNING - No token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump
+2025-04-01 13:01:05,049 - trading_bot.solana_trader - INFO - Stop loss triggered for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: -99.88%
+2025-04-01 13:01:05,050 - trading_bot.solana_trader - ERROR - Error getting token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:01:05,051 - trading_bot.solana_trader - WARNING - No token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump
+2025-04-01 13:01:05,157 - trading_bot.solana_trader - INFO - Stop loss triggered for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: -99.90%
+2025-04-01 13:01:05,158 - trading_bot.solana_trader - ERROR - Error getting token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:01:05,159 - trading_bot.solana_trader - WARNING - No token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump
+2025-04-01 13:01:05,273 - trading_bot.solana_trader - INFO - Stop loss triggered for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: -99.93%
+2025-04-01 13:01:05,274 - trading_bot.solana_trader - ERROR - Error getting token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: 'dict' object has no attribute 'encoding'
+2025-04-01 13:01:05,274 - trading_bot.solana_trader - WARNING - No token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon
+2025-04-01 13:01:05,373 - trading_bot.solana_trader - INFO - Stop loss triggered for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: -99.90%
+2025-04-01 13:01:05,374 - trading_bot.solana_trader - ERROR - Error getting token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:01:05,375 - trading_bot.solana_trader - WARNING - No token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump
+2025-04-01 13:01:05,494 - trading_bot.solana_trader - INFO - Stop loss triggered for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: -99.90%
+2025-04-01 13:01:05,495 - trading_bot.solana_trader - ERROR - Error getting token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:01:05,495 - trading_bot.solana_trader - WARNING - No token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump
+2025-04-01 13:02:05,590 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:02:07,649 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:02:11,697 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:02:11,698 - trading_bot.utils - ERROR - Failed to fetch https://quote-api.jup.ag/v6/quote after 3 attempts
+2025-04-01 13:02:11,699 - trading_bot.solana_trader - WARNING - Failed to get price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:02:11,699 - trading_bot.solana_trader - WARNING - Could not get current price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:02:11,811 - trading_bot.solana_trader - INFO - Stop loss triggered for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: -99.95%
+2025-04-01 13:02:12,806 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 13:02:12,808 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 13:02:12,809 - trading_bot.solana_trader - ERROR - Error getting token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:02:12,810 - trading_bot.solana_trader - WARNING - No token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump
+2025-04-01 13:02:12,909 - trading_bot.solana_trader - INFO - Stop loss triggered for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: -99.87%
+2025-04-01 13:02:12,910 - trading_bot.solana_trader - ERROR - Error getting token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:02:12,910 - trading_bot.solana_trader - WARNING - No token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump
+2025-04-01 13:02:13,017 - trading_bot.solana_trader - INFO - Stop loss triggered for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: -99.92%
+2025-04-01 13:02:13,018 - trading_bot.solana_trader - ERROR - Error getting token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:02:13,019 - trading_bot.solana_trader - WARNING - No token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump
+2025-04-01 13:02:13,101 - trading_bot.solana_trader - INFO - Stop loss triggered for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: -99.93%
+2025-04-01 13:02:13,102 - trading_bot.solana_trader - ERROR - Error getting token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: 'dict' object has no attribute 'encoding'
+2025-04-01 13:02:13,102 - trading_bot.solana_trader - WARNING - No token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon
+2025-04-01 13:02:13,158 - trading_bot.solana_trader - INFO - Stop loss triggered for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: -99.90%
+2025-04-01 13:02:13,159 - trading_bot.solana_trader - ERROR - Error getting token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:02:13,159 - trading_bot.solana_trader - WARNING - No token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump
+2025-04-01 13:02:13,226 - trading_bot.solana_trader - INFO - Stop loss triggered for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: -99.89%
+2025-04-01 13:02:13,227 - trading_bot.solana_trader - ERROR - Error getting token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:02:13,228 - trading_bot.solana_trader - WARNING - No token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump
+2025-04-01 13:03:13,332 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:03:15,400 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:03:19,465 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:03:19,466 - trading_bot.utils - ERROR - Failed to fetch https://quote-api.jup.ag/v6/quote after 3 attempts
+2025-04-01 13:03:19,467 - trading_bot.solana_trader - WARNING - Failed to get price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:03:19,468 - trading_bot.solana_trader - WARNING - Could not get current price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:03:19,525 - trading_bot.solana_trader - INFO - Stop loss triggered for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: -99.95%
+2025-04-01 13:03:20,526 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 13:03:20,528 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 13:03:20,529 - trading_bot.solana_trader - ERROR - Error getting token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:03:20,530 - trading_bot.solana_trader - WARNING - No token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump
+2025-04-01 13:03:20,583 - trading_bot.solana_trader - INFO - Stop loss triggered for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: -99.87%
+2025-04-01 13:03:20,584 - trading_bot.solana_trader - ERROR - Error getting token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:03:20,585 - trading_bot.solana_trader - WARNING - No token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump
+2025-04-01 13:03:20,652 - trading_bot.solana_trader - INFO - Stop loss triggered for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: -99.92%
+2025-04-01 13:03:20,653 - trading_bot.solana_trader - ERROR - Error getting token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:03:20,653 - trading_bot.solana_trader - WARNING - No token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump
+2025-04-01 13:03:20,742 - trading_bot.solana_trader - INFO - Stop loss triggered for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: -99.93%
+2025-04-01 13:03:20,743 - trading_bot.solana_trader - ERROR - Error getting token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: 'dict' object has no attribute 'encoding'
+2025-04-01 13:03:20,744 - trading_bot.solana_trader - WARNING - No token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon
+2025-04-01 13:03:20,831 - trading_bot.solana_trader - INFO - Stop loss triggered for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: -99.90%
+2025-04-01 13:03:20,832 - trading_bot.solana_trader - ERROR - Error getting token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:03:20,833 - trading_bot.solana_trader - WARNING - No token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump
+2025-04-01 13:03:20,953 - trading_bot.solana_trader - INFO - Stop loss triggered for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: -99.89%
+2025-04-01 13:03:20,954 - trading_bot.solana_trader - ERROR - Error getting token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:03:20,955 - trading_bot.solana_trader - WARNING - No token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump
+2025-04-01 13:03:52,651 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-01 13:03:53,176 - trading_bot.token_scanner - INFO - Discovered 7 tokens from Twitter
+2025-04-01 13:03:53,178 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-01 13:03:53,256 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://api.dexscreener.com/latest/dex/pairs/solana: 404, message='Not Found', url='https://api.dexscreener.com/latest/dex/pairs/solana'
+2025-04-01 13:03:54,301 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 13:03:54,378 - trading_bot - INFO - Current wallet balance: 3.0000 SOL ($384.45)
+2025-04-01 13:03:54,673 - trading_bot.token_scanner - INFO - Tradable token found: CA (6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump)
+2025-04-01 13:03:55,307 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://api.dexscreener.com/latest/dex/pairs/solana: 404, message='Not Found', url='https://api.dexscreener.com/latest/dex/pairs/solana'
+2025-04-01 13:03:56,097 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump)
+2025-04-01 13:03:57,113 - trading_bot - INFO - Trading EVA (6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump) for 0.1 SOL
+2025-04-01 13:03:57,144 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 13:03:57,578 - trading_bot.database - INFO - Recorded BUY trade for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: 0.1 at 2.9055764860714635e-05
+2025-04-01 13:03:57,579 - trading_bot.solana_trader - INFO - Buy executed: 1111111111111111111111111111111111111111111111111111111111111111 for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump - 0.1 SOL
+2025-04-01 13:03:57,580 - trading_bot - INFO - Successfully traded EVA: 1111111111111111111111111111111111111111111111111111111111111111
+2025-04-01 13:03:57,585 - trading_bot - INFO - Trading dog  (EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump) for 0.1 SOL
+2025-04-01 13:03:57,834 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 13:03:58,301 - trading_bot.database - INFO - Recorded BUY trade for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: 0.1 at 0.00022805284070583334
+2025-04-01 13:03:58,302 - trading_bot.solana_trader - INFO - Buy executed: 1111111111111111111111111111111111111111111111111111111111111111 for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump - 0.1 SOL
+2025-04-01 13:03:58,302 - trading_bot - INFO - Successfully traded dog : 1111111111111111111111111111111111111111111111111111111111111111
+2025-04-01 13:03:59,346 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://api.dexscreener.com/latest/dex/pairs/solana: 404, message='Not Found', url='https://api.dexscreener.com/latest/dex/pairs/solana'
+2025-04-01 13:03:59,347 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/pairs/solana after 3 attempts
+2025-04-01 13:03:59,348 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-01 13:03:59,348 - trading_bot.token_scanner - INFO - Analyzing discovered tokens...
+2025-04-01 13:03:59,353 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-01 13:04:21,056 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:04:23,107 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:04:27,155 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:04:27,157 - trading_bot.utils - ERROR - Failed to fetch https://quote-api.jup.ag/v6/quote after 3 attempts
+2025-04-01 13:04:27,157 - trading_bot.solana_trader - WARNING - Failed to get price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:04:27,158 - trading_bot.solana_trader - WARNING - Could not get current price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:04:27,222 - trading_bot.solana_trader - INFO - Stop loss triggered for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: -99.96%
+2025-04-01 13:04:28,081 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 13:04:28,083 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 13:04:28,084 - trading_bot.solana_trader - ERROR - Error getting token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:04:28,084 - trading_bot.solana_trader - WARNING - No token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump
+2025-04-01 13:04:28,207 - trading_bot.solana_trader - INFO - Stop loss triggered for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: -99.87%
+2025-04-01 13:04:28,208 - trading_bot.solana_trader - ERROR - Error getting token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:04:28,209 - trading_bot.solana_trader - WARNING - No token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump
+2025-04-01 13:04:28,278 - trading_bot.solana_trader - INFO - Stop loss triggered for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: -99.92%
+2025-04-01 13:04:28,280 - trading_bot.solana_trader - ERROR - Error getting token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:04:28,280 - trading_bot.solana_trader - WARNING - No token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump
+2025-04-01 13:04:28,365 - trading_bot.solana_trader - INFO - Stop loss triggered for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: -99.93%
+2025-04-01 13:04:28,366 - trading_bot.solana_trader - ERROR - Error getting token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: 'dict' object has no attribute 'encoding'
+2025-04-01 13:04:28,366 - trading_bot.solana_trader - WARNING - No token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon
+2025-04-01 13:04:28,423 - trading_bot.solana_trader - INFO - Stop loss triggered for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: -99.89%
+2025-04-01 13:04:28,425 - trading_bot.solana_trader - ERROR - Error getting token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:04:28,425 - trading_bot.solana_trader - WARNING - No token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump
+2025-04-01 13:04:28,492 - trading_bot.solana_trader - INFO - Stop loss triggered for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: -99.90%
+2025-04-01 13:04:28,493 - trading_bot.solana_trader - ERROR - Error getting token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:04:28,493 - trading_bot.solana_trader - WARNING - No token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump
+2025-04-01 13:04:28,592 - trading_bot.solana_trader - INFO - Stop loss triggered for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: -99.90%
+2025-04-01 13:04:28,593 - trading_bot.solana_trader - ERROR - Error getting token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:04:28,593 - trading_bot.solana_trader - WARNING - No token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump
+2025-04-01 13:04:28,695 - trading_bot.solana_trader - INFO - Stop loss triggered for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: -99.94%
+2025-04-01 13:04:28,695 - trading_bot.solana_trader - ERROR - Error getting token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:04:28,696 - trading_bot.solana_trader - WARNING - No token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump
+2025-04-01 13:05:28,789 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:05:30,845 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:05:34,908 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:05:34,910 - trading_bot.utils - ERROR - Failed to fetch https://quote-api.jup.ag/v6/quote after 3 attempts
+2025-04-01 13:05:34,910 - trading_bot.solana_trader - WARNING - Failed to get price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:05:34,911 - trading_bot.solana_trader - WARNING - Could not get current price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:05:35,000 - trading_bot.solana_trader - INFO - Stop loss triggered for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: -99.96%
+2025-04-01 13:05:35,758 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 13:05:35,759 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 13:05:35,759 - trading_bot.solana_trader - ERROR - Error getting token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:05:35,760 - trading_bot.solana_trader - WARNING - No token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump
+2025-04-01 13:05:35,854 - trading_bot.solana_trader - INFO - Stop loss triggered for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: -99.87%
+2025-04-01 13:05:35,855 - trading_bot.solana_trader - ERROR - Error getting token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:05:35,855 - trading_bot.solana_trader - WARNING - No token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump
+2025-04-01 13:05:35,960 - trading_bot.solana_trader - INFO - Stop loss triggered for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: -99.92%
+2025-04-01 13:05:35,961 - trading_bot.solana_trader - ERROR - Error getting token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:05:35,961 - trading_bot.solana_trader - WARNING - No token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump
+2025-04-01 13:05:36,027 - trading_bot.solana_trader - INFO - Stop loss triggered for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: -99.93%
+2025-04-01 13:05:36,028 - trading_bot.solana_trader - ERROR - Error getting token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: 'dict' object has no attribute 'encoding'
+2025-04-01 13:05:36,028 - trading_bot.solana_trader - WARNING - No token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon
+2025-04-01 13:05:36,154 - trading_bot.solana_trader - INFO - Stop loss triggered for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: -99.88%
+2025-04-01 13:05:36,155 - trading_bot.solana_trader - ERROR - Error getting token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:05:36,155 - trading_bot.solana_trader - WARNING - No token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump
+2025-04-01 13:05:36,259 - trading_bot.solana_trader - INFO - Stop loss triggered for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: -99.92%
+2025-04-01 13:05:36,260 - trading_bot.solana_trader - ERROR - Error getting token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:05:36,261 - trading_bot.solana_trader - WARNING - No token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump
+2025-04-01 13:05:36,378 - trading_bot.solana_trader - INFO - Stop loss triggered for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: -99.90%
+2025-04-01 13:05:36,379 - trading_bot.solana_trader - ERROR - Error getting token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:05:36,380 - trading_bot.solana_trader - WARNING - No token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump
+2025-04-01 13:05:36,465 - trading_bot.solana_trader - INFO - Stop loss triggered for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: -99.94%
+2025-04-01 13:05:36,466 - trading_bot.solana_trader - ERROR - Error getting token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:05:36,467 - trading_bot.solana_trader - WARNING - No token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump
+2025-04-01 13:06:36,822 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:06:38,899 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:06:42,953 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:06:42,955 - trading_bot.utils - ERROR - Failed to fetch https://quote-api.jup.ag/v6/quote after 3 attempts
+2025-04-01 13:06:42,955 - trading_bot.solana_trader - WARNING - Failed to get price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:06:42,955 - trading_bot.solana_trader - WARNING - Could not get current price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:06:43,062 - trading_bot.solana_trader - INFO - Stop loss triggered for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: -99.96%
+2025-04-01 13:06:43,907 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 13:06:43,908 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 13:06:43,909 - trading_bot.solana_trader - ERROR - Error getting token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:06:43,909 - trading_bot.solana_trader - WARNING - No token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump
+2025-04-01 13:06:43,973 - trading_bot.solana_trader - INFO - Stop loss triggered for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: -99.87%
+2025-04-01 13:06:43,974 - trading_bot.solana_trader - ERROR - Error getting token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:06:43,974 - trading_bot.solana_trader - WARNING - No token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump
+2025-04-01 13:06:44,032 - trading_bot.solana_trader - INFO - Stop loss triggered for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: -99.94%
+2025-04-01 13:06:44,033 - trading_bot.solana_trader - ERROR - Error getting token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:06:44,034 - trading_bot.solana_trader - WARNING - No token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump
+2025-04-01 13:06:44,131 - trading_bot.solana_trader - INFO - Stop loss triggered for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: -99.93%
+2025-04-01 13:06:44,132 - trading_bot.solana_trader - ERROR - Error getting token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: 'dict' object has no attribute 'encoding'
+2025-04-01 13:06:44,133 - trading_bot.solana_trader - WARNING - No token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon
+2025-04-01 13:06:44,241 - trading_bot.solana_trader - INFO - Stop loss triggered for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: -99.88%
+2025-04-01 13:06:44,243 - trading_bot.solana_trader - ERROR - Error getting token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:06:44,243 - trading_bot.solana_trader - WARNING - No token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump
+2025-04-01 13:06:44,347 - trading_bot.solana_trader - INFO - Stop loss triggered for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: -99.88%
+2025-04-01 13:06:44,348 - trading_bot.solana_trader - ERROR - Error getting token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:06:44,348 - trading_bot.solana_trader - WARNING - No token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump
+2025-04-01 13:06:44,440 - trading_bot.solana_trader - INFO - Stop loss triggered for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: -99.90%
+2025-04-01 13:06:44,441 - trading_bot.solana_trader - ERROR - Error getting token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:06:44,442 - trading_bot.solana_trader - WARNING - No token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump
+2025-04-01 13:06:44,563 - trading_bot.solana_trader - INFO - Stop loss triggered for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: -99.97%
+2025-04-01 13:06:44,564 - trading_bot.solana_trader - ERROR - Error getting token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:06:44,566 - trading_bot.solana_trader - WARNING - No token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump
+2025-04-01 13:07:44,685 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:07:46,751 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:07:50,830 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:07:50,833 - trading_bot.utils - ERROR - Failed to fetch https://quote-api.jup.ag/v6/quote after 3 attempts
+2025-04-01 13:07:50,833 - trading_bot.solana_trader - WARNING - Failed to get price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:07:50,833 - trading_bot.solana_trader - WARNING - Could not get current price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:07:50,891 - trading_bot.solana_trader - INFO - Stop loss triggered for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: -99.95%
+2025-04-01 13:07:51,731 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 13:07:51,732 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 13:07:51,733 - trading_bot.solana_trader - ERROR - Error getting token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:07:51,733 - trading_bot.solana_trader - WARNING - No token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump
+2025-04-01 13:07:51,863 - trading_bot.solana_trader - INFO - Stop loss triggered for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: -99.87%
+2025-04-01 13:07:51,864 - trading_bot.solana_trader - ERROR - Error getting token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:07:51,864 - trading_bot.solana_trader - WARNING - No token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump
+2025-04-01 13:07:51,918 - trading_bot.solana_trader - INFO - Stop loss triggered for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: -99.95%
+2025-04-01 13:07:51,919 - trading_bot.solana_trader - ERROR - Error getting token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:07:51,919 - trading_bot.solana_trader - WARNING - No token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump
+2025-04-01 13:07:52,025 - trading_bot.solana_trader - INFO - Stop loss triggered for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: -99.93%
+2025-04-01 13:07:52,026 - trading_bot.solana_trader - ERROR - Error getting token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: 'dict' object has no attribute 'encoding'
+2025-04-01 13:07:52,026 - trading_bot.solana_trader - WARNING - No token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon
+2025-04-01 13:07:52,081 - trading_bot.solana_trader - INFO - Stop loss triggered for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: -99.87%
+2025-04-01 13:07:52,082 - trading_bot.solana_trader - ERROR - Error getting token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:07:52,082 - trading_bot.solana_trader - WARNING - No token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump
+2025-04-01 13:07:52,188 - trading_bot.solana_trader - INFO - Stop loss triggered for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: -99.85%
+2025-04-01 13:07:52,188 - trading_bot.solana_trader - ERROR - Error getting token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:07:52,188 - trading_bot.solana_trader - WARNING - No token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump
+2025-04-01 13:07:52,265 - trading_bot.solana_trader - INFO - Stop loss triggered for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: -99.90%
+2025-04-01 13:07:52,266 - trading_bot.solana_trader - ERROR - Error getting token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:07:52,266 - trading_bot.solana_trader - WARNING - No token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump
+2025-04-01 13:07:52,369 - trading_bot.solana_trader - INFO - Stop loss triggered for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: -99.97%
+2025-04-01 13:07:52,370 - trading_bot.solana_trader - ERROR - Error getting token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:07:52,371 - trading_bot.solana_trader - WARNING - No token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump
+2025-04-01 13:08:52,494 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:08:54,567 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:08:59,158 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 13:08:59,159 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 13:08:59,166 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:08:59,167 - trading_bot.utils - ERROR - Failed to fetch https://quote-api.jup.ag/v6/quote after 3 attempts
+2025-04-01 13:08:59,167 - trading_bot.solana_trader - WARNING - Failed to get price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:08:59,168 - trading_bot.solana_trader - WARNING - Could not get current price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:08:59,261 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 13:08:59,307 - trading_bot.solana_trader - INFO - Stop loss triggered for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: -99.95%
+2025-04-01 13:08:59,308 - trading_bot.solana_trader - ERROR - Error getting token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:08:59,308 - trading_bot.solana_trader - WARNING - No token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump
+2025-04-01 13:08:59,353 - trading_bot - INFO - Current wallet balance: 3.0000 SOL ($383.49)
+2025-04-01 13:08:59,381 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-01 13:08:59,829 - trading_bot.token_scanner - INFO - Discovered 7 tokens from Twitter
+2025-04-01 13:08:59,830 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-01 13:08:59,833 - trading_bot.solana_trader - INFO - Stop loss triggered for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: -99.86%
+2025-04-01 13:08:59,834 - trading_bot.solana_trader - ERROR - Error getting token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:08:59,834 - trading_bot.solana_trader - WARNING - No token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump
+2025-04-01 13:08:59,937 - trading_bot.solana_trader - INFO - Stop loss triggered for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: -99.95%
+2025-04-01 13:08:59,938 - trading_bot.solana_trader - ERROR - Error getting token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:08:59,938 - trading_bot.solana_trader - WARNING - No token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump
+2025-04-01 13:08:59,943 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://api.dexscreener.com/latest/dex/pairs/solana: 404, message='Not Found', url='https://api.dexscreener.com/latest/dex/pairs/solana'
+2025-04-01 13:09:00,026 - trading_bot.solana_trader - INFO - Stop loss triggered for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: -99.93%
+2025-04-01 13:09:00,033 - trading_bot.solana_trader - ERROR - Error getting token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: 'dict' object has no attribute 'encoding'
+2025-04-01 13:09:00,036 - trading_bot.solana_trader - WARNING - No token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon
+2025-04-01 13:09:00,150 - trading_bot.solana_trader - INFO - Stop loss triggered for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: -99.87%
+2025-04-01 13:09:00,152 - trading_bot.solana_trader - ERROR - Error getting token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:09:00,153 - trading_bot.solana_trader - WARNING - No token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump
+2025-04-01 13:09:00,238 - trading_bot.solana_trader - INFO - Stop loss triggered for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: -99.83%
+2025-04-01 13:09:00,240 - trading_bot.solana_trader - ERROR - Error getting token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:09:00,241 - trading_bot.solana_trader - WARNING - No token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump
+2025-04-01 13:09:00,333 - trading_bot.solana_trader - INFO - Stop loss triggered for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: -99.90%
+2025-04-01 13:09:00,336 - trading_bot.solana_trader - ERROR - Error getting token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:09:00,336 - trading_bot.solana_trader - WARNING - No token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump
+2025-04-01 13:09:00,390 - trading_bot.solana_trader - INFO - Stop loss triggered for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: -99.96%
+2025-04-01 13:09:00,391 - trading_bot.solana_trader - ERROR - Error getting token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:09:00,392 - trading_bot.solana_trader - WARNING - No token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump
+2025-04-01 13:09:01,978 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://api.dexscreener.com/latest/dex/pairs/solana: 404, message='Not Found', url='https://api.dexscreener.com/latest/dex/pairs/solana'
+2025-04-01 13:09:06,026 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://api.dexscreener.com/latest/dex/pairs/solana: 404, message='Not Found', url='https://api.dexscreener.com/latest/dex/pairs/solana'
+2025-04-01 13:09:06,029 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/pairs/solana after 3 attempts
+2025-04-01 13:09:06,030 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-01 13:09:06,030 - trading_bot.token_scanner - INFO - Analyzing discovered tokens...
+2025-04-01 13:09:06,039 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-01 13:10:00,543 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:10:02,624 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:10:06,698 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:10:06,702 - trading_bot.utils - ERROR - Failed to fetch https://quote-api.jup.ag/v6/quote after 3 attempts
+2025-04-01 13:10:06,703 - trading_bot.solana_trader - WARNING - Failed to get price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:10:06,704 - trading_bot.solana_trader - WARNING - Could not get current price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:10:06,786 - trading_bot.solana_trader - INFO - Stop loss triggered for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: -99.95%
+2025-04-01 13:10:07,564 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 13:10:07,565 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 13:10:07,566 - trading_bot.solana_trader - ERROR - Error getting token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:10:07,566 - trading_bot.solana_trader - WARNING - No token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump
+2025-04-01 13:10:07,623 - trading_bot.solana_trader - INFO - Stop loss triggered for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: -99.86%
+2025-04-01 13:10:07,624 - trading_bot.solana_trader - ERROR - Error getting token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:10:07,625 - trading_bot.solana_trader - WARNING - No token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump
+2025-04-01 13:10:07,710 - trading_bot.solana_trader - INFO - Stop loss triggered for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: -99.96%
+2025-04-01 13:10:07,713 - trading_bot.solana_trader - ERROR - Error getting token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:10:07,713 - trading_bot.solana_trader - WARNING - No token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump
+2025-04-01 13:10:07,816 - trading_bot.solana_trader - INFO - Stop loss triggered for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: -99.93%
+2025-04-01 13:10:07,819 - trading_bot.solana_trader - ERROR - Error getting token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: 'dict' object has no attribute 'encoding'
+2025-04-01 13:10:07,820 - trading_bot.solana_trader - WARNING - No token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon
+2025-04-01 13:10:07,898 - trading_bot.solana_trader - INFO - Stop loss triggered for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: -99.86%
+2025-04-01 13:10:07,899 - trading_bot.solana_trader - ERROR - Error getting token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:10:07,899 - trading_bot.solana_trader - WARNING - No token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump
+2025-04-01 13:10:08,013 - trading_bot.solana_trader - INFO - Stop loss triggered for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: -99.86%
+2025-04-01 13:10:08,013 - trading_bot.solana_trader - ERROR - Error getting token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:10:08,014 - trading_bot.solana_trader - WARNING - No token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump
+2025-04-01 13:10:08,081 - trading_bot.solana_trader - INFO - Stop loss triggered for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: -99.90%
+2025-04-01 13:10:08,082 - trading_bot.solana_trader - ERROR - Error getting token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:10:08,083 - trading_bot.solana_trader - WARNING - No token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump
+2025-04-01 13:10:08,219 - trading_bot.solana_trader - INFO - Stop loss triggered for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: -99.96%
+2025-04-01 13:10:08,219 - trading_bot.solana_trader - ERROR - Error getting token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:10:08,220 - trading_bot.solana_trader - WARNING - No token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump
+2025-04-01 13:11:08,365 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:11:10,433 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:11:14,507 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:11:14,507 - trading_bot.utils - ERROR - Failed to fetch https://quote-api.jup.ag/v6/quote after 3 attempts
+2025-04-01 13:11:14,508 - trading_bot.solana_trader - WARNING - Failed to get price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:11:14,508 - trading_bot.solana_trader - WARNING - Could not get current price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:11:14,572 - trading_bot.solana_trader - INFO - Stop loss triggered for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: -99.95%
+2025-04-01 13:11:15,527 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 13:11:15,529 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 13:11:15,530 - trading_bot.solana_trader - ERROR - Error getting token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:11:15,530 - trading_bot.solana_trader - WARNING - No token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump
+2025-04-01 13:11:15,601 - trading_bot.solana_trader - INFO - Stop loss triggered for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: -99.86%
+2025-04-01 13:11:15,601 - trading_bot.solana_trader - ERROR - Error getting token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:11:15,602 - trading_bot.solana_trader - WARNING - No token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump
+2025-04-01 13:11:15,704 - trading_bot.solana_trader - INFO - Stop loss triggered for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: -99.96%
+2025-04-01 13:11:15,705 - trading_bot.solana_trader - ERROR - Error getting token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:11:15,705 - trading_bot.solana_trader - WARNING - No token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump
+2025-04-01 13:11:15,846 - trading_bot.solana_trader - INFO - Stop loss triggered for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: -99.93%
+2025-04-01 13:11:15,847 - trading_bot.solana_trader - ERROR - Error getting token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: 'dict' object has no attribute 'encoding'
+2025-04-01 13:11:15,848 - trading_bot.solana_trader - WARNING - No token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon
+2025-04-01 13:11:15,933 - trading_bot.solana_trader - INFO - Stop loss triggered for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: -99.86%
+2025-04-01 13:11:15,934 - trading_bot.solana_trader - ERROR - Error getting token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:11:15,935 - trading_bot.solana_trader - WARNING - No token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump
+2025-04-01 13:11:15,994 - trading_bot.solana_trader - INFO - Stop loss triggered for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: -99.90%
+2025-04-01 13:11:15,995 - trading_bot.solana_trader - ERROR - Error getting token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:11:15,995 - trading_bot.solana_trader - WARNING - No token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump
+2025-04-01 13:11:16,123 - trading_bot.solana_trader - INFO - Stop loss triggered for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: -99.90%
+2025-04-01 13:11:16,124 - trading_bot.solana_trader - ERROR - Error getting token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:11:16,124 - trading_bot.solana_trader - WARNING - No token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump
+2025-04-01 13:11:16,177 - trading_bot.solana_trader - INFO - Stop loss triggered for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: -99.96%
+2025-04-01 13:11:16,178 - trading_bot.solana_trader - ERROR - Error getting token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:11:16,179 - trading_bot.solana_trader - WARNING - No token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump
+2025-04-01 13:12:16,276 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:12:18,325 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:12:22,378 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:12:22,380 - trading_bot.utils - ERROR - Failed to fetch https://quote-api.jup.ag/v6/quote after 3 attempts
+2025-04-01 13:12:22,381 - trading_bot.solana_trader - WARNING - Failed to get price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:12:22,382 - trading_bot.solana_trader - WARNING - Could not get current price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:12:22,503 - trading_bot.solana_trader - INFO - Stop loss triggered for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: -99.93%
+2025-04-01 13:12:23,688 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 13:12:23,690 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 13:12:23,692 - trading_bot.solana_trader - ERROR - Error getting token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:12:23,692 - trading_bot.solana_trader - WARNING - No token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump
+2025-04-01 13:12:23,818 - trading_bot.solana_trader - INFO - Stop loss triggered for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: -99.86%
+2025-04-01 13:12:23,819 - trading_bot.solana_trader - ERROR - Error getting token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:12:23,820 - trading_bot.solana_trader - WARNING - No token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump
+2025-04-01 13:12:23,926 - trading_bot.solana_trader - INFO - Stop loss triggered for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: -99.96%
+2025-04-01 13:12:23,928 - trading_bot.solana_trader - ERROR - Error getting token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:12:23,928 - trading_bot.solana_trader - WARNING - No token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump
+2025-04-01 13:12:24,021 - trading_bot.solana_trader - INFO - Stop loss triggered for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: -99.93%
+2025-04-01 13:12:24,022 - trading_bot.solana_trader - ERROR - Error getting token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: 'dict' object has no attribute 'encoding'
+2025-04-01 13:12:24,023 - trading_bot.solana_trader - WARNING - No token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon
+2025-04-01 13:12:24,125 - trading_bot.solana_trader - INFO - Stop loss triggered for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: -99.87%
+2025-04-01 13:12:24,126 - trading_bot.solana_trader - ERROR - Error getting token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:12:24,127 - trading_bot.solana_trader - WARNING - No token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump
+2025-04-01 13:12:24,270 - trading_bot.solana_trader - INFO - Stop loss triggered for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: -99.88%
+2025-04-01 13:12:24,271 - trading_bot.solana_trader - ERROR - Error getting token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:12:24,271 - trading_bot.solana_trader - WARNING - No token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump
+2025-04-01 13:12:24,357 - trading_bot.solana_trader - INFO - Stop loss triggered for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: -99.90%
+2025-04-01 13:12:24,362 - trading_bot.solana_trader - ERROR - Error getting token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:12:24,363 - trading_bot.solana_trader - WARNING - No token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump
+2025-04-01 13:12:24,487 - trading_bot.solana_trader - INFO - Stop loss triggered for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: -99.96%
+2025-04-01 13:12:24,488 - trading_bot.solana_trader - ERROR - Error getting token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:12:24,488 - trading_bot.solana_trader - WARNING - No token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump
+2025-04-01 13:13:24,602 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:13:26,684 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:13:30,747 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:13:30,749 - trading_bot.utils - ERROR - Failed to fetch https://quote-api.jup.ag/v6/quote after 3 attempts
+2025-04-01 13:13:30,749 - trading_bot.solana_trader - WARNING - Failed to get price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:13:30,750 - trading_bot.solana_trader - WARNING - Could not get current price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:13:30,827 - trading_bot.solana_trader - INFO - Stop loss triggered for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: -99.93%
+2025-04-01 13:13:31,136 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 13:13:31,136 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 13:13:31,137 - trading_bot.solana_trader - ERROR - Error getting token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:13:31,137 - trading_bot.solana_trader - WARNING - No token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump
+2025-04-01 13:13:31,193 - trading_bot.solana_trader - INFO - Stop loss triggered for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: -99.86%
+2025-04-01 13:13:31,193 - trading_bot.solana_trader - ERROR - Error getting token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:13:31,193 - trading_bot.solana_trader - WARNING - No token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump
+2025-04-01 13:13:31,243 - trading_bot.solana_trader - INFO - Stop loss triggered for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: -99.95%
+2025-04-01 13:13:31,243 - trading_bot.solana_trader - ERROR - Error getting token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:13:31,244 - trading_bot.solana_trader - WARNING - No token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump
+2025-04-01 13:13:31,357 - trading_bot.solana_trader - INFO - Stop loss triggered for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: -99.93%
+2025-04-01 13:13:31,358 - trading_bot.solana_trader - ERROR - Error getting token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: 'dict' object has no attribute 'encoding'
+2025-04-01 13:13:31,359 - trading_bot.solana_trader - WARNING - No token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon
+2025-04-01 13:13:31,457 - trading_bot.solana_trader - INFO - Stop loss triggered for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: -99.87%
+2025-04-01 13:13:31,458 - trading_bot.solana_trader - ERROR - Error getting token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:13:31,459 - trading_bot.solana_trader - WARNING - No token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump
+2025-04-01 13:13:31,520 - trading_bot.solana_trader - INFO - Stop loss triggered for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: -99.90%
+2025-04-01 13:13:31,520 - trading_bot.solana_trader - ERROR - Error getting token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:13:31,521 - trading_bot.solana_trader - WARNING - No token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump
+2025-04-01 13:13:31,585 - trading_bot.solana_trader - INFO - Stop loss triggered for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: -99.90%
+2025-04-01 13:13:31,586 - trading_bot.solana_trader - ERROR - Error getting token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:13:31,586 - trading_bot.solana_trader - WARNING - No token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump
+2025-04-01 13:13:31,693 - trading_bot.solana_trader - INFO - Stop loss triggered for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: -99.96%
+2025-04-01 13:13:31,694 - trading_bot.solana_trader - ERROR - Error getting token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:13:31,694 - trading_bot.solana_trader - WARNING - No token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump
+2025-04-01 13:13:59,557 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 13:13:59,636 - trading_bot - INFO - Current wallet balance: 3.0000 SOL ($384.03)
+2025-04-01 13:14:06,047 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-01 13:14:06,524 - trading_bot.token_scanner - INFO - Discovered 8 tokens from Twitter
+2025-04-01 13:14:06,524 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-01 13:14:06,617 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://api.dexscreener.com/latest/dex/pairs/solana: 404, message='Not Found', url='https://api.dexscreener.com/latest/dex/pairs/solana'
+2025-04-01 13:14:08,659 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://api.dexscreener.com/latest/dex/pairs/solana: 404, message='Not Found', url='https://api.dexscreener.com/latest/dex/pairs/solana'
+2025-04-01 13:14:12,698 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://api.dexscreener.com/latest/dex/pairs/solana: 404, message='Not Found', url='https://api.dexscreener.com/latest/dex/pairs/solana'
+2025-04-01 13:14:12,699 - trading_bot.utils - ERROR - Failed to fetch https://api.dexscreener.com/latest/dex/pairs/solana after 3 attempts
+2025-04-01 13:14:12,699 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-01 13:14:12,701 - trading_bot.token_scanner - INFO - Analyzing discovered tokens...
+2025-04-01 13:14:13,225 - trading_bot.token_scanner - INFO - Tradable token found: MONKEY (4T79j1WoYDq9xsUoKtS87BWhFp4c4P1KuzjuiSNbpump)
+2025-04-01 13:14:14,236 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-01 13:14:31,826 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:14:33,893 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:14:37,951 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:14:37,953 - trading_bot.utils - ERROR - Failed to fetch https://quote-api.jup.ag/v6/quote after 3 attempts
+2025-04-01 13:14:37,954 - trading_bot.solana_trader - WARNING - Failed to get price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:14:37,955 - trading_bot.solana_trader - WARNING - Could not get current price for Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ
+2025-04-01 13:14:38,034 - trading_bot.solana_trader - INFO - Stop loss triggered for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: -99.93%
+2025-04-01 13:14:39,086 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 13:14:39,089 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 13:14:39,090 - trading_bot.solana_trader - ERROR - Error getting token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:14:39,091 - trading_bot.solana_trader - WARNING - No token balance for 4siCr4cLx3taFVp1acjbdaRjZrMW6fQG35pDdH9Dpump
+2025-04-01 13:14:39,224 - trading_bot.solana_trader - INFO - Stop loss triggered for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: -99.86%
+2025-04-01 13:14:39,225 - trading_bot.solana_trader - ERROR - Error getting token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:14:39,225 - trading_bot.solana_trader - WARNING - No token balance for 8Aq98PyztQc8cvuRA3z7DFzbFeXQa8xWuqEJUdx9pump
+2025-04-01 13:14:39,345 - trading_bot.solana_trader - INFO - Stop loss triggered for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: -99.95%
+2025-04-01 13:14:39,346 - trading_bot.solana_trader - ERROR - Error getting token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:14:39,346 - trading_bot.solana_trader - WARNING - No token balance for FhLjrWJMvhAAWQNQa9iyZeNwDEyv8vLdA2fh9icQpump
+2025-04-01 13:14:39,619 - trading_bot.solana_trader - INFO - Stop loss triggered for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: -99.93%
+2025-04-01 13:14:39,620 - trading_bot.solana_trader - ERROR - Error getting token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon: 'dict' object has no attribute 'encoding'
+2025-04-01 13:14:39,621 - trading_bot.solana_trader - WARNING - No token balance for CqGMgsUDbj1XnKe45FbzZLd64MivoKPSgnZQJb3emoon
+2025-04-01 13:14:39,829 - trading_bot.solana_trader - INFO - Stop loss triggered for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: -99.87%
+2025-04-01 13:14:39,832 - trading_bot.solana_trader - ERROR - Error getting token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:14:39,832 - trading_bot.solana_trader - WARNING - No token balance for ChKWH4PcfSw1q9NgoweQZ8DpeJuQBtyXoQtoWh89pump
+2025-04-01 13:14:40,037 - trading_bot.solana_trader - INFO - Stop loss triggered for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: -99.87%
+2025-04-01 13:14:40,037 - trading_bot.solana_trader - ERROR - Error getting token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:14:40,038 - trading_bot.solana_trader - WARNING - No token balance for 4Q9hxSp3fTdbsY3Qvefk2B3bWUJ8QsduBRoBn2xcpump
+2025-04-01 13:14:40,186 - trading_bot.solana_trader - INFO - Stop loss triggered for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: -99.90%
+2025-04-01 13:14:40,188 - trading_bot.solana_trader - ERROR - Error getting token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:14:40,189 - trading_bot.solana_trader - WARNING - No token balance for 6Y512fpoNUCUhfDg8qi5Zzzh4TT18Xcvgu6KMn2ipump
+2025-04-01 13:14:40,381 - trading_bot.solana_trader - INFO - Stop loss triggered for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: -99.97%
+2025-04-01 13:14:40,382 - trading_bot.solana_trader - ERROR - Error getting token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump: 'dict' object has no attribute 'encoding'
+2025-04-01 13:14:40,382 - trading_bot.solana_trader - WARNING - No token balance for EsSMbYKF7ct1nJ2BZsdGzHxUe9Ar9BpKZr81CEDLpump
+2025-04-01 13:15:40,512 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:15:42,584 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://quote-api.jup.ag/v6/quote: 400, message='Bad Request', url='https://quote-api.jup.ag/v6/quote?inputMint=Ej9jJDCD85mZysgorrY582Vpv7HLgDyi7Fa2jRCjgscZ&outputMint=So11111111111111111111111111111111111111112&amount=1000000&slippageBps=50'
+2025-04-01 13:15:43,417 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-04-01 13:15:43,888 - trading_bot - INFO - Closing connections
+2025-04-01 13:15:43,889 - trading_bot.solana_trader - INFO - Solana RPC client closed
+2025-04-01 13:15:43,891 - trading_bot - INFO - ==================================================
+2025-04-01 13:15:43,891 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-04-01 13:15:43,892 - trading_bot - INFO - ==================================================
+2025-04-01 13:15:43,896 - trading_bot - INFO - Bot execution completed

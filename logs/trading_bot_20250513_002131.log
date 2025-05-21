@@ -1,0 +1,69 @@
+2025-05-13 00:21:32,728 - database - INFO - Database tables initialized
+2025-05-13 00:21:33,479 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 00:21:33,480 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 00:21:33,481 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 00:21:33,481 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 00:21:33,615 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 00:21:33,671 - solana_trader - INFO - Got SOL price from CoinGecko: $167.69
+2025-05-13 00:21:33,860 - trading_bot - ERROR - Error fetching dashboard data: cannot access local variable 'logger' where it is not associated with a value
+2025-05-13 00:21:33,862 - trading_bot - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 333, in fetch_dashboard_data
+    positions_df = await update_token_prices(positions_df, db, trader)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 113, in update_token_prices
+    logger.info(f"Current SOL price for calculations: ${sol_price_usd}")
+    ^^^^^^
+UnboundLocalError: cannot access local variable 'logger' where it is not associated with a value
+
+2025-05-13 00:21:33,864 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 00:21:43,322 - database - INFO - Database tables initialized
+2025-05-13 00:21:44,070 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 00:21:44,070 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 00:21:44,071 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 00:21:44,072 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 00:21:44,193 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 00:21:44,347 - trading_bot - ERROR - Error fetching dashboard data: cannot access local variable 'logger' where it is not associated with a value
+2025-05-13 00:21:44,349 - trading_bot - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 333, in fetch_dashboard_data
+    positions_df = await update_token_prices(positions_df, db, trader)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 113, in update_token_prices
+    logger.info(f"Current SOL price for calculations: ${sol_price_usd}")
+    ^^^^^^
+UnboundLocalError: cannot access local variable 'logger' where it is not associated with a value
+
+2025-05-13 00:21:44,351 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 00:21:45,694 - database - INFO - Database tables initialized
+2025-05-13 00:21:46,293 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 00:21:46,294 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 00:21:46,294 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 00:21:46,294 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 00:21:46,384 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 00:21:46,676 - trading_bot - ERROR - Error fetching dashboard data: cannot access local variable 'logger' where it is not associated with a value
+2025-05-13 00:21:46,677 - trading_bot - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 333, in fetch_dashboard_data
+    positions_df = await update_token_prices(positions_df, db, trader)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 113, in update_token_prices
+    logger.info(f"Current SOL price for calculations: ${sol_price_usd}")
+    ^^^^^^
+UnboundLocalError: cannot access local variable 'logger' where it is not associated with a value
+
+2025-05-13 00:21:46,678 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 00:22:17,863 - database - INFO - Database tables initialized
+2025-05-13 00:22:18,264 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 00:22:18,265 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 00:22:18,266 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 00:22:18,266 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 00:22:18,343 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 00:22:18,441 - trading_bot - ERROR - Error fetching dashboard data: cannot access local variable 'logger' where it is not associated with a value
+2025-05-13 00:22:18,442 - trading_bot - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 333, in fetch_dashboard_data
+    positions_df = await update_token_prices(positions_df, db, trader)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 113, in update_token_prices
+    logger.info(f"Current SOL price for calculations: ${sol_price_usd}")
+    ^^^^^^
+UnboundLocalError: cannot access local variable 'logger' where it is not associated with a value
+
+2025-05-13 00:22:18,443 - solana_trader - INFO - Closing SolanaTrader connections

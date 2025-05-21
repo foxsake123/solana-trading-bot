@@ -1,0 +1,6 @@
+solana==0.29.2
+solders==0.18.1
+anchorpy==0.18.0
+base58==2.1.1
+typing-extensions==4.7.1
+construct==2.10.68

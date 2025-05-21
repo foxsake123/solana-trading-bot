@@ -1,0 +1,37 @@
+2025-05-13 01:39:32,285 - database - INFO - Database tables initialized
+2025-05-13 01:39:32,962 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 01:39:32,963 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 01:39:32,963 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 01:39:32,964 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 01:39:33,156 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 01:39:33,229 - solana_trader - INFO - Got SOL price from CoinGecko: $169.4
+2025-05-13 01:39:33,459 - trading_bot.dashboard - INFO - Current SOL price for calculations: $169.4
+2025-05-13 01:39:33,540 - trading_bot.dashboard - INFO - Updated 78 positions with proper USD values
+2025-05-13 01:39:33,630 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 01:39:33,630 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 01:39:33,631 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 01:39:33,631 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 01:39:33,632 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 01:39:33,633 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 01:39:33,636 - database - INFO - Database tables initialized
+2025-05-13 01:39:33,648 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 01:39:33,648 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 01:39:33,649 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 01:40:05,311 - database - INFO - Database tables initialized
+2025-05-13 01:40:05,871 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 01:40:05,872 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 01:40:05,873 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 01:40:05,874 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 01:40:05,957 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 01:40:06,255 - trading_bot.dashboard - INFO - Current SOL price for calculations: $169.4
+2025-05-13 01:40:06,337 - trading_bot.dashboard - INFO - Updated 78 positions with proper USD values
+2025-05-13 01:40:06,406 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 01:40:06,407 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 01:40:06,408 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 01:40:06,408 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 01:40:06,409 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 01:40:06,410 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 01:40:06,412 - database - INFO - Database tables initialized
+2025-05-13 01:40:06,423 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 01:40:06,424 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 01:40:06,424 - solana_trader - INFO - Closing SolanaTrader connections

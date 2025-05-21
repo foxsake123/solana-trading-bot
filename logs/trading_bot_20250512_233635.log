@@ -1,0 +1,61 @@
+2025-05-12 19:36:35,176 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:36:35,177 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:36:35,179 - trading_bot - INFO - ==================================================
+2025-05-12 19:36:35,180 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-05-12 19:36:35,181 - trading_bot - INFO - ==================================================
+2025-05-12 19:36:35,182 - trading_bot - INFO - Initial Wallet Balance: 10.0000 SOL ($302.48)
+2025-05-12 19:36:35,193 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-05-12 19:36:35,194 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 19:36:35,553 - trading_bot.token_scanner - ERROR - Twitter scan failed: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:36:35,553 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 19:36:35,558 - trading_bot - INFO - Starting token discovery and trading process
+2025-05-12 19:36:35,558 - trading_bot - INFO - Current wallet balance: 10.0000 SOL ($887.61)
+2025-05-12 19:36:35,619 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:36:35,620 - trading_bot.birdeye_api - INFO - Found 1 top gainers for 24h
+2025-05-12 19:36:35,622 - trading_bot.token_analyzer - INFO - Retrieved 1 top gainers from Birdeye API
+2025-05-12 19:36:35,624 - trading_bot.token_scanner - INFO - Found 1 top gainer tokens
+2025-05-12 19:36:35,625 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:36:36,005 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 19:36:36,007 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:36:36,008 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 19:36:36,009 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 19:36:36,010 - trading_bot.token_scanner - ERROR - Error scanning PumpFun: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:36:36,011 - trading_bot.token_scanner - INFO - Running machine learning analysis on discovered tokens...
+2025-05-12 19:36:36,012 - trading_bot.token_scanner - INFO - Training ML model with historical data
+2025-05-12 19:36:36,017 - trading_bot.ml_model - WARNING - Not enough data for training
+2025-05-12 19:36:36,018 - trading_bot.token_scanner - WARNING - ML model training failed, using existing model
+2025-05-12 19:36:36,019 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 19:36:36,022 - trading_bot.token_scanner - INFO - No tokens to analyze
+2025-05-12 19:36:36,023 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 19:36:36,378 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:36:36,379 - trading_bot.birdeye_api - INFO - Found 1 top gainers for 24h
+2025-05-12 19:36:36,379 - trading_bot.token_analyzer - INFO - Retrieved 1 top gainers from Birdeye API
+2025-05-12 19:36:36,380 - trading_bot.token_scanner - INFO - Found 1 top gainer tokens
+2025-05-12 19:36:36,380 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:36:37,108 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 19:36:37,110 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:36:37,110 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 19:36:37,113 - trading_bot.token_scanner - INFO - No tokens to analyze
+2025-05-12 19:37:36,031 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 19:37:36,325 - trading_bot.token_scanner - ERROR - Twitter scan failed: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:37:36,326 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 19:37:36,328 - trading_bot.token_analyzer - INFO - Retrieved 1 top gainers from Birdeye API
+2025-05-12 19:37:36,330 - trading_bot.token_scanner - INFO - Found 1 top gainer tokens
+2025-05-12 19:37:36,331 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:37:36,986 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 19:37:36,989 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:37:36,991 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 19:37:36,992 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 19:37:36,995 - trading_bot.token_scanner - ERROR - Error scanning PumpFun: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:37:36,997 - trading_bot.token_scanner - INFO - Running machine learning analysis on discovered tokens...
+2025-05-12 19:37:36,999 - trading_bot.token_scanner - INFO - Training ML model with historical data
+2025-05-12 19:37:37,011 - trading_bot.ml_model - WARNING - Not enough data for training
+2025-05-12 19:37:37,011 - trading_bot.token_scanner - WARNING - ML model training failed, using existing model
+2025-05-12 19:37:37,012 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 19:37:37,018 - trading_bot.token_scanner - INFO - No tokens to analyze
+2025-05-12 19:37:37,019 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 19:38:06,342 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-05-12 19:38:35,206 - trading_bot - INFO - Closing connections
+2025-05-12 19:38:35,208 - trading_bot - INFO - ==================================================
+2025-05-12 19:38:35,209 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-05-12 19:38:35,210 - trading_bot - INFO - ==================================================

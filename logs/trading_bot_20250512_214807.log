@@ -1,0 +1,460 @@
+2025-05-12 17:48:07,272 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 17:48:07,273 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:48:07,282 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:48:07,291 - trading_bot.solana_trader - INFO - Loaded 14 active orders
+2025-05-12 17:48:07,292 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:48:07,299 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 17:48:07,309 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 17:48:07,312 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 17:48:07,314 - trading_bot - INFO - ==================================================
+2025-05-12 17:48:07,314 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-05-12 17:48:07,315 - trading_bot - INFO - ==================================================
+2025-05-12 17:48:07,441 - trading_bot - INFO - Initial Wallet Balance: 5.0000 SOL ($863.05)
+2025-05-12 17:48:07,442 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-05-12 17:48:07,444 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 17:48:07,973 - trading_bot.token_scanner - INFO - Discovered 13 tokens from Twitter
+2025-05-12 17:48:07,974 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 17:48:07,974 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-05-12 17:48:07,983 - trading_bot - INFO - Starting token discovery and trading process
+2025-05-12 17:48:07,984 - trading_bot - INFO - Current wallet balance: 5.0000 SOL ($863.05)
+2025-05-12 17:48:08,069 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:48:08,070 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:48:08,071 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:48:08,071 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:48:08,072 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:48:08,092 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 17:48:08,093 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 17:48:08,094 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 17:48:08,095 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 17:48:08,697 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 17:48:08,791 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 17:48:08,792 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 17:48:08,794 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 17:48:08,795 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 17:48:09,506 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 17:48:10,426 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 17:48:10,426 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 17:48:10,465 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 17:48:10,466 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 17:48:10,835 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 17:48:10,942 - trading_bot.birdeye_api - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 17:48:10,943 - trading_bot.birdeye_api - WARNING - Failed to get token info for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 17:48:11,008 - trading_bot.token_analyzer - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 17:48:11,607 - trading_bot.birdeye_api - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 17:48:11,608 - trading_bot.birdeye_api - WARNING - Failed to get token info for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 17:48:11,640 - trading_bot.token_analyzer - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 17:48:12,475 - trading_bot.birdeye_api - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 17:48:12,476 - trading_bot.birdeye_api - WARNING - Failed to get token info for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 17:48:12,572 - trading_bot.token_analyzer - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 17:48:13,228 - trading_bot.birdeye_api - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 17:48:13,229 - trading_bot.birdeye_api - WARNING - Failed to get token info for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 17:48:13,263 - trading_bot.token_analyzer - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 17:48:13,579 - trading_bot.token_analyzer - INFO - Using Birdeye security score for fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP: 7.957072
+2025-05-12 17:48:13,580 - trading_bot.token_scanner - INFO - Tradable token found: SOLANA (fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP)
+2025-05-12 17:48:14,653 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 7Td2y4m1Cfkktp9S6rwb4akTv416gdBBWwsasDDQvyFY: 38.919955
+2025-05-12 17:48:14,654 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (7Td2y4m1Cfkktp9S6rwb4akTv416gdBBWwsasDDQvyFY)
+2025-05-12 17:48:15,245 - trading_bot.token_analyzer - INFO - Using Birdeye security score for BAJTaqHjzR4b7bT9a14TzuHDo8SdvmwJwAyiQnLMbonk: 11.191208
+2025-05-12 17:48:15,246 - trading_bot.token_scanner - INFO - Tradable token found: MC (BAJTaqHjzR4b7bT9a14TzuHDo8SdvmwJwAyiQnLMbonk)
+2025-05-12 17:48:16,100 - trading_bot.token_analyzer - INFO - Using Birdeye security score for DBW4topT6adDEvSkHAyTKurDbj9GNoPqch8XW7hBK1b4: 5.3346160000000005
+2025-05-12 17:48:16,102 - trading_bot.token_scanner - INFO - Tradable token found: PRIZE (DBW4topT6adDEvSkHAyTKurDbj9GNoPqch8XW7hBK1b4)
+2025-05-12 17:48:17,563 - trading_bot.token_analyzer - INFO - Using Birdeye security score for GsSUx3qENEAn5MDQLGYHYs7ThtPXsnwCkKwqv1ZWbonk: 46.348244
+2025-05-12 17:48:17,563 - trading_bot.token_scanner - INFO - Tradable token found: GOLDCARD (GsSUx3qENEAn5MDQLGYHYs7ThtPXsnwCkKwqv1ZWbonk)
+2025-05-12 17:48:19,102 - trading_bot.token_analyzer - INFO - Using Birdeye security score for Hx1dDGg2CkYoFupENoktYEUoQD6zBMZqrozrQF3boop: 21.751846
+2025-05-12 17:48:19,103 - trading_bot.token_scanner - INFO - Tradable token found: BOOPFUN (Hx1dDGg2CkYoFupENoktYEUoQD6zBMZqrozrQF3boop)
+2025-05-12 17:48:19,107 - trading_bot.token_analyzer - INFO - Using Birdeye security score for GsSUx3qENEAn5MDQLGYHYs7ThtPXsnwCkKwqv1ZWbonk: 46.373978
+2025-05-12 17:48:19,109 - trading_bot.token_scanner - INFO - Tradable token found: GOLDCARD (GsSUx3qENEAn5MDQLGYHYs7ThtPXsnwCkKwqv1ZWbonk)
+2025-05-12 17:48:20,401 - trading_bot.token_analyzer - INFO - Using Birdeye security score for ApsviLet1g2PKjudUuLy6XmfzweioLjLrqwZQCWWbonk: 18.483632999999998
+2025-05-12 17:48:20,402 - trading_bot.token_scanner - INFO - Tradable token found: shesaid (ApsviLet1g2PKjudUuLy6XmfzweioLjLrqwZQCWWbonk)
+2025-05-12 17:48:20,922 - trading_bot.token_analyzer - INFO - Using Birdeye security score for ApsviLet1g2PKjudUuLy6XmfzweioLjLrqwZQCWWbonk: 18.483632999999998
+2025-05-12 17:48:20,923 - trading_bot.token_scanner - INFO - Tradable token found: shesaid (ApsviLet1g2PKjudUuLy6XmfzweioLjLrqwZQCWWbonk)
+2025-05-12 17:48:21,716 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 4TXmkLyTrbF5fBfUVPQ4ctzzpRUvndwTQkfVKntndBJY: 18.301658999999997
+2025-05-12 17:48:21,717 - trading_bot.token_scanner - INFO - Tradable token found: Cycle (4TXmkLyTrbF5fBfUVPQ4ctzzpRUvndwTQkfVKntndBJY)
+2025-05-12 17:48:22,212 - trading_bot.token_analyzer - INFO - Using Birdeye security score for HJbsCiZ84ELMAp9mfrUFXaZ7uzQauAis9XNLAUrQyoaX: 18.617172
+2025-05-12 17:48:22,213 - trading_bot.token_scanner - INFO - Tradable token found: AI (HJbsCiZ84ELMAp9mfrUFXaZ7uzQauAis9XNLAUrQyoaX)
+2025-05-12 17:48:23,051 - trading_bot.token_analyzer - INFO - Using Birdeye security score for HUdqc5MR5h3FssESabPnQ1GTgTcPvnNudAuLj5J6a9sU: 70.0
+2025-05-12 17:48:23,052 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (HUdqc5MR5h3FssESabPnQ1GTgTcPvnNudAuLj5J6a9sU)
+2025-05-12 17:48:23,596 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ: 2.351238
+2025-05-12 17:48:23,599 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:48:24,073 - trading_bot - INFO - Token LAUNCH qualified for trading:
+2025-05-12 17:48:24,074 - trading_bot - INFO -   - Volume 24h: $3,365,046.30
+2025-05-12 17:48:24,075 - trading_bot - INFO -   - Liquidity: $89,199.55
+2025-05-12 17:48:24,075 - trading_bot - INFO -   - Market Cap: $0.00
+2025-05-12 17:48:24,076 - trading_bot - INFO -   - Holders: 0
+2025-05-12 17:48:24,077 - trading_bot - INFO -   - Price Change 24h: 23.63%
+2025-05-12 17:48:24,077 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 17:48:24,078 - trading_bot - INFO - Trading LAUNCH (7Td2y4m1Cfkktp9S6rwb4akTv416gdBBWwsasDDQvyFY) for 0.55 SOL
+2025-05-12 17:48:24,398 - trading_bot.solana_trader - INFO - SIMULATION: BUY 0.55 SOL of LAUNCH (7Td2y4m1Cfkktp9S6rwb4akTv416gdBBWwsasDDQvyFY) at 5.774868199988413e-07 tokens/SOL
+2025-05-12 17:48:24,399 - trading_bot - INFO - Successfully traded LAUNCH: SIM_BUY_7Td2y4m1_1747086504
+2025-05-12 17:48:24,412 - trading_bot - INFO - Token PRIZE qualified for trading:
+2025-05-12 17:48:24,413 - trading_bot - INFO -   - Volume 24h: $3,402.61
+2025-05-12 17:48:24,413 - trading_bot - INFO -   - Liquidity: $46,540.94
+2025-05-12 17:48:24,414 - trading_bot - INFO -   - Market Cap: $0.00
+2025-05-12 17:48:24,415 - trading_bot - INFO -   - Holders: 0
+2025-05-12 17:48:24,415 - trading_bot - INFO -   - Price Change 24h: -8.81%
+2025-05-12 17:48:24,416 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 17:48:24,417 - trading_bot - INFO - Trading PRIZE (DBW4topT6adDEvSkHAyTKurDbj9GNoPqch8XW7hBK1b4) for 0.55 SOL
+2025-05-12 17:48:24,614 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 17:48:25,061 - trading_bot.solana_trader - INFO - SIMULATION: BUY 0.55 SOL of PRIZE (DBW4topT6adDEvSkHAyTKurDbj9GNoPqch8XW7hBK1b4) at 7.566189676148543e-07 tokens/SOL
+2025-05-12 17:48:25,062 - trading_bot - INFO - Successfully traded PRIZE: SIM_BUY_DBW4topT_1747086504
+2025-05-12 17:48:25,077 - trading_bot - INFO - Token GOLDCARD qualified for trading:
+2025-05-12 17:48:25,079 - trading_bot - INFO -   - Volume 24h: $9,387,152.79
+2025-05-12 17:48:25,080 - trading_bot - INFO -   - Liquidity: $163,482.44
+2025-05-12 17:48:25,081 - trading_bot - INFO -   - Market Cap: $0.00
+2025-05-12 17:48:25,083 - trading_bot - INFO -   - Holders: 0
+2025-05-12 17:48:25,083 - trading_bot - INFO -   - Price Change 24h: 2513.00%
+2025-05-12 17:48:25,084 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 17:48:25,084 - trading_bot - INFO - Trading GOLDCARD (GsSUx3qENEAn5MDQLGYHYs7ThtPXsnwCkKwqv1ZWbonk) for 0.55 SOL
+2025-05-12 17:48:25,710 - trading_bot.solana_trader - INFO - SIMULATION: BUY 0.55 SOL of GOLDCARD (GsSUx3qENEAn5MDQLGYHYs7ThtPXsnwCkKwqv1ZWbonk) at 9.141996408087595e-06 tokens/SOL
+2025-05-12 17:48:25,711 - trading_bot - INFO - Successfully traded GOLDCARD: SIM_BUY_GsSUx3qE_1747086505
+2025-05-12 17:48:25,718 - trading_bot - INFO - Token cheat qualified for trading:
+2025-05-12 17:48:25,718 - trading_bot - INFO -   - Volume 24h: $104,571.38
+2025-05-12 17:48:25,718 - trading_bot - INFO -   - Liquidity: $8,375.70
+2025-05-12 17:48:25,718 - trading_bot - INFO -   - Market Cap: $0.00
+2025-05-12 17:48:25,719 - trading_bot - INFO -   - Holders: 0
+2025-05-12 17:48:25,719 - trading_bot - INFO -   - Price Change 24h: -91.30%
+2025-05-12 17:48:25,719 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 17:48:25,719 - trading_bot - INFO - Trading cheat (Hx1dDGg2CkYoFupENoktYEUoQD6zBMZqrozrQF3boop) for 0.55 SOL
+2025-05-12 17:48:26,511 - trading_bot.solana_trader - INFO - SIMULATION: BUY 0.55 SOL of cheat (Hx1dDGg2CkYoFupENoktYEUoQD6zBMZqrozrQF3boop) at 3.2616881988297316e-08 tokens/SOL
+2025-05-12 17:48:26,512 - trading_bot - INFO - Successfully traded cheat: SIM_BUY_Hx1dDGg2_1747086505
+2025-05-12 17:48:26,521 - trading_bot - INFO - Token shesaid qualified for trading:
+2025-05-12 17:48:26,522 - trading_bot - INFO -   - Volume 24h: $86,154.48
+2025-05-12 17:48:26,524 - trading_bot - INFO -   - Liquidity: $12,527.37
+2025-05-12 17:48:26,525 - trading_bot - INFO -   - Market Cap: $0.00
+2025-05-12 17:48:26,526 - trading_bot - INFO -   - Holders: 0
+2025-05-12 17:48:26,527 - trading_bot - INFO -   - Price Change 24h: -80.06%
+2025-05-12 17:48:26,528 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 17:48:26,529 - trading_bot - INFO - Trading shesaid (ApsviLet1g2PKjudUuLy6XmfzweioLjLrqwZQCWWbonk) for 0.55 SOL
+2025-05-12 17:48:27,217 - trading_bot.solana_trader - INFO - SIMULATION: BUY 0.55 SOL of shesaid (ApsviLet1g2PKjudUuLy6XmfzweioLjLrqwZQCWWbonk) at 7.346040206245292e-11 tokens/SOL
+2025-05-12 17:48:27,218 - trading_bot - INFO - Successfully traded shesaid: SIM_BUY_ApsviLet_1747086506
+2025-05-12 17:48:27,241 - trading_bot - INFO - Token Cycle qualified for trading:
+2025-05-12 17:48:27,241 - trading_bot - INFO -   - Volume 24h: $80,194.76
+2025-05-12 17:48:27,241 - trading_bot - INFO -   - Liquidity: $22,627.07
+2025-05-12 17:48:27,242 - trading_bot - INFO -   - Market Cap: $0.00
+2025-05-12 17:48:27,242 - trading_bot - INFO -   - Holders: 0
+2025-05-12 17:48:27,242 - trading_bot - INFO -   - Price Change 24h: 8383.00%
+2025-05-12 17:48:27,242 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 17:48:27,242 - trading_bot - INFO - Trading Cycle (4TXmkLyTrbF5fBfUVPQ4ctzzpRUvndwTQkfVKntndBJY) for 0.55 SOL
+2025-05-12 17:48:27,963 - trading_bot.solana_trader - INFO - SIMULATION: BUY 0.55 SOL of Cycle (4TXmkLyTrbF5fBfUVPQ4ctzzpRUvndwTQkfVKntndBJY) at 8.49313481258328e-05 tokens/SOL
+2025-05-12 17:48:27,964 - trading_bot - INFO - Successfully traded Cycle: SIM_BUY_4TXmkLyT_1747086507
+2025-05-12 17:48:27,970 - trading_bot - INFO - Token BONGO qualified for trading:
+2025-05-12 17:48:27,971 - trading_bot - INFO -   - Volume 24h: $2,052,782.85
+2025-05-12 17:48:27,971 - trading_bot - INFO -   - Liquidity: $1,018,386.07
+2025-05-12 17:48:27,972 - trading_bot - INFO -   - Market Cap: $0.00
+2025-05-12 17:48:27,972 - trading_bot - INFO -   - Holders: 0
+2025-05-12 17:48:27,972 - trading_bot - INFO -   - Price Change 24h: -16.51%
+2025-05-12 17:48:27,972 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 17:48:27,973 - trading_bot - INFO - Trading BONGO (HUdqc5MR5h3FssESabPnQ1GTgTcPvnNudAuLj5J6a9sU) for 0.55 SOL
+2025-05-12 17:48:28,606 - trading_bot.solana_trader - INFO - SIMULATION: BUY 0.55 SOL of BONGO (HUdqc5MR5h3FssESabPnQ1GTgTcPvnNudAuLj5J6a9sU) at 0.00011146515265627715 tokens/SOL
+2025-05-12 17:48:28,607 - trading_bot - INFO - Successfully traded BONGO: SIM_BUY_HUdqc5MR_1747086507
+2025-05-12 17:48:38,096 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:48:38,096 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:48:38,097 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:48:38,097 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:48:38,098 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:49:08,133 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:49:08,135 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:49:08,137 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:49:08,139 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:49:08,139 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:49:24,633 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 17:49:25,067 - trading_bot.token_scanner - INFO - Discovered 10 tokens from Twitter
+2025-05-12 17:49:25,068 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 17:49:25,068 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 17:49:25,070 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 17:49:25,670 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 17:49:25,694 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 17:49:25,694 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 17:49:25,725 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 17:49:25,728 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 17:49:25,731 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 17:49:38,159 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:49:38,160 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:49:38,161 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:49:38,163 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:49:38,165 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:50:08,195 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:50:08,198 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:50:08,199 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:50:08,200 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:50:08,200 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:50:25,746 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 17:50:26,195 - trading_bot.token_scanner - INFO - Discovered 10 tokens from Twitter
+2025-05-12 17:50:26,195 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 17:50:26,195 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 17:50:26,196 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 17:50:26,862 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 17:50:26,897 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 17:50:26,897 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 17:50:26,931 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 17:50:26,932 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 17:50:27,322 - trading_bot.token_analyzer - INFO - Using Birdeye security score for BXjjznSFV4JHQu5KQRn6xCD4mgtWgNzhVM1VQoXieQp4: 37.412169
+2025-05-12 17:50:27,323 - trading_bot.token_scanner - INFO - Tradable token found: gork (BXjjznSFV4JHQu5KQRn6xCD4mgtWgNzhVM1VQoXieQp4)
+2025-05-12 17:50:28,455 - trading_bot.birdeye_api - WARNING - No DexScreener data for 82U1E9mPJTAKMLqFYbks5ummy3v1o919Vx7yFqiyrKSP
+2025-05-12 17:50:28,456 - trading_bot.birdeye_api - WARNING - Failed to get token info for 82U1E9mPJTAKMLqFYbks5ummy3v1o919Vx7yFqiyrKSP
+2025-05-12 17:50:28,530 - trading_bot.token_analyzer - WARNING - No DexScreener data for 82U1E9mPJTAKMLqFYbks5ummy3v1o919Vx7yFqiyrKSP
+2025-05-12 17:50:29,836 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 65svCEvM4HdBHXKDxfhjm3yw1A6mKXkdS6HXWXDQTSNA: 70.0
+2025-05-12 17:50:29,837 - trading_bot.token_scanner - INFO - Tradable token found: BUDDY (65svCEvM4HdBHXKDxfhjm3yw1A6mKXkdS6HXWXDQTSNA)
+2025-05-12 17:50:30,848 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 17:50:38,228 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:50:38,229 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:50:38,231 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:50:38,233 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:50:38,235 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:51:08,257 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:51:08,259 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:51:08,260 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:51:08,262 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:51:08,263 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:51:30,852 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 17:51:31,410 - trading_bot.token_scanner - INFO - Discovered 13 tokens from Twitter
+2025-05-12 17:51:31,411 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 17:51:31,412 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 17:51:31,413 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 17:51:32,110 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 17:51:32,143 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 17:51:32,144 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 17:51:32,178 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 17:51:32,178 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 17:51:32,251 - trading_bot.birdeye_api - WARNING - No DexScreener data for PrSnXgKCa9rmPpR7cVZ7r5MHziA9fu98j3JemCqbonk
+2025-05-12 17:51:32,252 - trading_bot.birdeye_api - WARNING - Failed to get token info for PrSnXgKCa9rmPpR7cVZ7r5MHziA9fu98j3JemCqbonk
+2025-05-12 17:51:32,297 - trading_bot.token_analyzer - WARNING - No DexScreener data for PrSnXgKCa9rmPpR7cVZ7r5MHziA9fu98j3JemCqbonk
+2025-05-12 17:51:33,681 - trading_bot.token_analyzer - INFO - Using Birdeye security score for KN3mrsTanaNEsTLsqnK7wZSyh9ByuBXmwm6uAGmboop: 40.32694
+2025-05-12 17:51:33,682 - trading_bot.token_scanner - INFO - Tradable token found: BID (KN3mrsTanaNEsTLsqnK7wZSyh9ByuBXmwm6uAGmboop)
+2025-05-12 17:51:34,688 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 17:51:38,284 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:51:38,286 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:51:38,288 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:51:38,289 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:51:38,291 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:52:08,309 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:52:08,311 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:52:08,314 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:52:08,314 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:52:08,314 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:52:34,698 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 17:52:35,267 - trading_bot.token_scanner - INFO - Discovered 16 tokens from Twitter
+2025-05-12 17:52:35,269 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 17:52:35,271 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 17:52:35,273 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 17:52:36,067 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 17:52:36,092 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 17:52:36,093 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 17:52:36,134 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 17:52:36,134 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 17:52:36,463 - trading_bot.token_analyzer - INFO - Using Birdeye security score for Dmq7F8KTiuTLcUAmz2U8LVYQoWZ9EtaBJi9C7McEpeqK: 1.5325630000000001
+2025-05-12 17:52:36,464 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (Dmq7F8KTiuTLcUAmz2U8LVYQoWZ9EtaBJi9C7McEpeqK)
+2025-05-12 17:52:37,800 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 6BVqroeZvoxW2XM5XUSh2eMYegtFGmKEtkPT5VK4bonk: 33.018897
+2025-05-12 17:52:37,802 - trading_bot.token_scanner - INFO - Tradable token found: AI (6BVqroeZvoxW2XM5XUSh2eMYegtFGmKEtkPT5VK4bonk)
+2025-05-12 17:52:38,335 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:52:38,336 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:52:38,336 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:52:38,337 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:52:38,338 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:52:38,813 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 17:53:08,503 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:53:08,504 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:53:08,504 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:53:08,505 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:53:08,505 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:53:28,662 - trading_bot - INFO - Current wallet balance: 5.0000 SOL ($863.30)
+2025-05-12 17:53:28,964 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 17:53:28,966 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 17:53:28,967 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 17:53:28,969 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 17:53:29,438 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 17:53:30,271 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 17:53:38,526 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:53:38,528 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:53:38,530 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:53:38,532 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:53:38,534 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:53:38,821 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 17:53:39,273 - trading_bot.token_scanner - INFO - Discovered 12 tokens from Twitter
+2025-05-12 17:53:39,275 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 17:53:39,276 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 17:53:39,277 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 17:53:39,777 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 17:53:39,820 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 17:53:39,821 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 17:53:39,863 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 17:53:39,864 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 17:53:40,133 - trading_bot.token_analyzer - WARNING - Twitter API rate limit exceeded for pump
+2025-05-12 17:53:40,135 - trading_bot.token_analyzer - WARNING - Rate limited by Twitter API. Backing off for 11 seconds.
+2025-05-12 17:53:40,138 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 4GrvtAsJy7ycsHesxDc71YBTWKAAA4yM16KJVMDCh6z3: 36.040501
+2025-05-12 17:53:40,139 - trading_bot.token_scanner - INFO - Tradable token found: pump (4GrvtAsJy7ycsHesxDc71YBTWKAAA4yM16KJVMDCh6z3)
+2025-05-12 17:53:41,391 - trading_bot.token_analyzer - INFO - Using Birdeye security score for B6ZhDcay6E3CjRC5tN7cntbLwMnH3Tdgd2c2RdsnV2fs: 33.346224
+2025-05-12 17:53:41,393 - trading_bot.token_scanner - INFO - Tradable token found: MC (B6ZhDcay6E3CjRC5tN7cntbLwMnH3Tdgd2c2RdsnV2fs)
+2025-05-12 17:53:42,397 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 17:54:08,559 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:54:08,560 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:54:08,561 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:54:08,561 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:54:08,561 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:54:38,568 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:54:38,568 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:54:38,569 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:54:38,569 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:54:38,569 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:54:42,403 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 17:54:42,555 - trading_bot.token_scanner - ERROR - Twitter scan failed: 429 Too Many Requests
+Too Many Requests
+2025-05-12 17:54:42,556 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 17:54:42,557 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 17:54:42,558 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 17:54:43,061 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 17:54:43,084 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 17:54:43,085 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 17:54:43,117 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 17:54:43,119 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 17:54:43,124 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 17:55:08,598 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:55:08,599 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:55:08,599 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:55:08,599 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:55:08,599 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:55:38,619 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:55:38,620 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:55:38,621 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:55:38,622 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:55:38,623 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:55:43,140 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 17:55:43,240 - trading_bot.token_scanner - ERROR - Twitter scan failed: 429 Too Many Requests
+Too Many Requests
+2025-05-12 17:55:43,242 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 17:55:43,243 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 17:55:43,244 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 17:55:43,928 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 17:55:43,967 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 17:55:43,968 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 17:55:44,013 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 17:55:44,014 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 17:55:44,020 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 17:56:08,635 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:56:08,636 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:56:08,638 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:56:08,640 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:56:08,641 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:56:38,661 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:56:38,662 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:56:38,663 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:56:38,664 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:56:38,664 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:56:44,030 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 17:56:44,109 - trading_bot.token_scanner - ERROR - Twitter scan failed: 429 Too Many Requests
+Too Many Requests
+2025-05-12 17:56:44,111 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 17:56:44,111 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 17:56:44,112 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 17:56:44,867 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 17:56:44,904 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 17:56:44,906 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 17:56:44,938 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 17:56:44,938 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 17:56:44,941 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 17:57:08,681 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:57:08,683 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:57:08,685 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:57:08,687 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:57:08,689 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:57:38,712 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:57:38,713 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:57:38,714 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:57:38,714 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:57:38,714 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:57:44,948 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 17:57:45,023 - trading_bot.token_scanner - ERROR - Twitter scan failed: 429 Too Many Requests
+Too Many Requests
+2025-05-12 17:57:45,024 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 17:57:45,024 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 17:57:45,025 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 17:57:45,572 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 17:57:45,625 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 17:57:45,626 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 17:57:45,682 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 17:57:45,683 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 17:57:45,689 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 17:58:08,921 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:58:08,922 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:58:08,924 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:58:08,925 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:58:08,927 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:58:30,335 - trading_bot - INFO - Current wallet balance: 5.0000 SOL ($864.65)
+2025-05-12 17:58:30,474 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 17:58:30,477 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 17:58:30,478 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 17:58:30,480 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 17:58:31,223 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 17:58:31,996 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 17:58:38,952 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:58:38,953 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:58:38,954 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:58:38,955 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:58:38,955 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:58:45,693 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 17:58:45,764 - trading_bot.token_scanner - ERROR - Twitter scan failed: 429 Too Many Requests
+Too Many Requests
+2025-05-12 17:58:45,765 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 17:58:45,766 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 17:58:45,768 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 17:58:46,265 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 17:58:46,315 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 17:58:46,317 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 17:58:46,359 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 17:58:46,359 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 17:58:46,364 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 17:59:08,975 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:59:08,975 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:59:08,977 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:59:08,977 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:59:08,977 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:59:38,997 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 17:59:38,999 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 17:59:39,001 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 17:59:39,003 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 17:59:39,003 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 17:59:46,373 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 17:59:46,855 - trading_bot.token_scanner - INFO - Discovered 13 tokens from Twitter
+2025-05-12 17:59:46,855 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 17:59:46,856 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 17:59:46,856 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 17:59:47,487 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 17:59:47,518 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 17:59:47,519 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 17:59:47,558 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 17:59:47,559 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 17:59:48,045 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 9tsUburWeWCCyt6yYWXYdykwPwSK6tYZsr2pjX7vNRWZ: 55.378864
+2025-05-12 17:59:48,046 - trading_bot.token_scanner - INFO - Tradable token found: GYAT (9tsUburWeWCCyt6yYWXYdykwPwSK6tYZsr2pjX7vNRWZ)
+2025-05-12 17:59:49,361 - trading_bot.token_analyzer - INFO - Using Birdeye security score for Cft3gDDE72M833wN1C6rZgJLjse1X2EXMUgXVVfcbonk: 5.320849
+2025-05-12 17:59:49,362 - trading_bot.token_scanner - INFO - Tradable token found: COPPER (Cft3gDDE72M833wN1C6rZgJLjse1X2EXMUgXVVfcbonk)
+2025-05-12 17:59:50,625 - trading_bot.token_analyzer - INFO - Using Birdeye security score for GcAxBkBgNuncxdNdJ6tsZaqNY5kHGw4nxfkEXTdwT6fJ: 22.841241
+2025-05-12 17:59:50,626 - trading_bot.token_scanner - INFO - Tradable token found: SOL (GcAxBkBgNuncxdNdJ6tsZaqNY5kHGw4nxfkEXTdwT6fJ)
+2025-05-12 17:59:51,922 - trading_bot.token_analyzer - INFO - Using Birdeye security score for BN7G6LgfQqiyuVaYJAwgqXagKG394X9TqH5UY91DB9Zn: 60.769556
+2025-05-12 17:59:51,923 - trading_bot.token_scanner - INFO - Tradable token found: MCP (BN7G6LgfQqiyuVaYJAwgqXagKG394X9TqH5UY91DB9Zn)
+2025-05-12 17:59:52,932 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 18:00:09,020 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 18:00:09,022 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 18:00:09,023 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 18:00:09,023 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 18:00:09,025 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 18:00:39,042 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 18:00:39,043 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 18:00:39,043 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 18:00:39,044 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 18:00:39,044 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 18:00:52,940 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 18:00:53,610 - trading_bot.token_scanner - INFO - Discovered 11 tokens from Twitter
+2025-05-12 18:00:53,613 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 18:00:53,615 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 18:00:53,617 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 18:00:54,485 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 18:00:54,533 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 18:00:54,535 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 18:00:54,600 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 18:00:54,603 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 18:00:54,609 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 18:01:09,059 - trading_bot.solana_trader - INFO - Position: UNKNOWN (2pAFnY2Sp6d3kPCm684LuMf7CHakpCo2TQsNa4iXxjPQ)
+2025-05-12 18:01:09,060 - trading_bot.solana_trader - INFO -   - Buy price: 0.00000032
+2025-05-12 18:01:09,060 - trading_bot.solana_trader - INFO -   - Current price: 0.00005425
+2025-05-12 18:01:09,061 - trading_bot.solana_trader - INFO -   - P/L: 17069.56% (171.70x)
+2025-05-12 18:01:09,062 - trading_bot.solana_trader - ERROR - Error monitoring positions: 'take_profit_target'
+2025-05-12 18:01:11,838 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...

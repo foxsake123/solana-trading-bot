@@ -1,0 +1,189 @@
+2025-05-12 15:16:09,703 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:16:09,704 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-12 15:16:09,718 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:16:09,719 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-12 15:16:09,724 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-12 15:16:09,725 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:16:09,735 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 15:16:09,735 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 15:16:09,736 - trading_bot.database - INFO - Database tables initialized
+2025-05-12 15:16:09,739 - trading_bot - INFO - ==================================================
+2025-05-12 15:16:09,739 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-05-12 15:16:09,739 - trading_bot - INFO - ==================================================
+2025-05-12 15:16:09,809 - trading_bot - INFO - Initial Wallet Balance: 5.0000 SOL ($852.90)
+2025-05-12 15:16:09,810 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-05-12 15:16:09,811 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:16:10,146 - trading_bot.database - ERROR - Error storing token 4v2Me7u6gsDXhjUZrqk3rh6Y9WsNNYAoP835ZTvqbonk: table tokens has no column named price_usd
+2025-05-12 15:16:10,148 - trading_bot.database - ERROR - Error storing token 4v2Me7u6gsDXhjUZrqk3rh6Y9WsNNYAoP835ZTvqbonk: table tokens has no column named price_usd
+2025-05-12 15:16:10,150 - trading_bot.database - ERROR - Error storing token B4xb2Cq128WtrNzjDEMKk82D3ne2Rn3GpfzQWAynpump: no such column: price_usd
+2025-05-12 15:16:10,151 - trading_bot.database - ERROR - Error storing token 6EzSXR2ovTmMiiahVUgNxBsmDR4Z4ckzc4KegEQgL5Kd: table tokens has no column named price_usd
+2025-05-12 15:16:10,153 - trading_bot.database - ERROR - Error storing token 5bKxjcJLsz2kpQ2jD9DfqbBJSRpw68sdoAUV2rUibonk: table tokens has no column named price_usd
+2025-05-12 15:16:10,155 - trading_bot.database - ERROR - Error storing token 79eXoT1aR7qhBMGKXzVNdV4ZcLqHsupqj2WTFvDumpSZ: no such column: price_usd
+2025-05-12 15:16:10,158 - trading_bot.database - ERROR - Error storing token 8bDKUREoasKcG19hTaKNJp2u6xTBJFeoRigGuCDfbonk: table tokens has no column named price_usd
+2025-05-12 15:16:10,159 - trading_bot.database - ERROR - Error storing token 5bKxjcJLsz2kpQ2jD9DfqbBJSRpw68sdoAUV2rUibonk: table tokens has no column named price_usd
+2025-05-12 15:16:10,160 - trading_bot.database - ERROR - Error storing token 9wK8yN6iz1ie5kEJkvZCTxyN1x5sTdNfx8yeMY8Ebonk: table tokens has no column named price_usd
+2025-05-12 15:16:10,161 - trading_bot.database - ERROR - Error storing token 574MeVTmpwDwAJH3P6Kmf317LG6hMqyxNCoXLcQibonk: table tokens has no column named price_usd
+2025-05-12 15:16:10,162 - trading_bot.database - ERROR - Error storing token 8bDKUREoasKcG19hTaKNJp2u6xTBJFeoRigGuCDfbonk: table tokens has no column named price_usd
+2025-05-12 15:16:10,163 - trading_bot.database - ERROR - Error storing token 574MeVTmpwDwAJH3P6Kmf317LG6hMqyxNCoXLcQibonk: table tokens has no column named price_usd
+2025-05-12 15:16:10,166 - trading_bot.database - ERROR - Error storing token BKi4LavuZNHoZvx3YESEMVVEq3gGnrQuE5ArjRJspump: table tokens has no column named price_usd
+2025-05-12 15:16:10,167 - trading_bot.database - ERROR - Error storing token 8bDKUREoasKcG19hTaKNJp2u6xTBJFeoRigGuCDfbonk: table tokens has no column named price_usd
+2025-05-12 15:16:10,168 - trading_bot.database - ERROR - Error storing token DjPZvg3giqKxdZpYHGi3NuBMqopTeJ6189syLqM3pump: table tokens has no column named price_usd
+2025-05-12 15:16:10,169 - trading_bot.database - ERROR - Error storing token 574MeVTmpwDwAJH3P6Kmf317LG6hMqyxNCoXLcQibonk: table tokens has no column named price_usd
+2025-05-12 15:16:10,171 - trading_bot.database - ERROR - Error storing token 574MeVTmpwDwAJH3P6Kmf317LG6hMqyxNCoXLcQibonk: table tokens has no column named price_usd
+2025-05-12 15:16:10,172 - trading_bot.database - ERROR - Error storing token HcothbKPL2WkLzMFzX9FBZ13BnhTGD3AQdGGVdEcpump: table tokens has no column named price_usd
+2025-05-12 15:16:10,173 - trading_bot.database - ERROR - Error storing token 8bDKUREoasKcG19hTaKNJp2u6xTBJFeoRigGuCDfbonk: table tokens has no column named price_usd
+2025-05-12 15:16:10,174 - trading_bot.token_scanner - INFO - Discovered 11 tokens from Twitter
+2025-05-12 15:16:10,175 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:16:10,176 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-05-12 15:16:10,179 - trading_bot - INFO - Starting token discovery and trading process
+2025-05-12 15:16:10,220 - trading_bot - INFO - Current wallet balance: 5.0000 SOL ($852.90)
+2025-05-12 15:16:10,319 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:16:10,320 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 15:16:10,321 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:16:10,322 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:16:10,324 - trading_bot.database - ERROR - Error storing token fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP: table tokens has no column named price_usd
+2025-05-12 15:16:10,325 - trading_bot.database - ERROR - Error storing token 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump: table tokens has no column named price_usd
+2025-05-12 15:16:10,804 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:16:10,805 - trading_bot.database - ERROR - Error storing token fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP: table tokens has no column named price_usd
+2025-05-12 15:16:10,806 - trading_bot.database - ERROR - Error storing token 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump: table tokens has no column named price_usd
+2025-05-12 15:16:10,872 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 15:16:10,873 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 15:16:10,873 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:16:10,874 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:16:10,875 - trading_bot.database - ERROR - Error storing token fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP: table tokens has no column named price_usd
+2025-05-12 15:16:10,877 - trading_bot.database - ERROR - Error storing token 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump: table tokens has no column named price_usd
+2025-05-12 15:16:11,550 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:16:11,552 - trading_bot.database - ERROR - Error storing token fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP: table tokens has no column named price_usd
+2025-05-12 15:16:11,554 - trading_bot.database - ERROR - Error storing token 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump: table tokens has no column named price_usd
+2025-05-12 15:16:11,760 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 15:16:11,762 - trading_bot.database - ERROR - Error getting tokens: Execution failed on sql '
+            SELECT * FROM tokens 
+            WHERE safety_score >= 15.0
+              AND volume_24h >= 0
+              AND liquidity_usd >= 0
+            ORDER BY last_updated DESC
+            LIMIT 20
+            ': no such column: liquidity_usd
+2025-05-12 15:16:11,763 - trading_bot.token_scanner - INFO - No tokens to analyze
+2025-05-12 15:16:11,981 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:16:12,341 - trading_bot.token_scanner - ERROR - Error scanning PumpFun: Cannot connect to host api.pumpfun.com:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.pumpfun.com'. (_ssl.c:1028)")]
+2025-05-12 15:16:12,342 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:16:12,344 - trading_bot.database - ERROR - Error getting tokens: Execution failed on sql '
+            SELECT * FROM tokens 
+            WHERE safety_score >= 15.0
+              AND volume_24h >= 0
+              AND liquidity_usd >= 0
+            ORDER BY last_updated DESC
+            LIMIT 20
+            ': no such column: liquidity_usd
+2025-05-12 15:16:12,346 - trading_bot.token_scanner - INFO - No tokens to analyze
+2025-05-12 15:16:12,346 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:17:12,351 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:17:12,622 - trading_bot.database - ERROR - Error storing token 9wK8yN6iz1ie5kEJkvZCTxyN1x5sTdNfx8yeMY8Ebonk: table tokens has no column named price_usd
+2025-05-12 15:17:12,623 - trading_bot.database - ERROR - Error storing token 4v2Me7u6gsDXhjUZrqk3rh6Y9WsNNYAoP835ZTvqbonk: table tokens has no column named price_usd
+2025-05-12 15:17:12,624 - trading_bot.database - ERROR - Error storing token 69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump: table tokens has no column named price_usd
+2025-05-12 15:17:12,626 - trading_bot.database - ERROR - Error storing token 4v2Me7u6gsDXhjUZrqk3rh6Y9WsNNYAoP835ZTvqbonk: table tokens has no column named price_usd
+2025-05-12 15:17:12,627 - trading_bot.database - ERROR - Error storing token 13x4EA622yqPh8FX71huez3ZoQWdWMJ3P3AXrGmRbonk: table tokens has no column named price_usd
+2025-05-12 15:17:12,628 - trading_bot.database - ERROR - Error storing token 8bDKUREoasKcG19hTaKNJp2u6xTBJFeoRigGuCDfbonk: table tokens has no column named price_usd
+2025-05-12 15:17:12,629 - trading_bot.database - ERROR - Error storing token CNvitvFnSM5ed6K28RUNSaAjqqz5tX1rA5HgaBN9pump: table tokens has no column named price_usd
+2025-05-12 15:17:12,631 - trading_bot.database - ERROR - Error storing token 8HeK85Vhwftk5hakVJBEyXbw634guWDKiHYgCmUjpump: table tokens has no column named price_usd
+2025-05-12 15:17:12,633 - trading_bot.database - ERROR - Error storing token Cx8CaaLYw8BC9BaXQ9TPJQDvwtjcdNhipMHPsEsDZjgL: table tokens has no column named price_usd
+2025-05-12 15:17:12,633 - trading_bot.database - ERROR - Error storing token 4v2Me7u6gsDXhjUZrqk3rh6Y9WsNNYAoP835ZTvqbonk: table tokens has no column named price_usd
+2025-05-12 15:17:12,635 - trading_bot.database - ERROR - Error storing token 4v2Me7u6gsDXhjUZrqk3rh6Y9WsNNYAoP835ZTvqbonk: table tokens has no column named price_usd
+2025-05-12 15:17:12,636 - trading_bot.database - ERROR - Error storing token B4xb2Cq128WtrNzjDEMKk82D3ne2Rn3GpfzQWAynpump: no such column: price_usd
+2025-05-12 15:17:12,636 - trading_bot.token_scanner - INFO - Discovered 9 tokens from Twitter
+2025-05-12 15:17:12,637 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:17:12,638 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:17:12,638 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:17:12,639 - trading_bot.database - ERROR - Error storing token fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP: table tokens has no column named price_usd
+2025-05-12 15:17:12,640 - trading_bot.database - ERROR - Error storing token 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump: table tokens has no column named price_usd
+2025-05-12 15:17:13,352 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:17:13,353 - trading_bot.database - ERROR - Error storing token fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP: table tokens has no column named price_usd
+2025-05-12 15:17:13,355 - trading_bot.database - ERROR - Error storing token 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump: table tokens has no column named price_usd
+2025-05-12 15:17:13,358 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:17:13,563 - trading_bot.token_scanner - ERROR - Error scanning PumpFun: Cannot connect to host api.pumpfun.com:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.pumpfun.com'. (_ssl.c:1028)")]
+2025-05-12 15:17:13,564 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:17:13,566 - trading_bot.database - ERROR - Error getting tokens: Execution failed on sql '
+            SELECT * FROM tokens 
+            WHERE safety_score >= 15.0
+              AND volume_24h >= 0
+              AND liquidity_usd >= 0
+            ORDER BY last_updated DESC
+            LIMIT 20
+            ': no such column: liquidity_usd
+2025-05-12 15:17:13,567 - trading_bot.token_scanner - INFO - No tokens to analyze
+2025-05-12 15:17:13,568 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:18:13,572 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:18:13,855 - trading_bot.database - ERROR - Error storing token 6QbitjB4S1pj2N7c9GoCVavZ1ZaDpDSRrcmRmR1LCray: table tokens has no column named price_usd
+2025-05-12 15:18:13,857 - trading_bot.database - ERROR - Error storing token 2hbbbLc5AKyw3Ley4sXEw7vkQwjW2KcKdujXTr4Ybonk: table tokens has no column named price_usd
+2025-05-12 15:18:13,859 - trading_bot.database - ERROR - Error storing token 2hbtGAuwSMcjqmNhAWFbcWkWyx8HpuXDbbSq2otPpump: table tokens has no column named price_usd
+2025-05-12 15:18:13,860 - trading_bot.database - ERROR - Error storing token AXjgaNc7jm23wcduRscE6s9EkBjY7NQwYPVEaWyabonk: table tokens has no column named price_usd
+2025-05-12 15:18:13,862 - trading_bot.database - ERROR - Error storing token 34a8ALsPmbWxp7D3bQ6erERrCLz1ahr6u6o66Udmpump: table tokens has no column named price_usd
+2025-05-12 15:18:13,863 - trading_bot.database - ERROR - Error storing token 2SBAHPsypzU2oPBHFWMMRzHoRQfn3xZw4F8HXFBLJyX3: table tokens has no column named price_usd
+2025-05-12 15:18:13,864 - trading_bot.database - ERROR - Error storing token BetdxGvB2Bfmr1X5zGN6dwAq4xG1TjuXXoSWDzuQbonk: table tokens has no column named price_usd
+2025-05-12 15:18:13,865 - trading_bot.database - ERROR - Error storing token 9wK8yN6iz1ie5kEJkvZCTxyN1x5sTdNfx8yeMY8Ebonk: table tokens has no column named price_usd
+2025-05-12 15:18:13,866 - trading_bot.database - ERROR - Error storing token 4v2Me7u6gsDXhjUZrqk3rh6Y9WsNNYAoP835ZTvqbonk: table tokens has no column named price_usd
+2025-05-12 15:18:13,868 - trading_bot.database - ERROR - Error storing token 69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump: table tokens has no column named price_usd
+2025-05-12 15:18:13,869 - trading_bot.database - ERROR - Error storing token 4v2Me7u6gsDXhjUZrqk3rh6Y9WsNNYAoP835ZTvqbonk: table tokens has no column named price_usd
+2025-05-12 15:18:13,871 - trading_bot.database - ERROR - Error storing token 13x4EA622yqPh8FX71huez3ZoQWdWMJ3P3AXrGmRbonk: table tokens has no column named price_usd
+2025-05-12 15:18:13,872 - trading_bot.database - ERROR - Error storing token 8bDKUREoasKcG19hTaKNJp2u6xTBJFeoRigGuCDfbonk: table tokens has no column named price_usd
+2025-05-12 15:18:13,874 - trading_bot.database - ERROR - Error storing token CNvitvFnSM5ed6K28RUNSaAjqqz5tX1rA5HgaBN9pump: table tokens has no column named price_usd
+2025-05-12 15:18:13,874 - trading_bot.token_scanner - INFO - Discovered 13 tokens from Twitter
+2025-05-12 15:18:13,874 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:18:13,874 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:18:13,875 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:18:13,876 - trading_bot.database - ERROR - Error storing token fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP: table tokens has no column named price_usd
+2025-05-12 15:18:13,876 - trading_bot.database - ERROR - Error storing token 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump: table tokens has no column named price_usd
+2025-05-12 15:18:14,264 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:18:14,266 - trading_bot.database - ERROR - Error storing token fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP: table tokens has no column named price_usd
+2025-05-12 15:18:14,267 - trading_bot.database - ERROR - Error storing token 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump: table tokens has no column named price_usd
+2025-05-12 15:18:14,271 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:18:14,478 - trading_bot.token_scanner - ERROR - Error scanning PumpFun: Cannot connect to host api.pumpfun.com:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.pumpfun.com'. (_ssl.c:1028)")]
+2025-05-12 15:18:14,479 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:18:14,481 - trading_bot.database - ERROR - Error getting tokens: Execution failed on sql '
+            SELECT * FROM tokens 
+            WHERE safety_score >= 15.0
+              AND volume_24h >= 0
+              AND liquidity_usd >= 0
+            ORDER BY last_updated DESC
+            LIMIT 20
+            ': no such column: liquidity_usd
+2025-05-12 15:18:14,482 - trading_bot.token_scanner - INFO - No tokens to analyze
+2025-05-12 15:18:14,482 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:19:14,498 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 15:19:14,988 - trading_bot.database - ERROR - Error storing token 7BGouW813JNgJPLVgZ8GQycYoqLHjmDamtXpSFyQbonk: table tokens has no column named price_usd
+2025-05-12 15:19:14,989 - trading_bot.database - ERROR - Error storing token 4VJQUER7YqzZi9uS2s7n7bfJpYMZhs7qGByy6Hhibonk: table tokens has no column named price_usd
+2025-05-12 15:19:14,991 - trading_bot.database - ERROR - Error storing token 4VJQUER7YqzZi9uS2s7n7bfJpYMZhs7qGByy6Hhibonk: table tokens has no column named price_usd
+2025-05-12 15:19:14,992 - trading_bot.database - ERROR - Error storing token 7BGouW813JNgJPLVgZ8GQycYoqLHjmDamtXpSFyQbonk: table tokens has no column named price_usd
+2025-05-12 15:19:14,993 - trading_bot.database - ERROR - Error storing token BpwvxTDuXgJm5yq8Hg4Y7CNN3J9biB44EunEoRXUpump: table tokens has no column named price_usd
+2025-05-12 15:19:14,994 - trading_bot.database - ERROR - Error storing token HSZSQ9L16RM3WfzpxotV16vQa3rNdyKygtJunEpvbonk: table tokens has no column named price_usd
+2025-05-12 15:19:14,996 - trading_bot.database - ERROR - Error storing token 6m2SeubvmKc1MGqGxQToy9i7tdbkxhnMxqgEhtgFpump: no such column: price_usd
+2025-05-12 15:19:14,999 - trading_bot.database - ERROR - Error storing token 6QbitjB4S1pj2N7c9GoCVavZ1ZaDpDSRrcmRmR1LCray: table tokens has no column named price_usd
+2025-05-12 15:19:15,000 - trading_bot.token_scanner - INFO - Discovered 6 tokens from Twitter
+2025-05-12 15:19:15,000 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 15:19:15,000 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 15:19:15,002 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 15:19:15,003 - trading_bot.database - ERROR - Error storing token fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP: table tokens has no column named price_usd
+2025-05-12 15:19:15,005 - trading_bot.database - ERROR - Error storing token 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump: table tokens has no column named price_usd
+2025-05-12 15:19:15,606 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 15:19:15,607 - trading_bot.database - ERROR - Error storing token fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP: table tokens has no column named price_usd
+2025-05-12 15:19:15,608 - trading_bot.database - ERROR - Error storing token 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump: table tokens has no column named price_usd
+2025-05-12 15:19:15,609 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 15:19:15,818 - trading_bot.token_scanner - ERROR - Error scanning PumpFun: Cannot connect to host api.pumpfun.com:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'api.pumpfun.com'. (_ssl.c:1028)")]
+2025-05-12 15:19:15,819 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 15:19:15,820 - trading_bot.database - ERROR - Error getting tokens: Execution failed on sql '
+            SELECT * FROM tokens 
+            WHERE safety_score >= 15.0
+              AND volume_24h >= 0
+              AND liquidity_usd >= 0
+            ORDER BY last_updated DESC
+            LIMIT 20
+            ': no such column: liquidity_usd
+2025-05-12 15:19:15,821 - trading_bot.token_scanner - INFO - No tokens to analyze
+2025-05-12 15:19:15,821 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 15:19:22,580 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-05-12 15:19:31,865 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-05-12 15:20:09,850 - trading_bot - INFO - Closing connections
+2025-05-12 15:20:09,853 - trading_bot - INFO - ==================================================
+2025-05-12 15:20:09,854 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-05-12 15:20:09,856 - trading_bot - INFO - ==================================================

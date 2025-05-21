@@ -1,0 +1,253 @@
+2025-05-13 00:22:48,419 - database - INFO - Database tables initialized
+2025-05-13 00:22:48,789 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 00:22:48,789 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 00:22:48,789 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 00:22:48,790 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 00:22:49,007 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 00:22:49,071 - solana_trader - INFO - Got SOL price from CoinGecko: $167.81
+2025-05-13 00:22:49,168 - trading_bot - ERROR - Error fetching dashboard data: cannot access local variable 'logger' where it is not associated with a value
+2025-05-13 00:22:49,170 - trading_bot - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 333, in fetch_dashboard_data
+    positions_df = await update_token_prices(positions_df, db, trader)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 113, in update_token_prices
+    logger.info(f"Current SOL price for calculations: ${sol_price_usd}")
+    ^^^^^^
+UnboundLocalError: cannot access local variable 'logger' where it is not associated with a value
+
+2025-05-13 00:22:49,171 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 00:22:54,333 - database - INFO - Database tables initialized
+2025-05-13 00:22:54,842 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 00:22:54,843 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 00:22:54,843 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 00:22:54,843 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 00:22:54,912 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 00:22:55,041 - trading_bot - ERROR - Error fetching dashboard data: cannot access local variable 'logger' where it is not associated with a value
+2025-05-13 00:22:55,042 - trading_bot - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 333, in fetch_dashboard_data
+    positions_df = await update_token_prices(positions_df, db, trader)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 113, in update_token_prices
+    logger.info(f"Current SOL price for calculations: ${sol_price_usd}")
+    ^^^^^^
+UnboundLocalError: cannot access local variable 'logger' where it is not associated with a value
+
+2025-05-13 00:22:55,043 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 00:22:57,710 - database - INFO - Database tables initialized
+2025-05-13 00:22:58,253 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 00:22:58,253 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 00:22:58,254 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 00:22:58,254 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 00:22:58,336 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 00:22:58,445 - trading_bot - ERROR - Error fetching dashboard data: cannot access local variable 'logger' where it is not associated with a value
+2025-05-13 00:22:58,446 - trading_bot - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 333, in fetch_dashboard_data
+    positions_df = await update_token_prices(positions_df, db, trader)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 113, in update_token_prices
+    logger.info(f"Current SOL price for calculations: ${sol_price_usd}")
+    ^^^^^^
+UnboundLocalError: cannot access local variable 'logger' where it is not associated with a value
+
+2025-05-13 00:22:58,447 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 00:22:59,995 - database - INFO - Database tables initialized
+2025-05-13 00:23:00,636 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 00:23:00,637 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 00:23:00,637 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 00:23:00,638 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 00:23:00,734 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 00:23:00,940 - trading_bot - ERROR - Error fetching dashboard data: cannot access local variable 'logger' where it is not associated with a value
+2025-05-13 00:23:00,941 - trading_bot - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 333, in fetch_dashboard_data
+    positions_df = await update_token_prices(positions_df, db, trader)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 113, in update_token_prices
+    logger.info(f"Current SOL price for calculations: ${sol_price_usd}")
+    ^^^^^^
+UnboundLocalError: cannot access local variable 'logger' where it is not associated with a value
+
+2025-05-13 00:23:00,942 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 00:23:02,166 - database - INFO - Database tables initialized
+2025-05-13 00:23:02,795 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 00:23:02,796 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 00:23:02,796 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 00:23:02,797 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 00:23:02,926 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 00:23:03,267 - trading_bot - ERROR - Error fetching dashboard data: cannot access local variable 'logger' where it is not associated with a value
+2025-05-13 00:23:03,269 - trading_bot - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 333, in fetch_dashboard_data
+    positions_df = await update_token_prices(positions_df, db, trader)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 113, in update_token_prices
+    logger.info(f"Current SOL price for calculations: ${sol_price_usd}")
+    ^^^^^^
+UnboundLocalError: cannot access local variable 'logger' where it is not associated with a value
+
+2025-05-13 00:23:03,271 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 00:23:34,458 - database - INFO - Database tables initialized
+2025-05-13 00:23:34,785 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 00:23:34,786 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 00:23:34,786 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 00:23:34,786 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 00:23:34,973 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 00:23:35,067 - trading_bot - ERROR - Error fetching dashboard data: cannot access local variable 'logger' where it is not associated with a value
+2025-05-13 00:23:35,068 - trading_bot - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 333, in fetch_dashboard_data
+    positions_df = await update_token_prices(positions_df, db, trader)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 113, in update_token_prices
+    logger.info(f"Current SOL price for calculations: ${sol_price_usd}")
+    ^^^^^^
+UnboundLocalError: cannot access local variable 'logger' where it is not associated with a value
+
+2025-05-13 00:23:35,069 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 00:24:06,225 - database - INFO - Database tables initialized
+2025-05-13 00:24:06,564 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 00:24:06,564 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 00:24:06,564 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 00:24:06,565 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 00:24:06,646 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 00:24:06,748 - trading_bot - ERROR - Error fetching dashboard data: cannot access local variable 'logger' where it is not associated with a value
+2025-05-13 00:24:06,749 - trading_bot - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 333, in fetch_dashboard_data
+    positions_df = await update_token_prices(positions_df, db, trader)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 113, in update_token_prices
+    logger.info(f"Current SOL price for calculations: ${sol_price_usd}")
+    ^^^^^^
+UnboundLocalError: cannot access local variable 'logger' where it is not associated with a value
+
+2025-05-13 00:24:06,750 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 00:24:37,924 - database - INFO - Database tables initialized
+2025-05-13 00:24:38,534 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 00:24:38,535 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 00:24:38,536 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 00:24:38,536 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 00:24:38,620 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 00:24:38,814 - trading_bot - ERROR - Error fetching dashboard data: cannot access local variable 'logger' where it is not associated with a value
+2025-05-13 00:24:38,815 - trading_bot - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 333, in fetch_dashboard_data
+    positions_df = await update_token_prices(positions_df, db, trader)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\enhanced_dashboard.py", line 113, in update_token_prices
+    logger.info(f"Current SOL price for calculations: ${sol_price_usd}")
+    ^^^^^^
+UnboundLocalError: cannot access local variable 'logger' where it is not associated with a value
+
+2025-05-13 00:24:38,816 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 00:25:10,170 - database - INFO - Database tables initialized
+2025-05-13 00:25:10,737 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 00:25:10,738 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 00:25:10,738 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 00:25:10,739 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 00:25:10,830 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 00:25:10,889 - solana_trader - INFO - Got SOL price from CoinGecko: $167.98
+2025-05-13 00:25:11,052 - trading_bot.dashboard - INFO - Current SOL price for calculations: $167.98
+2025-05-13 00:25:11,102 - trading_bot.dashboard - INFO - Updated 36 positions with proper USD values
+2025-05-13 00:25:11,150 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 00:25:11,151 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 00:25:11,152 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 00:25:11,157 - database - INFO - Database tables initialized
+2025-05-13 00:25:11,170 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 00:25:11,170 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 00:25:11,171 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 00:25:11,659 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 00:25:11,660 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 00:25:11,661 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 00:25:11,661 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 00:25:11,661 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 00:25:11,662 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 00:25:11,662 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 00:25:11,662 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 00:25:11,663 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 00:25:11,663 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:11 AM ET: Invalid isoformat string: '2025-05-13 12:06:11 AM ET'
+2025-05-13 00:25:11,663 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:11 AM ET: Invalid isoformat string: '2025-05-13 12:06:11 AM ET'
+2025-05-13 00:25:11,663 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 00:25:11,664 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 00:25:11,664 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 00:25:11,665 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 00:25:11,665 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 00:25:11,665 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 00:25:11,665 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 00:25:11,666 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 00:25:11,666 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 00:25:11,666 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:56:32 PM ET: Invalid isoformat string: '2025-05-12 11:56:32 PM ET'
+2025-05-13 00:25:11,667 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:56:32 PM ET: Invalid isoformat string: '2025-05-12 11:56:32 PM ET'
+2025-05-13 00:25:11,667 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:56:32 PM ET: Invalid isoformat string: '2025-05-12 11:56:32 PM ET'
+2025-05-13 00:25:11,667 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:56:32 PM ET: Invalid isoformat string: '2025-05-12 11:56:32 PM ET'
+2025-05-13 00:25:11,667 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:56:32 PM ET: Invalid isoformat string: '2025-05-12 11:56:32 PM ET'
+2025-05-13 00:25:11,667 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:51:35 PM ET: Invalid isoformat string: '2025-05-12 11:51:35 PM ET'
+2025-05-13 00:25:11,667 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:51:35 PM ET: Invalid isoformat string: '2025-05-12 11:51:35 PM ET'
+2025-05-13 00:25:11,668 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:51:35 PM ET: Invalid isoformat string: '2025-05-12 11:51:35 PM ET'
+2025-05-13 00:25:11,668 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:51:35 PM ET: Invalid isoformat string: '2025-05-12 11:51:35 PM ET'
+2025-05-13 00:25:11,668 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:25 PM ET: Invalid isoformat string: '2025-05-12 11:46:25 PM ET'
+2025-05-13 00:25:11,668 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:25 PM ET: Invalid isoformat string: '2025-05-12 11:46:25 PM ET'
+2025-05-13 00:25:11,668 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:25 PM ET: Invalid isoformat string: '2025-05-12 11:46:25 PM ET'
+2025-05-13 00:25:11,668 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:25 PM ET: Invalid isoformat string: '2025-05-12 11:46:25 PM ET'
+2025-05-13 00:25:11,668 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:25 PM ET: Invalid isoformat string: '2025-05-12 11:46:25 PM ET'
+2025-05-13 00:25:11,669 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:25 PM ET: Invalid isoformat string: '2025-05-12 11:46:25 PM ET'
+2025-05-13 00:25:11,669 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:25 PM ET: Invalid isoformat string: '2025-05-12 11:46:25 PM ET'
+2025-05-13 00:25:11,669 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:25 PM ET: Invalid isoformat string: '2025-05-12 11:46:25 PM ET'
+2025-05-13 00:25:11,669 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:24 PM ET: Invalid isoformat string: '2025-05-12 11:46:24 PM ET'
+2025-05-13 00:25:11,669 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:24 PM ET: Invalid isoformat string: '2025-05-12 11:46:24 PM ET'
+2025-05-13 00:25:11,669 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:36:16 PM ET: Invalid isoformat string: '2025-05-12 11:36:16 PM ET'
+2025-05-13 00:25:11,670 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:36:16 PM ET: Invalid isoformat string: '2025-05-12 11:36:16 PM ET'
+2025-05-13 00:25:11,670 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:36:16 PM ET: Invalid isoformat string: '2025-05-12 11:36:16 PM ET'
+2025-05-13 00:25:11,670 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:36:16 PM ET: Invalid isoformat string: '2025-05-12 11:36:16 PM ET'
+2025-05-13 00:25:11,670 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:36:16 PM ET: Invalid isoformat string: '2025-05-12 11:36:16 PM ET'
+2025-05-13 00:25:11,670 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:36:16 PM ET: Invalid isoformat string: '2025-05-12 11:36:16 PM ET'
+2025-05-13 00:25:11,670 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:36:16 PM ET: Invalid isoformat string: '2025-05-12 11:36:16 PM ET'
+2025-05-13 00:25:11,670 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:11:01 PM ET: Invalid isoformat string: '2025-05-12 11:11:01 PM ET'
+2025-05-13 00:25:11,671 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:11:01 PM ET: Invalid isoformat string: '2025-05-12 11:11:01 PM ET'
+2025-05-13 00:25:11,671 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:11:01 PM ET: Invalid isoformat string: '2025-05-12 11:11:01 PM ET'
+2025-05-13 00:25:11,671 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:11:01 PM ET: Invalid isoformat string: '2025-05-12 11:11:01 PM ET'
+2025-05-13 00:25:11,702 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 00:25:11,702 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 00:25:11,703 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 00:25:11,703 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 00:25:11,703 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 00:25:11,703 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 00:25:11,703 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 00:25:11,703 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 00:25:11,703 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 00:25:11,703 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:11 AM ET: Invalid isoformat string: '2025-05-13 12:06:11 AM ET'
+2025-05-13 00:25:11,703 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:11 AM ET: Invalid isoformat string: '2025-05-13 12:06:11 AM ET'
+2025-05-13 00:25:11,704 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 00:25:11,704 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 00:25:11,704 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 00:25:11,704 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 00:25:11,704 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 00:25:11,704 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 00:25:11,704 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 00:25:11,704 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 00:25:11,704 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 00:25:11,704 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:56:32 PM ET: Invalid isoformat string: '2025-05-12 11:56:32 PM ET'
+2025-05-13 00:25:11,705 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:56:32 PM ET: Invalid isoformat string: '2025-05-12 11:56:32 PM ET'
+2025-05-13 00:25:11,705 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:56:32 PM ET: Invalid isoformat string: '2025-05-12 11:56:32 PM ET'
+2025-05-13 00:25:11,705 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:56:32 PM ET: Invalid isoformat string: '2025-05-12 11:56:32 PM ET'
+2025-05-13 00:25:11,705 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:56:32 PM ET: Invalid isoformat string: '2025-05-12 11:56:32 PM ET'
+2025-05-13 00:25:11,705 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:51:35 PM ET: Invalid isoformat string: '2025-05-12 11:51:35 PM ET'
+2025-05-13 00:25:11,705 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:51:35 PM ET: Invalid isoformat string: '2025-05-12 11:51:35 PM ET'
+2025-05-13 00:25:11,705 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:51:35 PM ET: Invalid isoformat string: '2025-05-12 11:51:35 PM ET'
+2025-05-13 00:25:11,705 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:51:35 PM ET: Invalid isoformat string: '2025-05-12 11:51:35 PM ET'
+2025-05-13 00:25:11,705 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:25 PM ET: Invalid isoformat string: '2025-05-12 11:46:25 PM ET'
+2025-05-13 00:25:11,706 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:25 PM ET: Invalid isoformat string: '2025-05-12 11:46:25 PM ET'
+2025-05-13 00:25:11,706 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:25 PM ET: Invalid isoformat string: '2025-05-12 11:46:25 PM ET'
+2025-05-13 00:25:11,706 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:25 PM ET: Invalid isoformat string: '2025-05-12 11:46:25 PM ET'
+2025-05-13 00:25:11,706 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:25 PM ET: Invalid isoformat string: '2025-05-12 11:46:25 PM ET'
+2025-05-13 00:25:11,706 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:25 PM ET: Invalid isoformat string: '2025-05-12 11:46:25 PM ET'
+2025-05-13 00:25:11,706 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:25 PM ET: Invalid isoformat string: '2025-05-12 11:46:25 PM ET'
+2025-05-13 00:25:11,706 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:25 PM ET: Invalid isoformat string: '2025-05-12 11:46:25 PM ET'
+2025-05-13 00:25:11,706 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:24 PM ET: Invalid isoformat string: '2025-05-12 11:46:24 PM ET'
+2025-05-13 00:25:11,706 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:46:24 PM ET: Invalid isoformat string: '2025-05-12 11:46:24 PM ET'
+2025-05-13 00:25:11,707 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:36:16 PM ET: Invalid isoformat string: '2025-05-12 11:36:16 PM ET'
+2025-05-13 00:25:11,707 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:36:16 PM ET: Invalid isoformat string: '2025-05-12 11:36:16 PM ET'
+2025-05-13 00:25:11,707 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:36:16 PM ET: Invalid isoformat string: '2025-05-12 11:36:16 PM ET'
+2025-05-13 00:25:11,707 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:36:16 PM ET: Invalid isoformat string: '2025-05-12 11:36:16 PM ET'
+2025-05-13 00:25:11,707 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:36:16 PM ET: Invalid isoformat string: '2025-05-12 11:36:16 PM ET'
+2025-05-13 00:25:11,707 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:36:16 PM ET: Invalid isoformat string: '2025-05-12 11:36:16 PM ET'
+2025-05-13 00:25:11,707 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:36:16 PM ET: Invalid isoformat string: '2025-05-12 11:36:16 PM ET'
+2025-05-13 00:25:11,707 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:11:01 PM ET: Invalid isoformat string: '2025-05-12 11:11:01 PM ET'
+2025-05-13 00:25:11,707 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:11:01 PM ET: Invalid isoformat string: '2025-05-12 11:11:01 PM ET'
+2025-05-13 00:25:11,707 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:11:01 PM ET: Invalid isoformat string: '2025-05-12 11:11:01 PM ET'
+2025-05-13 00:25:11,708 - trading_bot - ERROR - Error parsing timestamp 2025-05-12 11:11:01 PM ET: Invalid isoformat string: '2025-05-12 11:11:01 PM ET'

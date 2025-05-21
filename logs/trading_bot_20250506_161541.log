@@ -1,0 +1,16 @@
+2025-05-06 12:15:41,128 - trading_bot - CRITICAL - Unhandled bot initialization error: 'Database' object has no attribute 'setup_tables'
+2025-05-06 12:15:41,130 - trading_bot - CRITICAL - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\main.py", line 225, in main
+    bot = TradingBot()
+  File "C:\Users\shorg\sol-bot_claude\main.py", line 43, in __init__
+    self.trader = SolanaTrader()
+                  ~~~~~~~~~~~~^^
+  File "C:\Users\shorg\sol-bot_claude\solana_trader.py", line 30, in __init__
+    self.db = Database()
+              ~~~~~~~~^^
+  File "C:\Users\shorg\sol-bot_claude\database.py", line 26, in __init__
+    self.setup_tables()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'Database' object has no attribute 'setup_tables'
+
+2025-05-06 12:15:41,131 - trading_bot - INFO - Bot execution completed

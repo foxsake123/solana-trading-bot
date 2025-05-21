@@ -1,0 +1,438 @@
+2025-05-12 22:19:09,526 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 22:19:09,526 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 22:19:09,527 - trading_bot - INFO - Trading bot initialized in REAL TRADING mode
+2025-05-12 22:19:09,529 - trading_bot - INFO - ==================================================
+2025-05-12 22:19:09,529 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-05-12 22:19:09,530 - trading_bot - INFO - ==================================================
+2025-05-12 22:19:09,532 - trading_bot - INFO - Initial Wallet Balance: 10.0000 SOL ($918.55)
+2025-05-12 22:19:09,533 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-05-12 22:19:09,534 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 22:19:10,255 - trading_bot.token_scanner - INFO - Discovered 12 tokens from Twitter
+2025-05-12 22:19:10,256 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 22:19:10,420 - trading_bot - INFO - Starting token discovery and trading process
+2025-05-12 22:19:10,420 - trading_bot - INFO - Current wallet balance: 13.7500 SOL ($1040.68)
+2025-05-12 22:19:10,488 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 22:19:10,489 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 22:19:10,490 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 22:19:10,492 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 22:19:10,889 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 22:19:10,987 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 22:19:10,989 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 22:19:10,990 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 22:19:10,991 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 22:19:11,513 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 22:19:12,765 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 22:19:12,772 - trading_bot.token_analyzer - INFO - Using Birdeye security score for fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP: 7.860170999999999
+2025-05-12 22:19:12,773 - trading_bot.token_scanner - INFO - Tradable token found: SOLANA (fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP)
+2025-05-12 22:19:12,970 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 22:19:12,971 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 22:19:13,036 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 22:19:13,144 - trading_bot.birdeye_api - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:19:13,146 - trading_bot.birdeye_api - WARNING - Failed to get token info for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:19:13,197 - trading_bot.token_analyzer - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:19:13,908 - trading_bot.birdeye_api - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:19:13,910 - trading_bot.birdeye_api - WARNING - Failed to get token info for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:19:14,063 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 8w2PY5u2C53tcoSPN4KCjjuZRDEqhyddBNpsyBBLbonk: 46.51907
+2025-05-12 22:19:14,063 - trading_bot.token_scanner - INFO - Tradable token found: Bonkify (8w2PY5u2C53tcoSPN4KCjjuZRDEqhyddBNpsyBBLbonk)
+2025-05-12 22:19:14,121 - trading_bot.token_analyzer - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:19:14,611 - trading_bot.birdeye_api - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:19:14,612 - trading_bot.birdeye_api - WARNING - Failed to get token info for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:19:14,665 - trading_bot.token_analyzer - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:19:14,666 - trading_bot.token_scanner - INFO - Running machine learning analysis on discovered tokens...
+2025-05-12 22:19:14,667 - trading_bot.token_scanner - INFO - Training ML model with historical data
+2025-05-12 22:19:14,680 - trading_bot.ml_model - ERROR - Error training model: "['price_change_24h', 'price_change_6h', 'price_change_1h', 'social_media_score'] not in index"
+2025-05-12 22:19:14,687 - trading_bot.ml_model - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\ml_model.py", line 132, in train
+    X = merged_df[self.features].fillna(0)
+        ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6252, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['price_change_24h', 'price_change_6h', 'price_change_1h', 'social_media_score'] not in index"
+
+2025-05-12 22:19:14,688 - trading_bot.token_scanner - WARNING - ML model training failed, using existing model
+2025-05-12 22:19:14,689 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 22:19:15,312 - trading_bot.token_analyzer - INFO - Using Birdeye security score for M7tBg3eVTm7L1nMgoQsREF2KjBaWW6pmv2C6MUUU5i1: 44.881698
+2025-05-12 22:19:15,313 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (M7tBg3eVTm7L1nMgoQsREF2KjBaWW6pmv2C6MUUU5i1)
+2025-05-12 22:19:15,455 - trading_bot.birdeye_api - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:19:15,456 - trading_bot.birdeye_api - WARNING - Failed to get token info for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:19:15,507 - trading_bot.token_analyzer - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:19:16,656 - trading_bot.token_analyzer - INFO - Using Birdeye security score for Bsow2wFkVzy1itJnhLke6VRTqoEkYQZp7kbwPtS87FyN: 70.0
+2025-05-12 22:19:16,657 - trading_bot.token_scanner - INFO - Tradable token found: Giggles (Bsow2wFkVzy1itJnhLke6VRTqoEkYQZp7kbwPtS87FyN)
+2025-05-12 22:19:17,158 - trading_bot.birdeye_api - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:19:17,159 - trading_bot.birdeye_api - WARNING - Failed to get token info for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:19:17,211 - trading_bot.token_analyzer - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:19:18,249 - trading_bot.token_analyzer - INFO - Using Birdeye security score for mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So: 70.0
+2025-05-12 22:19:18,250 - trading_bot.token_scanner - INFO - Tradable token found: mSOL (mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So)
+2025-05-12 22:19:18,299 - trading_bot.birdeye_api - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:19:18,301 - trading_bot.birdeye_api - WARNING - Failed to get token info for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:19:18,344 - trading_bot.token_analyzer - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:19:19,543 - trading_bot.token_analyzer - INFO - Using Birdeye security score for CURWCStvQAPMtfcyyeXAFcbXhMV3CxSn2taYPEvJT5YC: 32.193992
+2025-05-12 22:19:19,544 - trading_bot.token_scanner - INFO - Tradable token found: Cycle (CURWCStvQAPMtfcyyeXAFcbXhMV3CxSn2taYPEvJT5YC)
+2025-05-12 22:19:19,688 - trading_bot.token_analyzer - INFO - Using Birdeye security score for CURWCStvQAPMtfcyyeXAFcbXhMV3CxSn2taYPEvJT5YC: 32.193992
+2025-05-12 22:19:19,689 - trading_bot.token_scanner - INFO - Tradable token found: Cycle (CURWCStvQAPMtfcyyeXAFcbXhMV3CxSn2taYPEvJT5YC)
+2025-05-12 22:19:20,857 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 70.0
+2025-05-12 22:19:20,858 - trading_bot.token_scanner - INFO - Tradable token found: PENGU (2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv)
+2025-05-12 22:19:21,480 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 3CB5rQJ7JGi5wLi2BzJ53txc9DfoPvcewxZcjzGvbzQP: 56.769858
+2025-05-12 22:19:21,480 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (3CB5rQJ7JGi5wLi2BzJ53txc9DfoPvcewxZcjzGvbzQP)
+2025-05-12 22:19:21,984 - trading_bot.birdeye_api - WARNING - No DexScreener data for AF9jniyjXHdKujZY6S7JnNH5zVwcGH5N6wUY3dbcbonk
+2025-05-12 22:19:21,986 - trading_bot.birdeye_api - WARNING - Failed to get token info for AF9jniyjXHdKujZY6S7JnNH5zVwcGH5N6wUY3dbcbonk
+2025-05-12 22:19:22,023 - trading_bot.token_analyzer - WARNING - No DexScreener data for AF9jniyjXHdKujZY6S7JnNH5zVwcGH5N6wUY3dbcbonk
+2025-05-12 22:19:22,485 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 22:19:23,035 - trading_bot - INFO - Calculated investment for SOLANA (0.01 SOL) is below minimum threshold (0.1 SOL), adjusting to minimum
+2025-05-12 22:19:23,096 - trading_bot - INFO - Token SOLANA qualified for trading:
+2025-05-12 22:19:23,097 - trading_bot - INFO -   - Volume 24h: $3,917.55
+2025-05-12 22:19:23,099 - trading_bot - INFO -   - Liquidity: $70,766.61
+2025-05-12 22:19:23,100 - trading_bot - INFO -   - Market Cap: $0.00
+2025-05-12 22:19:23,101 - trading_bot - INFO -   - Holders: 0
+2025-05-12 22:19:23,101 - trading_bot - INFO -   - Price Change 24h: 1.78%
+2025-05-12 22:19:23,102 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 22:19:23,103 - trading_bot - INFO - Trading SOLANA (fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP) for 0.1 SOL
+2025-05-12 22:19:23,123 - trading_bot - INFO - Successfully traded SOLANA: SIM_BUY_fESbUKjuMY_1747102763
+2025-05-12 22:19:23,124 - trading_bot - INFO - Calculated investment for Bonkify (0.01 SOL) is below minimum threshold (0.1 SOL), adjusting to minimum
+2025-05-12 22:19:23,197 - trading_bot - INFO - Token Bonkify qualified for trading:
+2025-05-12 22:19:23,198 - trading_bot - INFO -   - Volume 24h: $10,485,509.72
+2025-05-12 22:19:23,199 - trading_bot - INFO -   - Liquidity: $165,190.70
+2025-05-12 22:19:23,200 - trading_bot - INFO -   - Market Cap: $0.00
+2025-05-12 22:19:23,201 - trading_bot - INFO -   - Holders: 0
+2025-05-12 22:19:23,202 - trading_bot - INFO -   - Price Change 24h: 1663.00%
+2025-05-12 22:19:23,203 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 22:19:23,204 - trading_bot - INFO - Trading Bonkify (8w2PY5u2C53tcoSPN4KCjjuZRDEqhyddBNpsyBBLbonk) for 0.1 SOL
+2025-05-12 22:19:23,220 - trading_bot - INFO - Successfully traded Bonkify: SIM_BUY_8w2PY5u2C5_1747102763
+2025-05-12 22:19:23,221 - trading_bot - INFO - Calculated investment for REPLY (0.01 SOL) is below minimum threshold (0.1 SOL), adjusting to minimum
+2025-05-12 22:19:23,295 - trading_bot - INFO - Token REPLY qualified for trading:
+2025-05-12 22:19:23,296 - trading_bot - INFO -   - Volume 24h: $1,177,680.56
+2025-05-12 22:19:23,298 - trading_bot - INFO -   - Liquidity: $148,816.98
+2025-05-12 22:19:23,299 - trading_bot - INFO -   - Market Cap: $0.00
+2025-05-12 22:19:23,300 - trading_bot - INFO -   - Holders: 0
+2025-05-12 22:19:23,301 - trading_bot - INFO -   - Price Change 24h: 422.00%
+2025-05-12 22:19:23,303 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 22:19:23,304 - trading_bot - INFO - Trading REPLY (M7tBg3eVTm7L1nMgoQsREF2KjBaWW6pmv2C6MUUU5i1) for 0.1 SOL
+2025-05-12 22:19:23,324 - trading_bot - INFO - Successfully traded REPLY: SIM_BUY_M7tBg3eVTm_1747102763
+2025-05-12 22:19:23,325 - trading_bot - INFO - Calculated investment for GIGGLES (0.01 SOL) is below minimum threshold (0.1 SOL), adjusting to minimum
+2025-05-12 22:19:23,398 - trading_bot - INFO - Token GIGGLES qualified for trading:
+2025-05-12 22:19:23,399 - trading_bot - INFO -   - Volume 24h: $2,262,251.43
+2025-05-12 22:19:23,400 - trading_bot - INFO -   - Liquidity: $625,145.50
+2025-05-12 22:19:23,401 - trading_bot - INFO -   - Market Cap: $0.00
+2025-05-12 22:19:23,402 - trading_bot - INFO -   - Holders: 0
+2025-05-12 22:19:23,403 - trading_bot - INFO -   - Price Change 24h: 34.89%
+2025-05-12 22:19:23,404 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 22:19:23,406 - trading_bot - INFO - Trading GIGGLES (Bsow2wFkVzy1itJnhLke6VRTqoEkYQZp7kbwPtS87FyN) for 0.1 SOL
+2025-05-12 22:19:23,430 - trading_bot - INFO - Successfully traded GIGGLES: SIM_BUY_Bsow2wFkVz_1747102763
+2025-05-12 22:19:23,431 - trading_bot - INFO - Calculated investment for mSOL (0.01 SOL) is below minimum threshold (0.1 SOL), adjusting to minimum
+2025-05-12 22:19:23,506 - trading_bot - INFO - Token mSOL qualified for trading:
+2025-05-12 22:19:23,508 - trading_bot - INFO -   - Volume 24h: $10,738,765.21
+2025-05-12 22:19:23,510 - trading_bot - INFO -   - Liquidity: $10,531,724.73
+2025-05-12 22:19:23,511 - trading_bot - INFO -   - Market Cap: $0.00
+2025-05-12 22:19:23,513 - trading_bot - INFO -   - Holders: 0
+2025-05-12 22:19:23,514 - trading_bot - INFO -   - Price Change 24h: -3.42%
+2025-05-12 22:19:23,515 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 22:19:23,516 - trading_bot - INFO - Trading mSOL (mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So) for 0.1 SOL
+2025-05-12 22:19:23,537 - trading_bot - INFO - Successfully traded mSOL: SIM_BUY_mSoLzYCxHd_1747102763
+2025-05-12 22:19:23,539 - trading_bot - INFO - Calculated investment for Cycle (0.01 SOL) is below minimum threshold (0.1 SOL), adjusting to minimum
+2025-05-12 22:19:23,633 - trading_bot - INFO - Token Cycle qualified for trading:
+2025-05-12 22:19:23,634 - trading_bot - INFO -   - Volume 24h: $3,448,528.76
+2025-05-12 22:19:23,635 - trading_bot - INFO -   - Liquidity: $21,939.92
+2025-05-12 22:19:23,636 - trading_bot - INFO -   - Market Cap: $0.00
+2025-05-12 22:19:23,638 - trading_bot - INFO -   - Holders: 0
+2025-05-12 22:19:23,639 - trading_bot - INFO -   - Price Change 24h: -58.93%
+2025-05-12 22:19:23,640 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 22:19:23,641 - trading_bot - INFO - Trading Cycle (CURWCStvQAPMtfcyyeXAFcbXhMV3CxSn2taYPEvJT5YC) for 0.1 SOL
+2025-05-12 22:19:23,663 - trading_bot - INFO - Successfully traded Cycle: SIM_BUY_CURWCStvQA_1747102763
+2025-05-12 22:19:23,664 - trading_bot - INFO - Calculated investment for PENGU (0.01 SOL) is below minimum threshold (0.1 SOL), adjusting to minimum
+2025-05-12 22:19:23,746 - trading_bot - INFO - Token PENGU qualified for trading:
+2025-05-12 22:19:23,748 - trading_bot - INFO -   - Volume 24h: $7,789,199.85
+2025-05-12 22:19:23,749 - trading_bot - INFO -   - Liquidity: $4,842,784.03
+2025-05-12 22:19:23,749 - trading_bot - INFO -   - Market Cap: $0.00
+2025-05-12 22:19:23,750 - trading_bot - INFO -   - Holders: 0
+2025-05-12 22:19:23,751 - trading_bot - INFO -   - Price Change 24h: -3.61%
+2025-05-12 22:19:23,752 - trading_bot - INFO -   - Security Score: 0.0/100
+2025-05-12 22:19:23,753 - trading_bot - INFO - Trading PENGU (2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv) for 0.1 SOL
+2025-05-12 22:19:23,770 - trading_bot - INFO - Successfully traded PENGU: SIM_BUY_2zMMhcVQEX_1747102763
+2025-05-12 22:20:22,486 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 22:20:23,322 - trading_bot.token_scanner - INFO - Discovered 15 tokens from Twitter
+2025-05-12 22:20:23,323 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 22:20:23,323 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 22:20:23,324 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 22:20:23,758 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 22:20:23,796 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 22:20:23,796 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 22:20:23,847 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 22:20:23,947 - trading_bot.birdeye_api - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:20:23,948 - trading_bot.birdeye_api - WARNING - Failed to get token info for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:20:24,004 - trading_bot.token_analyzer - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:20:24,782 - trading_bot.birdeye_api - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:20:24,784 - trading_bot.birdeye_api - WARNING - Failed to get token info for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:20:24,870 - trading_bot.token_analyzer - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:20:25,336 - trading_bot.birdeye_api - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:20:25,338 - trading_bot.birdeye_api - WARNING - Failed to get token info for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:20:25,405 - trading_bot.token_analyzer - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:20:25,407 - trading_bot.token_scanner - INFO - Running machine learning analysis on discovered tokens...
+2025-05-12 22:20:25,408 - trading_bot.token_scanner - INFO - Training ML model with historical data
+2025-05-12 22:20:25,426 - trading_bot.ml_model - ERROR - Error training model: "['price_change_24h', 'price_change_6h', 'price_change_1h', 'social_media_score'] not in index"
+2025-05-12 22:20:25,428 - trading_bot.ml_model - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\ml_model.py", line 132, in train
+    X = merged_df[self.features].fillna(0)
+        ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6252, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['price_change_24h', 'price_change_6h', 'price_change_1h', 'social_media_score'] not in index"
+
+2025-05-12 22:20:25,429 - trading_bot.token_scanner - WARNING - ML model training failed, using existing model
+2025-05-12 22:20:25,430 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 22:20:26,188 - trading_bot.token_analyzer - INFO - Using Birdeye security score for CDBdbNqmrLu1PcgjrFG52yxg71QnFhBZcUE6PSFdbonk: 70.0
+2025-05-12 22:20:26,190 - trading_bot.token_scanner - INFO - Tradable token found: LetsBONK (CDBdbNqmrLu1PcgjrFG52yxg71QnFhBZcUE6PSFdbonk)
+2025-05-12 22:20:27,367 - trading_bot.token_analyzer - INFO - Using Birdeye security score for EeguLg7Zh6F86ZSJtcsDgsxUsA3t5Gci5Kr85AvkxA4B: 59.506096
+2025-05-12 22:20:27,368 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (EeguLg7Zh6F86ZSJtcsDgsxUsA3t5Gci5Kr85AvkxA4B)
+2025-05-12 22:20:28,647 - trading_bot.token_analyzer - INFO - Using Birdeye security score for C9Znic37SSbYXRAKqQCGxKaQj1PfN9aSSoTjc25DzXnd: 50.284161999999995
+2025-05-12 22:20:28,650 - trading_bot.token_scanner - INFO - Tradable token found: Ofs (C9Znic37SSbYXRAKqQCGxKaQj1PfN9aSSoTjc25DzXnd)
+2025-05-12 22:20:29,725 - trading_bot.birdeye_api - WARNING - No DexScreener data for 5SXx8eBRKSau4VexytTwGssFexGWPF9wrRg6oeGTbonk
+2025-05-12 22:20:29,727 - trading_bot.birdeye_api - WARNING - Failed to get token info for 5SXx8eBRKSau4VexytTwGssFexGWPF9wrRg6oeGTbonk
+2025-05-12 22:20:29,784 - trading_bot.token_analyzer - WARNING - No DexScreener data for 5SXx8eBRKSau4VexytTwGssFexGWPF9wrRg6oeGTbonk
+2025-05-12 22:20:31,106 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 7cEgQdp8JTXvBrpjSzji7bLEeCHWENRwX62B2Ep97k5H: 70.0
+2025-05-12 22:20:31,108 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (7cEgQdp8JTXvBrpjSzji7bLEeCHWENRwX62B2Ep97k5H)
+2025-05-12 22:20:32,113 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 22:21:32,125 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 22:21:33,017 - trading_bot.token_scanner - INFO - Discovered 10 tokens from Twitter
+2025-05-12 22:21:33,018 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 22:21:33,020 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 22:21:33,021 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 22:21:33,750 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 22:21:33,857 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 22:21:33,858 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 22:21:33,923 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 22:21:34,030 - trading_bot.birdeye_api - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:21:34,031 - trading_bot.birdeye_api - WARNING - Failed to get token info for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:21:34,082 - trading_bot.token_analyzer - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:21:34,791 - trading_bot.birdeye_api - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:21:34,795 - trading_bot.birdeye_api - WARNING - Failed to get token info for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:21:34,855 - trading_bot.token_analyzer - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:21:35,565 - trading_bot.birdeye_api - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:21:35,567 - trading_bot.birdeye_api - WARNING - Failed to get token info for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:21:35,626 - trading_bot.token_analyzer - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:21:35,630 - trading_bot.token_scanner - INFO - Running machine learning analysis on discovered tokens...
+2025-05-12 22:21:35,632 - trading_bot.token_scanner - INFO - Training ML model with historical data
+2025-05-12 22:21:35,657 - trading_bot.ml_model - ERROR - Error training model: "['price_change_24h', 'price_change_6h', 'price_change_1h', 'social_media_score'] not in index"
+2025-05-12 22:21:35,660 - trading_bot.ml_model - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\ml_model.py", line 132, in train
+    X = merged_df[self.features].fillna(0)
+        ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6252, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['price_change_24h', 'price_change_6h', 'price_change_1h', 'social_media_score'] not in index"
+
+2025-05-12 22:21:35,662 - trading_bot.token_scanner - WARNING - ML model training failed, using existing model
+2025-05-12 22:21:35,663 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 22:21:36,276 - trading_bot.birdeye_api - WARNING - No DexScreener data for 2ycKBn3EdZDS1aKfuESnmZR5QHQnDkGcubNjYp2abonk
+2025-05-12 22:21:36,280 - trading_bot.birdeye_api - WARNING - Failed to get token info for 2ycKBn3EdZDS1aKfuESnmZR5QHQnDkGcubNjYp2abonk
+2025-05-12 22:21:36,372 - trading_bot.token_analyzer - WARNING - No DexScreener data for 2ycKBn3EdZDS1aKfuESnmZR5QHQnDkGcubNjYp2abonk
+2025-05-12 22:21:37,557 - trading_bot.birdeye_api - WARNING - No DexScreener data for 2oZCXE34bchMVkj1dJ3syXxghrrtT6SU3v8FgSf7vfkS
+2025-05-12 22:21:37,559 - trading_bot.birdeye_api - WARNING - Failed to get token info for 2oZCXE34bchMVkj1dJ3syXxghrrtT6SU3v8FgSf7vfkS
+2025-05-12 22:21:37,628 - trading_bot.token_analyzer - WARNING - No DexScreener data for 2oZCXE34bchMVkj1dJ3syXxghrrtT6SU3v8FgSf7vfkS
+2025-05-12 22:21:38,921 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 4AuuM5XxosgFN6EZETXjeq2rWVujBx6rx1FowGHSDcPA: 3.6996519999999995
+2025-05-12 22:21:38,922 - trading_bot.token_scanner - INFO - Tradable token found: First (4AuuM5XxosgFN6EZETXjeq2rWVujBx6rx1FowGHSDcPA)
+2025-05-12 22:21:40,365 - trading_bot.token_analyzer - INFO - Using Birdeye security score for Ey59PH7Z4BFU4HjyKnyMdWt5GGN76KazTAwQihoUXRnk: 70.0
+2025-05-12 22:21:40,366 - trading_bot.token_scanner - INFO - Tradable token found: PASTERNAK (Ey59PH7Z4BFU4HjyKnyMdWt5GGN76KazTAwQihoUXRnk)
+2025-05-12 22:21:41,371 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 22:22:41,384 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 22:22:42,180 - trading_bot.token_scanner - INFO - Discovered 15 tokens from Twitter
+2025-05-12 22:22:42,181 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 22:22:42,182 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 22:22:42,183 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 22:22:42,941 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 22:22:42,972 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 22:22:42,973 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 22:22:43,030 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 22:22:43,134 - trading_bot.birdeye_api - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:22:43,136 - trading_bot.birdeye_api - WARNING - Failed to get token info for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:22:43,189 - trading_bot.token_analyzer - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:22:43,884 - trading_bot.birdeye_api - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:22:43,886 - trading_bot.birdeye_api - WARNING - Failed to get token info for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:22:43,944 - trading_bot.token_analyzer - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:22:44,822 - trading_bot.birdeye_api - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:22:44,824 - trading_bot.birdeye_api - WARNING - Failed to get token info for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:22:44,890 - trading_bot.token_analyzer - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:22:44,892 - trading_bot.token_scanner - INFO - Running machine learning analysis on discovered tokens...
+2025-05-12 22:22:44,895 - trading_bot.token_scanner - INFO - Training ML model with historical data
+2025-05-12 22:22:44,919 - trading_bot.ml_model - ERROR - Error training model: "['price_change_24h', 'price_change_6h', 'price_change_1h', 'social_media_score'] not in index"
+2025-05-12 22:22:44,922 - trading_bot.ml_model - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\ml_model.py", line 132, in train
+    X = merged_df[self.features].fillna(0)
+        ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6252, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['price_change_24h', 'price_change_6h', 'price_change_1h', 'social_media_score'] not in index"
+
+2025-05-12 22:22:44,923 - trading_bot.token_scanner - WARNING - ML model training failed, using existing model
+2025-05-12 22:22:44,924 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 22:22:45,212 - trading_bot.token_analyzer - INFO - Using Birdeye security score for HohL7oPEpzekWsWiDSa1ewohT92QZyumWnUqiUQKq6SK: 47.540037999999996
+2025-05-12 22:22:45,213 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (HohL7oPEpzekWsWiDSa1ewohT92QZyumWnUqiUQKq6SK)
+2025-05-12 22:22:46,488 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 3EjbUhjSMNwVNs5npi6cfvqVwiexPJ5HzKVbqsoJRocJ: 70.0
+2025-05-12 22:22:46,489 - trading_bot.token_scanner - INFO - Tradable token found: TWRAE (3EjbUhjSMNwVNs5npi6cfvqVwiexPJ5HzKVbqsoJRocJ)
+2025-05-12 22:22:47,699 - trading_bot.token_analyzer - INFO - Using Birdeye security score for ENfpbQUM5xAnNP8ecyEQGFJ6KwbuPjMwv7ZjR29cDuAb: 37.809403
+2025-05-12 22:22:47,700 - trading_bot.token_scanner - INFO - Tradable token found: HUNTER (ENfpbQUM5xAnNP8ecyEQGFJ6KwbuPjMwv7ZjR29cDuAb)
+2025-05-12 22:22:48,716 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 22:23:48,731 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 22:23:49,670 - trading_bot.token_scanner - INFO - Discovered 14 tokens from Twitter
+2025-05-12 22:23:49,672 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 22:23:49,673 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 22:23:49,675 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 22:23:50,264 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 22:23:50,314 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 22:23:50,315 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 22:23:50,369 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 22:23:50,569 - trading_bot.birdeye_api - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:23:50,571 - trading_bot.birdeye_api - WARNING - Failed to get token info for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:23:50,625 - trading_bot.token_analyzer - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:23:51,209 - trading_bot.birdeye_api - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:23:51,213 - trading_bot.birdeye_api - WARNING - Failed to get token info for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:23:51,299 - trading_bot.token_analyzer - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:23:51,810 - trading_bot.birdeye_api - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:23:51,813 - trading_bot.birdeye_api - WARNING - Failed to get token info for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:23:51,896 - trading_bot.token_analyzer - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:23:51,898 - trading_bot.token_scanner - INFO - Running machine learning analysis on discovered tokens...
+2025-05-12 22:23:51,899 - trading_bot.token_scanner - INFO - Training ML model with historical data
+2025-05-12 22:23:51,922 - trading_bot.ml_model - ERROR - Error training model: "['price_change_24h', 'price_change_6h', 'price_change_1h', 'social_media_score'] not in index"
+2025-05-12 22:23:51,926 - trading_bot.ml_model - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\ml_model.py", line 132, in train
+    X = merged_df[self.features].fillna(0)
+        ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6252, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['price_change_24h', 'price_change_6h', 'price_change_1h', 'social_media_score'] not in index"
+
+2025-05-12 22:23:51,928 - trading_bot.token_scanner - WARNING - ML model training failed, using existing model
+2025-05-12 22:23:51,929 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 22:23:52,726 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 4bXCaDUciWA5Qj1zmcZ9ryJsoqv4rahKD4r8zYYsbonk: 32.965071
+2025-05-12 22:23:52,728 - trading_bot.token_scanner - INFO - Tradable token found: BaoBao (4bXCaDUciWA5Qj1zmcZ9ryJsoqv4rahKD4r8zYYsbonk)
+2025-05-12 22:23:53,810 - trading_bot.birdeye_api - WARNING - No DexScreener data for EoFNryxmkGNzWhEbTKwDYkkpkD7xLhRMTKNLWfgsuFFs
+2025-05-12 22:23:53,812 - trading_bot.birdeye_api - WARNING - Failed to get token info for EoFNryxmkGNzWhEbTKwDYkkpkD7xLhRMTKNLWfgsuFFs
+2025-05-12 22:23:53,878 - trading_bot.token_analyzer - WARNING - No DexScreener data for EoFNryxmkGNzWhEbTKwDYkkpkD7xLhRMTKNLWfgsuFFs
+2025-05-12 22:23:54,896 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 22:24:23,775 - trading_bot - INFO - Current wallet balance: 36.3000 SOL ($2036.61)
+2025-05-12 22:24:23,828 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 22:24:23,830 - trading_bot.birdeye_api - INFO - Found 2 top gainers for 24h
+2025-05-12 22:24:23,831 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 22:24:23,833 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 22:24:24,404 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 22:24:25,274 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 22:24:54,913 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 22:24:55,797 - trading_bot.token_scanner - INFO - Discovered 12 tokens from Twitter
+2025-05-12 22:24:55,799 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 22:24:55,800 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 22:24:55,801 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 22:24:56,389 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 22:24:56,435 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 22:24:56,436 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 22:24:56,494 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 22:24:56,664 - trading_bot.birdeye_api - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:24:56,666 - trading_bot.birdeye_api - WARNING - Failed to get token info for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:24:56,737 - trading_bot.token_analyzer - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:24:57,245 - trading_bot.birdeye_api - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:24:57,248 - trading_bot.birdeye_api - WARNING - Failed to get token info for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:24:57,303 - trading_bot.token_analyzer - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:24:58,064 - trading_bot.birdeye_api - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:24:58,066 - trading_bot.birdeye_api - WARNING - Failed to get token info for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:24:58,128 - trading_bot.token_analyzer - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:24:58,130 - trading_bot.token_scanner - INFO - Running machine learning analysis on discovered tokens...
+2025-05-12 22:24:58,131 - trading_bot.token_scanner - INFO - Training ML model with historical data
+2025-05-12 22:24:58,156 - trading_bot.ml_model - ERROR - Error training model: "['price_change_24h', 'price_change_6h', 'price_change_1h', 'social_media_score'] not in index"
+2025-05-12 22:24:58,160 - trading_bot.ml_model - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\ml_model.py", line 132, in train
+    X = merged_df[self.features].fillna(0)
+        ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6252, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['price_change_24h', 'price_change_6h', 'price_change_1h', 'social_media_score'] not in index"
+
+2025-05-12 22:24:58,163 - trading_bot.token_scanner - WARNING - ML model training failed, using existing model
+2025-05-12 22:24:58,164 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 22:24:59,080 - trading_bot.token_analyzer - INFO - Using Birdeye security score for BxqqB1fyv4Q476LE53s8KzuRf8bdiZbbKA7y5R452xig: 7.568314000000001
+2025-05-12 22:24:59,082 - trading_bot.token_scanner - INFO - Tradable token found: BaoBao (BxqqB1fyv4Q476LE53s8KzuRf8bdiZbbKA7y5R452xig)
+2025-05-12 22:25:00,085 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 22:25:59,669 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-05-12 22:26:00,092 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 22:26:00,934 - trading_bot.token_scanner - INFO - Discovered 12 tokens from Twitter
+2025-05-12 22:26:00,935 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 22:26:00,935 - trading_bot.token_analyzer - INFO - Retrieved 2 top gainers from Birdeye API
+2025-05-12 22:26:00,936 - trading_bot.token_scanner - INFO - Found 2 top gainer tokens
+2025-05-12 22:26:01,776 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 22:26:01,816 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 22:26:01,817 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 22:26:01,862 - trading_bot.token_scanner - INFO - Found 3 simulated tokens from PumpFun
+2025-05-12 22:26:02,474 - trading_bot.birdeye_api - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:26:02,475 - trading_bot.birdeye_api - WARNING - Failed to get token info for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:26:02,524 - trading_bot.token_analyzer - WARNING - No DexScreener data for 6rKnbuVgTFWKunX19B3qU3ZW85qHgTWsUC8XgRnwKvGZ
+2025-05-12 22:26:02,632 - trading_bot.birdeye_api - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:26:02,633 - trading_bot.birdeye_api - WARNING - Failed to get token info for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:26:02,681 - trading_bot.token_analyzer - WARNING - No DexScreener data for DYgNtUQKnfVbxYqCJ6LiDN8ByuTuFnZ3NPVAWmsYAxuN
+2025-05-12 22:26:03,269 - trading_bot.birdeye_api - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:26:03,270 - trading_bot.birdeye_api - WARNING - Failed to get token info for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:26:03,317 - trading_bot.token_analyzer - WARNING - No DexScreener data for FTcBNFiCQeqK8niPcFKFGLx9nrtj7X3hLTG3EaQYM9N9
+2025-05-12 22:26:03,318 - trading_bot.token_scanner - INFO - Running machine learning analysis on discovered tokens...
+2025-05-12 22:26:03,319 - trading_bot.token_scanner - INFO - Training ML model with historical data
+2025-05-12 22:26:03,331 - trading_bot.ml_model - ERROR - Error training model: "['price_change_24h', 'price_change_6h', 'price_change_1h', 'social_media_score'] not in index"
+2025-05-12 22:26:03,333 - trading_bot.ml_model - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\ml_model.py", line 132, in train
+    X = merged_df[self.features].fillna(0)
+        ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shorg\sol-bot_claude\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6252, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['price_change_24h', 'price_change_6h', 'price_change_1h', 'social_media_score'] not in index"
+
+2025-05-12 22:26:03,334 - trading_bot.token_scanner - WARNING - ML model training failed, using existing model
+2025-05-12 22:26:03,335 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 22:26:04,181 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 65svCEvM4HdBHXKDxfhjm3yw1A6mKXkdS6HXWXDQTSNA: 70.0
+2025-05-12 22:26:04,182 - trading_bot.token_scanner - INFO - Tradable token found: BUDDY (65svCEvM4HdBHXKDxfhjm3yw1A6mKXkdS6HXWXDQTSNA)
+2025-05-12 22:26:05,418 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 7XJiwLDrjzxDYdZipnJXzpr1iDTmK55XixSFAa7JgNEL: 70.0
+2025-05-12 22:26:05,419 - trading_bot.token_scanner - INFO - Tradable token found: MLG (7XJiwLDrjzxDYdZipnJXzpr1iDTmK55XixSFAa7JgNEL)
+2025-05-12 22:26:06,747 - trading_bot.token_analyzer - INFO - Using Birdeye security score for H3CjPXjK1wsg9CUKy4yBESDB7UGun7ADxKkWdJr1s7Si: 17.846125
+2025-05-12 22:26:06,749 - trading_bot.token_scanner - INFO - Tradable token found: WeChat (H3CjPXjK1wsg9CUKy4yBESDB7UGun7ADxKkWdJr1s7Si)
+2025-05-12 22:26:07,996 - trading_bot.token_analyzer - INFO - Using Birdeye security score for 8ZtvqXDALSEQ2MXofQNKeRtyhMsjLAptDMhPyJxsbonk: 37.308431
+2025-05-12 22:26:07,997 - trading_bot.token_scanner - INFO - Tradable token found: bort (8ZtvqXDALSEQ2MXofQNKeRtyhMsjLAptDMhPyJxsbonk)
+2025-05-12 22:26:09,008 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 22:26:09,587 - trading_bot - INFO - Closing connections
+2025-05-12 22:26:09,588 - trading_bot - INFO - ==================================================
+2025-05-12 22:26:09,589 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-05-12 22:26:09,589 - trading_bot - INFO - ==================================================

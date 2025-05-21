@@ -1,0 +1,477 @@
+2025-05-13 01:06:18,018 - database - INFO - Database tables initialized
+2025-05-13 01:06:18,636 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 01:06:18,637 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 01:06:18,638 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 01:06:18,639 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 01:06:18,773 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 01:06:18,833 - solana_trader - INFO - Got SOL price from CoinGecko: $169.74
+2025-05-13 01:06:19,111 - trading_bot.dashboard - INFO - Current SOL price for calculations: $169.74
+2025-05-13 01:06:19,195 - trading_bot.dashboard - INFO - Updated 68 positions with proper USD values
+2025-05-13 01:06:19,258 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 01:06:19,259 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 01:06:19,260 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 01:06:19,260 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 01:06:19,262 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 01:06:19,262 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 01:06:19,265 - database - INFO - Database tables initialized
+2025-05-13 01:06:19,281 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 01:06:19,281 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 01:06:19,282 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 01:06:19,959 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:06:19,960 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:06:19,961 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:06:19,962 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:06:19,963 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:05 AM ET: Invalid isoformat string: '2025-05-13 01:06:05 AM ET'
+2025-05-13 01:06:19,964 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:06:19,967 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:06:19,968 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:06:19,969 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:48 AM ET: Invalid isoformat string: '2025-05-13 01:03:48 AM ET'
+2025-05-13 01:06:19,970 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:48 AM ET: Invalid isoformat string: '2025-05-13 01:03:48 AM ET'
+2025-05-13 01:06:19,971 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:06:19,972 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:06:19,973 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:06:19,974 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:06:19,975 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:06:19,975 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:06:19,976 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:06:19,977 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:06:19,978 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:06:19,979 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:37 AM ET: Invalid isoformat string: '2025-05-13 12:53:37 AM ET'
+2025-05-13 01:06:19,980 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:33 AM ET: Invalid isoformat string: '2025-05-13 12:48:33 AM ET'
+2025-05-13 01:06:19,981 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:33 AM ET: Invalid isoformat string: '2025-05-13 12:48:33 AM ET'
+2025-05-13 01:06:19,982 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:06:19,983 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:06:19,984 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:06:19,985 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:06:19,986 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:06:19,986 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:06:19,986 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:00 AM ET: Invalid isoformat string: '2025-05-13 12:36:00 AM ET'
+2025-05-13 01:06:19,986 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:00 AM ET: Invalid isoformat string: '2025-05-13 12:36:00 AM ET'
+2025-05-13 01:06:19,987 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:30:55 AM ET: Invalid isoformat string: '2025-05-13 12:30:55 AM ET'
+2025-05-13 01:06:19,987 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:25:50 AM ET: Invalid isoformat string: '2025-05-13 12:25:50 AM ET'
+2025-05-13 01:06:19,988 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:06:19,989 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:06:19,989 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:06:19,990 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:06:19,991 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:06:19,991 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:06:19,991 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:06:19,992 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:06:19,992 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:06:19,993 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:11 AM ET: Invalid isoformat string: '2025-05-13 12:06:11 AM ET'
+2025-05-13 01:06:19,993 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:11 AM ET: Invalid isoformat string: '2025-05-13 12:06:11 AM ET'
+2025-05-13 01:06:19,993 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 01:06:19,993 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 01:06:19,994 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 01:06:19,995 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:06:19,995 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:06:19,996 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:06:19,996 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:06:51,215 - database - INFO - Database tables initialized
+2025-05-13 01:06:51,622 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 01:06:51,623 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 01:06:51,623 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 01:06:51,624 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 01:06:51,712 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 01:06:51,841 - trading_bot.dashboard - INFO - Current SOL price for calculations: $169.74
+2025-05-13 01:06:51,879 - trading_bot.dashboard - INFO - Updated 68 positions with proper USD values
+2025-05-13 01:06:51,962 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 01:06:51,963 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 01:06:51,964 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 01:06:51,964 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 01:06:51,966 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 01:06:51,967 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 01:06:51,968 - database - INFO - Database tables initialized
+2025-05-13 01:06:51,976 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 01:06:51,976 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 01:06:51,977 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 01:06:52,222 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:06:52,223 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:06:52,224 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:06:52,224 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:06:52,224 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:05 AM ET: Invalid isoformat string: '2025-05-13 01:06:05 AM ET'
+2025-05-13 01:06:52,224 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:06:52,224 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:06:52,224 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:06:52,224 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:48 AM ET: Invalid isoformat string: '2025-05-13 01:03:48 AM ET'
+2025-05-13 01:06:52,224 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:48 AM ET: Invalid isoformat string: '2025-05-13 01:03:48 AM ET'
+2025-05-13 01:06:52,225 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:06:52,225 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:06:52,225 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:06:52,225 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:06:52,225 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:06:52,225 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:06:52,225 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:06:52,225 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:06:52,226 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:06:52,226 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:37 AM ET: Invalid isoformat string: '2025-05-13 12:53:37 AM ET'
+2025-05-13 01:06:52,226 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:33 AM ET: Invalid isoformat string: '2025-05-13 12:48:33 AM ET'
+2025-05-13 01:06:52,226 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:33 AM ET: Invalid isoformat string: '2025-05-13 12:48:33 AM ET'
+2025-05-13 01:06:52,226 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:06:52,227 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:06:52,227 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:06:52,227 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:06:52,227 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:06:52,227 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:06:52,227 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:00 AM ET: Invalid isoformat string: '2025-05-13 12:36:00 AM ET'
+2025-05-13 01:06:52,228 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:00 AM ET: Invalid isoformat string: '2025-05-13 12:36:00 AM ET'
+2025-05-13 01:06:52,228 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:30:55 AM ET: Invalid isoformat string: '2025-05-13 12:30:55 AM ET'
+2025-05-13 01:06:52,228 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:25:50 AM ET: Invalid isoformat string: '2025-05-13 12:25:50 AM ET'
+2025-05-13 01:06:52,228 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:06:52,228 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:06:52,228 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:06:52,229 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:06:52,229 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:06:52,229 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:06:52,230 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:06:52,230 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:06:52,230 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:06:52,231 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:11 AM ET: Invalid isoformat string: '2025-05-13 12:06:11 AM ET'
+2025-05-13 01:06:52,231 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:11 AM ET: Invalid isoformat string: '2025-05-13 12:06:11 AM ET'
+2025-05-13 01:06:52,231 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 01:06:52,231 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 01:06:52,231 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 01:06:52,231 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:06:52,231 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:06:52,231 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:06:52,231 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:07:23,471 - database - INFO - Database tables initialized
+2025-05-13 01:07:24,177 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 01:07:24,178 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 01:07:24,179 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 01:07:24,180 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 01:07:24,292 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 01:07:24,566 - trading_bot.dashboard - INFO - Current SOL price for calculations: $169.74
+2025-05-13 01:07:24,653 - trading_bot.dashboard - INFO - Updated 68 positions with proper USD values
+2025-05-13 01:07:24,977 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 01:07:24,978 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 01:07:24,979 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 01:07:24,980 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 01:07:24,983 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 01:07:24,983 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 01:07:24,988 - database - INFO - Database tables initialized
+2025-05-13 01:07:25,007 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 01:07:25,008 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 01:07:25,009 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 01:07:25,505 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:07:25,507 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:07:25,508 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:07:25,509 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:07:25,510 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:05 AM ET: Invalid isoformat string: '2025-05-13 01:06:05 AM ET'
+2025-05-13 01:07:25,512 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:07:25,512 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:07:25,513 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:07:25,514 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:48 AM ET: Invalid isoformat string: '2025-05-13 01:03:48 AM ET'
+2025-05-13 01:07:25,515 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:48 AM ET: Invalid isoformat string: '2025-05-13 01:03:48 AM ET'
+2025-05-13 01:07:25,516 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:07:25,517 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:07:25,518 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:07:25,518 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:07:25,519 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:07:25,520 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:07:25,521 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:07:25,522 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:07:25,522 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:07:25,523 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:37 AM ET: Invalid isoformat string: '2025-05-13 12:53:37 AM ET'
+2025-05-13 01:07:25,524 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:33 AM ET: Invalid isoformat string: '2025-05-13 12:48:33 AM ET'
+2025-05-13 01:07:25,525 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:33 AM ET: Invalid isoformat string: '2025-05-13 12:48:33 AM ET'
+2025-05-13 01:07:25,525 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:07:25,526 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:07:25,528 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:07:25,529 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:07:25,530 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:07:25,531 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:07:25,531 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:00 AM ET: Invalid isoformat string: '2025-05-13 12:36:00 AM ET'
+2025-05-13 01:07:25,532 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:00 AM ET: Invalid isoformat string: '2025-05-13 12:36:00 AM ET'
+2025-05-13 01:07:25,533 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:30:55 AM ET: Invalid isoformat string: '2025-05-13 12:30:55 AM ET'
+2025-05-13 01:07:25,534 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:25:50 AM ET: Invalid isoformat string: '2025-05-13 12:25:50 AM ET'
+2025-05-13 01:07:25,534 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:07:25,534 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:07:25,535 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:07:25,536 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:07:25,536 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:07:25,537 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:07:25,537 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:07:25,538 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:07:25,538 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:07:25,538 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:11 AM ET: Invalid isoformat string: '2025-05-13 12:06:11 AM ET'
+2025-05-13 01:07:25,538 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:11 AM ET: Invalid isoformat string: '2025-05-13 12:06:11 AM ET'
+2025-05-13 01:07:25,538 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 01:07:25,538 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 01:07:25,538 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 01:07:25,539 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:07:25,539 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:07:25,539 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:07:25,539 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:07:56,794 - database - INFO - Database tables initialized
+2025-05-13 01:07:57,441 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 01:07:57,441 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 01:07:57,442 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 01:07:57,442 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 01:07:57,543 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 01:07:57,822 - trading_bot.dashboard - INFO - Current SOL price for calculations: $169.74
+2025-05-13 01:07:57,879 - trading_bot.dashboard - INFO - Updated 68 positions with proper USD values
+2025-05-13 01:07:58,499 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 01:07:58,500 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 01:07:58,500 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 01:07:58,500 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 01:07:58,501 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 01:07:58,501 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 01:07:58,502 - database - INFO - Database tables initialized
+2025-05-13 01:07:58,508 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 01:07:58,508 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 01:07:58,508 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 01:07:58,813 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:07:58,814 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:07:58,816 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:07:58,817 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:07:58,818 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:05 AM ET: Invalid isoformat string: '2025-05-13 01:06:05 AM ET'
+2025-05-13 01:07:58,819 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:07:58,819 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:07:58,820 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:07:58,820 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:48 AM ET: Invalid isoformat string: '2025-05-13 01:03:48 AM ET'
+2025-05-13 01:07:58,821 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:48 AM ET: Invalid isoformat string: '2025-05-13 01:03:48 AM ET'
+2025-05-13 01:07:58,822 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:07:58,822 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:07:58,822 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:07:58,823 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:07:58,823 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:07:58,823 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:07:58,824 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:07:58,824 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:07:58,825 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:07:58,825 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:37 AM ET: Invalid isoformat string: '2025-05-13 12:53:37 AM ET'
+2025-05-13 01:07:58,825 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:33 AM ET: Invalid isoformat string: '2025-05-13 12:48:33 AM ET'
+2025-05-13 01:07:58,826 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:33 AM ET: Invalid isoformat string: '2025-05-13 12:48:33 AM ET'
+2025-05-13 01:07:58,826 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:07:58,826 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:07:58,826 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:07:58,826 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:07:58,827 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:07:58,827 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:07:58,827 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:00 AM ET: Invalid isoformat string: '2025-05-13 12:36:00 AM ET'
+2025-05-13 01:07:58,827 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:00 AM ET: Invalid isoformat string: '2025-05-13 12:36:00 AM ET'
+2025-05-13 01:07:58,827 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:30:55 AM ET: Invalid isoformat string: '2025-05-13 12:30:55 AM ET'
+2025-05-13 01:07:58,828 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:25:50 AM ET: Invalid isoformat string: '2025-05-13 12:25:50 AM ET'
+2025-05-13 01:07:58,828 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:07:58,828 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:07:58,828 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:07:58,829 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:07:58,829 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:07:58,829 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:07:58,829 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:07:58,830 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:07:58,830 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:07:58,831 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:11 AM ET: Invalid isoformat string: '2025-05-13 12:06:11 AM ET'
+2025-05-13 01:07:58,832 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:11 AM ET: Invalid isoformat string: '2025-05-13 12:06:11 AM ET'
+2025-05-13 01:07:58,832 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 01:07:58,833 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 01:07:58,834 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 01:07:58,835 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:07:58,835 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:07:58,836 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:07:58,837 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:08:30,059 - database - INFO - Database tables initialized
+2025-05-13 01:08:30,510 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 01:08:30,511 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 01:08:30,511 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 01:08:30,511 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 01:08:30,635 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 01:08:30,893 - trading_bot.dashboard - INFO - Current SOL price for calculations: $169.74
+2025-05-13 01:08:30,953 - trading_bot.dashboard - INFO - Updated 68 positions with proper USD values
+2025-05-13 01:08:31,262 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 01:08:31,262 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 01:08:31,263 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 01:08:31,263 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 01:08:31,264 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 01:08:31,264 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 01:08:31,266 - database - INFO - Database tables initialized
+2025-05-13 01:08:31,275 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 01:08:31,275 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 01:08:31,275 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 01:08:31,742 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:08:31,744 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:08:31,744 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:08:31,746 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:08:31,747 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:05 AM ET: Invalid isoformat string: '2025-05-13 01:06:05 AM ET'
+2025-05-13 01:08:31,748 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:08:31,749 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:08:31,750 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:08:31,751 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:48 AM ET: Invalid isoformat string: '2025-05-13 01:03:48 AM ET'
+2025-05-13 01:08:31,752 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:48 AM ET: Invalid isoformat string: '2025-05-13 01:03:48 AM ET'
+2025-05-13 01:08:31,754 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:08:31,754 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:08:31,755 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:08:31,755 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:08:31,756 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:08:31,757 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:08:31,758 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:08:31,759 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:08:31,759 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:08:31,760 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:37 AM ET: Invalid isoformat string: '2025-05-13 12:53:37 AM ET'
+2025-05-13 01:08:31,761 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:33 AM ET: Invalid isoformat string: '2025-05-13 12:48:33 AM ET'
+2025-05-13 01:08:31,762 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:33 AM ET: Invalid isoformat string: '2025-05-13 12:48:33 AM ET'
+2025-05-13 01:08:31,762 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:08:31,763 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:08:31,764 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:08:31,765 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:08:31,765 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:08:31,767 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:08:31,767 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:00 AM ET: Invalid isoformat string: '2025-05-13 12:36:00 AM ET'
+2025-05-13 01:08:31,768 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:00 AM ET: Invalid isoformat string: '2025-05-13 12:36:00 AM ET'
+2025-05-13 01:08:31,769 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:30:55 AM ET: Invalid isoformat string: '2025-05-13 12:30:55 AM ET'
+2025-05-13 01:08:31,770 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:25:50 AM ET: Invalid isoformat string: '2025-05-13 12:25:50 AM ET'
+2025-05-13 01:08:31,770 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:08:31,771 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:08:31,772 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:08:31,773 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:08:31,773 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:08:31,774 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:08:31,774 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:08:31,775 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:08:31,775 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:08:31,776 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:11 AM ET: Invalid isoformat string: '2025-05-13 12:06:11 AM ET'
+2025-05-13 01:08:31,776 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:11 AM ET: Invalid isoformat string: '2025-05-13 12:06:11 AM ET'
+2025-05-13 01:08:31,776 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 01:08:31,777 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 01:08:31,777 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 01:08:31,777 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:08:31,778 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:08:31,779 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:08:31,779 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:00:59 AM ET: Invalid isoformat string: '2025-05-13 12:00:59 AM ET'
+2025-05-13 01:09:02,983 - database - INFO - Database tables initialized
+2025-05-13 01:09:03,699 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 01:09:03,700 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 01:09:03,700 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 01:09:03,700 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 01:09:03,861 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 01:09:04,167 - trading_bot.dashboard - INFO - Current SOL price for calculations: $169.74
+2025-05-13 01:09:04,268 - trading_bot.dashboard - INFO - Updated 73 positions with proper USD values
+2025-05-13 01:09:04,552 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 01:09:04,553 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 01:09:04,554 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 01:09:04,555 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 01:09:04,556 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 01:09:04,557 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 01:09:04,559 - database - INFO - Database tables initialized
+2025-05-13 01:09:04,571 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 01:09:04,571 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 01:09:04,572 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 01:09:05,075 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:08:55 AM ET: Invalid isoformat string: '2025-05-13 01:08:55 AM ET'
+2025-05-13 01:09:05,076 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:08:54 AM ET: Invalid isoformat string: '2025-05-13 01:08:54 AM ET'
+2025-05-13 01:09:05,076 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:08:54 AM ET: Invalid isoformat string: '2025-05-13 01:08:54 AM ET'
+2025-05-13 01:09:05,077 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:08:54 AM ET: Invalid isoformat string: '2025-05-13 01:08:54 AM ET'
+2025-05-13 01:09:05,078 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:08:54 AM ET: Invalid isoformat string: '2025-05-13 01:08:54 AM ET'
+2025-05-13 01:09:05,078 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:09:05,079 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:09:05,079 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:09:05,080 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:09:05,081 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:05 AM ET: Invalid isoformat string: '2025-05-13 01:06:05 AM ET'
+2025-05-13 01:09:05,081 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:09:05,082 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:09:05,083 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:09:05,083 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:48 AM ET: Invalid isoformat string: '2025-05-13 01:03:48 AM ET'
+2025-05-13 01:09:05,084 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:48 AM ET: Invalid isoformat string: '2025-05-13 01:03:48 AM ET'
+2025-05-13 01:09:05,084 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:09:05,084 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:09:05,085 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:09:05,085 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:09:05,085 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:09:05,086 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:09:05,086 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:09:05,086 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:09:05,086 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:09:05,086 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:37 AM ET: Invalid isoformat string: '2025-05-13 12:53:37 AM ET'
+2025-05-13 01:09:05,086 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:33 AM ET: Invalid isoformat string: '2025-05-13 12:48:33 AM ET'
+2025-05-13 01:09:05,087 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:33 AM ET: Invalid isoformat string: '2025-05-13 12:48:33 AM ET'
+2025-05-13 01:09:05,087 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:09:05,087 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:09:05,087 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:09:05,088 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:09:05,088 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:09:05,088 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:09:05,088 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:00 AM ET: Invalid isoformat string: '2025-05-13 12:36:00 AM ET'
+2025-05-13 01:09:05,089 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:00 AM ET: Invalid isoformat string: '2025-05-13 12:36:00 AM ET'
+2025-05-13 01:09:05,089 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:30:55 AM ET: Invalid isoformat string: '2025-05-13 12:30:55 AM ET'
+2025-05-13 01:09:05,089 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:25:50 AM ET: Invalid isoformat string: '2025-05-13 12:25:50 AM ET'
+2025-05-13 01:09:05,089 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:09:05,089 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:09:05,090 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:09:05,090 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:09:05,090 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:09:05,091 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:09:05,091 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:09:05,091 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:09:05,092 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:09:05,092 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:11 AM ET: Invalid isoformat string: '2025-05-13 12:06:11 AM ET'
+2025-05-13 01:09:05,092 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:11 AM ET: Invalid isoformat string: '2025-05-13 12:06:11 AM ET'
+2025-05-13 01:09:05,093 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 01:09:05,093 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 01:09:36,305 - database - INFO - Database tables initialized
+2025-05-13 01:09:36,803 - solana_trader - INFO - Processing private key as hex string
+2025-05-13 01:09:36,804 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-13 01:09:36,805 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-13 01:09:36,806 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 01:09:36,891 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-13 01:09:37,129 - trading_bot.dashboard - INFO - Current SOL price for calculations: $169.74
+2025-05-13 01:09:37,247 - trading_bot.dashboard - INFO - Updated 73 positions with proper USD values
+2025-05-13 01:09:37,685 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 01:09:37,686 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 01:09:37,688 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 01:09:37,688 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 01:09:37,690 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 01:09:37,691 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 01:09:37,694 - database - INFO - Database tables initialized
+2025-05-13 01:09:37,715 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 01:09:37,716 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-13 01:09:37,717 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-13 01:09:38,072 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:08:55 AM ET: Invalid isoformat string: '2025-05-13 01:08:55 AM ET'
+2025-05-13 01:09:38,074 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:08:54 AM ET: Invalid isoformat string: '2025-05-13 01:08:54 AM ET'
+2025-05-13 01:09:38,074 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:08:54 AM ET: Invalid isoformat string: '2025-05-13 01:08:54 AM ET'
+2025-05-13 01:09:38,075 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:08:54 AM ET: Invalid isoformat string: '2025-05-13 01:08:54 AM ET'
+2025-05-13 01:09:38,076 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:08:54 AM ET: Invalid isoformat string: '2025-05-13 01:08:54 AM ET'
+2025-05-13 01:09:38,077 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:09:38,077 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:09:38,078 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:09:38,079 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:06 AM ET: Invalid isoformat string: '2025-05-13 01:06:06 AM ET'
+2025-05-13 01:09:38,080 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:06:05 AM ET: Invalid isoformat string: '2025-05-13 01:06:05 AM ET'
+2025-05-13 01:09:38,081 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:09:38,081 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:09:38,083 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:49 AM ET: Invalid isoformat string: '2025-05-13 01:03:49 AM ET'
+2025-05-13 01:09:38,084 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:48 AM ET: Invalid isoformat string: '2025-05-13 01:03:48 AM ET'
+2025-05-13 01:09:38,084 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 01:03:48 AM ET: Invalid isoformat string: '2025-05-13 01:03:48 AM ET'
+2025-05-13 01:09:38,084 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:09:38,085 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:09:38,085 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:09:38,086 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:09:38,086 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:58:43 AM ET: Invalid isoformat string: '2025-05-13 12:58:43 AM ET'
+2025-05-13 01:09:38,087 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:09:38,087 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:09:38,088 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:09:38,089 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:38 AM ET: Invalid isoformat string: '2025-05-13 12:53:38 AM ET'
+2025-05-13 01:09:38,090 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:53:37 AM ET: Invalid isoformat string: '2025-05-13 12:53:37 AM ET'
+2025-05-13 01:09:38,091 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:33 AM ET: Invalid isoformat string: '2025-05-13 12:48:33 AM ET'
+2025-05-13 01:09:38,092 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:33 AM ET: Invalid isoformat string: '2025-05-13 12:48:33 AM ET'
+2025-05-13 01:09:38,092 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:09:38,093 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:09:38,093 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:48:32 AM ET: Invalid isoformat string: '2025-05-13 12:48:32 AM ET'
+2025-05-13 01:09:38,094 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:09:38,095 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:09:38,096 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:01 AM ET: Invalid isoformat string: '2025-05-13 12:36:01 AM ET'
+2025-05-13 01:09:38,097 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:00 AM ET: Invalid isoformat string: '2025-05-13 12:36:00 AM ET'
+2025-05-13 01:09:38,098 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:36:00 AM ET: Invalid isoformat string: '2025-05-13 12:36:00 AM ET'
+2025-05-13 01:09:38,098 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:30:55 AM ET: Invalid isoformat string: '2025-05-13 12:30:55 AM ET'
+2025-05-13 01:09:38,098 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:25:50 AM ET: Invalid isoformat string: '2025-05-13 12:25:50 AM ET'
+2025-05-13 01:09:38,099 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:09:38,099 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:09:38,099 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:09:38,100 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:33 AM ET: Invalid isoformat string: '2025-05-13 12:21:33 AM ET'
+2025-05-13 01:09:38,100 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:09:38,100 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:09:38,100 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:09:38,100 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:09:38,101 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:21:32 AM ET: Invalid isoformat string: '2025-05-13 12:21:32 AM ET'
+2025-05-13 01:09:38,101 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:11 AM ET: Invalid isoformat string: '2025-05-13 12:06:11 AM ET'
+2025-05-13 01:09:38,101 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:11 AM ET: Invalid isoformat string: '2025-05-13 12:06:11 AM ET'
+2025-05-13 01:09:38,101 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'
+2025-05-13 01:09:38,101 - trading_bot - ERROR - Error parsing timestamp 2025-05-13 12:06:10 AM ET: Invalid isoformat string: '2025-05-13 12:06:10 AM ET'

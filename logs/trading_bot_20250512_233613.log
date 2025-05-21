@@ -1,0 +1,388 @@
+2025-05-12 23:36:14,063 - database - INFO - Database tables initialized
+2025-05-12 23:36:14,493 - database - INFO - Database tables initialized
+2025-05-12 23:36:14,691 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:36:14,692 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:36:14,692 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:36:14,693 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:36:14,841 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:36:14,880 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:36:14,972 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:36:15,101 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:36:15,103 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:36:15,129 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:36:15,131 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:36:15,138 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:36:15,157 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:36:15,164 - database - INFO - Database tables initialized
+2025-05-12 23:36:15,184 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:36:15,184 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:36:15,185 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:36:15,250 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:36:15,294 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:36:15,373 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:36:15,498 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:36:15,499 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:36:15,562 - database - INFO - Database tables initialized
+2025-05-12 23:36:15,577 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:36:15,578 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:36:15,578 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:36:47,243 - database - INFO - Database tables initialized
+2025-05-12 23:36:47,244 - database - INFO - Database tables initialized
+2025-05-12 23:36:48,147 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:36:48,148 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:36:48,149 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:36:48,149 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:36:48,164 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:36:48,166 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:36:48,168 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:36:48,169 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:36:48,236 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:36:48,270 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:36:48,617 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:36:48,619 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:36:48,684 - database - INFO - Database tables initialized
+2025-05-12 23:36:48,704 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:36:48,705 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:36:48,705 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:36:48,753 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:36:48,758 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:36:48,836 - database - INFO - Database tables initialized
+2025-05-12 23:36:48,856 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:36:48,857 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:36:48,857 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:37:20,585 - database - INFO - Database tables initialized
+2025-05-12 23:37:20,596 - database - INFO - Database tables initialized
+2025-05-12 23:37:21,202 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:37:21,203 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:37:21,204 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:37:21,204 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:37:21,232 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:37:21,233 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:37:21,234 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:37:21,234 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:37:21,391 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:37:21,404 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:37:21,639 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:37:21,734 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:37:21,734 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:37:21,770 - database - INFO - Database tables initialized
+2025-05-12 23:37:21,776 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:37:21,778 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:37:21,778 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:37:21,857 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:37:21,864 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:37:21,936 - database - INFO - Database tables initialized
+2025-05-12 23:37:21,945 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:37:21,945 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:37:21,945 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:37:53,145 - database - INFO - Database tables initialized
+2025-05-12 23:37:53,333 - database - INFO - Database tables initialized
+2025-05-12 23:37:53,817 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:37:53,818 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:37:53,820 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:37:53,821 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:37:53,950 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:37:53,993 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:37:54,025 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:37:54,026 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:37:54,027 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:37:54,028 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:37:54,085 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:37:54,136 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:37:54,209 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:37:54,224 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:37:54,225 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:37:54,261 - database - INFO - Database tables initialized
+2025-05-12 23:37:54,267 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:37:54,268 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:37:54,270 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:37:54,333 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:37:54,628 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:37:54,629 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:37:54,701 - database - INFO - Database tables initialized
+2025-05-12 23:37:54,721 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:37:54,722 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:37:54,723 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:38:25,677 - database - INFO - Database tables initialized
+2025-05-12 23:38:26,043 - database - INFO - Database tables initialized
+2025-05-12 23:38:26,391 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:38:26,391 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:38:26,392 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:38:26,392 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:38:26,497 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:38:26,697 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:38:26,697 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:38:26,698 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:38:26,698 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:38:26,883 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:38:26,957 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:38:26,958 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:38:27,008 - database - INFO - Database tables initialized
+2025-05-12 23:38:27,017 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:38:27,018 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:38:27,018 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:38:27,331 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:38:27,333 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:38:27,389 - database - INFO - Database tables initialized
+2025-05-12 23:38:27,396 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:38:27,397 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:38:27,397 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:38:58,425 - database - INFO - Database tables initialized
+2025-05-12 23:38:58,748 - database - INFO - Database tables initialized
+2025-05-12 23:38:59,171 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:38:59,172 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:38:59,173 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:38:59,173 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:38:59,464 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:38:59,465 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:38:59,465 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:38:59,466 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:38:59,542 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:38:59,580 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:38:59,802 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:38:59,836 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:39:00,055 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:39:00,057 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:39:00,116 - database - INFO - Database tables initialized
+2025-05-12 23:39:00,141 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:39:00,142 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:39:00,142 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:39:00,342 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:39:00,343 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:39:00,391 - database - INFO - Database tables initialized
+2025-05-12 23:39:00,408 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:39:00,408 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:39:00,409 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:39:31,541 - database - INFO - Database tables initialized
+2025-05-12 23:39:31,820 - database - INFO - Database tables initialized
+2025-05-12 23:39:32,253 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:39:32,254 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:39:32,255 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:39:32,255 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:39:32,381 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:39:32,414 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:39:32,500 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:39:32,537 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:39:32,540 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:39:32,540 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:39:32,541 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:39:32,617 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:39:32,619 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:39:32,648 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:39:32,668 - database - INFO - Database tables initialized
+2025-05-12 23:39:32,681 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:39:32,682 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:39:32,683 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:39:32,729 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:39:32,896 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:39:33,078 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:39:33,080 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:39:33,125 - database - INFO - Database tables initialized
+2025-05-12 23:39:33,139 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:39:33,140 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:39:33,141 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:40:04,108 - database - INFO - Database tables initialized
+2025-05-12 23:40:04,553 - database - INFO - Database tables initialized
+2025-05-12 23:40:04,888 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:40:04,889 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:40:04,889 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:40:04,890 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:40:04,985 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:40:05,275 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:40:05,276 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:40:05,277 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:40:05,278 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:40:05,356 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:40:05,357 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:40:05,401 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:40:05,403 - database - INFO - Database tables initialized
+2025-05-12 23:40:05,416 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:40:05,417 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:40:05,418 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:40:05,863 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:40:05,865 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:40:05,906 - database - INFO - Database tables initialized
+2025-05-12 23:40:05,923 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:40:05,924 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:40:05,925 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:40:36,992 - database - INFO - Database tables initialized
+2025-05-12 23:40:37,339 - database - INFO - Database tables initialized
+2025-05-12 23:40:37,576 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:40:37,576 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:40:37,577 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:40:37,577 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:40:37,659 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:40:37,816 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:40:37,952 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:40:37,953 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:40:37,954 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:40:37,955 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:40:37,955 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:40:37,956 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:40:37,993 - database - INFO - Database tables initialized
+2025-05-12 23:40:38,002 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:40:38,003 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:40:38,005 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:40:38,081 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:40:38,182 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:40:38,282 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:40:38,406 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:40:38,407 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:40:38,437 - database - INFO - Database tables initialized
+2025-05-12 23:40:38,444 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:40:38,445 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:40:38,445 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:41:09,375 - database - INFO - Database tables initialized
+2025-05-12 23:41:09,755 - database - INFO - Database tables initialized
+2025-05-12 23:41:10,116 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:41:10,117 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:41:10,118 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:41:10,119 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:41:10,220 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:41:10,290 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:41:10,411 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:41:10,492 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:41:10,493 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:41:10,495 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:41:10,496 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:41:10,624 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:41:10,625 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:41:10,680 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:41:10,686 - database - INFO - Database tables initialized
+2025-05-12 23:41:10,699 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:41:10,699 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:41:10,700 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:41:10,729 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:41:10,910 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:41:11,040 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:41:11,042 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:41:11,092 - database - INFO - Database tables initialized
+2025-05-12 23:41:11,108 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:41:11,109 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:41:11,110 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:41:42,056 - database - INFO - Database tables initialized
+2025-05-12 23:41:42,449 - database - INFO - Database tables initialized
+2025-05-12 23:41:42,764 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:41:42,765 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:41:42,766 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:41:42,766 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:41:42,863 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:41:43,100 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:41:43,100 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:41:43,101 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:41:43,101 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:41:43,110 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:41:43,111 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:41:43,146 - database - INFO - Database tables initialized
+2025-05-12 23:41:43,153 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:41:43,153 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:41:43,153 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:41:43,208 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:41:43,635 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:41:43,640 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:41:43,681 - database - INFO - Database tables initialized
+2025-05-12 23:41:43,688 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:41:43,689 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:41:43,689 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:42:14,493 - database - INFO - Database tables initialized
+2025-05-12 23:42:14,808 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:42:14,809 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:42:14,809 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:42:14,810 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:42:14,932 - database - INFO - Database tables initialized
+2025-05-12 23:42:15,012 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:42:15,278 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:42:15,279 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:42:15,280 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:42:15,280 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:42:15,374 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:42:15,540 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:42:15,579 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:42:15,583 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:42:15,605 - database - INFO - Database tables initialized
+2025-05-12 23:42:15,613 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:42:15,613 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:42:15,614 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:42:15,719 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:42:15,721 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:42:15,745 - database - INFO - Database tables initialized
+2025-05-12 23:42:15,752 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:42:15,752 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:42:15,752 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:42:46,823 - database - INFO - Database tables initialized
+2025-05-12 23:42:46,968 - database - INFO - Database tables initialized
+2025-05-12 23:42:47,241 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:42:47,241 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:42:47,242 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:42:47,242 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:42:47,383 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:42:47,384 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:42:47,385 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:42:47,385 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:42:47,455 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:42:47,528 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:42:47,567 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:42:47,628 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:42:47,629 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:42:47,696 - solana_trader - WARNING - Could not get SOL price from CoinGecko, using fallback price
+2025-05-12 23:42:47,998 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:42:47,998 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:42:48,017 - database - INFO - Database tables initialized
+2025-05-12 23:42:48,024 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:42:48,024 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:42:48,025 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:42:48,083 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:42:48,086 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:42:48,137 - database - INFO - Database tables initialized
+2025-05-12 23:42:48,149 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:42:48,149 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:42:48,150 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:43:19,377 - database - INFO - Database tables initialized
+2025-05-12 23:43:19,377 - database - INFO - Database tables initialized
+2025-05-12 23:43:20,120 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:43:20,121 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:43:20,121 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:43:20,122 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:43:20,148 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:43:20,149 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:43:20,150 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:43:20,151 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:43:20,245 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:43:20,253 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:43:20,937 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:43:20,940 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:43:20,946 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:43:20,950 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:43:20,999 - database - INFO - Database tables initialized
+2025-05-12 23:43:21,007 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:43:21,007 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:43:21,008 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:43:21,018 - database - INFO - Database tables initialized
+2025-05-12 23:43:21,037 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:43:21,039 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:43:21,042 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:43:52,663 - database - INFO - Database tables initialized
+2025-05-12 23:43:52,667 - database - INFO - Database tables initialized
+2025-05-12 23:43:53,245 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:43:53,246 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:43:53,246 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:43:53,247 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:43:53,293 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:43:53,295 - solana_trader - INFO - Attempting to create keypair using seed method
+2025-05-12 23:43:53,295 - solana_trader - INFO - Wallet address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-12 23:43:53,296 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:43:53,346 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:43:53,392 - solana_trader - INFO - Got SOL price from CoinGecko: $168.18
+2025-05-12 23:43:53,397 - solana_trader - INFO - Connected to Solana network via https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee
+2025-05-12 23:43:53,875 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:43:53,876 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:43:53,905 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:43:53,906 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:43:53,929 - database - INFO - Database tables initialized
+2025-05-12 23:43:53,943 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:43:53,943 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:43:53,943 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:43:53,945 - database - INFO - Database tables initialized
+2025-05-12 23:43:53,962 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:43:53,963 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:43:53,968 - solana_trader - INFO - Closing SolanaTrader connections

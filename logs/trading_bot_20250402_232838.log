@@ -1,0 +1,190 @@
+2025-04-02 19:28:38,894 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 19:28:38,894 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-04-02 19:28:38,901 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-04-02 19:28:38,904 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-04-02 19:28:38,904 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 19:28:38,909 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-04-02 19:28:38,919 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 19:28:38,920 - trading_bot - INFO - ==================================================
+2025-04-02 19:28:38,921 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-04-02 19:28:38,921 - trading_bot - INFO - ==================================================
+2025-04-02 19:28:39,238 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 19:28:39,399 - trading_bot - INFO - Initial Wallet Balance: 0.0000 SOL ($0.00)
+2025-04-02 19:28:39,403 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-04-02 19:28:39,404 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:28:39,960 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 19:28:39,961 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:28:39,964 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-04-02 19:28:39,966 - trading_bot - INFO - Starting token discovery and trading process
+2025-04-02 19:28:40,094 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 19:28:40,119 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:28:40,248 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:28:42,246 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:28:42,396 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:28:46,389 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:28:46,390 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 19:28:46,391 - trading_bot.token_analyzer - WARNING - No valid Birdeye data for top gainers (1h)
+2025-04-02 19:28:46,527 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:28:46,528 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 19:28:46,529 - trading_bot.token_analyzer - WARNING - No valid Birdeye data for top gainers (1h)
+2025-04-02 19:28:46,581 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:28:46,693 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:28:48,733 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:28:48,829 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:28:52,895 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:28:52,896 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 19:28:52,897 - trading_bot.token_analyzer - WARNING - No valid Birdeye data for top gainers (6h)
+2025-04-02 19:28:52,979 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:28:52,980 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 19:28:52,980 - trading_bot.token_analyzer - WARNING - No valid Birdeye data for top gainers (6h)
+2025-04-02 19:28:53,138 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 19:28:53,201 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 19:28:53,357 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:28:53,358 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:28:53,456 - trading_bot.token_analyzer - ERROR - Error fetching token data for 82cL4WeWcTBeb6V1gfR561UJPkyGgMXKVAdm16Ytpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,457 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zto592G38BUK7t7E9ULfHnUfidXFZtYxiiE69fEpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,457 - trading_bot.token_analyzer - ERROR - Error fetching token data for FRpTyMBDavKsdYN1FQZcEeZ2iwGvHaZKFSkvr5izpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,458 - trading_bot.token_analyzer - ERROR - Error fetching token data for 8wXYbSjLEpkXxdcYXsyBy2bJtTUmHPj6zEJaf7o7pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,458 - trading_bot.token_analyzer - ERROR - Error fetching token data for ERKYpXQNHXNJxgWBt9X5CSs4w1SSLWmXMsm1zRCoiqPs: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,458 - trading_bot.token_analyzer - ERROR - Error fetching token data for BRQfSzKDThYt4sz8jUEgad8UxXGqRq7c5Y4yM952pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,459 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,459 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,460 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,460 - trading_bot.token_analyzer - ERROR - Error fetching token data for CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,461 - trading_bot.token_analyzer - ERROR - Error fetching token data for 65Ph5GECxYFEtANqBuAxi4eMWcTd4rat5tq6YTgCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,461 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,462 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,462 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,463 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,463 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:28:53,467 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:28:53,467 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:28:53,474 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:28:53,474 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:28:53,570 - trading_bot.token_analyzer - ERROR - Error fetching token data for 82cL4WeWcTBeb6V1gfR561UJPkyGgMXKVAdm16Ytpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,570 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zto592G38BUK7t7E9ULfHnUfidXFZtYxiiE69fEpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,571 - trading_bot.token_analyzer - ERROR - Error fetching token data for FRpTyMBDavKsdYN1FQZcEeZ2iwGvHaZKFSkvr5izpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,571 - trading_bot.token_analyzer - ERROR - Error fetching token data for 8wXYbSjLEpkXxdcYXsyBy2bJtTUmHPj6zEJaf7o7pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,571 - trading_bot.token_analyzer - ERROR - Error fetching token data for ERKYpXQNHXNJxgWBt9X5CSs4w1SSLWmXMsm1zRCoiqPs: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,572 - trading_bot.token_analyzer - ERROR - Error fetching token data for BRQfSzKDThYt4sz8jUEgad8UxXGqRq7c5Y4yM952pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,572 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,573 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,573 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,573 - trading_bot.token_analyzer - ERROR - Error fetching token data for CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,573 - trading_bot.token_analyzer - ERROR - Error fetching token data for 65Ph5GECxYFEtANqBuAxi4eMWcTd4rat5tq6YTgCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,574 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,574 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,574 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,574 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:28:53,574 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 19:28:53,577 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:29:53,478 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:29:53,799 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 19:29:53,799 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:29:54,002 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:29:56,144 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:30:00,281 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:30:00,283 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 19:30:00,284 - trading_bot.token_analyzer - WARNING - No valid Birdeye data for top gainers (1h)
+2025-04-02 19:30:00,442 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:30:02,577 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:30:06,728 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:30:06,729 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 19:30:06,730 - trading_bot.token_analyzer - WARNING - No valid Birdeye data for top gainers (6h)
+2025-04-02 19:30:07,066 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 19:30:07,324 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:30:07,325 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:30:07,438 - trading_bot.token_analyzer - ERROR - Error fetching token data for 82cL4WeWcTBeb6V1gfR561UJPkyGgMXKVAdm16Ytpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:30:07,439 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zto592G38BUK7t7E9ULfHnUfidXFZtYxiiE69fEpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:30:07,439 - trading_bot.token_analyzer - ERROR - Error fetching token data for FRpTyMBDavKsdYN1FQZcEeZ2iwGvHaZKFSkvr5izpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:30:07,440 - trading_bot.token_analyzer - ERROR - Error fetching token data for 8wXYbSjLEpkXxdcYXsyBy2bJtTUmHPj6zEJaf7o7pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:30:07,440 - trading_bot.token_analyzer - ERROR - Error fetching token data for ERKYpXQNHXNJxgWBt9X5CSs4w1SSLWmXMsm1zRCoiqPs: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:30:07,440 - trading_bot.token_analyzer - ERROR - Error fetching token data for BRQfSzKDThYt4sz8jUEgad8UxXGqRq7c5Y4yM952pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:30:07,440 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:30:07,441 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:30:07,441 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:30:07,441 - trading_bot.token_analyzer - ERROR - Error fetching token data for CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:30:07,442 - trading_bot.token_analyzer - ERROR - Error fetching token data for 65Ph5GECxYFEtANqBuAxi4eMWcTd4rat5tq6YTgCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:30:07,442 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:30:07,442 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:30:07,442 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:30:07,442 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:30:07,443 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:30:07,446 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:30:07,446 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:31:07,459 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:31:07,823 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 19:31:07,824 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:31:07,995 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:31:10,154 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:31:14,335 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:31:14,337 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 19:31:14,339 - trading_bot.token_analyzer - WARNING - No valid Birdeye data for top gainers (1h)
+2025-04-02 19:31:14,575 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:31:16,702 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:31:20,870 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:31:20,872 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 19:31:20,872 - trading_bot.token_analyzer - WARNING - No valid Birdeye data for top gainers (6h)
+2025-04-02 19:31:21,125 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 19:31:21,401 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:31:21,402 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:31:21,508 - trading_bot.token_analyzer - ERROR - Error fetching token data for 82cL4WeWcTBeb6V1gfR561UJPkyGgMXKVAdm16Ytpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:31:21,509 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zto592G38BUK7t7E9ULfHnUfidXFZtYxiiE69fEpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:31:21,510 - trading_bot.token_analyzer - ERROR - Error fetching token data for FRpTyMBDavKsdYN1FQZcEeZ2iwGvHaZKFSkvr5izpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:31:21,510 - trading_bot.token_analyzer - ERROR - Error fetching token data for 8wXYbSjLEpkXxdcYXsyBy2bJtTUmHPj6zEJaf7o7pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:31:21,511 - trading_bot.token_analyzer - ERROR - Error fetching token data for ERKYpXQNHXNJxgWBt9X5CSs4w1SSLWmXMsm1zRCoiqPs: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:31:21,511 - trading_bot.token_analyzer - ERROR - Error fetching token data for BRQfSzKDThYt4sz8jUEgad8UxXGqRq7c5Y4yM952pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:31:21,511 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:31:21,512 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:31:21,513 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:31:21,513 - trading_bot.token_analyzer - ERROR - Error fetching token data for CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:31:21,513 - trading_bot.token_analyzer - ERROR - Error fetching token data for 65Ph5GECxYFEtANqBuAxi4eMWcTd4rat5tq6YTgCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:31:21,514 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:31:21,514 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:31:21,515 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:31:21,515 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:31:21,515 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:31:21,524 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:31:21,525 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:32:21,535 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:32:21,848 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 19:32:21,848 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:32:22,049 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:32:24,210 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:32:28,342 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v1hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:32:28,344 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 19:32:28,344 - trading_bot.token_analyzer - WARNING - No valid Birdeye data for top gainers (1h)
+2025-04-02 19:32:28,548 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:32:30,701 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:32:31,460 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-04-02 19:32:33,955 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-04-02 19:32:34,845 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 400, message='Bad Request', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v6hChangePercent&sort_type=desc&offset=0&limit=5&min_liquidity=10000'
+2025-04-02 19:32:34,847 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 19:32:34,847 - trading_bot.token_analyzer - WARNING - No valid Birdeye data for top gainers (6h)
+2025-04-02 19:32:35,132 - trading_bot.token_scanner - INFO - Found 5 top gainer tokens
+2025-04-02 19:32:35,381 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:32:35,381 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:32:35,479 - trading_bot.token_analyzer - ERROR - Error fetching token data for 82cL4WeWcTBeb6V1gfR561UJPkyGgMXKVAdm16Ytpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:32:35,479 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zto592G38BUK7t7E9ULfHnUfidXFZtYxiiE69fEpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:32:35,480 - trading_bot.token_analyzer - ERROR - Error fetching token data for FRpTyMBDavKsdYN1FQZcEeZ2iwGvHaZKFSkvr5izpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:32:35,480 - trading_bot.token_analyzer - ERROR - Error fetching token data for 8wXYbSjLEpkXxdcYXsyBy2bJtTUmHPj6zEJaf7o7pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:32:35,480 - trading_bot.token_analyzer - ERROR - Error fetching token data for ERKYpXQNHXNJxgWBt9X5CSs4w1SSLWmXMsm1zRCoiqPs: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:32:35,481 - trading_bot.token_analyzer - ERROR - Error fetching token data for BRQfSzKDThYt4sz8jUEgad8UxXGqRq7c5Y4yM952pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:32:35,481 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:32:35,482 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:32:35,482 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:32:35,482 - trading_bot.token_analyzer - ERROR - Error fetching token data for CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:32:35,483 - trading_bot.token_analyzer - ERROR - Error fetching token data for 65Ph5GECxYFEtANqBuAxi4eMWcTd4rat5tq6YTgCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:32:35,483 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:32:35,483 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:32:35,484 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:32:35,484 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:32:35,484 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:32:35,489 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:32:35,490 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:32:39,418 - trading_bot - INFO - Closing connections
+2025-04-02 19:32:39,420 - trading_bot.solana_trader - INFO - Solana RPC client closed
+2025-04-02 19:32:39,420 - trading_bot - INFO - ==================================================
+2025-04-02 19:32:39,421 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-04-02 19:32:39,421 - trading_bot - INFO - ==================================================
+2025-04-02 19:32:39,424 - trading_bot - INFO - Bot execution completed

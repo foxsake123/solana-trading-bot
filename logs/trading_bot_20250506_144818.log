@@ -1,0 +1,200 @@
+2025-05-06 14:48:19,259 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:48:19,260 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 14:48:19,267 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 14:48:19,268 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 14:48:19,271 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 14:48:19,272 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:48:19,659 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 14:48:19,660 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 14:49:21,067 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:49:21,068 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 14:49:21,076 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 14:49:21,077 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 14:49:21,079 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 14:49:21,081 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:49:21,495 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 14:49:21,496 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 14:50:22,844 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:50:22,846 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 14:50:22,857 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 14:50:22,858 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 14:50:22,862 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 14:50:22,864 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:50:23,585 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 14:50:23,586 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 14:51:24,967 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:51:24,968 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 14:51:24,977 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 14:51:24,979 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 14:51:24,982 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 14:51:24,984 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:51:25,682 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 14:51:25,684 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 14:52:27,028 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:52:27,028 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 14:52:27,035 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 14:52:27,035 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 14:52:27,037 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 14:52:27,038 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:52:27,714 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 14:52:27,716 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 14:53:29,143 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:53:29,145 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 14:53:29,162 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 14:53:29,164 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 14:53:29,166 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 14:53:29,166 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:53:29,709 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 14:53:29,710 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 14:54:31,153 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:54:31,154 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 14:54:31,162 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 14:54:31,164 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 14:54:31,166 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 14:54:31,168 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:54:31,850 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 14:54:31,851 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 14:55:33,209 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:55:33,211 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 14:55:33,225 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 14:55:33,226 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 14:55:33,229 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 14:55:33,232 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:55:33,995 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 14:55:33,996 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 14:56:35,349 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:56:35,349 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 14:56:35,356 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 14:56:35,356 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 14:56:35,358 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 14:56:35,360 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:56:35,829 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 14:56:35,830 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 14:57:37,126 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:57:37,126 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 14:57:37,133 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 14:57:37,133 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 14:57:37,135 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 14:57:37,136 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:57:37,736 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 14:57:37,737 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 14:58:39,034 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:58:39,035 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 14:58:39,042 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 14:58:39,042 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 14:58:39,045 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 14:58:39,046 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:58:39,451 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 14:58:39,453 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 14:59:40,777 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:59:40,778 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 14:59:40,785 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 14:59:40,786 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 14:59:40,788 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 14:59:40,790 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 14:59:41,241 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 14:59:41,242 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 15:00:42,525 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:00:42,526 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 15:00:42,533 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 15:00:42,533 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 15:00:42,534 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 15:00:42,535 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:00:42,995 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 15:00:42,996 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 15:01:44,289 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:01:44,290 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 15:01:44,298 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 15:01:44,299 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 15:01:44,301 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 15:01:44,302 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:01:44,689 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 15:01:44,690 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 15:02:45,980 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:02:45,981 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 15:02:45,989 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 15:02:45,990 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 15:02:45,993 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 15:02:45,995 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:02:46,621 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 15:02:46,622 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 15:03:48,083 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:03:48,084 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 15:03:48,094 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 15:03:48,095 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 15:03:48,096 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 15:03:48,098 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:03:48,677 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 15:03:48,678 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 15:04:50,054 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:04:50,054 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 15:04:50,061 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 15:04:50,061 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 15:04:50,063 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 15:04:50,064 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:04:50,482 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 15:04:50,483 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 15:05:51,761 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:05:51,761 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 15:05:51,767 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 15:05:51,768 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 15:05:51,770 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 15:05:51,770 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:05:52,218 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 15:05:52,219 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 15:06:53,571 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:06:53,572 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 15:06:53,582 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 15:06:53,583 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 15:06:53,586 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 15:06:53,590 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:06:54,227 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 15:06:54,228 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 15:07:55,586 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:07:55,587 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 15:07:55,594 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 15:07:55,595 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 15:07:55,596 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 15:07:55,597 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:07:56,195 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 15:07:56,196 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 15:08:57,567 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:08:57,568 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 15:08:57,579 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 15:08:57,580 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 15:08:57,582 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 15:08:57,583 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:08:58,243 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 15:08:58,244 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 15:09:59,632 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:09:59,633 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 15:09:59,640 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 15:09:59,641 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 15:09:59,643 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 15:09:59,644 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:10:00,285 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 15:10:00,286 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 15:11:01,641 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:11:01,642 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 15:11:01,650 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 15:11:01,650 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 15:11:01,653 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 15:11:01,654 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:11:02,474 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 15:11:02,475 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 15:12:03,894 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:12:03,895 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 15:12:03,906 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 15:12:03,907 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 15:12:03,910 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 15:12:03,913 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:12:04,565 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 15:12:04,567 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-05-06 15:13:05,926 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:13:05,926 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-05-06 15:13:05,939 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-06 15:13:05,941 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-05-06 15:13:05,943 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-05-06 15:13:05,944 - trading_bot.database - INFO - Database tables initialized
+2025-05-06 15:13:06,707 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-05-06 15:13:06,708 - trading_bot.solana_trader - INFO - Connected to Solana RPC

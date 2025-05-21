@@ -1,0 +1,216 @@
+2025-05-12 23:02:21,853 - database - INFO - Database tables initialized
+2025-05-12 23:02:22,697 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:02:22,698 - solana_trader - ERROR - Error creating keypair: expected a sequence of length 64 (got 32)
+2025-05-12 23:02:22,698 - solana_trader - ERROR - Failed to create keypair. Will run in simulation mode.
+2025-05-12 23:02:22,699 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:02:22,699 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 23:02:22,903 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:02:22,904 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:02:22,973 - database - INFO - Database tables initialized
+2025-05-12 23:02:22,997 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:02:22,998 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:02:22,999 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:02:54,977 - database - INFO - Database tables initialized
+2025-05-12 23:02:55,260 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:02:55,261 - solana_trader - ERROR - Error creating keypair: expected a sequence of length 64 (got 32)
+2025-05-12 23:02:55,262 - solana_trader - ERROR - Failed to create keypair. Will run in simulation mode.
+2025-05-12 23:02:55,262 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:02:55,262 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 23:02:55,395 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:02:55,395 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:02:55,427 - database - INFO - Database tables initialized
+2025-05-12 23:02:55,436 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:02:55,437 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:02:55,437 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:03:26,773 - database - INFO - Database tables initialized
+2025-05-12 23:03:27,737 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:03:27,737 - solana_trader - ERROR - Error creating keypair: expected a sequence of length 64 (got 32)
+2025-05-12 23:03:27,738 - solana_trader - ERROR - Failed to create keypair. Will run in simulation mode.
+2025-05-12 23:03:27,739 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:03:27,740 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 23:03:27,918 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:03:27,921 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:03:27,993 - database - INFO - Database tables initialized
+2025-05-12 23:03:28,018 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:03:28,019 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:03:28,019 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:03:59,468 - database - INFO - Database tables initialized
+2025-05-12 23:03:59,767 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:03:59,767 - solana_trader - ERROR - Error creating keypair: expected a sequence of length 64 (got 32)
+2025-05-12 23:03:59,768 - solana_trader - ERROR - Failed to create keypair. Will run in simulation mode.
+2025-05-12 23:03:59,768 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:03:59,768 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 23:03:59,958 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:03:59,960 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:04:00,001 - database - INFO - Database tables initialized
+2025-05-12 23:04:00,009 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:04:00,010 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:04:00,010 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:04:31,363 - database - INFO - Database tables initialized
+2025-05-12 23:04:32,234 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:04:32,234 - solana_trader - ERROR - Error creating keypair: expected a sequence of length 64 (got 32)
+2025-05-12 23:04:32,235 - solana_trader - ERROR - Failed to create keypair. Will run in simulation mode.
+2025-05-12 23:04:32,235 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:04:32,236 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 23:04:32,389 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:04:32,390 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:04:32,447 - database - INFO - Database tables initialized
+2025-05-12 23:04:32,465 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:04:32,465 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:04:32,466 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:05:03,967 - database - INFO - Database tables initialized
+2025-05-12 23:05:04,875 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:05:04,876 - solana_trader - ERROR - Error creating keypair: expected a sequence of length 64 (got 32)
+2025-05-12 23:05:04,876 - solana_trader - ERROR - Failed to create keypair. Will run in simulation mode.
+2025-05-12 23:05:04,876 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:05:04,877 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 23:05:05,008 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:05:05,009 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:05:05,096 - database - INFO - Database tables initialized
+2025-05-12 23:05:05,115 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:05:05,116 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:05:05,116 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:05:36,578 - database - INFO - Database tables initialized
+2025-05-12 23:05:36,870 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:05:36,870 - solana_trader - ERROR - Error creating keypair: expected a sequence of length 64 (got 32)
+2025-05-12 23:05:36,871 - solana_trader - ERROR - Failed to create keypair. Will run in simulation mode.
+2025-05-12 23:05:36,871 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:05:36,871 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 23:05:37,186 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:05:37,188 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:05:37,233 - database - INFO - Database tables initialized
+2025-05-12 23:05:37,242 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:05:37,243 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:05:37,243 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:06:08,614 - database - INFO - Database tables initialized
+2025-05-12 23:06:09,550 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:06:09,552 - solana_trader - ERROR - Error creating keypair: expected a sequence of length 64 (got 32)
+2025-05-12 23:06:09,553 - solana_trader - ERROR - Failed to create keypair. Will run in simulation mode.
+2025-05-12 23:06:09,553 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:06:09,553 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 23:06:10,300 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:06:10,302 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:06:10,383 - database - INFO - Database tables initialized
+2025-05-12 23:06:10,401 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:06:10,402 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:06:10,403 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:06:42,033 - database - INFO - Database tables initialized
+2025-05-12 23:06:42,977 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:06:42,978 - solana_trader - ERROR - Error creating keypair: expected a sequence of length 64 (got 32)
+2025-05-12 23:06:42,979 - solana_trader - ERROR - Failed to create keypair. Will run in simulation mode.
+2025-05-12 23:06:42,979 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:06:42,979 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 23:06:43,370 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:06:43,372 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:06:43,436 - database - INFO - Database tables initialized
+2025-05-12 23:06:43,459 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:06:43,459 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:06:43,460 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:07:14,903 - database - INFO - Database tables initialized
+2025-05-12 23:07:15,180 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:07:15,181 - solana_trader - ERROR - Error creating keypair: expected a sequence of length 64 (got 32)
+2025-05-12 23:07:15,181 - solana_trader - ERROR - Failed to create keypair. Will run in simulation mode.
+2025-05-12 23:07:15,181 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:07:15,182 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 23:07:15,481 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:07:15,481 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:07:15,513 - database - INFO - Database tables initialized
+2025-05-12 23:07:15,518 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:07:15,518 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:07:15,519 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:07:46,791 - database - INFO - Database tables initialized
+2025-05-12 23:07:47,717 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:07:47,718 - solana_trader - ERROR - Error creating keypair: expected a sequence of length 64 (got 32)
+2025-05-12 23:07:47,719 - solana_trader - ERROR - Failed to create keypair. Will run in simulation mode.
+2025-05-12 23:07:47,719 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:07:47,720 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 23:07:48,172 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:07:48,174 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:07:48,251 - database - INFO - Database tables initialized
+2025-05-12 23:07:48,271 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:07:48,272 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:07:48,273 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:08:19,682 - database - INFO - Database tables initialized
+2025-05-12 23:08:19,966 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:08:19,966 - solana_trader - ERROR - Error creating keypair: expected a sequence of length 64 (got 32)
+2025-05-12 23:08:19,967 - solana_trader - ERROR - Failed to create keypair. Will run in simulation mode.
+2025-05-12 23:08:19,967 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:08:19,967 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 23:08:20,345 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:08:20,346 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:08:20,382 - database - INFO - Database tables initialized
+2025-05-12 23:08:20,388 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:08:20,388 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:08:20,389 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:08:51,659 - database - INFO - Database tables initialized
+2025-05-12 23:08:52,577 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:08:52,578 - solana_trader - ERROR - Error creating keypair: expected a sequence of length 64 (got 32)
+2025-05-12 23:08:52,578 - solana_trader - ERROR - Failed to create keypair. Will run in simulation mode.
+2025-05-12 23:08:52,579 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:08:52,579 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 23:08:52,772 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:08:52,773 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:08:52,845 - database - INFO - Database tables initialized
+2025-05-12 23:08:52,866 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:08:52,867 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:08:52,867 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:09:24,261 - database - INFO - Database tables initialized
+2025-05-12 23:09:25,224 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:09:25,225 - solana_trader - ERROR - Error creating keypair: expected a sequence of length 64 (got 32)
+2025-05-12 23:09:25,225 - solana_trader - ERROR - Failed to create keypair. Will run in simulation mode.
+2025-05-12 23:09:25,226 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:09:25,226 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 23:09:25,406 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:09:25,406 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:09:25,480 - database - INFO - Database tables initialized
+2025-05-12 23:09:25,504 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:09:25,505 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:09:25,505 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:09:56,989 - database - INFO - Database tables initialized
+2025-05-12 23:09:57,816 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:09:57,817 - solana_trader - ERROR - Error creating keypair: expected a sequence of length 64 (got 32)
+2025-05-12 23:09:57,818 - solana_trader - ERROR - Failed to create keypair. Will run in simulation mode.
+2025-05-12 23:09:57,818 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:09:57,818 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 23:09:57,947 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:09:57,949 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:09:58,021 - database - INFO - Database tables initialized
+2025-05-12 23:09:58,038 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:09:58,039 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:09:58,040 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:10:29,465 - database - INFO - Database tables initialized
+2025-05-12 23:10:30,400 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:10:30,400 - solana_trader - ERROR - Error creating keypair: expected a sequence of length 64 (got 32)
+2025-05-12 23:10:30,401 - solana_trader - ERROR - Failed to create keypair. Will run in simulation mode.
+2025-05-12 23:10:30,401 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:10:30,402 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 23:10:32,337 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:10:32,338 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:10:32,407 - database - INFO - Database tables initialized
+2025-05-12 23:10:32,426 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:10:32,427 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:10:32,427 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:11:03,940 - database - INFO - Database tables initialized
+2025-05-12 23:11:04,858 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:11:04,859 - solana_trader - ERROR - Error creating keypair: expected a sequence of length 64 (got 32)
+2025-05-12 23:11:04,860 - solana_trader - ERROR - Failed to create keypair. Will run in simulation mode.
+2025-05-12 23:11:04,860 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:11:04,861 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 23:11:05,035 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:11:05,036 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:11:05,101 - database - INFO - Database tables initialized
+2025-05-12 23:11:05,123 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:11:05,124 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:11:05,125 - solana_trader - INFO - Closing SolanaTrader connections
+2025-05-12 23:11:36,556 - database - INFO - Database tables initialized
+2025-05-12 23:11:36,856 - solana_trader - INFO - Processing private key as hex string
+2025-05-12 23:11:36,856 - solana_trader - ERROR - Error creating keypair: expected a sequence of length 64 (got 32)
+2025-05-12 23:11:36,857 - solana_trader - ERROR - Failed to create keypair. Will run in simulation mode.
+2025-05-12 23:11:36,857 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:11:36,857 - solana_trader - INFO - SIMULATION: Connected to Solana network
+2025-05-12 23:11:36,955 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 23:11:36,956 - trading_bot.birdeye_api - INFO - Found 2 trending tokens
+2025-05-12 23:11:36,982 - database - INFO - Database tables initialized
+2025-05-12 23:11:36,986 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 23:11:36,987 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 23:11:36,987 - solana_trader - INFO - Closing SolanaTrader connections

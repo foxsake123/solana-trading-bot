@@ -1,0 +1,73 @@
+2025-05-12 19:34:28,197 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-12 19:34:28,198 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-05-12 19:34:28,200 - trading_bot - INFO - ==================================================
+2025-05-12 19:34:28,201 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-05-12 19:34:28,202 - trading_bot - INFO - ==================================================
+2025-05-12 19:34:28,203 - trading_bot - INFO - Initial Wallet Balance: 10.0000 SOL ($676.44)
+2025-05-12 19:34:28,204 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-05-12 19:34:28,206 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 19:34:28,626 - trading_bot.token_scanner - ERROR - Twitter scan failed: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:34:28,627 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 19:34:28,634 - trading_bot - INFO - Starting token discovery and trading process
+2025-05-12 19:34:28,635 - trading_bot - INFO - Current wallet balance: 10.0000 SOL ($319.96)
+2025-05-12 19:34:28,745 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:34:28,747 - trading_bot.birdeye_api - INFO - Found 1 top gainers for 24h
+2025-05-12 19:34:28,749 - trading_bot.token_analyzer - INFO - Retrieved 1 top gainers from Birdeye API
+2025-05-12 19:34:28,750 - trading_bot.token_scanner - INFO - Found 1 top gainer tokens
+2025-05-12 19:34:28,751 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:34:29,326 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 19:34:29,327 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:34:29,328 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 19:34:29,329 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 19:34:29,330 - trading_bot.token_scanner - ERROR - Error scanning PumpFun: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:34:29,330 - trading_bot.token_scanner - INFO - Running machine learning analysis on discovered tokens...
+2025-05-12 19:34:29,331 - trading_bot.token_scanner - INFO - Training ML model with historical data
+2025-05-12 19:34:29,332 - trading_bot.ml_model - ERROR - Error training model: 'Database' object has no attribute 'get_trading_history'
+2025-05-12 19:34:29,333 - trading_bot.ml_model - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\ml_model.py", line 117, in train
+    trades_df = db.get_trading_history(limit=1000)
+                ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Database' object has no attribute 'get_trading_history'. Did you mean: 'get_trade_history'?
+
+2025-05-12 19:34:29,334 - trading_bot.token_scanner - WARNING - ML model training failed, using existing model
+2025-05-12 19:34:29,334 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 19:34:29,335 - trading_bot.token_scanner - ERROR - Token analysis failed: 'Database' object has no attribute 'get_tokens'
+2025-05-12 19:34:29,335 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 19:34:29,408 - trading_bot.birdeye_api - INFO - Retrieved 2 tokens from DexScreener
+2025-05-12 19:34:29,409 - trading_bot.birdeye_api - INFO - Found 1 top gainers for 24h
+2025-05-12 19:34:29,410 - trading_bot.token_analyzer - INFO - Retrieved 1 top gainers from Birdeye API
+2025-05-12 19:34:29,411 - trading_bot.token_scanner - INFO - Found 1 top gainer tokens
+2025-05-12 19:34:29,411 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:34:30,065 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 19:34:30,066 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:34:30,067 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-05-12 19:34:30,067 - trading_bot.token_scanner - ERROR - Token analysis failed: 'Database' object has no attribute 'get_tokens'
+2025-05-12 19:35:29,344 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-05-12 19:35:29,657 - trading_bot.token_scanner - ERROR - Twitter scan failed: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:35:29,658 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-05-12 19:35:29,659 - trading_bot.token_analyzer - INFO - Retrieved 1 top gainers from Birdeye API
+2025-05-12 19:35:29,660 - trading_bot.token_scanner - INFO - Found 1 top gainer tokens
+2025-05-12 19:35:29,661 - trading_bot.token_scanner - ERROR - Error scanning for top gainers: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:35:30,188 - trading_bot.token_scanner - INFO - Found 2 trending tokens
+2025-05-12 19:35:30,188 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:35:30,190 - trading_bot.token_scanner - INFO - Scanning PumpFun for tokens...
+2025-05-12 19:35:30,191 - trading_bot.token_scanner - INFO - Using simulated PumpFun data due to API certificate issues
+2025-05-12 19:35:30,192 - trading_bot.token_scanner - ERROR - Error scanning PumpFun: Database.store_token() got an unexpected keyword argument 'contract_address'
+2025-05-12 19:35:30,194 - trading_bot.token_scanner - INFO - Running machine learning analysis on discovered tokens...
+2025-05-12 19:35:30,195 - trading_bot.token_scanner - INFO - Training ML model with historical data
+2025-05-12 19:35:30,197 - trading_bot.ml_model - ERROR - Error training model: 'Database' object has no attribute 'get_trading_history'
+2025-05-12 19:35:30,200 - trading_bot.ml_model - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\ml_model.py", line 117, in train
+    trades_df = db.get_trading_history(limit=1000)
+                ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Database' object has no attribute 'get_trading_history'. Did you mean: 'get_trade_history'?
+
+2025-05-12 19:35:30,202 - trading_bot.token_scanner - WARNING - ML model training failed, using existing model
+2025-05-12 19:35:30,203 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-05-12 19:35:30,203 - trading_bot.token_scanner - ERROR - Token analysis failed: 'Database' object has no attribute 'get_tokens'
+2025-05-12 19:35:30,204 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-05-12 19:36:25,614 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-05-12 19:36:28,221 - trading_bot - INFO - Closing connections
+2025-05-12 19:36:28,222 - trading_bot - INFO - ==================================================
+2025-05-12 19:36:28,223 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-05-12 19:36:28,223 - trading_bot - INFO - ==================================================

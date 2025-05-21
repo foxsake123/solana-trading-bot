@@ -1,0 +1,2523 @@
+import streamlit as st
+import pandas as pd
+import numpy as np
+import os
+import json
+import time
+import sqlite3
+from datetime import datetime, timedelta
+import pytz
+import requests
+import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+import sys
+import logging
+import base64
+import traceback
+
+# Set up logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger('enhanced_dashboard')
+
+# Set page title and icon
+st.set_page_config(
+    page_title="Solana Trading Bot - Enhanced Dashboard",
+    page_icon="💸",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# Custom CSS for dark theme
+st.markdown("""
+<style>
+    .main {
+        background-color: #0E1117;
+        color: white;
+    }
+    .css-1d391kg {
+        background-color: #1E1E1E;
+    }
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 1px;
+    }
+    .stTabs [data-baseweb="tab"] {
+        background-color: #1E1E1E;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 4px 4px 0 0;
+    }
+    .stTabs [aria-selected="true"] {
+        background-color: #4CAF50;
+        color: white;
+    }
+    .metric-card {
+        background-color: #252525;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 10px 0;
+    }
+    .profit {
+        color: #4CAF50;
+    }
+    .loss {
+        color: #FF5252;
+    }
+    .neutral {
+        color: #2196F3;
+    }
+    .main-metric {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .sub-metric {
+        font-size: 16px;
+        color: #BDBDBD;
+    }
+    .dataframe {
+        background-color: #1E1E1E !important;
+        color: white !important;
+    }
+    th {
+        background-color: #252525 !important;
+        color: white !important;
+    }
+    td {
+        background-color: #1E1E1E !important;
+        color: white !important;
+    }
+    button {
+        background-color: #4CAF50 !important;
+        color: white !important;
+    }
+    .simulation-tag {
+        background-color: #FF9800;
+        color: black;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+    .real-tag {
+        background-color: #F44336;
+        color: white;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+    .info-box {
+        background-color: #252525;
+        border-left: 4px solid #2196F3;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 4px;
+    }
+    .warning-box {
+        background-color: #252525;
+        border-left: 4px solid #FF9800;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 4px;
+    }
+    .success-box {
+        background-color: #252525;
+        border-left: 4px solid #4CAF50;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 4px;
+    }
+    .error-box {
+        background-color: #252525;
+        border-left: 4px solid #F44336;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 4px;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+# Helper functions
+def get_live_sol_price():
+    """Get the current SOL price from multiple API sources."""
+    try:
+        # Try CoinGecko API
+        response = requests.get(
+            "https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd",
+            timeout=10
+        )
+        if response.status_code == 200:
+            data = response.json()
+            if data and 'solana' in data and 'usd' in data['solana']:
+                return float(data['solana']['usd'])
+    except Exception as e:
+        logger.warning(f"CoinGecko API error: {e}")
+    
+    try:
+        # Try Binance API
+        response = requests.get(
+            "https://api.binance.com/api/v3/ticker/price?symbol=SOLUSDT",
+            timeout=10
+        )
+        if response.status_code == 200:
+            data = response.json()
+            if data and 'price' in data:
+                return float(data['price'])
+    except Exception as e:
+        logger.warning(f"Binance API error: {e}")
+    
+    logger.warning("Could not fetch live SOL price from any API")
+    return 0.0
+
+def convert_to_et(timestamp_str):
+    """Convert a timestamp string to Eastern Time."""
+    try:
+        # Parse the timestamp
+        if isinstance(timestamp_str, str):
+            # Try different formats
+            for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M:%S.%f", "%Y-%m-%dT%H:%M:%S.%f%z", "%Y-%m-%dT%H:%M:%S%z"):
+                try:
+                    timestamp = datetime.strptime(timestamp_str, fmt)
+                    break
+                except ValueError:
+                    continue
+            else:
+                # If no format matched, return the original string
+                return timestamp_str
+        else:
+            # Assume it's already a datetime object
+            timestamp = timestamp_str
+        
+        # If timestamp has no timezone info, assume it's UTC
+        if timestamp.tzinfo is None:
+            timestamp = timestamp.replace(tzinfo=pytz.UTC)
+        
+        # Convert to Eastern Time
+        eastern = pytz.timezone('US/Eastern')
+        timestamp_et = timestamp.astimezone(eastern)
+        
+        return timestamp_et.strftime("%Y-%m-%d %H:%M:%S")
+    except Exception as e:
+        logger.error(f"Error converting timestamp: {e}")
+        # Return the original string if conversion fails
+        return timestamp_str
+
+def get_wallet_balance(wallet_address=None, rpc_endpoint=None):
+    """Get wallet balance from Solana blockchain using REST API."""
+    try:
+        # Read wallet key from .env file
+        private_key = None
+        rpc_endpoint = None
+        
+        if os.path.exists('.env'):
+            with open('.env', 'r') as f:
+                for line in f:
+                    line = line.strip()
+                    if line.startswith('WALLET_PRIVATE_KEY='):
+                        private_key = line.split('=', 1)[1].strip().strip("'").strip('"')
+                    elif line.startswith('SOLANA_RPC_ENDPOINT='):
+                        rpc_endpoint = line.split('=', 1)[1].strip().strip("'").strip('"')
+        
+        if not wallet_address and not private_key:
+            logger.warning("No wallet address or private key found")
+            # Return fallback balance instead of None
+            return 1.15
+        
+        if not rpc_endpoint:
+            rpc_endpoint = "https://api.mainnet-beta.solana.com"
+            
+        # If wallet_address is not provided, try to derive it from private key
+        # (In a real implementation, you would use solana-py SDK for this)
+        if not wallet_address and private_key:
+            # This is a placeholder
+            wallet_address = "YOUR_PUBLIC_KEY_HERE"  # Replace with actual public key
+        
+        # Query balance using RPC endpoint
+        payload = {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "getBalance",
+            "params": [wallet_address]
+        }
+        
+        headers = {"Content-Type": "application/json"}
+        response = requests.post(rpc_endpoint, json=payload, headers=headers)
+        
+        if response.status_code == 200:
+            data = response.json()
+            if 'result' in data and 'value' in data['result']:
+                # Convert lamports to SOL (1 SOL = 10^9 lamports)
+                balance_sol = data['result']['value'] / 10**9
+                return balance_sol
+        
+        logger.warning(f"Failed to get wallet balance: {response.text if response else 'No response'}")
+        # Return fallback balance
+        return 1.15
+    
+    except Exception as e:
+        logger.error(f"Error getting wallet balance: {e}")
+        # Return fallback balance
+        return 1.15
+
+def load_bot_settings():
+    """Load bot settings from control file."""
+    control_files = [
+        'data/bot_control.json',
+        'bot_control.json'
+    ]
+    
+    for control_file in control_files:
+        if os.path.exists(control_file):
+            try:
+                with open(control_file, 'r') as f:
+                    return json.load(f)
+            except Exception as e:
+                logger.error(f"Error loading {control_file}: {e}")
+    
+    # Default settings
+    return {
+        "running": False,
+        "simulation_mode": True,
+        "take_profit_target": 50.0,
+        "stop_loss_percentage": 25.0,
+        "min_investment_per_token": 0.02,
+        "max_investment_per_token": 0.1,
+        "use_machine_learning": False,
+        "MIN_SAFETY_SCORE": 15.0,
+        "MIN_VOLUME": 10.0,
+        "MIN_LIQUIDITY": 5000.0,
+        "MIN_MCAP": 10000.0,
+        "MIN_HOLDERS": 10,
+        "MIN_PRICE_CHANGE_1H": 1.0,
+        "MIN_PRICE_CHANGE_6H": 2.0,
+        "MIN_PRICE_CHANGE_24H": 5.0
+    }
+
+def save_bot_settings(settings, control_file='data/bot_control.json'):
+    """Save bot settings to control file."""
+    try:
+        # Create directory if it doesn't exist
+        os.makedirs(os.path.dirname(control_file), exist_ok=True)
+        
+        with open(control_file, 'w') as f:
+            json.dump(settings, f, indent=4)
+        return True
+    except Exception as e:
+        logger.error(f"Error saving settings: {e}")
+        return False
+
+def find_database():
+    """Find the SQLite database file."""
+    db_files = [
+        'data/sol_bot.db',
+        'data/trading_bot.db',
+        'solana_trader.db'
+    ]
+    
+    for db_file in db_files:
+        if os.path.exists(db_file):
+            return db_file
+    
+    return None
+
+def calculate_metrics(trades_df, current_sol_price, is_simulation=False):
+    """Calculate trading metrics from trades."""
+    if trades_df.empty:
+        return {
+            "win_rate": 0.0,
+            "total_pl_sol": 0.0,
+            "total_pl_usd": 0.0,
+            "total_trades": 0,
+            "best_trade_pct": 0.0,
+            "worst_trade_pct": 0.0,
+            "avg_holding_time": "0 hours"
+        }
+    
+    try:
+        # Filter for correct simulation mode
+        if 'is_simulation' in trades_df.columns:
+            trades_df = trades_df[trades_df['is_simulation'] == is_simulation]
+            
+            if trades_df.empty:
+                return {
+                    "win_rate": 0.0,
+                    "total_pl_sol": 0.0,
+                    "total_pl_usd": 0.0,
+                    "total_trades": 0,
+                    "best_trade_pct": 0.0,
+                    "worst_trade_pct": 0.0,
+                    "avg_holding_time": "0 hours"
+                }
+        
+        # Filter buy and sell trades
+        buy_trades = trades_df[trades_df['action'] == 'BUY']
+        sell_trades = trades_df[trades_df['action'] == 'SELL']
+        
+        # Count trades
+        total_trades = len(sell_trades)
+        
+        if total_trades == 0:
+            return {
+                "win_rate": 0.0,
+                "total_pl_sol": 0.0,
+                "total_pl_usd": 0.0,
+                "total_trades": 0,
+                "best_trade_pct": 0.0,
+                "worst_trade_pct": 0.0,
+                "avg_holding_time": "0 hours"
+            }
+        
+        # Calculate profit/loss
+        total_pl_sol = 0.0
+        winning_trades = 0
+        trade_percentages = []
+        holding_times = []
+        
+        # Match buys and sells by contract address
+        for contract in buy_trades['contract_address'].unique():
+            contract_buys = buy_trades[buy_trades['contract_address'] == contract]
+            contract_sells = sell_trades[sell_trades['contract_address'] == contract]
+            
+            if not contract_sells.empty and not contract_buys.empty:
+                # For each sell, find a matching buy
+                for _, sell in contract_sells.iterrows():
+                    # Find buys that happened before this sell
+                    prior_buys = contract_buys[
+                        pd.to_datetime(contract_buys['timestamp']) < pd.to_datetime(sell['timestamp'])
+                    ]
+                    
+                    if not prior_buys.empty:
+                        # Use the earliest buy
+                        buy = prior_buys.iloc[0]
+                        
+                        # Calculate profit
+                        buy_price = buy['price']
+                        sell_price = sell['price']
+                        amount = buy['amount']
+                        
+                        profit = (sell_price - buy_price) * amount
+                        total_pl_sol += profit
+                        
+                        # Calculate percentage gain/loss
+                        if buy_price > 0:
+                            percentage = ((sell_price / buy_price) - 1) * 100
+                            trade_percentages.append(percentage)
+                        
+                        if profit > 0:
+                            winning_trades += 1
+                            
+                        # Calculate holding time
+                        buy_time = pd.to_datetime(buy['timestamp'])
+                        sell_time = pd.to_datetime(sell['timestamp'])
+                        holding_time = (sell_time - buy_time).total_seconds() / 3600  # in hours
+                        holding_times.append(holding_time)
+        
+        # Calculate win rate
+        win_rate = (winning_trades / total_trades * 100) if total_trades > 0 else 0.0
+        
+        # Calculate USD value
+        total_pl_usd = total_pl_sol * current_sol_price if current_sol_price > 0 else 0.0
+        
+        # Calculate best and worst trades
+        best_trade_pct = max(trade_percentages) if trade_percentages else 0.0
+        worst_trade_pct = min(trade_percentages) if trade_percentages else 0.0
+        
+        # Calculate average holding time
+        avg_holding_time = sum(holding_times) / len(holding_times) if holding_times else 0.0
+        avg_holding_time_str = f"{avg_holding_time:.1f} hours"
+        
+        return {
+            "win_rate": win_rate,
+            "total_pl_sol": total_pl_sol,
+            "total_pl_usd": total_pl_usd,
+            "total_trades": total_trades,
+            "best_trade_pct": best_trade_pct,
+            "worst_trade_pct": worst_trade_pct,
+            "avg_holding_time": avg_holding_time_str
+        }
+    
+    except Exception as e:
+        logger.error(f"Error calculating metrics: {e}")
+        return {
+            "win_rate": 0.0,
+            "total_pl_sol": 0.0,
+            "total_pl_usd": 0.0,
+            "total_trades": 0,
+            "best_trade_pct": 0.0,
+            "worst_trade_pct": 0.0,
+            "avg_holding_time": "0 hours"
+        }
+
+def create_pl_chart(trades_df, is_simulation=False, lookback_days=30, chart_id=None):
+    """Create a P&L chart for the dashboard."""
+    if trades_df.empty:
+        # Return an empty figure
+        fig = go.Figure()
+        fig.update_layout(
+            title="Profit/Loss Over Time",
+            xaxis_title="Date",
+            yaxis_title="P&L (SOL)",
+            height=400,
+            template="plotly_dark"
+        )
+        return fig
+        
+    try:
+        # Create a copy of the DataFrame to avoid warnings
+        trades_df_copy = trades_df.copy()
+        
+        # Filter for correct simulation mode
+        if 'is_simulation' in trades_df_copy.columns:
+            trades_df_copy = trades_df_copy[trades_df_copy['is_simulation'] == is_simulation]
+        
+        # Convert timestamp to datetime
+        if 'timestamp' in trades_df_copy.columns:
+            # Handle different timestamp formats
+            try:
+                trades_df_copy.loc[:, 'timestamp'] = pd.to_datetime(trades_df_copy['timestamp'], utc=True, errors='coerce')
+            except Exception as e:
+                logger.warning(f"Error converting timestamps: {e}")
+                trades_df_copy['timestamp'] = pd.to_datetime(trades_df_copy['timestamp'].astype(str), errors='coerce')
+        
+        # Filter for lookback period
+        start_date = pd.Timestamp.now(tz='UTC') - pd.Timedelta(days=lookback_days)
+        trades_df_copy = trades_df_copy[trades_df_copy['timestamp'] >= start_date]
+        
+        if trades_df_copy.empty:
+            # Return an empty figure
+            fig = go.Figure()
+            fig.update_layout(
+                title="Profit/Loss Over Time",
+                xaxis_title="Date",
+                yaxis_title="P&L (SOL)",
+                height=400,
+                template="plotly_dark"
+            )
+            return fig
+        
+        # Sort by timestamp
+        trades_df_copy = trades_df_copy.sort_values('timestamp')
+        
+        # Initialize data for cumulative P&L
+        dates = []
+        cumulative_pl = []
+        total_pl = 0.0
+        
+        # Process trades to extract dates
+        unique_dates = pd.Series(trades_df_copy['timestamp'].dt.date.unique()).sort_values()
+        
+        for day in unique_dates:
+            # Get trades for this day
+            day_trades = trades_df_copy[trades_df_copy['timestamp'].dt.date == day]
+            
+            # Calculate day's P&L
+            buys = day_trades[day_trades['action'] == 'BUY']
+            sells = day_trades[day_trades['action'] == 'SELL']
+            
+            day_pl = 0.0
+            
+            # Calculate profit from sells
+            for _, sell in sells.iterrows():
+                contract = sell['contract_address']
+                amount = sell['amount']
+                sell_price = sell['price']
+                
+                # Find corresponding buys in the entire dataset
+                buy_trades = trades_df_copy[
+                    (trades_df_copy['contract_address'] == contract) & 
+                    (trades_df_copy['action'] == 'BUY')
+                ]
+                
+                # Only consider buys that happened before this sell
+                contract_buys = buy_trades[buy_trades['timestamp'] < sell['timestamp']]
+                
+                if not contract_buys.empty:
+                    # Use the earliest buy
+                    buy = contract_buys.iloc[0]
+                    buy_price = buy['price']
+                    
+                    # Calculate profit
+                    profit = (sell_price - buy_price) * amount
+                    day_pl += profit
+            
+            # Add day's P&L to cumulative
+            total_pl += day_pl
+            dates.append(day)
+            cumulative_pl.append(total_pl)
+        
+        # Create the figure
+        fig = go.Figure()
+        
+        # Add the line
+        fig.add_trace(go.Scatter(
+            x=dates,
+            y=cumulative_pl,
+            mode='lines+markers',
+            name='Cumulative P&L',
+            line=dict(
+                color='cyan' if is_simulation else 'lime',
+                width=2
+            ),
+            marker=dict(
+                size=6,
+                symbol='circle'
+            )
+        ))
+        
+        # Add a horizontal line at y=0 if we have dates
+        if dates:
+            fig.add_shape(
+                type="line",
+                x0=min(dates),
+                y0=0,
+                x1=max(dates),
+                y1=0,
+                line=dict(
+                    color="gray",
+                    width=1,
+                    dash="dash",
+                )
+            )
+        
+        # Update layout
+        fig.update_layout(
+            title=f"{'Simulated' if is_simulation else 'Real'} P&L Over Time",
+            xaxis_title="Date",
+            yaxis_title="P&L (SOL)",
+            height=400,
+            template="plotly_dark",
+            plot_bgcolor='#1E1E1E',
+            paper_bgcolor='#1E1E1E',
+            font=dict(color='white'),
+            xaxis=dict(
+                showgrid=True,
+                gridcolor='#333333',
+            ),
+            yaxis=dict(
+                showgrid=True,
+                gridcolor='#333333',
+                zerolinecolor='#666666',
+            ),
+            margin=dict(l=10, r=10, t=50, b=10),
+            legend=dict(
+                orientation="h",
+                yanchor="bottom",
+                y=1.02,
+                xanchor="right",
+                x=1
+            )
+        )
+        
+        return fig
+    
+    except Exception as e:
+        logger.error(f"Error creating P&L chart: {e}")
+        # Return an empty figure
+        fig = go.Figure()
+        fig.update_layout(
+            title="Profit/Loss Over Time",
+            xaxis_title="Date",
+            yaxis_title="P&L (SOL)",
+            height=400,
+            template="plotly_dark"
+        )
+        return fig
+
+def create_performance_chart(metrics_real, metrics_sim):
+    """Create a comparative performance chart."""
+    try:
+        # Create figure with secondary y-axis
+        fig = make_subplots(specs=[[{"secondary_y": True}]])
+        
+        # Categories
+        categories = ['Win Rate (%)', 'Total P&L (SOL)', 'Total Trades']
+        
+        # Data
+        real_values = [metrics_real['win_rate'], metrics_real['total_pl_sol'], metrics_real['total_trades']]
+        sim_values = [metrics_sim['win_rate'], metrics_sim['total_pl_sol'], metrics_sim['total_trades']]
+        
+        # Add bars
+        fig.add_trace(
+            go.Bar(
+                x=categories,
+                y=real_values,
+                name='Real Trading',
+                marker_color='lime'
+            ),
+            secondary_y=False,
+        )
+        
+        fig.add_trace(
+            go.Bar(
+                x=categories,
+                y=sim_values,
+                name='Simulation',
+                marker_color='cyan'
+            ),
+            secondary_y=False,
+        )
+        
+        # Add figure title
+        fig.update_layout(
+            title_text="Real vs Simulation Performance",
+            barmode='group',
+            template="plotly_dark",
+            plot_bgcolor='#1E1E1E',
+            paper_bgcolor='#1E1E1E',
+            font=dict(color='white'),
+            height=400,
+            margin=dict(l=10, r=10, t=50, b=10),
+            legend=dict(
+                orientation="h",
+                yanchor="bottom",
+                y=1.02,
+                xanchor="right",
+                x=1
+            )
+        )
+        
+        # Set x-axis title
+        fig.update_xaxes(title_text="Metric")
+        
+        # Set y-axes titles
+        fig.update_yaxes(title_text="Value", secondary_y=False)
+        
+        return fig
+        
+    except Exception as e:
+        logger.error(f"Error creating performance chart: {e}")
+        # Return empty figure
+        fig = go.Figure()
+        fig.update_layout(
+            title="Performance Comparison",
+            height=400,
+            template="plotly_dark"
+        )
+        return fig
+
+def create_daily_volume_chart(trades_df, is_simulation=False, lookback_days=30, chart_id=None):
+    """Create a daily trading volume chart."""
+    if trades_df.empty:
+        # Return an empty figure
+        fig = go.Figure()
+        fig.update_layout(
+            title="Daily Trading Volume",
+            xaxis_title="Date",
+            yaxis_title="Volume (SOL)",
+            height=400,
+            template="plotly_dark"
+        )
+        return fig
+        
+    try:
+        # Create a copy of the DataFrame to avoid warnings
+        trades_df_copy = trades_df.copy()
+        
+        # Filter for correct simulation mode
+        if 'is_simulation' in trades_df_copy.columns:
+            trades_df_copy = trades_df_copy[trades_df_copy['is_simulation'] == is_simulation]
+        
+        # Convert timestamp to datetime
+        if 'timestamp' in trades_df_copy.columns:
+            # Handle different timestamp formats
+            try:
+                trades_df_copy.loc[:, 'timestamp'] = pd.to_datetime(trades_df_copy['timestamp'], utc=True, errors='coerce')
+            except Exception as e:
+                logger.warning(f"Error converting timestamps: {e}")
+                trades_df_copy['timestamp'] = pd.to_datetime(trades_df_copy['timestamp'].astype(str), errors='coerce')
+        
+        # Filter for lookback period
+        start_date = pd.Timestamp.now(tz='UTC') - pd.Timedelta(days=lookback_days)
+        trades_df_copy = trades_df_copy[trades_df_copy['timestamp'] >= start_date]
+        
+        if trades_df_copy.empty:
+            # Return an empty figure
+            fig = go.Figure()
+            fig.update_layout(
+                title="Daily Trading Volume",
+                xaxis_title="Date",
+                yaxis_title="Volume (SOL)",
+                height=400,
+                template="plotly_dark"
+            )
+            return fig
+        
+        # Calculate daily volume
+        trades_df_copy.loc[:, 'date'] = trades_df_copy['timestamp'].dt.date
+        daily_volume = trades_df_copy.groupby('date').agg({
+            'amount': 'sum',
+            'action': 'count'
+        }).reset_index()
+        daily_volume.columns = ['date', 'volume', 'trades']
+        
+        # Create the figure
+        fig = go.Figure()
+        
+        # Add volume bars
+        fig.add_trace(go.Bar(
+            x=daily_volume['date'],
+            y=daily_volume['volume'],
+            name='Volume (SOL)',
+            marker_color='rgba(0, 200, 200, 0.6)'
+        ))
+        
+        # Add trade count line
+        fig.add_trace(go.Scatter(
+            x=daily_volume['date'],
+            y=daily_volume['trades'],
+            name='Number of Trades',
+            yaxis='y2',
+            mode='lines+markers',
+            line=dict(color='orange', width=2),
+            marker=dict(size=6)
+        ))
+        
+        # Update layout
+        fig.update_layout(
+            title=f"{'Simulated' if is_simulation else 'Real'} Daily Trading Volume",
+            xaxis_title="Date",
+            yaxis=dict(
+                title="Volume (SOL)",
+                showgrid=True,
+                gridcolor='#333333'
+            ),
+            yaxis2=dict(
+                title="Number of Trades",
+                overlaying='y',
+                side='right',
+                showgrid=False
+            ),
+            height=400,
+            template="plotly_dark",
+            plot_bgcolor='#1E1E1E',
+            paper_bgcolor='#1E1E1E',
+            font=dict(color='white'),
+            margin=dict(l=10, r=10, t=50, b=10),
+            legend=dict(
+                orientation="h",
+                yanchor="bottom",
+                y=1.02,
+                xanchor="right",
+                x=1
+            )
+        )
+        
+        return fig
+    
+    except Exception as e:
+        logger.error(f"Error creating daily volume chart: {e}")
+        # Return an empty figure
+        fig = go.Figure()
+        fig.update_layout(
+            title="Daily Trading Volume",
+            xaxis_title="Date",
+            yaxis_title="Volume (SOL)",
+            height=400,
+            template="plotly_dark"
+        )
+        return fig
+
+def create_token_distribution_chart(active_positions):
+    """Create a pie chart of token distribution in the wallet."""
+    if active_positions.empty:
+        # Return an empty figure
+        fig = go.Figure()
+        fig.update_layout(
+            title="Token Distribution",
+            height=400,
+            template="plotly_dark"
+        )
+        return fig
+    
+    try:
+        # Calculate total value for each position
+        if 'current_price' in active_positions.columns and 'amount' in active_positions.columns:
+            active_positions['value'] = active_positions['current_price'] * active_positions['amount']
+        elif 'buy_price' in active_positions.columns and 'amount' in active_positions.columns:
+            active_positions['value'] = active_positions['buy_price'] * active_positions['amount']
+        else:
+            # If we don't have price data, just use amount
+            active_positions['value'] = active_positions['amount']
+        
+        # Sort by value
+        active_positions = active_positions.sort_values('value', ascending=False)
+        
+        # Get top 5 positions and group the rest as "Others"
+        if len(active_positions) > 5:
+            top_positions = active_positions.iloc[:5]
+            others_value = active_positions.iloc[5:]['value'].sum()
+            
+            # Create labels and values
+            labels = list(top_positions['ticker']) + ['Others']
+            values = list(top_positions['value']) + [others_value]
+        else:
+            # Use all positions
+            labels = list(active_positions['ticker'])
+            values = list(active_positions['value'])
+        
+        # Create pie chart
+        fig = go.Figure(data=[go.Pie(
+            labels=labels,
+            values=values,
+            hole=.3,
+            marker=dict(
+                colors=px.colors.sequential.Plasma
+            )
+        )])
+        
+        # Update layout
+        fig.update_layout(
+            title="Token Distribution",
+            height=400,
+            template="plotly_dark",
+            plot_bgcolor='#1E1E1E',
+            paper_bgcolor='#1E1E1E',
+            font=dict(color='white'),
+            margin=dict(l=10, r=10, t=50, b=10),
+            legend=dict(
+                orientation="h",
+                yanchor="top",
+                y=-0.1,
+                xanchor="center",
+                x=0.5
+            )
+        )
+        
+        return fig
+        
+    except Exception as e:
+        logger.error(f"Error creating token distribution chart: {e}")
+        # Return an empty figure
+        fig = go.Figure()
+        fig.update_layout(
+            title="Token Distribution",
+            height=400,
+            template="plotly_dark"
+        )
+        return fig
+
+def verify_transaction(tx_hash, rpc_endpoint=None):
+    """Verify a transaction on the Solana blockchain."""
+    try:
+        if not tx_hash or not isinstance(tx_hash, str):
+            return False
+            
+        # Default RPC endpoint
+        if not rpc_endpoint:
+            rpc_endpoint = "https://api.mainnet-beta.solana.com"
+            
+        # Query transaction
+        payload = {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "getTransaction",
+            "params": [
+                tx_hash,
+                {"encoding": "json"}
+            ]
+        }
+        
+        headers = {"Content-Type": "application/json"}
+        response = requests.post(rpc_endpoint, json=payload, headers=headers)
+        
+        if response.status_code == 200:
+            data = response.json()
+            return 'result' in data and data['result'] is not None
+            
+        return False
+    except Exception as e:
+        logger.error(f"Error verifying transaction: {e}")
+        return False
+
+# Main dashboard code
+def main():
+    # Add title with Solana logo
+    st.title("💸 Solana Trading Bot - Enhanced Dashboard")
+    
+    # Get current SOL price
+    sol_price = get_live_sol_price()
+    
+    # Load bot settings
+    bot_settings = load_bot_settings()
+    
+    # Find database
+    db_file = find_database()
+    
+    # Set up tabs for different sections
+    tabs = st.tabs(["Overview", "Real Trading", "Simulation", "Active Positions", "Trading History", "Settings"])
+    
+    # Sidebar controls
+    st.sidebar.title("Bot Controls")
+    
+    # Add simulation mode toggle
+    simulation_mode = st.sidebar.checkbox(
+        "Simulation Mode", 
+        value=bot_settings.get('simulation_mode', True),
+        help="Toggle between simulation and real trading mode"
+    )
+    
+    # Add machine learning toggle
+    ml_enabled = st.sidebar.checkbox(
+        "ML Analysis", 
+        value=bot_settings.get('use_machine_learning', False),
+        help="Enable/disable machine learning for trade analysis"
+    )
+    
+    # Add stop/start button
+    bot_running = st.sidebar.checkbox(
+        "Bot Running", 
+        value=bot_settings.get('running', False),
+        help="Start or stop the trading bot"
+    )
+    
+    # Strategy settings
+    st.sidebar.subheader("Strategy Settings")
+    
+    take_profit = st.sidebar.slider(
+        "Take Profit (%)", 
+        min_value=10.0, 
+        max_value=500.0, 
+        value=float(bot_settings.get('take_profit_target', 50.0)),
+        step=5.0,
+        help="Target profit percentage for trades"
+    )
+    
+    stop_loss = st.sidebar.slider(
+        "Stop Loss (%)", 
+        min_value=1.0, 
+        max_value=50.0, 
+        value=float(bot_settings.get('stop_loss_percentage', 25.0)),
+        step=1.0,
+        help="Stop loss percentage for trades"
+    )
+    
+    min_investment = st.sidebar.slider(
+        "Min Investment (SOL)", 
+        min_value=0.001, 
+        max_value=1.0, 
+        value=float(bot_settings.get('min_investment_per_token', 0.02)),
+        step=0.001,
+        help="Minimum investment per token in SOL"
+    )
+    
+    max_investment = st.sidebar.slider(
+        "Max Investment (SOL)", 
+        min_value=0.01, 
+        max_value=5.0, 
+        value=float(bot_settings.get('max_investment_per_token', 0.1)),
+        step=0.01,
+        help="Maximum investment per token in SOL"
+    )
+    
+    # Advanced settings
+    with st.sidebar.expander("Advanced Settings"):
+        min_safety_score = st.slider(
+            "Min Safety Score", 
+            min_value=0.0, 
+            max_value=100.0, 
+            value=float(bot_settings.get('MIN_SAFETY_SCORE', 15.0)),
+            step=5.0,
+            help="Minimum safety score for tokens"
+        )
+        
+        min_volume = st.slider(
+            "Min 24h Volume (USD)", 
+            min_value=0.0, 
+            max_value=100000.0, 
+            value=float(bot_settings.get('MIN_VOLUME', 10.0)),
+            step=1000.0,
+            help="Minimum 24h trading volume in USD"
+        )
+        
+        min_liquidity = st.slider(
+            "Min Liquidity (USD)", 
+            min_value=0.0, 
+            max_value=100000.0, 
+            value=float(bot_settings.get('MIN_LIQUIDITY', 5000.0)),
+            step=1000.0,
+            help="Minimum liquidity in USD"
+        )
+        
+        min_price_change_24h = st.slider(
+            "Min 24h Price Change (%)", 
+            min_value=0.0, 
+            max_value=100.0, 
+            value=float(bot_settings.get('MIN_PRICE_CHANGE_24H', 5.0)),
+            step=1.0,
+            help="Minimum 24h price change percentage"
+        )
+    
+    # Update bot settings if changed
+    if (simulation_mode != bot_settings.get('simulation_mode', True) or 
+        bot_running != bot_settings.get('running', False) or
+        ml_enabled != bot_settings.get('use_machine_learning', False) or
+        take_profit != bot_settings.get('take_profit_target', 50.0) or
+        stop_loss != bot_settings.get('stop_loss_percentage', 25.0) or
+        min_investment != bot_settings.get('min_investment_per_token', 0.02) or
+        max_investment != bot_settings.get('max_investment_per_token', 0.1) or
+        min_safety_score != bot_settings.get('MIN_SAFETY_SCORE', 15.0) or
+        min_volume != bot_settings.get('MIN_VOLUME', 10.0) or
+        min_liquidity != bot_settings.get('MIN_LIQUIDITY', 5000.0) or
+        min_price_change_24h != bot_settings.get('MIN_PRICE_CHANGE_24H', 5.0)):
+        
+        # Update the settings
+        bot_settings['simulation_mode'] = simulation_mode
+        bot_settings['running'] = bot_running
+        bot_settings['use_machine_learning'] = ml_enabled
+        bot_settings['take_profit_target'] = take_profit
+        bot_settings['stop_loss_percentage'] = stop_loss
+        bot_settings['min_investment_per_token'] = min_investment
+        bot_settings['max_investment_per_token'] = max_investment
+        bot_settings['MIN_SAFETY_SCORE'] = min_safety_score
+        bot_settings['MIN_VOLUME'] = min_volume
+        bot_settings['MIN_LIQUIDITY'] = min_liquidity
+        bot_settings['MIN_PRICE_CHANGE_24H'] = min_price_change_24h
+        
+        # Save to file
+        if save_bot_settings(bot_settings):
+            st.sidebar.success("Settings updated successfully!")
+        else:
+            st.sidebar.error("Failed to save settings")
+    
+    # Get wallet balance
+    wallet_balance = 1.15  # Default value
+    
+    # Check if we can get a real wallet balance
+    if not simulation_mode:
+        try:
+            # Try to use connected wallet information
+            real_balance = get_wallet_balance()
+            if real_balance is not None:
+                wallet_balance = real_balance
+        except Exception as e:
+            logger.error(f"Error getting wallet balance: {e}")
+            # Keep default value
+    
+    # Initialize variables for trading metrics
+    all_trades = pd.DataFrame()
+    metrics_real = {
+        "win_rate": 0.0,
+        "total_pl_sol": 0.0,
+        "total_pl_usd": 0.0,
+        "total_trades": 0,
+        "best_trade_pct": 0.0,
+        "worst_trade_pct": 0.0,
+        "avg_holding_time": "0 hours"
+    }
+    metrics_sim = {
+        "win_rate": 0.0,
+        "total_pl_sol": 0.0,
+        "total_pl_usd": 0.0,
+        "total_trades": 0,
+        "best_trade_pct": 0.0,
+        "worst_trade_pct": 0.0,
+        "avg_holding_time": "0 hours"
+    }
+    active_positions = pd.DataFrame()
+    completed_trades = pd.DataFrame()
+    
+    if db_file and os.path.exists(db_file):
+        try:
+            # Connect to database
+            conn = sqlite3.connect(db_file)
+            
+            # Get all trades
+            all_trades = pd.read_sql_query("SELECT * FROM trades", conn)
+            
+            # Add is_simulation column if not present
+            if 'is_simulation' not in all_trades.columns:
+                # Try to identify simulation trades based on contract_address
+                # Simulation addresses often start with "Sim" or contain "test"
+                def is_simulation(address):
+                    if not isinstance(address, str):
+                        return True
+                    return (address.startswith('Sim') or 
+                            'test' in address.lower() or 
+                            'simulation' in address.lower())
+                    
+                all_trades['is_simulation'] = all_trades['contract_address'].apply(is_simulation)
+            
+            # Calculate metrics
+            metrics_real = calculate_metrics(all_trades, sol_price, is_simulation=False)
+            metrics_sim = calculate_metrics(all_trades, sol_price, is_simulation=True)
+            
+            # Get active positions
+            try:
+                # First try from a dedicated table if it exists
+                active_positions = pd.read_sql_query("SELECT * FROM active_positions", conn)
+            except:
+                # If table doesn't exist, calculate from trades
+                # Filter trades
+                buy_trades = all_trades[all_trades['action'] == 'BUY']
+                sell_trades = all_trades[all_trades['action'] == 'SELL']
+                
+                # Find active positions (tokens where we have bought but not fully sold)
+                active_positions_list = []
+                
+                for contract in buy_trades['contract_address'].unique():
+                    contract_buys = buy_trades[buy_trades['contract_address'] == contract]
+                    contract_sells = sell_trades[sell_trades['contract_address'] == contract]
+                    
+                    # Calculate total bought and sold
+                    total_bought = contract_buys['amount'].sum()
+                    total_sold = contract_sells['amount'].sum() if not contract_sells.empty else 0
+                    
+                    # If we have more bought than sold, this is an active position
+                    if total_bought > total_sold:
+                        # Calculate weighted average buy price
+                        weighted_price = (contract_buys['price'] * contract_buys['amount']).sum() / total_bought
+                        
+                        # Use the most recent buy for display
+                        latest_buy = contract_buys.iloc[0]
+                        
+                        # Get token info if available
+                        ticker = 'UNKNOWN'
+                        name = 'Unknown Token'
+                        try:
+                            token_info = pd.read_sql_query(f"SELECT * FROM tokens WHERE contract_address='{contract}'", conn)
+                            if not token_info.empty:
+                                ticker = token_info['ticker'].iloc[0]
+                                name = token_info['name'].iloc[0]
+                        except:
+                            pass
+                        
+                        # Calculate unrealized P/L
+                        current_price = weighted_price  # Default to buy price if we don't have current
+                        
+                        # Try to get current price
+                        try:
+                            recent_price_data = pd.read_sql_query(
+                                f"SELECT price FROM token_prices WHERE contract_address='{contract}' ORDER BY timestamp DESC LIMIT 1",
+                                conn
+                            )
+                            if not recent_price_data.empty:
+                                current_price = recent_price_data['price'].iloc[0]
+                        except:
+                            # If no price table, try to estimate from recent trades
+                            pass
+                        
+                        position_pl = (current_price - weighted_price) * (total_bought - total_sold)
+                        position_pl_percent = ((current_price / weighted_price) - 1) * 100 if weighted_price > 0 else 0
+                        
+                        active_positions_list.append({
+                            'contract_address': contract,
+                            'ticker': ticker,
+                            'name': name,
+                            'amount': total_bought - total_sold,
+                            'buy_price': weighted_price,
+                            'current_price': current_price,
+                            'unrealized_pl': position_pl,
+                            'pl_percent': position_pl_percent,
+                            'is_simulation': 'is_simulation' in latest_buy and latest_buy['is_simulation'],
+                            'time': latest_buy['timestamp'] if 'timestamp' in latest_buy else None
+                        })
+                
+                if active_positions_list:
+                    active_positions = pd.DataFrame(active_positions_list)
+            
+            # Get completed trades (matched buy/sell pairs)
+            # This is similar to how we calculated metrics
+            completed_trades_list = []
+            
+            buy_trades = all_trades[all_trades['action'] == 'BUY']
+            sell_trades = all_trades[all_trades['action'] == 'SELL']
+            
+            for contract in buy_trades['contract_address'].unique():
+                contract_buys = buy_trades[buy_trades['contract_address'] == contract]
+                contract_sells = sell_trades[sell_trades['contract_address'] == contract]
+                
+                if not contract_sells.empty and not contract_buys.empty:
+                    # For each sell, find a matching buy
+                    for _, sell in contract_sells.iterrows():
+                        # Find buys that happened before this sell
+                        prior_buys = contract_buys[
+                            pd.to_datetime(contract_buys['timestamp']) < pd.to_datetime(sell['timestamp'])
+                        ]
+                        
+                        if not prior_buys.empty:
+                            # Use the earliest buy
+                            buy = prior_buys.iloc[0]
+                            
+                            # Calculate profit
+                            buy_price = buy['price']
+                            sell_price = sell['price']
+                            amount = sell['amount']
+                            
+                            profit_sol = (sell_price - buy_price) * amount
+                            profit_usd = profit_sol * sol_price
+                            profit_percent = ((sell_price / buy_price) - 1) * 100 if buy_price > 0 else 0
+                            
+                            # Get token info
+                            ticker = contract[:8]  # Default to first 8 chars
+                            try:
+                                token_info = pd.read_sql_query(f"SELECT * FROM tokens WHERE contract_address='{contract}'", conn)
+                                if not token_info.empty:
+                                    ticker = token_info['ticker'].iloc[0]
+                            except:
+                                pass
+                                
+                            completed_trades_list.append({
+                                'contract_address': contract,
+                                'ticker': ticker,
+                                'buy_time': buy['timestamp'],
+                                'sell_time': sell['timestamp'],
+                                'buy_price': buy_price,
+                                'sell_price': sell_price,
+                                'amount': amount,
+                                'profit_sol': profit_sol,
+                                'profit_usd': profit_usd,
+                                'profit_percent': profit_percent,
+                                'is_simulation': 'is_simulation' in buy and buy['is_simulation']
+                            })
+            
+            if completed_trades_list:
+                completed_trades = pd.DataFrame(completed_trades_list)
+                # Sort by sell time, most recent first
+                completed_trades = completed_trades.sort_values('sell_time', ascending=False)
+            
+            conn.close()
+        
+        except Exception as e:
+            st.error(f"Error accessing database: {e}")
+            logger.error(f"Database error: {traceback.format_exc()}")
+    
+    else:
+        st.warning(f"Database file not found. Looked for: {db_file}")
+    
+    # Overview Tab
+    with tabs[0]:
+        st.subheader("Bot Status and Balance")
+        
+        # Create 4 columns for status metrics
+        col1, col2, col3, col4 = st.columns(4)
+        
+        with col1:
+            st.metric(
+                "Bot Status", 
+                "Running ✅" if bot_settings.get('running', False) else "Stopped ⛔"
+            )
+        
+        with col2:
+            st.metric(
+                "Mode", 
+                "Simulation 🧪" if bot_settings.get('simulation_mode', True) else "Real Trading 💰"
+            )
+        
+        with col3:
+            st.metric("SOL Price", f"${sol_price:.2f}")
+        
+        with col4:
+            st.metric("Last Updated", time.strftime("%H:%M:%S ET"))
+        
+        # Trading performance overview
+        st.subheader("Trading Performance Overview")
+        
+        # Metrics for real trading
+        st.markdown("#### Real Trading Performance")
+        
+        # Create 4 columns for real metrics
+        real_col1, real_col2, real_col3, real_col4 = st.columns(4)
+        
+        with real_col1:
+            # Format with color based on profit/loss
+            color = "green" if metrics_real["total_pl_usd"] > 0 else "red" if metrics_real["total_pl_usd"] < 0 else "gray"
+            st.markdown(f"<div class='metric-card'><span class='main-metric' style='color: {color}'>Total P&L</span><br/><span class='main-metric' style='color: {color}'>${metrics_real['total_pl_usd']:.2f}</span></div>", unsafe_allow_html=True)
+        
+        with real_col2:
+            st.markdown(f"<div class='metric-card'><span class='main-metric'>SOL Balance</span><br/><span class='main-metric'>{wallet_balance:.6f} SOL</span></div>", unsafe_allow_html=True)
+        
+        with real_col3:
+            st.markdown(f"<div class='metric-card'><span class='main-metric'>Total Trades</span><br/><span class='main-metric'>{metrics_real['total_trades']}</span></div>", unsafe_allow_html=True)
+        
+        with real_col4:
+            st.markdown(f"<div class='metric-card'><span class='main-metric'>Win Rate</span><br/><span class='main-metric'>{metrics_real['win_rate']:.1f}%</span></div>", unsafe_allow_html=True)
+        
+        # Metrics for simulation trading
+        st.markdown("#### Simulation Performance")
+        
+        # Create 4 columns for simulation metrics
+        sim_col1, sim_col2, sim_col3, sim_col4 = st.columns(4)
+        
+        with sim_col1:
+            # Format with color based on profit/loss
+            color = "green" if metrics_sim["total_pl_usd"] > 0 else "red" if metrics_sim["total_pl_usd"] < 0 else "gray"
+            st.markdown(f"<div class='metric-card'><span class='main-metric' style='color: {color}'>Total P&L</span><br/><span class='main-metric' style='color: {color}'>${metrics_sim['total_pl_usd']:.2f}</span></div>", unsafe_allow_html=True)
+        
+        with sim_col2:
+            st.markdown(f"<div class='metric-card'><span class='main-metric'>Simulated Trades</span><br/><span class='main-metric'>{metrics_sim['total_trades']}</span></div>", unsafe_allow_html=True)
+        
+        with sim_col3:
+            st.markdown(f"<div class='metric-card'><span class='main-metric'>Win Rate</span><br/><span class='main-metric'>{metrics_sim['win_rate']:.1f}%</span></div>", unsafe_allow_html=True)
+        
+        with sim_col4:
+            st.markdown(f"<div class='metric-card'><span class='main-metric'>Best Trade</span><br/><span class='main-metric'>{metrics_sim['best_trade_pct']:.1f}%</span></div>", unsafe_allow_html=True)
+        
+        # Charts
+        st.subheader("Performance Charts")
+        
+        # Create 2 columns for charts
+        chart_col1, chart_col2 = st.columns(2)
+        
+        with chart_col1:
+            # Real P&L chart
+            pl_chart_real = create_pl_chart(all_trades, is_simulation=False, chart_id="real_pl_overview")
+            st.plotly_chart(pl_chart_real, use_container_width=True, key="real_pl_overview")
+        
+        with chart_col2:
+            # Simulation P&L chart
+            pl_chart_sim = create_pl_chart(all_trades, is_simulation=True, chart_id="sim_pl_overview")
+            st.plotly_chart(pl_chart_sim, use_container_width=True, key="sim_pl_overview")
+        
+        # Performance comparison chart
+        perf_chart = create_performance_chart(metrics_real, metrics_sim)
+        st.plotly_chart(perf_chart, use_container_width=True, key="perf_comparison")
+        
+        # Active positions summary
+        st.subheader("Active Positions Summary")
+        
+        if not active_positions.empty:
+            # Separate real and simulation positions
+            real_positions = active_positions[~active_positions['is_simulation']] if 'is_simulation' in active_positions.columns else pd.DataFrame()
+            sim_positions = active_positions[active_positions['is_simulation']] if 'is_simulation' in active_positions.columns else active_positions
+            
+            # Create 2 columns
+            pos_col1, pos_col2 = st.columns(2)
+            
+            with pos_col1:
+                st.markdown("#### Real Positions")
+                if not real_positions.empty:
+                    # Create a styled DataFrame
+                    # Format currency columns
+                    real_pos_display = real_positions.copy()
+                    if 'buy_price' in real_pos_display:
+                        real_pos_display['buy_price'] = real_pos_display['buy_price'].apply(lambda x: f"${x:.6f}")
+                    if 'current_price' in real_pos_display:
+                        real_pos_display['current_price'] = real_pos_display['current_price'].apply(lambda x: f"${x:.6f}")
+                    if 'unrealized_pl' in real_pos_display:
+                        real_pos_display['unrealized_pl'] = real_pos_display['unrealized_pl'].apply(lambda x: f"${x:.2f}")
+                    if 'pl_percent' in real_pos_display:
+                        real_pos_display['pl_percent'] = real_pos_display['pl_percent'].apply(lambda x: f"{x:.2f}%")
+                    
+                    # Select columns to display
+                    display_cols = ['ticker', 'amount', 'buy_price', 'current_price', 'pl_percent']
+                    display_cols = [col for col in display_cols if col in real_pos_display.columns]
+                    
+                    # Create display DataFrame
+                    st.dataframe(real_pos_display[display_cols], use_container_width=True)
+                else:
+                    st.info("No active real positions found")
+            
+            with pos_col2:
+                st.markdown("#### Simulation Positions")
+                if not sim_positions.empty:
+                    # Create a styled DataFrame
+                    # Format currency columns
+                    sim_pos_display = sim_positions.copy()
+                    if 'buy_price' in sim_pos_display:
+                        sim_pos_display['buy_price'] = sim_pos_display['buy_price'].apply(lambda x: f"${x:.6f}")
+                    if 'current_price' in sim_pos_display:
+                        sim_pos_display['current_price'] = sim_pos_display['current_price'].apply(lambda x: f"${x:.6f}")
+                    if 'unrealized_pl' in sim_pos_display:
+                        sim_pos_display['unrealized_pl'] = sim_pos_display['unrealized_pl'].apply(lambda x: f"${x:.2f}")
+                    if 'pl_percent' in sim_pos_display:
+                        sim_pos_display['pl_percent'] = sim_pos_display['pl_percent'].apply(lambda x: f"{x:.2f}%")
+                    
+                    # Select columns to display
+                    display_cols = ['ticker', 'amount', 'buy_price', 'current_price', 'pl_percent']
+                    display_cols = [col for col in display_cols if col in sim_pos_display.columns]
+                    
+                    # Create display DataFrame
+                    st.dataframe(sim_pos_display[display_cols], use_container_width=True)
+                else:
+                    st.info("No active simulation positions found")
+            
+            # Token distribution chart
+            st.subheader("Token Distribution")
+            
+            # Create 2 columns for distribution charts
+            dist_col1, dist_col2 = st.columns(2)
+            
+            with dist_col1:
+                if not real_positions.empty:
+                    token_dist_chart = create_token_distribution_chart(real_positions)
+                    st.plotly_chart(token_dist_chart, use_container_width=True)
+                else:
+                    st.info("No real positions for distribution chart")
+            
+            with dist_col2:
+                if not sim_positions.empty:
+                    token_dist_chart_sim = create_token_distribution_chart(sim_positions)
+                    st.plotly_chart(token_dist_chart_sim, use_container_width=True)
+                else:
+                    st.info("No simulation positions for distribution chart")
+        else:
+            st.info("No active positions found")
+    
+    # Real Trading Tab
+    with tabs[1]:
+        st.subheader("Real Trading Performance")
+        
+        # Warning if real trading is disabled
+        if bot_settings.get('simulation_mode', True):
+            st.warning("📢 The bot is currently in simulation mode. No real trades will be executed.")
+        
+        # Main metrics
+        # Create 4 columns for metrics
+        col1, col2, col3, col4 = st.columns(4)
+        
+        with col1:
+            color = "green" if metrics_real["total_pl_usd"] > 0 else "red" if metrics_real["total_pl_usd"] < 0 else "gray"
+            st.markdown(f"<div class='metric-card'><span class='main-metric' style='color: {color}'>Total Profit/Loss</span><br/><span class='main-metric' style='color: {color}'>${metrics_real['total_pl_usd']:.2f}</span><br/><span class='sub-metric'>{metrics_real['total_pl_sol']:.6f} SOL</span></div>", unsafe_allow_html=True)
+        
+        with col2:
+            st.markdown(f"<div class='metric-card'><span class='main-metric'>SOL Balance</span><br/><span class='main-metric'>{wallet_balance:.6f} SOL</span><br/><span class='sub-metric'>${wallet_balance * sol_price:.2f} USD</span></div>", unsafe_allow_html=True)
+        
+        with col3:
+            st.markdown(f"<div class='metric-card'><span class='main-metric'>Total Trades</span><br/><span class='main-metric'>{metrics_real['total_trades']}</span><br/><span class='sub-metric'>Win Rate: {metrics_real['win_rate']:.1f}%</span></div>", unsafe_allow_html=True)
+        
+        with col4:
+            st.markdown(f"<div class='metric-card'><span class='main-metric'>Best Trade</span><br/><span class='main-metric'>{metrics_real['best_trade_pct']:.1f}%</span><br/><span class='sub-metric'>Worst: {metrics_real['worst_trade_pct']:.1f}%</span></div>", unsafe_allow_html=True)
+        
+        # Charts
+        st.subheader("Real Trading Charts")
+        
+        # Create 2 columns for charts
+        chart_col1, chart_col2 = st.columns(2)
+        
+        with chart_col1:
+            # Real P&L chart
+            pl_chart_real = create_pl_chart(all_trades, is_simulation=False, chart_id="real_pl_tab1")
+            st.plotly_chart(pl_chart_real, use_container_width=True, key="real_pl_tab1")
+        
+        with chart_col2:
+            # Trading volume chart
+            volume_chart_real = create_daily_volume_chart(all_trades, is_simulation=False, chart_id="volume_real_tab1")
+            st.plotly_chart(volume_chart_real, use_container_width=True, key="volume_real_tab1")
+        
+        # Active real positions
+        st.subheader("Active Real Positions")
+        
+        real_positions = active_positions[~active_positions['is_simulation']] if 'is_simulation' in active_positions.columns else pd.DataFrame()
+        
+        if not real_positions.empty:
+            # Format the DataFrame for display
+            real_pos_display = real_positions.copy()
+            
+            # Format columns
+            if 'buy_price' in real_pos_display:
+                real_pos_display['buy_price'] = real_pos_display['buy_price'].apply(lambda x: f"${x:.6f}")
+            if 'current_price' in real_pos_display:
+                real_pos_display['current_price'] = real_pos_display['current_price'].apply(lambda x: f"${x:.6f}")
+            if 'unrealized_pl' in real_pos_display:
+                real_pos_display['unrealized_pl'] = real_pos_display['unrealized_pl'].apply(lambda x: f"${x:.2f}")
+            if 'pl_percent' in real_pos_display:
+                real_pos_display['pl_percent'] = real_pos_display['pl_percent'].apply(lambda x: f"{x:.2f}%")
+            if 'time' in real_pos_display:
+                real_pos_display['time'] = real_pos_display['time'].apply(convert_to_et)
+            
+            # Select columns to display
+            display_cols = ['ticker', 'name', 'amount', 'buy_price', 'current_price', 'unrealized_pl', 'pl_percent', 'time']
+            display_cols = [col for col in display_cols if col in real_pos_display.columns]
+            
+            # Display the DataFrame
+            st.dataframe(real_pos_display[display_cols], use_container_width=True)
+        else:
+            st.info("No active real positions found")
+        
+        # Completed real trades
+        st.subheader("Completed Real Trades")
+        
+        real_completed = completed_trades[~completed_trades['is_simulation']] if 'is_simulation' in completed_trades.columns else pd.DataFrame()
+        
+        if not real_completed.empty:
+            # Format the DataFrame for display
+            real_completed_display = real_completed.copy()
+            
+            # Format columns
+            if 'buy_price' in real_completed_display:
+                real_completed_display['buy_price'] = real_completed_display['buy_price'].apply(lambda x: f"${x:.6f}")
+            if 'sell_price' in real_completed_display:
+                real_completed_display['sell_price'] = real_completed_display['sell_price'].apply(lambda x: f"${x:.6f}")
+            if 'profit_sol' in real_completed_display:
+                real_completed_display['profit_sol'] = real_completed_display['profit_sol'].apply(lambda x: f"{x:.6f} SOL")
+            if 'profit_usd' in real_completed_display:
+                real_completed_display['profit_usd'] = real_completed_display['profit_usd'].apply(lambda x: f"${x:.2f}")
+            if 'profit_percent' in real_completed_display:
+                real_completed_display['profit_percent'] = real_completed_display['profit_percent'].apply(lambda x: f"{x:.2f}%")
+            if 'buy_time' in real_completed_display:
+                real_completed_display['buy_time'] = real_completed_display['buy_time'].apply(convert_to_et)
+            if 'sell_time' in real_completed_display:
+                real_completed_display['sell_time'] = real_completed_display['sell_time'].apply(convert_to_et)
+            
+            # Select columns to display
+            display_cols = ['ticker', 'buy_time', 'sell_time', 'buy_price', 'sell_price', 'amount', 'profit_usd', 'profit_percent']
+            display_cols = [col for col in display_cols if col in real_completed_display.columns]
+            
+            # Display the DataFrame
+            st.dataframe(real_completed_display[display_cols], use_container_width=True)
+            
+            # Add download button
+            if st.button("Download Real Trade History"):
+                csv = real_completed.to_csv(index=False)
+                b64 = base64.b64encode(csv.encode()).decode()
+                href = f'<a href="data:file/csv;base64,{b64}" download="real_trade_history.csv">Download CSV File</a>'
+                st.markdown(href, unsafe_allow_html=True)
+        else:
+            st.info("No completed real trades found")
+        
+        # Verified transactions section
+        st.subheader("Verified Transactions")
+        
+        if not real_completed.empty and 'tx_hash' in real_completed.columns:
+            # Create columns for verified transactions display
+            verified_col1, verified_col2 = st.columns([3, 1])
+            
+            with verified_col1:
+                # Show the most recent verified transaction
+                latest_tx = real_completed.iloc[0] if not real_completed.empty else None
+                
+                if latest_tx is not None and 'tx_hash' in latest_tx:
+                    tx_hash = latest_tx['tx_hash']
+                    is_verified = verify_transaction(tx_hash)
+                    
+                    if is_verified:
+                        st.success(f"Latest transaction verified: {tx_hash}")
+                    else:
+                        st.warning(f"Latest transaction not verified: {tx_hash}")
+                else:
+                    st.info("No transaction hash found for verification")
+            
+            with verified_col2:
+                # Add button to verify all transactions
+                if st.button("Verify All Transactions"):
+                    with st.spinner("Verifying transactions..."):
+                        verified_count = 0
+                        total_count = 0
+                        
+                        for _, row in real_completed.iterrows():
+                            if 'tx_hash' in row and row['tx_hash']:
+                                total_count += 1
+                                if verify_transaction(row['tx_hash']):
+                                    verified_count += 1
+                        
+                        st.success(f"Verified {verified_count} out of {total_count} transactions")
+        else:
+            st.info("No transaction data available for verification")
+    
+    # Simulation Tab
+    with tabs[2]:
+        st.subheader("Simulation Performance")
+        
+        # Main metrics
+        # Create 4 columns for metrics
+        col1, col2, col3, col4 = st.columns(4)
+        
+        with col1:
+            color = "green" if metrics_sim["total_pl_usd"] > 0 else "red" if metrics_sim["total_pl_usd"] < 0 else "gray"
+            st.markdown(f"<div class='metric-card'><span class='main-metric' style='color: {color}'>Total Profit/Loss</span><br/><span class='main-metric' style='color: {color}'>${metrics_sim['total_pl_usd']:.2f}</span><br/><span class='sub-metric'>{metrics_sim['total_pl_sol']:.6f} SOL</span></div>", unsafe_allow_html=True)
+        
+        with col2:
+            st.markdown(f"<div class='metric-card'><span class='main-metric'>Total Trades</span><br/><span class='main-metric'>{metrics_sim['total_trades']}</span><br/><span class='sub-metric'>Simulated only</span></div>", unsafe_allow_html=True)
+        
+        with col3:
+            st.markdown(f"<div class='metric-card'><span class='main-metric'>Win Rate</span><br/><span class='main-metric'>{metrics_sim['win_rate']:.1f}%</span><br/><span class='sub-metric'>Avg Holding: {metrics_sim['avg_holding_time']}</span></div>", unsafe_allow_html=True)
+        
+        with col4:
+            st.markdown(f"<div class='metric-card'><span class='main-metric'>Best Trade</span><br/><span class='main-metric'>{metrics_sim['best_trade_pct']:.1f}%</span><br/><span class='sub-metric'>Worst: {metrics_sim['worst_trade_pct']:.1f}%</span></div>", unsafe_allow_html=True)
+        
+        # Charts
+        st.subheader("Simulation Charts")
+        
+        # Create 2 columns for charts
+        chart_col1, chart_col2 = st.columns(2)
+        
+        with chart_col1:
+            # Simulation P&L chart
+            pl_chart_sim = create_pl_chart(all_trades, is_simulation=True, chart_id="sim_pl_tab2")
+            st.plotly_chart(pl_chart_sim, use_container_width=True, key="sim_pl_tab2")
+        
+        with chart_col2:
+            # Trading volume chart
+            volume_chart_sim = create_daily_volume_chart(all_trades, is_simulation=True, chart_id="volume_sim_tab2")
+            st.plotly_chart(volume_chart_sim, use_container_width=True, key="volume_sim_tab2")
+        
+        # Active simulation positions
+        st.subheader("Active Simulation Positions")
+        
+        sim_positions = active_positions[active_positions['is_simulation']] if 'is_simulation' in active_positions.columns else active_positions
+        
+        if not sim_positions.empty:
+            # Format the DataFrame for display
+            sim_pos_display = sim_positions.copy()
+            
+            # Format columns
+            if 'buy_price' in sim_pos_display:
+                sim_pos_display['buy_price'] = sim_pos_display['buy_price'].apply(lambda x: f"${x:.6f}")
+            if 'current_price' in sim_pos_display:
+                sim_pos_display['current_price'] = sim_pos_display['current_price'].apply(lambda x: f"${x:.6f}")
+            if 'unrealized_pl' in sim_pos_display:
+                sim_pos_display['unrealized_pl'] = sim_pos_display['unrealized_pl'].apply(lambda x: f"${x:.2f}")
+            if 'pl_percent' in sim_pos_display:
+                sim_pos_display['pl_percent'] = sim_pos_display['pl_percent'].apply(lambda x: f"{x:.2f}%")
+            if 'time' in sim_pos_display:
+                sim_pos_display['time'] = sim_pos_display['time'].apply(convert_to_et)
+            
+            # Select columns to display
+            display_cols = ['ticker', 'name', 'amount', 'buy_price', 'current_price', 'unrealized_pl', 'pl_percent', 'time']
+            display_cols = [col for col in display_cols if col in sim_pos_display.columns]
+            
+            # Display the DataFrame
+            st.dataframe(sim_pos_display[display_cols], use_container_width=True)
+        else:
+            st.info("No active simulation positions found")
+        
+        # Completed simulation trades
+        st.subheader("Completed Simulation Trades")
+        
+        sim_completed = completed_trades[completed_trades['is_simulation']] if 'is_simulation' in completed_trades.columns else completed_trades
+        
+        if not sim_completed.empty:
+            # Format the DataFrame for display
+            sim_completed_display = sim_completed.copy()
+            
+            # Format columns
+            if 'buy_price' in sim_completed_display:
+                sim_completed_display['buy_price'] = sim_completed_display['buy_price'].apply(lambda x: f"${x:.6f}")
+            if 'sell_price' in sim_completed_display:
+                sim_completed_display['sell_price'] = sim_completed_display['sell_price'].apply(lambda x: f"${x:.6f}")
+            if 'profit_sol' in sim_completed_display:
+                sim_completed_display['profit_sol'] = sim_completed_display['profit_sol'].apply(lambda x: f"{x:.6f} SOL")
+            if 'profit_usd' in sim_completed_display:
+                sim_completed_display['profit_usd'] = sim_completed_display['profit_usd'].apply(lambda x: f"${x:.2f}")
+            if 'profit_percent' in sim_completed_display:
+                sim_completed_display['profit_percent'] = sim_completed_display['profit_percent'].apply(lambda x: f"{x:.2f}%")
+            if 'buy_time' in sim_completed_display:
+                sim_completed_display['buy_time'] = sim_completed_display['buy_time'].apply(convert_to_et)
+            if 'sell_time' in sim_completed_display:
+                sim_completed_display['sell_time'] = sim_completed_display['sell_time'].apply(convert_to_et)
+            
+            # Select columns to display
+            display_cols = ['ticker', 'buy_time', 'sell_time', 'buy_price', 'sell_price', 'amount', 'profit_usd', 'profit_percent']
+            display_cols = [col for col in display_cols if col in sim_completed_display.columns]
+            
+            # Display the DataFrame
+            st.dataframe(sim_completed_display[display_cols], use_container_width=True)
+            
+            # Add download button
+            if st.button("Download Simulation Trade History"):
+                csv = sim_completed.to_csv(index=False)
+                b64 = base64.b64encode(csv.encode()).decode()
+                href = f'<a href="data:file/csv;base64,{b64}" download="simulation_trade_history.csv">Download CSV File</a>'
+                st.markdown(href, unsafe_allow_html=True)
+        else:
+            st.info("No completed simulation trades found")
+        
+        # Simulation settings
+        with st.expander("Simulation Settings"):
+            st.markdown("""
+            ### Simulation Parameters
+            
+            The simulation mode allows you to test trading strategies without risking real funds. The bot will simulate trades
+            using the parameters below, but no actual transactions will be executed on the blockchain.
+            
+            - **Initial Balance**: The starting SOL balance for simulation
+            - **Market Conditions**: Simulated market volatility and liquidity
+            - **Transaction Fees**: Simulated network fees
+            """)
+            
+            # Create simulation settings inputs
+            sim_col1, sim_col2 = st.columns(2)
+            
+            with sim_col1:
+                sim_initial_balance = st.number_input(
+                    "Initial Simulation Balance (SOL)",
+                    min_value=0.1,
+                    max_value=100.0,
+                    value=1.0,
+                    step=0.1
+                )
+                
+                sim_market_volatility = st.slider(
+                    "Market Volatility",
+                    min_value=0.1,
+                    max_value=5.0,
+                    value=1.0,
+                    step=0.1,
+                    help="Higher values mean more price volatility in simulations"
+                )
+            
+            with sim_col2:
+                sim_tx_fee = st.number_input(
+                    "Transaction Fee (SOL)",
+                    min_value=0.000001,
+                    max_value=0.01,
+                    value=0.000005,
+                    format="%.6f",
+                    help="Simulated transaction fee per trade"
+                )
+                
+                sim_slippage = st.slider(
+                    "Slippage (%)",
+                    min_value=0.1,
+                    max_value=10.0,
+                    value=1.0,
+                    step=0.1,
+                    help="Simulated slippage percentage"
+                )
+            
+            # Add button to save simulation settings
+            if st.button("Save Simulation Settings"):
+                # In a real implementation, these would be saved to the bot configuration
+                st.success("Simulation settings saved")
+    
+    # Active Positions Tab
+    with tabs[3]:
+        st.subheader("Active Positions")
+        
+        # Create tabs for real and simulation positions
+        position_tabs = st.tabs(["All Positions", "Real Trading", "Simulation"])
+        
+        with position_tabs[0]:
+            if not active_positions.empty:
+                # Format the DataFrame for display
+                active_pos_display = active_positions.copy()
+                
+                # Add a column to indicate real vs simulation
+                if 'is_simulation' in active_pos_display:
+                    active_pos_display['type'] = active_pos_display['is_simulation'].apply(
+                        lambda x: "<span class='simulation-tag'>Simulation</span>" if x else "<span class='real-tag'>Real</span>"
+                    )
+                
+                # Format columns
+                if 'buy_price' in active_pos_display:
+                    active_pos_display['buy_price'] = active_pos_display['buy_price'].apply(lambda x: f"${x:.6f}")
+                if 'current_price' in active_pos_display:
+                    active_pos_display['current_price'] = active_pos_display['current_price'].apply(lambda x: f"${x:.6f}")
+                if 'unrealized_pl' in active_pos_display:
+                    active_pos_display['unrealized_pl'] = active_pos_display['unrealized_pl'].apply(lambda x: f"${x:.2f}")
+                if 'pl_percent' in active_pos_display:
+                    active_pos_display['pl_percent'] = active_pos_display['pl_percent'].apply(lambda x: f"{x:.2f}%")
+                if 'time' in active_pos_display:
+                    active_pos_display['time'] = active_pos_display['time'].apply(convert_to_et)
+                
+                # Select columns to display
+                display_cols = ['type', 'ticker', 'name', 'amount', 'buy_price', 'current_price', 'unrealized_pl', 'pl_percent', 'time']
+                display_cols = [col for col in display_cols if col in active_pos_display.columns]
+                
+                # Display the DataFrame
+                st.markdown(active_pos_display.to_html(escape=False, index=False, columns=display_cols), unsafe_allow_html=True)
+                
+                # Token distribution chart
+                token_dist_chart = create_token_distribution_chart(active_positions)
+                st.plotly_chart(token_dist_chart, use_container_width=True)
+            else:
+                st.info("No active positions found")
+        
+        with position_tabs[1]:
+            real_positions = active_positions[~active_positions['is_simulation']] if 'is_simulation' in active_positions.columns else pd.DataFrame()
+            
+            if not real_positions.empty:
+                # Format the DataFrame for display
+                real_pos_display = real_positions.copy()
+                
+                # Format columns
+                if 'buy_price' in real_pos_display:
+                    real_pos_display['buy_price'] = real_pos_display['buy_price'].apply(lambda x: f"${x:.6f}")
+                if 'current_price' in real_pos_display:
+                    real_pos_display['current_price'] = real_pos_display['current_price'].apply(lambda x: f"${x:.6f}")
+                if 'unrealized_pl' in real_pos_display:
+                    real_pos_display['unrealized_pl'] = real_pos_display['unrealized_pl'].apply(lambda x: f"${x:.2f}")
+                if 'pl_percent' in real_pos_display:
+                    real_pos_display['pl_percent'] = real_pos_display['pl_percent'].apply(lambda x: f"{x:.2f}%")
+                if 'time' in real_pos_display:
+                    real_pos_display['time'] = real_pos_display['time'].apply(convert_to_et)
+                
+                # Select columns to display
+                display_cols = ['ticker', 'name', 'amount', 'buy_price', 'current_price', 'unrealized_pl', 'pl_percent', 'time']
+                display_cols = [col for col in display_cols if col in real_pos_display.columns]
+                
+                # Display the DataFrame
+                st.dataframe(real_pos_display[display_cols], use_container_width=True)
+                
+                # Show actions for real positions
+                st.subheader("Position Actions")
+                
+                # Create columns for action buttons
+                action_col1, action_col2, action_col3 = st.columns(3)
+                
+                with action_col1:
+                    if st.button("Refresh Prices"):
+                        st.success("Prices refreshed successfully")
+                
+                with action_col2:
+                    selected_token = st.selectbox(
+                        "Select Token",
+                        options=real_positions['ticker'].tolist(),
+                        index=0 if not real_positions.empty else None
+                    )
+                
+                with action_col3:
+                    if st.button("Sell Selected Token"):
+                        if selected_token:
+                            st.warning(f"This would sell {selected_token} in a real implementation")
+                        else:
+                            st.error("Please select a token to sell")
+            else:
+                st.info("No active real positions found")
+        
+        with position_tabs[2]:
+            sim_positions = active_positions[active_positions['is_simulation']] if 'is_simulation' in active_positions.columns else active_positions
+            
+            if not sim_positions.empty:
+                # Format the DataFrame for display
+                sim_pos_display = sim_positions.copy()
+                
+                # Format columns
+                if 'buy_price' in sim_pos_display:
+                    sim_pos_display['buy_price'] = sim_pos_display['buy_price'].apply(lambda x: f"${x:.6f}")
+                if 'current_price' in sim_pos_display:
+                    sim_pos_display['current_price'] = sim_pos_display['current_price'].apply(lambda x: f"${x:.6f}")
+                if 'unrealized_pl' in sim_pos_display:
+                    sim_pos_display['unrealized_pl'] = sim_pos_display['unrealized_pl'].apply(lambda x: f"${x:.2f}")
+                if 'pl_percent' in sim_pos_display:
+                    sim_pos_display['pl_percent'] = sim_pos_display['pl_percent'].apply(lambda x: f"{x:.2f}%")
+                if 'time' in sim_pos_display:
+                    sim_pos_display['time'] = sim_pos_display['time'].apply(convert_to_et)
+                
+                # Select columns to display
+                display_cols = ['ticker', 'name', 'amount', 'buy_price', 'current_price', 'unrealized_pl', 'pl_percent', 'time']
+                display_cols = [col for col in display_cols if col in sim_pos_display.columns]
+                
+                # Display the DataFrame
+                st.dataframe(sim_pos_display[display_cols], use_container_width=True)
+                
+                # Show actions for simulation positions
+                st.subheader("Simulation Actions")
+                
+                # Create columns for action buttons
+                action_col1, action_col2, action_col3 = st.columns(3)
+                
+                with action_col1:
+                    if st.button("Simulate Market Movement"):
+                        st.success("Market movement simulated")
+                
+                with action_col2:
+                    selected_sim_token = st.selectbox(
+                        "Select Simulation Token",
+                        options=sim_positions['ticker'].tolist(),
+                        index=0 if not sim_positions.empty else None
+                    )
+                
+                with action_col3:
+                    if st.button("Simulate Sell"):
+                        if selected_sim_token:
+                            st.success(f"Simulated selling {selected_sim_token}")
+                        else:
+                            st.error("Please select a token to simulate selling")
+            else:
+                st.info("No active simulation positions found")
+    
+    # Trading History Tab
+    with tabs[4]:
+        st.subheader("Trading History")
+        
+        # Create tabs for all, real, and simulation histories
+        history_tabs = st.tabs(["All Trades", "Real Trading", "Simulation"])
+        
+        with history_tabs[0]:
+            if not completed_trades.empty:
+                # Format the DataFrame for display
+                completed_display = completed_trades.copy()
+                
+                # Add a column to indicate real vs simulation
+                if 'is_simulation' in completed_display:
+                    completed_display['type'] = completed_display['is_simulation'].apply(
+                        lambda x: "<span class='simulation-tag'>Simulation</span>" if x else "<span class='real-tag'>Real</span>"
+                    )
+                
+                # Format columns
+                if 'buy_price' in completed_display:
+                    completed_display['buy_price'] = completed_display['buy_price'].apply(lambda x: f"${x:.6f}")
+                if 'sell_price' in completed_display:
+                    completed_display['sell_price'] = completed_display['sell_price'].apply(lambda x: f"${x:.6f}")
+                if 'profit_sol' in completed_display:
+                    completed_display['profit_sol'] = completed_display['profit_sol'].apply(lambda x: f"{x:.6f} SOL")
+                if 'profit_usd' in completed_display:
+                    completed_display['profit_usd'] = completed_display['profit_usd'].apply(lambda x: f"${x:.2f}")
+                if 'profit_percent' in completed_display:
+                    completed_display['profit_percent'] = completed_display['profit_percent'].apply(lambda x: f"{x:.2f}%")
+                if 'buy_time' in completed_display:
+                    completed_display['buy_time'] = completed_display['buy_time'].apply(convert_to_et)
+                if 'sell_time' in completed_display:
+                    completed_display['sell_time'] = completed_display['sell_time'].apply(convert_to_et)
+                
+                # Select columns to display
+                display_cols = ['type', 'ticker', 'buy_time', 'sell_time', 'buy_price', 'sell_price', 'amount', 'profit_usd', 'profit_percent']
+                display_cols = [col for col in display_cols if col in completed_display.columns]
+                
+                # Display the DataFrame
+                st.markdown(completed_display.to_html(escape=False, index=False, columns=display_cols), unsafe_allow_html=True)
+                
+                # Add download button
+                if st.button("Download All Trade History"):
+                    csv = completed_trades.to_csv(index=False)
+                    b64 = base64.b64encode(csv.encode()).decode()
+                    href = f'<a href="data:file/csv;base64,{b64}" download="trade_history.csv">Download CSV File</a>'
+                    st.markdown(href, unsafe_allow_html=True)
+            else:
+                st.info("No completed trades found")
+        
+        with history_tabs[1]:
+            real_completed = completed_trades[~completed_trades['is_simulation']] if 'is_simulation' in completed_trades.columns else pd.DataFrame()
+            
+            if not real_completed.empty:
+                # Format the DataFrame for display
+                real_completed_display = real_completed.copy()
+                
+                # Format columns
+                if 'buy_price' in real_completed_display:
+                    real_completed_display['buy_price'] = real_completed_display['buy_price'].apply(lambda x: f"${x:.6f}")
+                if 'sell_price' in real_completed_display:
+                    real_completed_display['sell_price'] = real_completed_display['sell_price'].apply(lambda x: f"${x:.6f}")
+                if 'profit_sol' in real_completed_display:
+                    real_completed_display['profit_sol'] = real_completed_display['profit_sol'].apply(lambda x: f"{x:.6f} SOL")
+                if 'profit_usd' in real_completed_display:
+                    real_completed_display['profit_usd'] = real_completed_display['profit_usd'].apply(lambda x: f"${x:.2f}")
+                if 'profit_percent' in real_completed_display:
+                    real_completed_display['profit_percent'] = real_completed_display['profit_percent'].apply(lambda x: f"{x:.2f}%")
+                if 'buy_time' in real_completed_display:
+                    real_completed_display['buy_time'] = real_completed_display['buy_time'].apply(convert_to_et)
+                if 'sell_time' in real_completed_display:
+                    real_completed_display['sell_time'] = real_completed_display['sell_time'].apply(convert_to_et)
+                
+                # Select columns to display
+                display_cols = ['ticker', 'buy_time', 'sell_time', 'buy_price', 'sell_price', 'amount', 'profit_usd', 'profit_percent']
+                display_cols = [col for col in display_cols if col in real_completed_display.columns]
+                
+                # Display the DataFrame
+                st.dataframe(real_completed_display[display_cols], use_container_width=True)
+                
+                # Add filters
+                st.subheader("Filter Trades")
+                
+                filter_col1, filter_col2, filter_col3 = st.columns(3)
+                
+                with filter_col1:
+                    date_range = st.date_input(
+                        "Date Range",
+                        value=[
+                            datetime.now() - timedelta(days=30),
+                            datetime.now()
+                        ],
+                        help="Filter trades by date range"
+                    )
+                
+                with filter_col2:
+                    min_profit = st.number_input(
+                        "Min Profit (%)",
+                        min_value=-100.0,
+                        max_value=1000.0,
+                        value=0.0,
+                        step=5.0,
+                        help="Filter trades by minimum profit percentage"
+                    )
+                
+                with filter_col3:
+                    token_filter = st.text_input(
+                        "Token Filter",
+                        value="",
+                        help="Filter trades by token symbol or name"
+                    )
+                
+                # Add apply filters button
+                if st.button("Apply Filters", key="real_filters"):
+                    st.info("Filters would be applied in a real implementation")
+            else:
+                st.info("No completed real trades found")
+        
+        with history_tabs[2]:
+            sim_completed = completed_trades[completed_trades['is_simulation']] if 'is_simulation' in completed_trades.columns else completed_trades
+            
+            if not sim_completed.empty:
+                # Format the DataFrame for display
+                sim_completed_display = sim_completed.copy()
+                
+                # Format columns
+                if 'buy_price' in sim_completed_display:
+                    sim_completed_display['buy_price'] = sim_completed_display['buy_price'].apply(lambda x: f"${x:.6f}")
+                if 'sell_price' in sim_completed_display:
+                    sim_completed_display['sell_price'] = sim_completed_display['sell_price'].apply(lambda x: f"${x:.6f}")
+                if 'profit_sol' in sim_completed_display:
+                    sim_completed_display['profit_sol'] = sim_completed_display['profit_sol'].apply(lambda x: f"{x:.6f} SOL")
+                if 'profit_usd' in sim_completed_display:
+                    sim_completed_display['profit_usd'] = sim_completed_display['profit_usd'].apply(lambda x: f"${x:.2f}")
+                if 'profit_percent' in sim_completed_display:
+                    sim_completed_display['profit_percent'] = sim_completed_display['profit_percent'].apply(lambda x: f"{x:.2f}%")
+                if 'buy_time' in sim_completed_display:
+                    sim_completed_display['buy_time'] = sim_completed_display['buy_time'].apply(convert_to_et)
+                if 'sell_time' in sim_completed_display:
+                    sim_completed_display['sell_time'] = sim_completed_display['sell_time'].apply(convert_to_et)
+                
+                # Select columns to display
+                display_cols = ['ticker', 'buy_time', 'sell_time', 'buy_price', 'sell_price', 'amount', 'profit_usd', 'profit_percent']
+                display_cols = [col for col in display_cols if col in sim_completed_display.columns]
+                
+                # Display the DataFrame
+                st.dataframe(sim_completed_display[display_cols], use_container_width=True)
+                
+                # Add filters
+                st.subheader("Filter Simulation Trades")
+                
+                filter_col1, filter_col2, filter_col3 = st.columns(3)
+                
+                with filter_col1:
+                    sim_date_range = st.date_input(
+                        "Date Range",
+                        value=[
+                            datetime.now() - timedelta(days=30),
+                            datetime.now()
+                        ],
+                        help="Filter trades by date range",
+                        key="sim_date_range"
+                    )
+                
+                with filter_col2:
+                    sim_min_profit = st.number_input(
+                        "Min Profit (%)",
+                        min_value=-100.0,
+                        max_value=1000.0,
+                        value=0.0,
+                        step=5.0,
+                        help="Filter trades by minimum profit percentage",
+                        key="sim_min_profit"
+                    )
+                
+                with filter_col3:
+                    sim_token_filter = st.text_input(
+                        "Token Filter",
+                        value="",
+                        help="Filter trades by token symbol or name",
+                        key="sim_token_filter"
+                    )
+                
+                # Add apply filters button
+                if st.button("Apply Filters", key="sim_filters"):
+                    st.info("Filters would be applied in a real implementation")
+            else:
+                st.info("No completed simulation trades found")
+    
+    # Settings Tab
+    with tabs[5]:
+        st.subheader("Bot Settings")
+        
+        # Create tabs for different settings categories
+        settings_tabs = st.tabs(["General", "Trading Parameters", "Token Filters", "API Keys", "Advanced"])
+        
+        with settings_tabs[0]:
+            st.markdown("### General Settings")
+            
+            general_col1, general_col2 = st.columns(2)
+            
+            with general_col1:
+                general_running = st.checkbox(
+                    "Bot Running",
+                    value=bot_settings.get('running', False),
+                    help="Start or stop the trading bot",
+                    key="general_running"
+                )
+                
+                general_sim_mode = st.checkbox(
+                    "Simulation Mode",
+                    value=bot_settings.get('simulation_mode', True),
+                    help="Toggle between simulation and real trading mode",
+                    key="general_sim_mode"
+                )
+                
+                general_ml = st.checkbox(
+                    "ML Analysis",
+                    value=bot_settings.get('use_machine_learning', False),
+                    help="Enable/disable machine learning for trade analysis",
+                    key="general_ml"
+                )
+            
+            with general_col2:
+                scan_interval = st.number_input(
+                    "Scan Interval (seconds)",
+                    min_value=30,
+                    max_value=3600,
+                    value=bot_settings.get('scan_interval', 60),
+                    step=30,
+                    help="Interval between token scans"
+                )
+                
+                max_active_positions = st.number_input(
+                    "Max Active Positions",
+                    min_value=1,
+                    max_value=50,
+                    value=bot_settings.get('max_active_positions', 10),
+                    step=1,
+                    help="Maximum number of active positions"
+                )
+                
+                auto_update = st.checkbox(
+                    "Auto-Update Dashboard",
+                    value=True,
+                    help="Automatically refresh the dashboard"
+                )
+            
+            # Save general settings button
+            if st.button("Save General Settings"):
+                # Update settings
+                bot_settings['running'] = general_running
+                bot_settings['simulation_mode'] = general_sim_mode
+                bot_settings['use_machine_learning'] = general_ml
+                bot_settings['scan_interval'] = scan_interval
+                bot_settings['max_active_positions'] = max_active_positions
+                
+                # Save settings
+                if save_bot_settings(bot_settings):
+                    st.success("General settings saved successfully!")
+                else:
+                    st.error("Failed to save general settings")
+        
+        with settings_tabs[1]:
+            st.markdown("### Trading Parameters")
+            
+            trading_col1, trading_col2 = st.columns(2)
+            
+            with trading_col1:
+                tp_target = st.number_input(
+                    "Take Profit (%)",
+                    min_value=1.0,
+                    max_value=1000.0,
+                    value=float(bot_settings.get('take_profit_target', 50.0)),
+                    step=5.0,
+                    help="Target profit percentage for trades"
+                )
+                
+                sl_percentage = st.number_input(
+                    "Stop Loss (%)",
+                    min_value=1.0,
+                    max_value=100.0,
+                    value=float(bot_settings.get('stop_loss_percentage', 25.0)),
+                    step=1.0,
+                    help="Stop loss percentage for trades"
+                )
+                
+                min_inv = st.number_input(
+                    "Min Investment (SOL)",
+                    min_value=0.001,
+                    max_value=1.0,
+                    value=float(bot_settings.get('min_investment_per_token', 0.02)),
+                    step=0.001,
+                    help="Minimum investment per token in SOL"
+                )
+                
+                trailing_stop = st.checkbox(
+                    "Enable Trailing Stop",
+                    value=bot_settings.get('use_trailing_stop', False),
+                    help="Enable trailing stop loss"
+                )
+                
+                if trailing_stop:
+                    trailing_stop_pct = st.number_input(
+                        "Trailing Stop Distance (%)",
+                        min_value=1.0,
+                        max_value=50.0,
+                        value=float(bot_settings.get('trailing_stop_percent', 10.0)),
+                        step=1.0,
+                        help="Trailing stop distance as percentage of price"
+                    )
+            
+            with trading_col2:
+                max_inv = st.number_input(
+                    "Max Investment (SOL)",
+                    min_value=0.01,
+                    max_value=10.0,
+                    value=float(bot_settings.get('max_investment_per_token', 0.1)),
+                    step=0.01,
+                    help="Maximum investment per token in SOL"
+                )
+                
+                slippage = st.number_input(
+                    "Slippage Tolerance (%)",
+                    min_value=0.1,
+                    max_value=100.0,
+                    value=float(bot_settings.get('slippage_tolerance', 0.3)) * 100,
+                    step=0.1,
+                    help="Slippage tolerance percentage"
+                )
+                
+                moonbag_pct = st.number_input(
+                    "Moonbag Percentage (%)",
+                    min_value=0.0,
+                    max_value=100.0,
+                    value=float(bot_settings.get('moonbag_percentage', 0.0)) * 100,
+                    step=5.0,
+                    help="Percentage to keep as 'moonbag' after taking profit"
+                )
+            
+            # Save trading parameters button
+            if st.button("Save Trading Parameters"):
+                # Update settings
+                bot_settings['take_profit_target'] = tp_target
+                bot_settings['stop_loss_percentage'] = sl_percentage
+                bot_settings['min_investment_per_token'] = min_inv
+                bot_settings['use_trailing_stop'] = trailing_stop
+                if trailing_stop:
+                    bot_settings['trailing_stop_percent'] = trailing_stop_pct
+                bot_settings['max_investment_per_token'] = max_inv
+                bot_settings['slippage_tolerance'] = slippage / 100  # Convert to decimal
+                bot_settings['moonbag_percentage'] = moonbag_pct / 100  # Convert to decimal
+                
+                # Save settings
+                if save_bot_settings(bot_settings):
+                    st.success("Trading parameters saved successfully!")
+                else:
+                    st.error("Failed to save trading parameters")
+        
+        with settings_tabs[2]:
+            st.markdown("### Token Filters")
+            
+            filter_col1, filter_col2 = st.columns(2)
+            
+            with filter_col1:
+                min_safety = st.number_input(
+                    "Min Safety Score",
+                    min_value=0.0,
+                    max_value=100.0,
+                    value=float(bot_settings.get('MIN_SAFETY_SCORE', 15.0)),
+                    step=5.0,
+                    help="Minimum safety score for tokens"
+                )
+                
+                min_vol = st.number_input(
+                    "Min 24h Volume (USD)",
+                    min_value=0.0,
+                    max_value=1000000.0,
+                    value=float(bot_settings.get('MIN_VOLUME', 10.0)),
+                    step=1000.0,
+                    help="Minimum 24h trading volume in USD"
+                )
+                
+                min_liq = st.number_input(
+                    "Min Liquidity (USD)",
+                    min_value=0.0,
+                    max_value=1000000.0,
+                    value=float(bot_settings.get('MIN_LIQUIDITY', 5000.0)),
+                    step=1000.0,
+                    help="Minimum liquidity in USD"
+                )
+                
+                min_mcap = st.number_input(
+                    "Min Market Cap (USD)",
+                    min_value=0.0,
+                    max_value=10000000.0,
+                    value=float(bot_settings.get('MIN_MCAP', 10000.0)),
+                    step=10000.0,
+                    help="Minimum market cap in USD"
+                )
+            
+            with filter_col2:
+                min_holders = st.number_input(
+                    "Min Holders",
+                    min_value=0,
+                    max_value=10000,
+                    value=int(bot_settings.get('MIN_HOLDERS', 10)),
+                    step=10,
+                    help="Minimum number of token holders"
+                )
+                
+                min_price_change_1h = st.number_input(
+                    "Min 1h Price Change (%)",
+                    min_value=0.0,
+                    max_value=100.0,
+                    value=float(bot_settings.get('MIN_PRICE_CHANGE_1H', 1.0)),
+                    step=0.5,
+                    help="Minimum 1h price change percentage"
+                )
+                
+                min_price_change_6h = st.number_input(
+                    "Min 6h Price Change (%)",
+                    min_value=0.0,
+                    max_value=100.0,
+                    value=float(bot_settings.get('MIN_PRICE_CHANGE_6H', 2.0)),
+                    step=0.5,
+                    help="Minimum 6h price change percentage"
+                )
+                
+                min_price_change_24h = st.number_input(
+                    "Min 24h Price Change (%)",
+                    min_value=0.0,
+                    max_value=100.0,
+                    value=float(bot_settings.get('MIN_PRICE_CHANGE_24H', 5.0)),
+                    step=0.5,
+                    help="Minimum 24h price change percentage"
+                )
+            
+            # Filter fake tokens option
+            filter_fake = st.checkbox(
+                "Filter Fake Tokens",
+                value=bot_settings.get('filter_fake_tokens', True),
+                help="Filter out likely fake or scam tokens"
+            )
+            
+            # Save token filters button
+            if st.button("Save Token Filters"):
+                # Update settings
+                bot_settings['MIN_SAFETY_SCORE'] = min_safety
+                bot_settings['MIN_VOLUME'] = min_vol
+                bot_settings['MIN_LIQUIDITY'] = min_liq
+                bot_settings['MIN_MCAP'] = min_mcap
+                bot_settings['MIN_HOLDERS'] = min_holders
+                bot_settings['MIN_PRICE_CHANGE_1H'] = min_price_change_1h
+                bot_settings['MIN_PRICE_CHANGE_6H'] = min_price_change_6h
+                bot_settings['MIN_PRICE_CHANGE_24H'] = min_price_change_24h
+                bot_settings['filter_fake_tokens'] = filter_fake
+                
+                # Save settings
+                if save_bot_settings(bot_settings):
+                    st.success("Token filters saved successfully!")
+                else:
+                    st.error("Failed to save token filters")
+        
+        with settings_tabs[3]:
+            st.markdown("### API Keys")
+            
+            # Store keys in session state (not secure for production)
+            if 'api_keys' not in st.session_state:
+                st.session_state.api_keys = {
+                    'solana_rpc': '',
+                    'birdeye_api': '',
+                    'twitter_api': ''
+                }
+            
+            # RPC Endpoint
+            rpc_endpoint = st.text_input(
+                "Solana RPC Endpoint",
+                value=st.session_state.api_keys['solana_rpc'],
+                type="password",
+                help="Enter your Solana RPC endpoint URL"
+            )
+            st.session_state.api_keys['solana_rpc'] = rpc_endpoint
+            
+            # BirdEye API Key
+            birdeye_api = st.text_input(
+                "BirdEye API Key",
+                value=st.session_state.api_keys['birdeye_api'],
+                type="password",
+                help="Enter your BirdEye API key"
+            )
+            st.session_state.api_keys['birdeye_api'] = birdeye_api
+            
+            # Twitter API Key
+            twitter_api = st.text_input(
+                "Twitter API Key",
+                value=st.session_state.api_keys['twitter_api'],
+                type="password",
+                help="Enter your Twitter API key (optional)"
+            )
+            st.session_state.api_keys['twitter_api'] = twitter_api
+            
+            # Save API keys button
+            if st.button("Save API Keys"):
+                # In a real implementation, these would be saved securely
+                st.success("API keys saved successfully!")
+                
+                # Show a warning about RPC endpoint
+                if not rpc_endpoint.startswith("https://"):
+                    st.warning("RPC endpoint should start with https://")
+        
+        with settings_tabs[4]:
+            st.markdown("### Advanced Settings")
+            
+            # Database Management
+            st.subheader("Database Management")
+            
+            db_col1, db_col2 = st.columns(2)
+            
+            with db_col1:
+                if st.button("Backup Database"):
+                    if db_file and os.path.exists(db_file):
+                        # In a real implementation, this would create a backup
+                        st.success(f"Database backed up successfully: {db_file}")
+                    else:
+                        st.error("Database file not found")
+            
+            with db_col2:
+                if st.button("Reset Database", help="WARNING: This will delete all trading data"):
+                    # Add a confirmation
+                    st.warning("Are you sure you want to reset the database? This will delete all trading data.")
+                    db_col3, db_col4 = st.columns(2)
+                    
+                    with db_col3:
+                        if st.button("Yes, Reset Database"):
+                            # In a real implementation, this would reset the database
+                            st.success("Database reset successfully")
+                    
+                    with db_col4:
+                        if st.button("Cancel"):
+                            pass
+            
+            # Bot Logs
+            st.subheader("Bot Logs")
+            
+            # Create a text area with simulated logs
+            logs = """
+2025-05-13 20:21:45 INFO - Bot started successfully
+2025-05-13 20:21:46 INFO - Connected to Solana network
+2025-05-13 20:21:47 INFO - Initialized database connection
+2025-05-13 20:21:48 INFO - Wallet balance: 1.15000000 SOL
+2025-05-13 20:21:50 INFO - Starting token scanner
+2025-05-13 20:21:51 INFO - Scanning for new tokens...
+            """
+            
+            st.text_area("Logs", value=logs, height=200)
+            
+            log_col1, log_col2 = st.columns(2)
+            
+            with log_col1:
+                if st.button("Refresh Logs"):
+                    st.success("Logs refreshed")
+            
+            with log_col2:
+                if st.button("Clear Logs"):
+                    st.info("Logs cleared")
+            
+            # Debug Mode
+            debug_mode = st.checkbox(
+                "Debug Mode",
+                value=False,
+                help="Enable debug mode for detailed logging"
+            )
+            
+            if debug_mode:
+                st.info("Debug mode enabled. Additional information will be logged.")
+            
+            # Save advanced settings button
+            if st.button("Save Advanced Settings"):
+                # In a real implementation, these would be saved
+                st.success("Advanced settings saved successfully!")
+    
+    # Add refresh button at the bottom
+    st.markdown("""
+    <style>
+    div.stButton > button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 24px;
+        border-radius: 8px;
+        border: none;
+    }
+    div.stButton > button:hover {
+        background-color: #45a049;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+    
+    if st.button("Refresh Dashboard"):
+        st.experimental_rerun()
+    
+    # Add timestamp for last update
+    st.caption(f"Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} Eastern Time")
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,109 @@
+2025-04-01 22:31:15,873 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 22:31:15,873 - trading_bot.solana_trader - INFO - Wallet initialized: DpWxPejkHk4Hq1Gz15N2cjBYwgnAR2EuTfe8XcmGoP9k
+2025-04-01 22:31:15,879 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-04-01 22:31:15,881 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-04-01 22:31:15,882 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 22:31:15,886 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-04-01 22:31:15,888 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 22:31:15,888 - trading_bot - INFO - ==================================================
+2025-04-01 22:31:15,888 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-04-01 22:31:15,889 - trading_bot - INFO - ==================================================
+2025-04-01 22:31:16,223 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 22:31:16,224 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 22:31:16,274 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 22:31:16,329 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd: 429, message='Too Many Requests', url='https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd'
+2025-04-01 22:31:18,346 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd: 429, message='Too Many Requests', url='https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd'
+2025-04-01 22:31:22,375 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd: 429, message='Too Many Requests', url='https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd'
+2025-04-01 22:31:22,376 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 3 attempts
+2025-04-01 22:31:22,428 - trading_bot - INFO - Initial Wallet Balance: 3.0000 SOL ($374.22)
+2025-04-01 22:31:22,428 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-04-01 22:31:22,429 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-01 22:31:23,085 - trading_bot.token_scanner - INFO - Discovered 9 tokens from Twitter
+2025-04-01 22:31:23,085 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-01 22:31:23,086 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-04-01 22:31:23,087 - trading_bot - INFO - Starting token discovery and trading process
+2025-04-01 22:31:23,156 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-01 22:31:23,156 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-01 22:31:23,172 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 22:31:23,219 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 22:31:23,225 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd: 429, message='Too Many Requests', url='https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd'
+2025-04-01 22:31:23,258 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 22:31:23,297 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 22:31:23,298 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-01 22:31:23,341 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-04-01 22:31:23,341 - trading_bot.token_scanner - INFO - Found 0 trending tokens
+2025-04-01 22:31:23,342 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-01 22:31:25,244 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd: 429, message='Too Many Requests', url='https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd'
+2025-04-01 22:31:29,272 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd: 429, message='Too Many Requests', url='https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd'
+2025-04-01 22:31:29,273 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 3 attempts
+2025-04-01 22:31:29,336 - trading_bot - INFO - Current wallet balance: 3.0000 SOL ($374.21)
+2025-04-01 22:31:29,580 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 22:31:29,631 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 22:31:29,688 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 22:31:29,689 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-01 22:31:29,738 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-04-01 22:31:29,738 - trading_bot.token_scanner - INFO - Found 0 trending tokens
+2025-04-01 22:31:29,738 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-01 22:31:47,772 - trading_bot.token_analyzer - WARNING - No DexScreener data for GTXGEEijLD8958dnPd1ZkwZaxyxmfMf4gUdtd7JA3LSc
+2025-04-01 22:31:47,774 - trading_bot.token_analyzer - WARNING - No DexScreener data for GTXGEEijLD8958dnPd1ZkwZaxyxmfMf4gUdtd7JA3LSc
+2025-04-01 22:31:48,786 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-01 22:36:48,792 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-01 22:36:49,369 - trading_bot.token_scanner - INFO - Discovered 6 tokens from Twitter
+2025-04-01 22:36:49,369 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-01 22:36:49,938 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 22:36:49,939 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 22:36:49,991 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 22:36:50,023 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd: 429, message='Too Many Requests', url='https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd'
+2025-04-01 22:36:50,063 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-01 22:36:50,063 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-01 22:36:50,117 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 22:36:50,158 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 22:36:50,190 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 22:36:50,191 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-01 22:36:50,246 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-04-01 22:36:50,246 - trading_bot.token_scanner - INFO - Found 0 trending tokens
+2025-04-01 22:36:50,247 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-01 22:36:50,250 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-01 22:36:52,049 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd: 429, message='Too Many Requests', url='https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd'
+2025-04-01 22:36:56,069 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd: 429, message='Too Many Requests', url='https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd'
+2025-04-01 22:36:56,070 - trading_bot.utils - ERROR - Failed to fetch https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd after 3 attempts
+2025-04-01 22:36:56,123 - trading_bot - INFO - Current wallet balance: 3.0000 SOL ($372.71)
+2025-04-01 22:36:56,180 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 22:36:56,241 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 22:36:56,303 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 22:36:56,303 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-01 22:36:56,354 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-04-01 22:36:56,355 - trading_bot.token_scanner - INFO - Found 0 trending tokens
+2025-04-01 22:36:56,355 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-01 22:41:50,267 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-01 22:41:50,859 - trading_bot.token_scanner - INFO - Discovered 5 tokens from Twitter
+2025-04-01 22:41:50,859 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-01 22:41:50,927 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-01 22:41:50,927 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-01 22:41:50,973 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 22:41:51,024 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 22:41:51,074 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 22:41:51,075 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-01 22:41:51,125 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-04-01 22:41:51,126 - trading_bot.token_scanner - INFO - Found 0 trending tokens
+2025-04-01 22:41:51,126 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-01 22:41:51,133 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-01 22:41:56,928 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 22:41:56,929 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 22:41:56,970 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 22:41:57,037 - trading_bot - INFO - Current wallet balance: 3.0000 SOL ($373.23)
+2025-04-01 22:41:57,099 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 22:41:57,140 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 22:41:57,190 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-01 22:41:57,190 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-01 22:41:57,231 - trading_bot.token_analyzer - WARNING - No DexScreener data for trending tokens
+2025-04-01 22:41:57,232 - trading_bot.token_scanner - INFO - Found 0 trending tokens
+2025-04-01 22:41:57,232 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-01 22:43:42,140 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-04-01 22:44:04,986 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-04-01 22:44:22,487 - trading_bot - INFO - Closing connections
+2025-04-01 22:44:22,487 - trading_bot.solana_trader - INFO - Solana RPC client closed
+2025-04-01 22:44:22,488 - trading_bot - INFO - ==================================================
+2025-04-01 22:44:22,488 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-04-01 22:44:22,488 - trading_bot - INFO - ==================================================
+2025-04-01 22:44:22,490 - trading_bot - INFO - Bot execution completed

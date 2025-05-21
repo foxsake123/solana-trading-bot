@@ -1,0 +1,20 @@
+{
+    "running": true,
+    "take_profit_target": 75.0,
+    "stop_loss_percentage": 0.2,
+    "min_investment_per_token": 0.052,
+    "max_investment_per_token": 0.23,
+    "simulation_mode": true,
+    "use_machine_learning": true,
+    "slippage_tolerance": 0.3,
+    "MIN_SAFETY_SCORE": 0.0,
+    "MIN_VOLUME": 10.0,
+    "MIN_LIQUIDITY": 5000.0,
+    "MIN_MCAP": 10000.0,
+    "MIN_HOLDERS": 10,
+    "MIN_PRICE_CHANGE_1H": 1.0,
+    "MIN_PRICE_CHANGE_6H": 2.0,
+    "MIN_PRICE_CHANGE_24H": 4.0,
+    "scan_interval": 60,
+    "max_active_positions": 20
+}

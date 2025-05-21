@@ -1,0 +1,677 @@
+2025-04-02 19:33:58,299 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 19:33:58,299 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-04-02 19:33:58,304 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-04-02 19:33:58,306 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-04-02 19:33:58,307 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 19:33:58,311 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-04-02 19:33:58,321 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 19:33:58,323 - trading_bot - INFO - ==================================================
+2025-04-02 19:33:58,323 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-04-02 19:33:58,323 - trading_bot - INFO - ==================================================
+2025-04-02 19:33:58,598 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 19:33:58,774 - trading_bot - INFO - Initial Wallet Balance: 0.0000 SOL ($0.00)
+2025-04-02 19:33:58,774 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-04-02 19:33:58,775 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:33:59,255 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 19:33:59,255 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:33:59,256 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:33:59,258 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-04-02 19:33:59,261 - trading_bot - INFO - Starting token discovery and trading process
+2025-04-02 19:33:59,341 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 19:33:59,342 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:33:59,614 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:33:59,615 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:33:59,922 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:33:59,923 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:33:59,925 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:34:00,225 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:34:00,226 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:34:00,242 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:34:00,403 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:34:00,404 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:34:00,512 - trading_bot.token_analyzer - ERROR - Error fetching token data for BRQfSzKDThYt4sz8jUEgad8UxXGqRq7c5Y4yM952pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,513 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,513 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,513 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,514 - trading_bot.token_analyzer - ERROR - Error fetching token data for CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,514 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,515 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,515 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,515 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,516 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,516 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:34:00,520 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:34:00,520 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:34:00,522 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:34:00,523 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:34:00,740 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:34:00,741 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:34:00,866 - trading_bot.token_analyzer - ERROR - Error fetching token data for BRQfSzKDThYt4sz8jUEgad8UxXGqRq7c5Y4yM952pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,866 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,866 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,866 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,866 - trading_bot.token_analyzer - ERROR - Error fetching token data for CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,867 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,867 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,868 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,868 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,868 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:34:00,868 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 19:34:00,871 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:35:00,532 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:35:00,983 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 19:35:00,984 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:35:00,984 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:35:01,393 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:35:01,394 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:35:01,770 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:35:02,079 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:35:02,080 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:35:02,383 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:35:02,384 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:35:02,498 - trading_bot.token_analyzer - ERROR - Error fetching token data for BRQfSzKDThYt4sz8jUEgad8UxXGqRq7c5Y4yM952pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:35:02,499 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:35:02,500 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:35:02,502 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:35:02,502 - trading_bot.token_analyzer - ERROR - Error fetching token data for CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:35:02,503 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:35:02,504 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:35:02,504 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:35:02,505 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:35:02,505 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:35:02,505 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:35:02,510 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:35:02,511 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:36:02,517 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:36:02,842 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 19:36:02,843 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:36:02,844 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:36:03,145 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:36:03,147 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:36:03,479 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:36:03,825 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:36:03,827 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:36:04,049 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:36:04,050 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:36:04,187 - trading_bot.token_analyzer - ERROR - Error fetching token data for BRQfSzKDThYt4sz8jUEgad8UxXGqRq7c5Y4yM952pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:36:04,188 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:36:04,189 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:36:04,189 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:36:04,190 - trading_bot.token_analyzer - ERROR - Error fetching token data for CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:36:04,190 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:36:04,191 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:36:04,191 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:36:04,192 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:36:04,193 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:36:04,193 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:36:04,199 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:36:04,199 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:37:04,204 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:37:04,565 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 19:37:04,567 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:37:04,568 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:37:04,916 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:37:04,917 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:37:05,235 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:37:05,530 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:37:05,531 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:37:05,757 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:37:05,758 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:37:05,892 - trading_bot.token_analyzer - ERROR - Error fetching token data for BRQfSzKDThYt4sz8jUEgad8UxXGqRq7c5Y4yM952pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:37:05,894 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:37:05,895 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:37:05,895 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:37:05,896 - trading_bot.token_analyzer - ERROR - Error fetching token data for CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:37:05,896 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:37:05,897 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:37:05,897 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:37:05,898 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:37:05,899 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:37:05,899 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:37:05,905 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:37:05,905 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:38:05,910 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:38:06,242 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:38:06,245 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:38:06,245 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:38:06,624 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:38:06,627 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:38:06,970 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:38:07,261 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:38:07,264 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:38:07,469 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:38:07,471 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:38:07,615 - trading_bot.token_analyzer - ERROR - Error fetching token data for BRQfSzKDThYt4sz8jUEgad8UxXGqRq7c5Y4yM952pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:38:07,616 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:38:07,617 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:38:07,618 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:38:07,618 - trading_bot.token_analyzer - ERROR - Error fetching token data for CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:38:07,618 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:38:07,619 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:38:07,620 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:38:07,620 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:38:07,621 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:38:07,621 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:38:07,628 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:38:07,629 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:39:01,893 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 19:39:02,040 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 19:39:02,040 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:39:02,579 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:39:02,580 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:39:03,098 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:39:03,441 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:39:03,443 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:39:03,790 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:39:03,791 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:39:03,924 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:03,925 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:03,926 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:03,927 - trading_bot.token_analyzer - ERROR - Error fetching token data for CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:03,927 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:03,928 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:03,929 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:03,929 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:03,930 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:03,930 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:03,931 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 19:39:03,939 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:39:07,639 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:39:07,968 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:39:07,971 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:39:07,972 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:39:08,294 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:39:08,295 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:39:08,616 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:39:08,887 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:39:08,888 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:39:09,079 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:39:09,080 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:39:09,202 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:09,203 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:09,204 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:09,204 - trading_bot.token_analyzer - ERROR - Error fetching token data for CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:09,205 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:09,205 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:09,206 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:09,206 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:09,206 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:09,207 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:39:09,208 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:39:09,212 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:39:09,213 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:40:09,228 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:40:09,469 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:40:09,470 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:40:09,470 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:40:09,784 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:40:09,785 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:40:10,051 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:40:10,281 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:40:10,282 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:40:10,512 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:40:10,513 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:40:10,625 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:40:10,626 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:40:10,626 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:40:10,626 - trading_bot.token_analyzer - ERROR - Error fetching token data for CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:40:10,627 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:40:10,627 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:40:10,628 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:40:10,628 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:40:10,628 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:40:10,629 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:40:10,629 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:40:10,635 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:40:10,636 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:41:10,640 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:41:11,035 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:41:11,035 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:41:11,036 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:41:11,369 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:41:11,370 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:41:11,703 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:41:12,077 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:41:12,079 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:41:12,297 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:41:12,299 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:41:12,432 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:41:12,433 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:41:12,434 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:41:12,434 - trading_bot.token_analyzer - ERROR - Error fetching token data for CniPCE4b3s8gSUPhUiyMjXnytrEqUrMfSsnbBjLCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:41:12,435 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:41:12,435 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:41:12,436 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:41:12,436 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:41:12,436 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:41:12,438 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:41:12,438 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:41:12,444 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:41:12,444 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:42:12,454 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:42:12,724 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:42:12,725 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:42:12,726 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:42:13,056 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:42:13,057 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:42:13,384 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:42:13,666 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:42:13,669 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:42:13,860 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:42:13,860 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:42:13,988 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:42:13,991 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:42:13,991 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:42:13,991 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:42:13,992 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:42:13,992 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:42:13,992 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:42:13,993 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:42:13,993 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:42:13,993 - trading_bot.token_analyzer - ERROR - Error fetching token data for 34HDZNbUkTyTrgYKy2ox43yp2f8PJ5hoM7xsrfNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:42:13,994 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:42:13,999 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:42:14,000 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:43:14,003 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:43:14,296 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:43:14,297 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:43:14,298 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:43:14,622 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:43:14,623 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:43:14,932 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:43:15,246 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:43:15,250 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:43:15,445 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:43:15,446 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:43:15,524 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:43:15,524 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:43:15,525 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:43:15,525 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:43:15,525 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:43:15,525 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:43:15,525 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:43:15,525 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:43:15,525 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:43:15,525 - trading_bot.token_analyzer - ERROR - Error fetching token data for 34HDZNbUkTyTrgYKy2ox43yp2f8PJ5hoM7xsrfNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:43:15,525 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:43:15,527 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:43:15,527 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:44:04,363 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 19:44:04,643 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 19:44:04,645 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:44:04,908 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:44:04,909 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:44:05,186 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:44:05,461 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:44:05,462 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:44:05,682 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:44:05,683 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:44:05,760 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:05,760 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:05,760 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:05,760 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:05,761 - trading_bot.token_analyzer - ERROR - Error fetching token data for 65Ph5GECxYFEtANqBuAxi4eMWcTd4rat5tq6YTgCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:05,761 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:05,761 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:05,761 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:05,761 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:05,762 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:05,762 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 19:44:05,764 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:44:15,543 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:44:15,790 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:44:15,791 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:44:15,791 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:44:16,137 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:44:16,139 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:44:16,401 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:44:16,639 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:44:16,640 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:44:16,867 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:44:16,871 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:44:16,955 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:16,955 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:16,956 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:16,956 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:16,956 - trading_bot.token_analyzer - ERROR - Error fetching token data for 65Ph5GECxYFEtANqBuAxi4eMWcTd4rat5tq6YTgCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:16,956 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:16,956 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:16,956 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:16,956 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:16,957 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:44:16,957 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:44:16,958 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:44:16,959 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:45:16,962 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:45:17,236 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:45:17,237 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:45:17,237 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:45:17,578 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:45:17,579 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:45:17,859 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:45:18,147 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:45:18,147 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:45:18,465 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:45:18,466 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:45:18,556 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:45:18,556 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:45:18,557 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:45:18,557 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:45:18,557 - trading_bot.token_analyzer - ERROR - Error fetching token data for 65Ph5GECxYFEtANqBuAxi4eMWcTd4rat5tq6YTgCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:45:18,557 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:45:18,558 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:45:18,558 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:45:18,558 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:45:18,558 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:45:18,559 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:45:18,562 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:45:18,563 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:46:18,567 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:46:18,817 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:46:18,818 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:46:18,818 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:46:19,137 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:46:19,137 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:46:19,423 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:46:19,702 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:46:19,703 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:46:19,916 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:46:19,916 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:46:20,028 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:46:20,029 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:46:20,029 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:46:20,029 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:46:20,030 - trading_bot.token_analyzer - ERROR - Error fetching token data for 65Ph5GECxYFEtANqBuAxi4eMWcTd4rat5tq6YTgCpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:46:20,030 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:46:20,030 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:46:20,031 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:46:20,031 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:46:20,031 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:46:20,031 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:46:20,035 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:46:20,035 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:47:20,052 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:47:20,279 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:47:20,280 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:47:20,280 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:47:20,609 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:47:20,610 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:47:20,895 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:47:21,145 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:47:21,145 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:47:21,321 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:47:21,321 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:47:21,421 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:47:21,422 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:47:21,422 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:47:21,422 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:47:21,422 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:47:21,422 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:47:21,422 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:47:21,423 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:47:21,423 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:47:21,423 - trading_bot.token_analyzer - ERROR - Error fetching token data for 34HDZNbUkTyTrgYKy2ox43yp2f8PJ5hoM7xsrfNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:47:21,423 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:47:21,425 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:47:21,425 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:48:21,428 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:48:21,659 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:48:21,659 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:48:21,660 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:48:21,958 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:48:21,958 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:48:22,229 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:48:22,473 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:48:22,474 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:48:22,663 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:48:22,664 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:48:22,802 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:48:22,803 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:48:22,803 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:48:22,804 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:48:22,805 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:48:22,806 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:48:22,807 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:48:22,807 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:48:22,808 - trading_bot.token_analyzer - ERROR - Error fetching token data for 34HDZNbUkTyTrgYKy2ox43yp2f8PJ5hoM7xsrfNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:48:22,808 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:48:22,809 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:48:22,813 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:48:22,814 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:49:06,202 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 19:49:06,362 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 19:49:06,363 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:49:06,624 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:49:06,625 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:49:06,941 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:49:07,222 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:49:07,223 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:49:07,410 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:49:07,411 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:49:07,497 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:07,498 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:07,499 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:07,500 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:07,500 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:07,501 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:07,501 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:07,501 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:07,501 - trading_bot.token_analyzer - ERROR - Error fetching token data for 34HDZNbUkTyTrgYKy2ox43yp2f8PJ5hoM7xsrfNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:07,501 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:07,501 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 19:49:07,503 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:49:22,830 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:49:23,071 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:49:23,072 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:49:23,072 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:49:23,422 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:49:23,423 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:49:23,726 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:49:24,036 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:49:24,036 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:49:24,216 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:49:24,216 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:49:24,290 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:24,291 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:24,291 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:24,291 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:24,291 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:24,291 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:24,291 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:24,292 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:24,292 - trading_bot.token_analyzer - ERROR - Error fetching token data for 34HDZNbUkTyTrgYKy2ox43yp2f8PJ5hoM7xsrfNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:24,292 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:49:24,292 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:49:24,294 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:49:24,294 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:50:24,300 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:50:24,532 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:50:24,533 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:50:24,533 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:50:24,817 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:50:24,817 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:50:25,116 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:50:25,384 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:50:25,384 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:50:25,561 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:50:25,562 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:50:25,650 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:50:25,650 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:50:25,651 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:50:25,651 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:50:25,652 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:50:25,653 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:50:25,653 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:50:25,653 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:50:25,654 - trading_bot.token_analyzer - ERROR - Error fetching token data for 34HDZNbUkTyTrgYKy2ox43yp2f8PJ5hoM7xsrfNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:50:25,654 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:50:25,655 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:50:25,659 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:50:25,659 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:51:25,670 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:51:25,910 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:51:25,911 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:51:25,911 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:51:26,204 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:51:26,205 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:51:26,465 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:51:26,762 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:51:26,763 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:51:26,980 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:51:26,980 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:51:27,059 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:51:27,059 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:51:27,059 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:51:27,059 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:51:27,060 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:51:27,060 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:51:27,060 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:51:27,060 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:51:27,060 - trading_bot.token_analyzer - ERROR - Error fetching token data for 34HDZNbUkTyTrgYKy2ox43yp2f8PJ5hoM7xsrfNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:51:27,061 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:51:27,061 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:51:27,063 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:51:27,064 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:52:27,072 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:52:27,331 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:52:27,332 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:52:27,333 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:52:27,644 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:52:27,645 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:52:27,995 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:52:28,269 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:52:28,271 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:52:28,487 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:52:28,488 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:52:28,589 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:52:28,589 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:52:28,590 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:52:28,590 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:52:28,590 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:52:28,591 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:52:28,593 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:52:28,593 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:52:28,594 - trading_bot.token_analyzer - ERROR - Error fetching token data for 34HDZNbUkTyTrgYKy2ox43yp2f8PJ5hoM7xsrfNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:52:28,594 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:52:28,594 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:52:28,596 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:52:28,597 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:53:28,599 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:53:28,902 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:53:28,903 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:53:28,903 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:53:29,245 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:53:29,245 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:53:29,501 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:53:29,815 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:53:29,817 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:53:30,010 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:53:30,011 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:53:30,104 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:53:30,104 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:53:30,104 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:53:30,104 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:53:30,105 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:53:30,105 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:53:30,106 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:53:30,106 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:53:30,106 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:53:30,106 - trading_bot.token_analyzer - ERROR - Error fetching token data for 34HDZNbUkTyTrgYKy2ox43yp2f8PJ5hoM7xsrfNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:53:30,106 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:53:30,109 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:53:30,109 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:54:07,912 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 19:54:08,021 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 19:54:08,022 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:54:08,327 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:54:08,329 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:54:08,599 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:54:08,855 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:54:08,856 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:54:09,072 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:54:09,073 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:54:09,178 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:09,179 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:09,179 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:09,179 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:09,179 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:09,179 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:09,180 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:09,180 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:09,180 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:09,180 - trading_bot.token_analyzer - ERROR - Error fetching token data for 34HDZNbUkTyTrgYKy2ox43yp2f8PJ5hoM7xsrfNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:09,180 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 19:54:09,183 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:54:30,118 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:54:30,387 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:54:30,388 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:54:30,388 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:54:30,657 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:54:30,658 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:54:30,955 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:54:31,232 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:54:31,232 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:54:31,499 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:54:31,499 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:54:31,579 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:31,580 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:31,580 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:31,580 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:31,580 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:31,581 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:31,581 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:31,581 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:31,581 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:31,582 - trading_bot.token_analyzer - ERROR - Error fetching token data for 34HDZNbUkTyTrgYKy2ox43yp2f8PJ5hoM7xsrfNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:54:31,582 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:54:31,584 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:54:31,585 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:55:31,598 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:55:31,894 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:55:31,895 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:55:31,895 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:55:32,245 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:55:32,246 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:55:32,605 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:55:32,921 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:55:32,922 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:55:33,144 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:55:33,145 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:55:33,223 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:55:33,223 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:55:33,223 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:55:33,223 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:55:33,223 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:55:33,224 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:55:33,224 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:55:33,224 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:55:33,224 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:55:33,224 - trading_bot.token_analyzer - ERROR - Error fetching token data for 34HDZNbUkTyTrgYKy2ox43yp2f8PJ5hoM7xsrfNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:55:33,225 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:55:33,227 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:55:33,227 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:56:33,233 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 19:56:33,511 - trading_bot.token_scanner - INFO - Discovered 0 tokens from Twitter
+2025-04-02 19:56:33,512 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 19:56:33,513 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 1h
+2025-04-02 19:56:33,823 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:56:33,824 - trading_bot.token_analyzer - WARNING - Only 24h timeframe is supported for top gainers, got 6h
+2025-04-02 19:56:34,051 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:56:34,279 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: float() argument must be a string or a real number, not 'NoneType'
+2025-04-02 19:56:34,280 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 19:56:34,480 - trading_bot.token_analyzer - INFO - Found 10 trending tokens
+2025-04-02 19:56:34,481 - trading_bot.token_scanner - INFO - Found 10 trending tokens
+2025-04-02 19:56:34,562 - trading_bot.token_analyzer - ERROR - Error fetching token data for 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:56:34,562 - trading_bot.token_analyzer - ERROR - Error fetching token data for DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:56:34,562 - trading_bot.token_analyzer - ERROR - Error fetching token data for 3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:56:34,563 - trading_bot.token_analyzer - ERROR - Error fetching token data for C3DwDjT17gDvvCYC2nsdGHxDHVmQRdhKfpAdqQ29pump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:56:34,563 - trading_bot.token_analyzer - ERROR - Error fetching token data for 7LSsEoJGhLeZzGvDofTdNg7M3JttxQqGWNLo6vWMpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:56:34,564 - trading_bot.token_analyzer - ERROR - Error fetching token data for HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:56:34,564 - trading_bot.token_analyzer - ERROR - Error fetching token data for 21nnfR4TkbZNLwvRrqEseAbz7P3kxKjaV7KuboLJpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:56:34,564 - trading_bot.token_analyzer - ERROR - Error fetching token data for 6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:56:34,564 - trading_bot.token_analyzer - ERROR - Error fetching token data for FBnKUSCNTWs2e1ENpuWo3mHiuBx6tyU2AhZ1y9aZpump: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:56:34,564 - trading_bot.token_analyzer - ERROR - Error fetching token data for 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv: 'TokenAnalyzer' object has no attribute 'db'
+2025-04-02 19:56:34,564 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 19:56:34,565 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 19:56:34,566 - trading_bot.token_scanner - INFO - Scan complete, waiting 60 seconds for next scan
+2025-04-02 19:56:39,110 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...

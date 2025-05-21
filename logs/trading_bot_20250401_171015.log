@@ -1,0 +1,148 @@
+2025-04-01 17:10:16,537 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 17:10:16,538 - trading_bot.solana_trader - INFO - Wallet initialized: DpWxPejkHk4Hq1Gz15N2cjBYwgnAR2EuTfe8XcmGoP9k
+2025-04-01 17:10:16,541 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-04-01 17:10:16,542 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 17:10:16,549 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-04-01 17:10:16,549 - trading_bot.database - INFO - Database tables initialized
+2025-04-01 17:10:16,550 - trading_bot - INFO - ==================================================
+2025-04-01 17:10:16,551 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-04-01 17:10:16,552 - trading_bot - INFO - ==================================================
+2025-04-01 17:10:16,864 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 17:10:16,865 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 17:10:16,996 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 17:10:17,071 - trading_bot - INFO - Initial Wallet Balance: 3.0000 SOL ($379.26)
+2025-04-01 17:10:17,072 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-04-01 17:10:17,073 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-01 17:10:17,522 - trading_bot.token_scanner - INFO - Discovered 5 tokens from Twitter
+2025-04-01 17:10:17,522 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-01 17:10:17,523 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-04-01 17:10:17,527 - trading_bot - INFO - Starting token discovery and trading process
+2025-04-01 17:10:17,570 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 17:10:17,614 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-01 17:10:17,614 - trading_bot.token_scanner - INFO - Analyzing discovered tokens...
+2025-04-01 17:10:17,659 - trading_bot - INFO - Current wallet balance: 3.0000 SOL ($379.26)
+2025-04-01 17:10:18,032 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (2SY8mhHg7erzpdksc2En4nqufhGqZLF4ALzcGKCkTeqH)
+2025-04-01 17:10:18,081 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (2SY8mhHg7erzpdksc2En4nqufhGqZLF4ALzcGKCkTeqH)
+2025-04-01 17:10:19,296 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (HK6Je5naxLjWB8Qs4U47pN8bSGLUg5GMf9YEkxKKZFac)
+2025-04-01 17:10:19,330 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (HK6Je5naxLjWB8Qs4U47pN8bSGLUg5GMf9YEkxKKZFac)
+2025-04-01 17:10:20,733 - trading_bot.token_scanner - INFO - Tradable token found: TG (45DzrxKPS4Rgerk7u6gBCB9iikF4gYVUtYE6GXbDdZkj)
+2025-04-01 17:10:20,765 - trading_bot.token_scanner - INFO - Tradable token found: TG (45DzrxKPS4Rgerk7u6gBCB9iikF4gYVUtYE6GXbDdZkj)
+2025-04-01 17:10:22,072 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (H36voSNRagXWLxLKLJyH2Gyn5HHUkoKGQYubSswwXoFB)
+2025-04-01 17:10:22,099 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (H36voSNRagXWLxLKLJyH2Gyn5HHUkoKGQYubSswwXoFB)
+2025-04-01 17:10:23,378 - trading_bot.token_scanner - INFO - Tradable token found: BIG (Ddm4DTxNZxABUYm2A87TFLY6GDG2ktM2eJhGZS3EbzHM)
+2025-04-01 17:10:23,433 - trading_bot.token_scanner - INFO - Tradable token found: BIG (Ddm4DTxNZxABUYm2A87TFLY6GDG2ktM2eJhGZS3EbzHM)
+2025-04-01 17:10:24,545 - trading_bot.token_analyzer - WARNING - No DexScreener data for GTXGEEijLD8958dnPd1ZkwZaxyxmfMf4gUdtd7JA3LSc
+2025-04-01 17:10:24,550 - trading_bot.token_analyzer - WARNING - No DexScreener data for GTXGEEijLD8958dnPd1ZkwZaxyxmfMf4gUdtd7JA3LSc
+2025-04-01 17:10:25,861 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (DosKVpFhk7D1uBqddDTYNLCVdqNFHtmw1PbvVyNQqPf2)
+2025-04-01 17:10:25,893 - trading_bot.token_scanner - INFO - Tradable token found: UNKNOWN (DosKVpFhk7D1uBqddDTYNLCVdqNFHtmw1PbvVyNQqPf2)
+2025-04-01 17:10:27,268 - trading_bot.token_scanner - INFO - Tradable token found: CA (7wMutxpCdP3GbKaoMWoPVf2sFLCeV7a9ox25v1h2QsTp)
+2025-04-01 17:10:27,320 - trading_bot.token_scanner - INFO - Tradable token found: CA (7wMutxpCdP3GbKaoMWoPVf2sFLCeV7a9ox25v1h2QsTp)
+2025-04-01 17:10:28,808 - trading_bot.token_scanner - INFO - Tradable token found: CA (AEsHWNsasurhsjuErPoFxHwzJYBYMUj2zgNzTggcwTXB)
+2025-04-01 17:10:28,811 - trading_bot.token_scanner - INFO - Tradable token found: CA (AEsHWNsasurhsjuErPoFxHwzJYBYMUj2zgNzTggcwTXB)
+2025-04-01 17:10:29,815 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-01 17:10:29,820 - trading_bot - INFO - Trading HDA (2SY8mhHg7erzpdksc2En4nqufhGqZLF4ALzcGKCkTeqH) for 0.1 SOL
+2025-04-01 17:10:29,821 - trading_bot.solana_trader - INFO - Simulation mode: Executing simulated buy for 2SY8mhHg7erzpdksc2En4nqufhGqZLF4ALzcGKCkTeqH
+2025-04-01 17:10:29,836 - trading_bot.database - INFO - Recorded BUY trade for 2SY8mhHg7erzpdksc2En4nqufhGqZLF4ALzcGKCkTeqH: 0.1 at 0.00025
+2025-04-01 17:10:29,837 - trading_bot - INFO - Successfully traded HDA: 1111111111111111111111111111111111111111111111111111111111111111
+2025-04-01 17:10:29,842 - trading_bot - INFO - Trading DWT (HK6Je5naxLjWB8Qs4U47pN8bSGLUg5GMf9YEkxKKZFac) for 0.1 SOL
+2025-04-01 17:10:29,843 - trading_bot.solana_trader - INFO - Simulation mode: Executing simulated buy for HK6Je5naxLjWB8Qs4U47pN8bSGLUg5GMf9YEkxKKZFac
+2025-04-01 17:10:29,860 - trading_bot.database - INFO - Recorded BUY trade for HK6Je5naxLjWB8Qs4U47pN8bSGLUg5GMf9YEkxKKZFac: 0.1 at 0.00025
+2025-04-01 17:10:29,861 - trading_bot - INFO - Successfully traded DWT: 1111111111111111111111111111111111111111111111111111111111111111
+2025-04-01 17:10:29,866 - trading_bot - INFO - Trading ANIME (45DzrxKPS4Rgerk7u6gBCB9iikF4gYVUtYE6GXbDdZkj) for 0.1 SOL
+2025-04-01 17:10:29,866 - trading_bot.solana_trader - INFO - Simulation mode: Executing simulated buy for 45DzrxKPS4Rgerk7u6gBCB9iikF4gYVUtYE6GXbDdZkj
+2025-04-01 17:10:29,882 - trading_bot.database - INFO - Recorded BUY trade for 45DzrxKPS4Rgerk7u6gBCB9iikF4gYVUtYE6GXbDdZkj: 0.1 at 0.00025
+2025-04-01 17:10:29,883 - trading_bot - INFO - Successfully traded ANIME: 1111111111111111111111111111111111111111111111111111111111111111
+2025-04-01 17:10:29,889 - trading_bot - INFO - Trading CBF (H36voSNRagXWLxLKLJyH2Gyn5HHUkoKGQYubSswwXoFB) for 0.1 SOL
+2025-04-01 17:10:29,889 - trading_bot.solana_trader - INFO - Simulation mode: Executing simulated buy for H36voSNRagXWLxLKLJyH2Gyn5HHUkoKGQYubSswwXoFB
+2025-04-01 17:10:29,905 - trading_bot.database - INFO - Recorded BUY trade for H36voSNRagXWLxLKLJyH2Gyn5HHUkoKGQYubSswwXoFB: 0.1 at 0.00025
+2025-04-01 17:10:29,905 - trading_bot - INFO - Successfully traded CBF: 1111111111111111111111111111111111111111111111111111111111111111
+2025-04-01 17:10:29,911 - trading_bot - INFO - Trading DISTRIBUTE (Ddm4DTxNZxABUYm2A87TFLY6GDG2ktM2eJhGZS3EbzHM) for 0.1 SOL
+2025-04-01 17:10:29,912 - trading_bot.solana_trader - INFO - Simulation mode: Executing simulated buy for Ddm4DTxNZxABUYm2A87TFLY6GDG2ktM2eJhGZS3EbzHM
+2025-04-01 17:10:29,927 - trading_bot.database - INFO - Recorded BUY trade for Ddm4DTxNZxABUYm2A87TFLY6GDG2ktM2eJhGZS3EbzHM: 0.1 at 0.00025
+2025-04-01 17:10:29,928 - trading_bot - INFO - Successfully traded DISTRIBUTE: 1111111111111111111111111111111111111111111111111111111111111111
+2025-04-01 17:10:29,932 - trading_bot - INFO - Trading GTA6 (DosKVpFhk7D1uBqddDTYNLCVdqNFHtmw1PbvVyNQqPf2) for 0.1 SOL
+2025-04-01 17:10:29,933 - trading_bot.solana_trader - INFO - Simulation mode: Executing simulated buy for DosKVpFhk7D1uBqddDTYNLCVdqNFHtmw1PbvVyNQqPf2
+2025-04-01 17:10:29,949 - trading_bot.database - INFO - Recorded BUY trade for DosKVpFhk7D1uBqddDTYNLCVdqNFHtmw1PbvVyNQqPf2: 0.1 at 0.00025
+2025-04-01 17:10:29,950 - trading_bot - INFO - Successfully traded GTA6: 1111111111111111111111111111111111111111111111111111111111111111
+2025-04-01 17:10:29,955 - trading_bot - INFO - Trading PLath (7wMutxpCdP3GbKaoMWoPVf2sFLCeV7a9ox25v1h2QsTp) for 0.1 SOL
+2025-04-01 17:10:29,955 - trading_bot.solana_trader - INFO - Simulation mode: Executing simulated buy for 7wMutxpCdP3GbKaoMWoPVf2sFLCeV7a9ox25v1h2QsTp
+2025-04-01 17:10:29,970 - trading_bot.database - INFO - Recorded BUY trade for 7wMutxpCdP3GbKaoMWoPVf2sFLCeV7a9ox25v1h2QsTp: 0.1 at 0.00025
+2025-04-01 17:10:29,971 - trading_bot - INFO - Successfully traded PLath: 1111111111111111111111111111111111111111111111111111111111111111
+2025-04-01 17:10:29,976 - trading_bot - INFO - Trading BJ (AEsHWNsasurhsjuErPoFxHwzJYBYMUj2zgNzTggcwTXB) for 0.1 SOL
+2025-04-01 17:10:29,976 - trading_bot.solana_trader - INFO - Simulation mode: Executing simulated buy for AEsHWNsasurhsjuErPoFxHwzJYBYMUj2zgNzTggcwTXB
+2025-04-01 17:10:29,991 - trading_bot.database - INFO - Recorded BUY trade for AEsHWNsasurhsjuErPoFxHwzJYBYMUj2zgNzTggcwTXB: 0.1 at 0.00025
+2025-04-01 17:10:29,991 - trading_bot - INFO - Successfully traded BJ: 1111111111111111111111111111111111111111111111111111111111111111
+2025-04-01 17:11:17,539 - trading_bot.solana_trader - INFO - Stop loss triggered for 2SY8mhHg7erzpdksc2En4nqufhGqZLF4ALzcGKCkTeqH: -99.90%
+2025-04-01 17:11:17,542 - trading_bot.solana_trader - INFO - Simulation mode: Executing simulated sell for 2SY8mhHg7erzpdksc2En4nqufhGqZLF4ALzcGKCkTeqH
+2025-04-01 17:11:17,566 - trading_bot.database - INFO - Recorded SELL trade for 2SY8mhHg7erzpdksc2En4nqufhGqZLF4ALzcGKCkTeqH: 0.1 at 0.00035442165795777165
+2025-04-01 17:11:17,569 - trading_bot.solana_trader - INFO - Stop loss triggered for HK6Je5naxLjWB8Qs4U47pN8bSGLUg5GMf9YEkxKKZFac: -99.90%
+2025-04-01 17:11:17,570 - trading_bot.solana_trader - INFO - Simulation mode: Executing simulated sell for HK6Je5naxLjWB8Qs4U47pN8bSGLUg5GMf9YEkxKKZFac
+2025-04-01 17:11:17,584 - trading_bot.database - INFO - Recorded SELL trade for HK6Je5naxLjWB8Qs4U47pN8bSGLUg5GMf9YEkxKKZFac: 0.1 at 0.00022562070740245478
+2025-04-01 17:11:17,586 - trading_bot.solana_trader - INFO - Stop loss triggered for 45DzrxKPS4Rgerk7u6gBCB9iikF4gYVUtYE6GXbDdZkj: -99.90%
+2025-04-01 17:11:17,586 - trading_bot.solana_trader - INFO - Simulation mode: Executing simulated sell for 45DzrxKPS4Rgerk7u6gBCB9iikF4gYVUtYE6GXbDdZkj
+2025-04-01 17:11:17,600 - trading_bot.database - INFO - Recorded SELL trade for 45DzrxKPS4Rgerk7u6gBCB9iikF4gYVUtYE6GXbDdZkj: 0.1 at 0.00019300805424790176
+2025-04-01 17:11:17,601 - trading_bot.solana_trader - INFO - Stop loss triggered for H36voSNRagXWLxLKLJyH2Gyn5HHUkoKGQYubSswwXoFB: -99.90%
+2025-04-01 17:11:17,602 - trading_bot.solana_trader - INFO - Simulation mode: Executing simulated sell for H36voSNRagXWLxLKLJyH2Gyn5HHUkoKGQYubSswwXoFB
+2025-04-01 17:11:17,617 - trading_bot.database - INFO - Recorded SELL trade for H36voSNRagXWLxLKLJyH2Gyn5HHUkoKGQYubSswwXoFB: 0.1 at 0.00010013638182520556
+2025-04-01 17:11:17,618 - trading_bot.solana_trader - INFO - Stop loss triggered for Ddm4DTxNZxABUYm2A87TFLY6GDG2ktM2eJhGZS3EbzHM: -99.90%
+2025-04-01 17:11:17,618 - trading_bot.solana_trader - INFO - Simulation mode: Executing simulated sell for Ddm4DTxNZxABUYm2A87TFLY6GDG2ktM2eJhGZS3EbzHM
+2025-04-01 17:11:17,636 - trading_bot.database - INFO - Recorded SELL trade for Ddm4DTxNZxABUYm2A87TFLY6GDG2ktM2eJhGZS3EbzHM: 0.1 at 0.0002475211069536642
+2025-04-01 17:11:17,637 - trading_bot.solana_trader - INFO - Stop loss triggered for DosKVpFhk7D1uBqddDTYNLCVdqNFHtmw1PbvVyNQqPf2: -99.90%
+2025-04-01 17:11:17,638 - trading_bot.solana_trader - INFO - Simulation mode: Executing simulated sell for DosKVpFhk7D1uBqddDTYNLCVdqNFHtmw1PbvVyNQqPf2
+2025-04-01 17:11:17,651 - trading_bot.database - INFO - Recorded SELL trade for DosKVpFhk7D1uBqddDTYNLCVdqNFHtmw1PbvVyNQqPf2: 0.1 at 0.0001708626359896203
+2025-04-01 17:11:17,652 - trading_bot.solana_trader - INFO - Stop loss triggered for 7wMutxpCdP3GbKaoMWoPVf2sFLCeV7a9ox25v1h2QsTp: -99.90%
+2025-04-01 17:11:17,652 - trading_bot.solana_trader - INFO - Simulation mode: Executing simulated sell for 7wMutxpCdP3GbKaoMWoPVf2sFLCeV7a9ox25v1h2QsTp
+2025-04-01 17:11:17,666 - trading_bot.database - INFO - Recorded SELL trade for 7wMutxpCdP3GbKaoMWoPVf2sFLCeV7a9ox25v1h2QsTp: 0.1 at 0.0003269331109390971
+2025-04-01 17:11:17,668 - trading_bot.solana_trader - INFO - Stop loss triggered for AEsHWNsasurhsjuErPoFxHwzJYBYMUj2zgNzTggcwTXB: -99.90%
+2025-04-01 17:11:17,668 - trading_bot.solana_trader - INFO - Simulation mode: Executing simulated sell for AEsHWNsasurhsjuErPoFxHwzJYBYMUj2zgNzTggcwTXB
+2025-04-01 17:11:17,683 - trading_bot.database - INFO - Recorded SELL trade for AEsHWNsasurhsjuErPoFxHwzJYBYMUj2zgNzTggcwTXB: 0.1 at 0.00016952415372618616
+2025-04-01 17:12:17,806 - trading_bot.solana_trader - INFO - Stop loss triggered for Ddm4DTxNZxABUYm2A87TFLY6GDG2ktM2eJhGZS3EbzHM: -93.96%
+2025-04-01 17:12:17,807 - trading_bot.solana_trader - INFO - Simulation mode: Executing simulated sell for Ddm4DTxNZxABUYm2A87TFLY6GDG2ktM2eJhGZS3EbzHM
+2025-04-01 17:12:17,808 - trading_bot.solana_trader - WARNING - No active order found for Ddm4DTxNZxABUYm2A87TFLY6GDG2ktM2eJhGZS3EbzHM
+2025-04-01 17:15:29,827 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-01 17:15:30,187 - trading_bot.token_scanner - INFO - Discovered 5 tokens from Twitter
+2025-04-01 17:15:30,188 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-01 17:15:31,099 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 17:15:31,101 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 17:15:31,121 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-01 17:15:31,121 - trading_bot.token_scanner - INFO - Analyzing discovered tokens...
+2025-04-01 17:15:31,128 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-01 17:15:31,147 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 17:15:31,233 - trading_bot - INFO - Current wallet balance: 3.0000 SOL ($379.68)
+2025-04-01 17:20:31,136 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-01 17:20:31,501 - trading_bot.token_scanner - INFO - Discovered 5 tokens from Twitter
+2025-04-01 17:20:31,501 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-01 17:20:32,351 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 17:20:32,353 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 17:20:32,387 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 17:20:32,453 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-01 17:20:32,453 - trading_bot.token_scanner - INFO - Analyzing discovered tokens...
+2025-04-01 17:20:32,461 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-01 17:20:32,479 - trading_bot - INFO - Current wallet balance: 3.0000 SOL ($379.44)
+2025-04-01 17:25:32,464 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-01 17:25:32,806 - trading_bot.token_scanner - INFO - Discovered 5 tokens from Twitter
+2025-04-01 17:25:32,807 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-01 17:25:33,236 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 17:25:33,237 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 17:25:33,305 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 17:25:33,322 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-01 17:25:33,323 - trading_bot.token_scanner - INFO - Analyzing discovered tokens...
+2025-04-01 17:25:33,327 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-01 17:25:33,369 - trading_bot - INFO - Current wallet balance: 3.0000 SOL ($379.53)
+2025-04-01 17:30:33,329 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-01 17:30:33,741 - trading_bot.token_scanner - INFO - Discovered 5 tokens from Twitter
+2025-04-01 17:30:33,742 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-01 17:30:34,545 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 17:30:34,546 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-01 17:30:34,574 - httpx - INFO - HTTP Request: POST https://mainnet.helius-rpc.com/?api-key=3c05add4-9974-4e11-a003-ef52c488edee "HTTP/1.1 200 OK"
+2025-04-01 17:30:34,643 - trading_bot - INFO - Current wallet balance: 3.0000 SOL ($379.41)
+2025-04-01 17:30:34,650 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-01 17:30:34,651 - trading_bot.token_scanner - INFO - Analyzing discovered tokens...
+2025-04-01 17:30:34,658 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-01 17:31:20,740 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-04-01 17:32:17,266 - trading_bot - INFO - Closing connections
+2025-04-01 17:32:17,269 - trading_bot.solana_trader - INFO - Solana RPC client closed
+2025-04-01 17:32:17,269 - trading_bot - INFO - ==================================================
+2025-04-01 17:32:17,269 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-04-01 17:32:17,270 - trading_bot - INFO - ==================================================
+2025-04-01 17:32:17,274 - trading_bot - INFO - Bot execution completed

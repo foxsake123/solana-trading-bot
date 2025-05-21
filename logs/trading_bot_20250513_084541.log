@@ -1,0 +1,93 @@
+2025-05-13 08:45:41,826 - database - INFO - Database tables initialized
+2025-05-13 08:45:41,827 - solana_trader - WARNING - Solana libraries not available, wallet initialization skipped
+2025-05-13 08:45:41,827 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:45:41,827 - solana_trader - WARNING - Solana libraries not available, using simulated connection
+2025-05-13 08:45:42,283 - solana_trader - INFO - Got SOL price from CoinGecko: $174.25
+2025-05-13 08:45:42,928 - solana_trader - INFO - Got SOL price from CoinGecko: $174.25
+2025-05-13 08:45:42,929 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 0 SOL, 17.60000000000001 SOL in active positions
+2025-05-13 08:45:42,930 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:45:43,368 - solana_trader - INFO - Got SOL price from CoinGecko: $174.25
+2025-05-13 08:45:43,368 - trading_bot.dashboard - INFO - Current SOL price for calculations: $174.25
+2025-05-13 08:45:43,428 - trading_bot.dashboard - INFO - Updated 98 positions with proper USD values
+2025-05-13 08:45:43,570 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:45:43,571 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:45:43,571 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:45:43,572 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:45:43,573 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:45:43,573 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:45:43,574 - trading_bot.token_scanner - INFO - ML model initialized
+2025-05-13 08:45:43,575 - trading_bot.dashboard - ERROR - Error getting ML stats: 'MLModel' object has no attribute 'get_recent_predictions'
+2025-05-13 08:45:48,509 - database - INFO - Database tables initialized
+2025-05-13 08:45:48,510 - solana_trader - WARNING - Solana libraries not available, wallet initialization skipped
+2025-05-13 08:45:48,511 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:45:48,511 - solana_trader - WARNING - Solana libraries not available, using simulated connection
+2025-05-13 08:45:48,981 - solana_trader - INFO - Got SOL price from CoinGecko: $174.42
+2025-05-13 08:45:49,701 - solana_trader - INFO - Got SOL price from CoinGecko: $174.42
+2025-05-13 08:45:49,703 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 0 SOL, 17.60000000000001 SOL in active positions
+2025-05-13 08:45:49,703 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:45:50,081 - solana_trader - INFO - Got SOL price from CoinGecko: $174.42
+2025-05-13 08:45:50,081 - trading_bot.dashboard - INFO - Current SOL price for calculations: $174.42
+2025-05-13 08:45:50,138 - trading_bot.dashboard - INFO - Updated 98 positions with proper USD values
+2025-05-13 08:45:50,204 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:45:50,205 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:45:50,205 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:45:50,206 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:45:50,206 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:45:50,207 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:45:50,208 - trading_bot.token_scanner - INFO - ML model initialized
+2025-05-13 08:45:50,208 - trading_bot.dashboard - ERROR - Error getting ML stats: 'MLModel' object has no attribute 'get_recent_predictions'
+2025-05-13 08:45:51,939 - database - INFO - Database tables initialized
+2025-05-13 08:45:51,941 - solana_trader - WARNING - Solana libraries not available, wallet initialization skipped
+2025-05-13 08:45:51,941 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:45:51,942 - solana_trader - WARNING - Solana libraries not available, using simulated connection
+2025-05-13 08:45:52,548 - solana_trader - ERROR - Error getting SOL price from CoinGecko: 'solana'
+2025-05-13 08:45:53,073 - solana_trader - ERROR - Error getting SOL price from Binance: 'price'
+2025-05-13 08:45:53,955 - solana_trader - INFO - Got SOL price from CoinGecko: $174.42
+2025-05-13 08:45:53,957 - trading_bot.dashboard - INFO - Adjusting wallet balance: Starting with 0 SOL, 17.60000000000001 SOL in active positions
+2025-05-13 08:45:53,957 - trading_bot.dashboard - INFO - Adjusted wallet balance: 0 SOL ($0.00)
+2025-05-13 08:45:54,421 - solana_trader - ERROR - Error getting SOL price from CoinGecko: 'solana'
+2025-05-13 08:45:54,967 - solana_trader - ERROR - Error getting SOL price from Binance: 'price'
+2025-05-13 08:45:54,967 - trading_bot.dashboard - INFO - Current SOL price for calculations: $170.0
+2025-05-13 08:45:55,028 - trading_bot.dashboard - INFO - Updated 98 positions with proper USD values
+2025-05-13 08:45:55,130 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:45:55,130 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:45:55,130 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:45:55,131 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:45:55,132 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:45:55,132 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:45:55,133 - trading_bot.token_scanner - INFO - ML model initialized
+2025-05-13 08:45:55,133 - trading_bot.dashboard - ERROR - Error getting ML stats: 'MLModel' object has no attribute 'get_recent_predictions'
+2025-05-13 08:45:59,070 - database - INFO - Database tables initialized
+2025-05-13 08:45:59,071 - solana_trader - WARNING - Solana libraries not available, wallet initialization skipped
+2025-05-13 08:45:59,072 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:45:59,072 - solana_trader - WARNING - Solana libraries not available, using simulated connection
+2025-05-13 08:45:59,666 - solana_trader - ERROR - Error getting SOL price from CoinGecko: 'solana'
+2025-05-13 08:46:00,216 - solana_trader - ERROR - Error getting SOL price from Binance: 'price'
+2025-05-13 08:46:00,495 - solana_trader - WARNING - Cannot get real wallet balance, Solana libraries not available
+2025-05-13 08:46:01,065 - solana_trader - INFO - Got SOL price from CoinGecko: $174.43
+2025-05-13 08:46:01,065 - trading_bot.dashboard - INFO - Current SOL price for calculations: $174.43
+2025-05-13 08:46:01,175 - trading_bot.dashboard - INFO - Updated 98 positions with proper USD values
+2025-05-13 08:46:01,227 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:46:01,228 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:46:01,231 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:46:01,231 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:46:01,233 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:46:01,233 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:46:01,235 - trading_bot.token_scanner - INFO - ML model initialized
+2025-05-13 08:46:12,016 - database - INFO - Database tables initialized
+2025-05-13 08:46:12,017 - solana_trader - WARNING - Solana libraries not available, wallet initialization skipped
+2025-05-13 08:46:12,017 - trading_bot.birdeye_api - INFO - BirdeyeAPI initialized with DexScreener fallback enabled
+2025-05-13 08:46:12,018 - solana_trader - WARNING - Solana libraries not available, using simulated connection
+2025-05-13 08:46:12,381 - solana_trader - ERROR - Error getting SOL price from CoinGecko: 'solana'
+2025-05-13 08:46:12,708 - solana_trader - ERROR - Error getting SOL price from Binance: 'price'
+2025-05-13 08:46:12,818 - solana_trader - WARNING - Cannot get real wallet balance, Solana libraries not available
+2025-05-13 08:46:13,171 - solana_trader - INFO - Got SOL price from CoinGecko: $174.43
+2025-05-13 08:46:13,172 - trading_bot.dashboard - INFO - Current SOL price for calculations: $174.43
+2025-05-13 08:46:13,219 - trading_bot.dashboard - INFO - Updated 98 positions with proper USD values
+2025-05-13 08:46:13,293 - trading_bot.utils - WARNING - Detected 'pump' in token address: 3siTgKmX1oWFvKzKtfbNKQ8MFq9kRnA8wQodhbwYpump
+2025-05-13 08:46:13,294 - trading_bot.birdeye_api - INFO - Retrieved 1 tokens from DexScreener
+2025-05-13 08:46:13,294 - trading_bot.birdeye_api - INFO - Found 1 trending tokens
+2025-05-13 08:46:13,294 - trading_bot.dashboard - INFO - Calculating stats from 50 trades
+2025-05-13 08:46:13,295 - trading_bot.dashboard - INFO - Found 0 completed (SELL) trades
+2025-05-13 08:46:13,296 - trading_bot.dashboard - INFO - No completed trades found for statistics
+2025-05-13 08:46:13,296 - trading_bot.token_scanner - INFO - ML model initialized

@@ -1,0 +1,465 @@
+2025-04-02 15:07:34,372 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 15:07:34,375 - trading_bot.solana_trader - INFO - Wallet initialized: 8GU6LRQBNMQyTrQrzufXNczGUizf9oS2AwsX94Zn6Bzv
+2025-04-02 15:07:34,381 - trading_bot.solana_trader - INFO - Trading bot running in SIMULATION MODE - no real trades will be executed
+2025-04-02 15:07:34,386 - trading_bot.solana_trader - INFO - Loaded 0 active orders
+2025-04-02 15:07:34,387 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 15:07:34,392 - trading_bot.token_scanner - INFO - Twitter client initialized
+2025-04-02 15:07:34,393 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 15:07:34,395 - trading_bot - INFO - ==================================================
+2025-04-02 15:07:34,395 - trading_bot - INFO -    Solana Trading Bot Starting
+2025-04-02 15:07:34,395 - trading_bot - INFO - ==================================================
+2025-04-02 15:07:34,731 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 15:07:34,853 - trading_bot - INFO - Initial Wallet Balance: 0.0000 SOL ($0.00)
+2025-04-02 15:07:34,857 - trading_bot.token_scanner - INFO - Starting token scanner
+2025-04-02 15:07:34,858 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 15:07:35,320 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 15:07:35,321 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 15:07:35,322 - trading_bot.solana_trader - INFO - Starting position monitor
+2025-04-02 15:07:35,324 - trading_bot - INFO - Starting token discovery and trading process
+2025-04-02 15:07:35,432 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 15:07:35,482 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-02 15:07:35,483 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 15:07:35,497 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:07:35,548 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:07:35,634 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:07:35,695 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:07:37,749 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:07:37,816 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:07:41,868 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:07:41,869 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana after 3 attempts
+2025-04-02 15:07:41,870 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 15:07:41,941 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:07:41,943 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana after 3 attempts
+2025-04-02 15:07:41,943 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 15:07:41,944 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:07:42,002 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:07:42,114 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:07:42,137 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:07:44,246 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:07:44,262 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:07:48,488 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:07:48,489 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana after 3 attempts
+2025-04-02 15:07:48,490 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 15:07:48,491 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:07:48,492 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana after 3 attempts
+2025-04-02 15:07:48,493 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 15:07:48,532 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:07:48,560 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:07:48,684 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:07:48,692 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:07:50,799 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:07:50,811 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:07:55,045 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:07:55,047 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:07:55,048 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana after 3 attempts
+2025-04-02 15:07:55,048 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 15:07:55,049 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 15:07:55,051 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana after 3 attempts
+2025-04-02 15:07:55,054 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 15:07:55,055 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 15:07:55,556 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:07:55,558 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:07:57,704 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:07:57,720 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:08:01,858 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:08:01,859 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 15:08:01,859 - trading_bot.token_analyzer - WARNING - No data from Birdeye tokenlist endpoint, trying alternative
+2025-04-02 15:08:01,862 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:08:01,863 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 15:08:01,863 - trading_bot.token_analyzer - WARNING - No data from Birdeye tokenlist endpoint, trying alternative
+2025-04-02 15:08:01,993 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:08:02,016 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:08:04,120 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:08:04,135 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:08:08,391 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:08:08,393 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:08:08,394 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending after 3 attempts
+2025-04-02 15:08:08,395 - trading_bot.token_analyzer - WARNING - No data from Birdeye trending endpoint
+2025-04-02 15:08:08,397 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending after 3 attempts
+2025-04-02 15:08:08,398 - trading_bot.token_analyzer - WARNING - No data from Birdeye trending endpoint
+2025-04-02 15:08:08,560 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 15:08:08,561 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 15:08:08,562 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 15:08:08,567 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 15:08:08,570 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 15:08:08,571 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 15:08:08,571 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 15:08:08,574 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 15:08:08,575 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-02 15:13:09,347 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 15:13:09,704 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 15:13:09,705 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 15:13:09,782 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 15:13:09,859 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-02 15:13:09,860 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 15:13:09,915 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:13:09,964 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 15:13:10,051 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:13:10,062 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:13:10,204 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:13:12,187 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:13:12,328 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:13:16,351 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:13:16,352 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana after 3 attempts
+2025-04-02 15:13:16,353 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 15:13:16,461 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:13:16,485 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:13:16,487 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana after 3 attempts
+2025-04-02 15:13:16,487 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 15:13:16,562 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:13:16,615 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:13:16,727 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:13:18,750 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:13:18,850 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:13:22,887 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:13:22,888 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana after 3 attempts
+2025-04-02 15:13:22,888 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 15:13:22,937 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:13:22,979 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:13:22,980 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana after 3 attempts
+2025-04-02 15:13:22,980 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 15:13:23,070 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:13:23,107 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:13:23,250 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:13:25,261 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:13:25,388 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:13:29,411 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:13:29,412 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana after 3 attempts
+2025-04-02 15:13:29,412 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 15:13:29,413 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 15:13:29,513 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:13:29,514 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana after 3 attempts
+2025-04-02 15:13:29,514 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 15:13:29,514 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 15:13:29,569 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:13:29,662 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:13:31,705 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:13:31,806 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:13:35,834 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:13:35,834 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 15:13:35,835 - trading_bot.token_analyzer - WARNING - No data from Birdeye tokenlist endpoint, trying alternative
+2025-04-02 15:13:35,971 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:13:35,972 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 15:13:35,973 - trading_bot.token_analyzer - WARNING - No data from Birdeye tokenlist endpoint, trying alternative
+2025-04-02 15:13:35,984 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:13:36,127 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:13:38,123 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:13:38,249 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:13:42,255 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:13:42,257 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending after 3 attempts
+2025-04-02 15:13:42,258 - trading_bot.token_analyzer - WARNING - No data from Birdeye trending endpoint
+2025-04-02 15:13:42,367 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:13:42,369 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending after 3 attempts
+2025-04-02 15:13:42,369 - trading_bot.token_analyzer - WARNING - No data from Birdeye trending endpoint
+2025-04-02 15:13:42,426 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 15:13:42,427 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 15:13:42,429 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 15:13:42,432 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 15:13:42,432 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-02 15:13:42,480 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 15:13:42,482 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 15:13:42,482 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 15:13:42,485 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 15:18:42,440 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 15:18:42,803 - trading_bot.token_scanner - INFO - Discovered 2 tokens from Twitter
+2025-04-02 15:18:42,803 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 15:18:43,081 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 15:18:43,174 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-02 15:18:43,175 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 15:18:43,268 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:18:43,437 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:18:43,510 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 15:18:43,564 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:18:43,893 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:18:45,556 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:18:46,017 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:18:49,688 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:18:49,692 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana after 3 attempts
+2025-04-02 15:18:49,693 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 15:18:49,752 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:18:50,073 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:18:50,146 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:18:50,148 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana after 3 attempts
+2025-04-02 15:18:50,149 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 15:18:50,221 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:18:50,545 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:18:52,255 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:18:52,864 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:18:56,550 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:18:56,553 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana after 3 attempts
+2025-04-02 15:18:56,554 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 15:18:56,657 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:18:56,825 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:18:57,012 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:18:57,014 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana after 3 attempts
+2025-04-02 15:18:57,015 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 15:18:57,106 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:18:57,273 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:18:58,941 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:18:59,389 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:19:03,103 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:19:03,108 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana after 3 attempts
+2025-04-02 15:19:03,108 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 15:19:03,109 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 15:19:03,450 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:19:03,565 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:19:03,567 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana after 3 attempts
+2025-04-02 15:19:03,568 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 15:19:03,568 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 15:19:03,867 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:19:05,774 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:19:06,003 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:19:09,944 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:19:09,946 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 15:19:09,946 - trading_bot.token_analyzer - WARNING - No data from Birdeye tokenlist endpoint, trying alternative
+2025-04-02 15:19:10,151 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:19:10,152 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 15:19:10,152 - trading_bot.token_analyzer - WARNING - No data from Birdeye tokenlist endpoint, trying alternative
+2025-04-02 15:19:10,260 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:19:10,330 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:19:12,396 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:19:12,443 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:19:16,518 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:19:16,520 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending after 3 attempts
+2025-04-02 15:19:16,521 - trading_bot.token_analyzer - WARNING - No data from Birdeye trending endpoint
+2025-04-02 15:19:16,572 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:19:16,573 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending after 3 attempts
+2025-04-02 15:19:16,573 - trading_bot.token_analyzer - WARNING - No data from Birdeye trending endpoint
+2025-04-02 15:19:16,691 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 15:19:16,691 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 15:19:16,691 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 15:19:16,693 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 15:19:16,693 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-02 15:19:16,722 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 15:19:16,722 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 15:19:16,723 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 15:19:16,726 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 15:24:16,705 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 15:24:17,087 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 15:24:17,087 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 15:24:17,354 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 15:24:17,383 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-02 15:24:17,384 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 15:24:17,477 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:24:17,509 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 15:24:17,582 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:24:17,634 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:24:17,722 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:24:19,780 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:24:19,841 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:24:23,905 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:24:23,906 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana after 3 attempts
+2025-04-02 15:24:23,907 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 15:24:23,960 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:24:23,962 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:24:23,963 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana after 3 attempts
+2025-04-02 15:24:23,963 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 15:24:24,011 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:24:24,157 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:24:24,292 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:24:26,276 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:24:26,484 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:24:30,411 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:24:30,413 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana after 3 attempts
+2025-04-02 15:24:30,413 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 15:24:30,489 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:24:30,623 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:24:30,624 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana after 3 attempts
+2025-04-02 15:24:30,625 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 15:24:30,717 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:24:30,818 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:24:31,076 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:24:33,037 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:24:33,241 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:24:37,194 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:24:37,195 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana after 3 attempts
+2025-04-02 15:24:37,196 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 15:24:37,196 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 15:24:37,352 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:24:37,386 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:24:37,387 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana after 3 attempts
+2025-04-02 15:24:37,388 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 15:24:37,388 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 15:24:37,712 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:24:39,489 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:24:39,905 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:24:43,635 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:24:43,637 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 15:24:43,638 - trading_bot.token_analyzer - WARNING - No data from Birdeye tokenlist endpoint, trying alternative
+2025-04-02 15:24:43,979 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:24:44,065 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:24:44,066 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 15:24:44,067 - trading_bot.token_analyzer - WARNING - No data from Birdeye tokenlist endpoint, trying alternative
+2025-04-02 15:24:44,422 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:24:46,153 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:24:46,565 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:24:50,344 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:24:50,345 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending after 3 attempts
+2025-04-02 15:24:50,346 - trading_bot.token_analyzer - WARNING - No data from Birdeye trending endpoint
+2025-04-02 15:24:50,497 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 15:24:50,498 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 15:24:50,499 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 15:24:50,506 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 15:24:50,758 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:24:50,760 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending after 3 attempts
+2025-04-02 15:24:50,761 - trading_bot.token_analyzer - WARNING - No data from Birdeye trending endpoint
+2025-04-02 15:24:50,870 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 15:24:50,871 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 15:24:50,872 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 15:24:50,876 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 15:24:50,877 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-02 15:29:50,841 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 15:29:50,880 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 15:29:51,295 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 15:29:51,296 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 15:29:51,443 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-02 15:29:51,444 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 15:29:51,524 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 15:29:51,554 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:29:51,578 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:29:51,737 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:29:51,738 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:29:53,856 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:29:53,862 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:29:57,991 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:29:57,992 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana after 3 attempts
+2025-04-02 15:29:57,992 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 15:29:57,995 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:29:57,995 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana after 3 attempts
+2025-04-02 15:29:57,996 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 15:29:58,044 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:29:58,068 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:29:58,177 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:29:58,228 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:30:00,313 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:30:00,339 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:30:04,427 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:30:04,433 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana after 3 attempts
+2025-04-02 15:30:04,433 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 15:30:04,457 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:30:04,458 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana after 3 attempts
+2025-04-02 15:30:04,458 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 15:30:04,483 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:30:04,543 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:30:04,820 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:30:04,872 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:30:06,940 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:30:06,989 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:30:11,062 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:30:11,063 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana after 3 attempts
+2025-04-02 15:30:11,064 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 15:30:11,065 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 15:30:11,109 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:30:11,110 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana after 3 attempts
+2025-04-02 15:30:11,110 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 15:30:11,110 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 15:30:11,216 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:30:11,272 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:30:13,358 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:30:13,414 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:30:17,506 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:30:17,507 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 15:30:17,508 - trading_bot.token_analyzer - WARNING - No data from Birdeye tokenlist endpoint, trying alternative
+2025-04-02 15:30:17,537 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:30:17,538 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 15:30:17,538 - trading_bot.token_analyzer - WARNING - No data from Birdeye tokenlist endpoint, trying alternative
+2025-04-02 15:30:17,664 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:30:17,841 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:30:19,777 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:30:20,074 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:30:23,895 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:30:23,896 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending after 3 attempts
+2025-04-02 15:30:23,897 - trading_bot.token_analyzer - WARNING - No data from Birdeye trending endpoint
+2025-04-02 15:30:24,088 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 15:30:24,089 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 15:30:24,089 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 15:30:24,092 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 15:30:24,213 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:30:24,215 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending after 3 attempts
+2025-04-02 15:30:24,215 - trading_bot.token_analyzer - WARNING - No data from Birdeye trending endpoint
+2025-04-02 15:30:24,326 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 15:30:24,326 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 15:30:24,327 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 15:30:24,329 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 15:30:24,329 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-02 15:41:59,556 - trading_bot.token_scanner - INFO - Scanning Twitter for tokens...
+2025-04-02 15:41:59,941 - trading_bot.token_scanner - INFO - Discovered 1 tokens from Twitter
+2025-04-02 15:41:59,942 - trading_bot.token_scanner - INFO - Scanning DexScreener for tokens...
+2025-04-02 15:42:00,020 - trading_bot.solana_trader - INFO - Connected to Solana RPC
+2025-04-02 15:42:00,049 - trading_bot.token_scanner - WARNING - Invalid DexScreener response
+2025-04-02 15:42:00,050 - trading_bot.token_scanner - INFO - Analyzing tokens by screening criteria...
+2025-04-02 15:42:00,087 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:42:00,203 - trading_bot - INFO - Current wallet balance: 0.0000 SOL ($0.00)
+2025-04-02 15:42:00,252 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:42:00,253 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:42:00,424 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:42:02,372 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:42:02,540 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:42:06,506 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:42:06,507 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana after 3 attempts
+2025-04-02 15:42:06,507 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 15:42:06,644 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:42:06,664 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana'
+2025-04-02 15:42:06,665 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=1H&chain=solana after 3 attempts
+2025-04-02 15:42:06,665 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (1h)
+2025-04-02 15:42:06,699 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:42:06,781 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:42:06,830 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:42:08,921 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:42:08,950 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:42:13,046 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:42:13,047 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana after 3 attempts
+2025-04-02 15:42:13,047 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 15:42:13,144 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:42:13,219 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana'
+2025-04-02 15:42:13,219 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=6H&chain=solana after 3 attempts
+2025-04-02 15:42:13,220 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (6h)
+2025-04-02 15:42:13,278 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:42:13,301 - trading_bot.token_analyzer - WARNING - No DexScreener data for top gainers
+2025-04-02 15:42:13,428 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:42:15,386 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:42:15,549 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:42:19,515 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:42:19,516 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana after 3 attempts
+2025-04-02 15:42:19,516 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 15:42:19,516 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 15:42:19,661 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana'
+2025-04-02 15:42:19,662 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending?sort_by=gainers&time_range=24H&chain=solana after 3 attempts
+2025-04-02 15:42:19,662 - trading_bot.token_analyzer - WARNING - No Birdeye data for top gainers (24h)
+2025-04-02 15:42:19,662 - trading_bot.token_scanner - INFO - Found 0 top gainer tokens
+2025-04-02 15:42:19,665 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:42:19,812 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:42:21,794 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:42:21,953 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:42:25,932 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:42:25,932 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 15:42:25,933 - trading_bot.token_analyzer - WARNING - No data from Birdeye tokenlist endpoint, trying alternative
+2025-04-02 15:42:26,060 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:42:26,079 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/defi/tokenlist: 401, message='Unauthorized', url='https://public-api.birdeye.so/defi/tokenlist?sort_by=v24hUSD&sort_type=desc&offset=0&limit=10'
+2025-04-02 15:42:26,079 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/defi/tokenlist after 3 attempts
+2025-04-02 15:42:26,080 - trading_bot.token_analyzer - WARNING - No data from Birdeye tokenlist endpoint, trying alternative
+2025-04-02 15:42:26,231 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:42:28,179 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:42:28,358 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:42:32,299 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:42:32,300 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending after 3 attempts
+2025-04-02 15:42:32,300 - trading_bot.token_analyzer - WARNING - No data from Birdeye trending endpoint
+2025-04-02 15:42:32,471 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 15:42:32,471 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 15:42:32,472 - trading_bot.token_scanner - INFO - Analyzing other discovered tokens...
+2025-04-02 15:42:32,474 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 15:42:32,475 - trading_bot.token_scanner - INFO - Scan complete, waiting 300 seconds for next scan
+2025-04-02 15:42:32,478 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/public/tokenlist/trending: 404, message='Not Found', url='https://public-api.birdeye.so/public/tokenlist/trending?sort_by=volume&time_range=24H&chain=solana'
+2025-04-02 15:42:32,478 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/public/tokenlist/trending after 3 attempts
+2025-04-02 15:42:32,478 - trading_bot.token_analyzer - WARNING - No data from Birdeye trending endpoint
+2025-04-02 15:42:32,547 - trading_bot.token_analyzer - INFO - Successfully fetched DexScreener data from https://api.dexscreener.com/latest/dex/tokens/solana
+2025-04-02 15:42:32,547 - trading_bot.token_scanner - ERROR - Error scanning for trending tokens: 'NoneType' object is not iterable
+2025-04-02 15:42:32,548 - trading_bot - INFO - No tokens found meeting screening criteria, analyzing other tokens...
+2025-04-02 15:42:32,550 - trading_bot.token_scanner - ERROR - Token analysis failed: 'TokenAnalyzer' object has no attribute 'evaluate_trading_potential'
+2025-04-02 15:43:07,831 - trading_bot - CRITICAL - Received signal 2. Initiating graceful shutdown...
+2025-04-02 15:43:59,960 - trading_bot - INFO - Closing connections
+2025-04-02 15:43:59,963 - trading_bot.solana_trader - INFO - Solana RPC client closed
+2025-04-02 15:43:59,963 - trading_bot - INFO - ==================================================
+2025-04-02 15:43:59,963 - trading_bot - INFO -    Solana Trading Bot Shutdown Complete
+2025-04-02 15:43:59,963 - trading_bot - INFO - ==================================================
+2025-04-02 15:43:59,965 - trading_bot - INFO - Bot execution completed

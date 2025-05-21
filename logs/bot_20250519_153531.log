@@ -1,0 +1,24 @@
+2025-05-19 15:35:31 - solana_bot - INFO - ============================================================
+2025-05-19 15:35:31 - solana_bot - INFO -           SOLANA TRADING BOT - STARTING          
+2025-05-19 15:35:31 - solana_bot - INFO - ============================================================
+2025-05-19 15:35:31 - solana_bot - INFO - Bot control settings: running=False, simulation_mode=False
+2025-05-19 15:35:31 - core.SoldersAdapter - INFO - Successfully imported Solders packages
+2025-05-19 15:35:31 - solana_bot - INFO - Successfully imported SoldersAdapter from core.SoldersAdapter
+2025-05-19 15:35:31 - solana_bot - INFO - Imported Database from core.database
+2025-05-19 15:35:31 - core.SoldersAdapter - INFO - Wallet initialized with address: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-19 15:35:31 - solana_bot - INFO - Wallet initialized: 16um9NG9V88CWR9vESe42WfmNrDcTNq9jUit5t5mpgf
+2025-05-19 15:35:32 - solana_bot - INFO - Wallet balance: 1.0000 SOL ($165.04)
+2025-05-19 15:35:32 - core.database - INFO - Database tables initialized
+2025-05-19 15:35:32 - solana_bot - INFO - Database initialized successfully
+2025-05-19 15:35:32 - solana_wrapper - INFO - Solana libraries are available
+2025-05-19 15:35:32 - solana_bot - ERROR - Unexpected error: name 'logger' is not defined
+2025-05-19 15:35:32 - solana_bot - ERROR - Traceback (most recent call last):
+  File "C:\Users\shorg\sol-bot_claude\main.py", line 133, in <module>
+    from core.AsyncSolanaTrader_adapter import SolanaTrader
+  File "C:\Users\shorg\sol-bot_claude\core\AsyncSolanaTrader_adapter.py", line 22, in <module>
+    from core.solana_trader import SolanaTrader as OriginalSolanaTrader
+  File "C:\Users\shorg\sol-bot_claude\core\solana_trader.py", line 17, in <module>
+    logger.info("Imported Solana wrapper module")
+    ^^^^^^
+NameError: name 'logger' is not defined
+

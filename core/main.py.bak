@@ -1,0 +1,319 @@
+"""
+Updated main.py to work with the new SolanaTrader adapter
+"""
+import os
+import sys
+import logging
+import time
+from datetime import datetime
+import asyncio
+import secrets
+import json
+import threading
+from pathlib import Path
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S',
+)
+
+# Set Python recursion limit higher for complex operations
+sys.setrecursionlimit(3000)
+logging.info(f"Python recursion limit set to {sys.getrecursionlimit()}")
+
+# Add the project root directory to the Python path
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if project_root not in sys.path:
+    sys.path.append(project_root)
+
+# Add the core directory to the Python path
+core_dir = os.path.dirname(os.path.abspath(__file__))
+if core_dir not in sys.path:
+    sys.path.insert(0, core_dir)
+
+# Import the SoldersAdapter class
+try:
+    # Import from the new SoldersAdapter.py file in the core directory
+    from SoldersAdapter import SoldersAdapter
+    logging.info("Successfully imported SoldersAdapter from SoldersAdapter.py")
+except ImportError as e:
+    logging.error(f"Failed to import SoldersAdapter: {e}")
+    logging.error("Please create the SoldersAdapter.py file in the core directory")
+    sys.exit(1)
+
+# Import database adapter with flexible handling
+try:
+    # Try importing the adapter first
+    try:
+        from database_adapter import init_database
+        logging.info("Imported init_database from database_adapter")
+    except ImportError:
+        # Try importing the Database class directly as fallback
+        from database import Database
+        
+        # Create a compatible init_database function
+        def init_database():
+            db = Database()
+            return True
+            
+        logging.info("Created init_database function from Database class")
+except ImportError as e:
+    logging.warning(f"Failed to import database module: {e}")
+    # Create a dummy function as fallback
+    def init_database():
+        logging.info("Database initialization skipped (module not found)")
+        return True
+
+# Import configuration with fallback
+try:
+    # Try importing from config_adapter first
+    try:
+        from config_adapter import (
+            MAINNET_RPC_URL,
+            WALLET_PRIVATE_KEY,
+            BOT_RUNNING,
+            SIMULATION_MODE,
+            TRADING_PARAMS,
+        )
+        logging.info("Imported configuration from config_adapter")
+    except ImportError:
+        # Try importing from config directly as fallback
+        from config import (
+            MAINNET_RPC_URL,
+            WALLET_PRIVATE_KEY,
+            BOT_RUNNING,
+            SIMULATION_MODE,
+            TRADING_PARAMS,
+        )
+        logging.info("Imported configuration from config")
+except ImportError as e:
+    logging.error(f"Failed to import configuration: {e}")
+    # Set default values
+    MAINNET_RPC_URL = "https://api.mainnet-beta.solana.com"
+    WALLET_PRIVATE_KEY = ""
+    BOT_RUNNING = False
+    SIMULATION_MODE = True
+    TRADING_PARAMS = {
+        "initial_investment_sol": 0.05,
+        "max_investment_per_token_sol": 0.1,
+        "min_liquidity_usd": 50000,
+        "max_slippage_percent": 2.5,
+        "buy_volume_threshold_usd": 1000,
+        "min_price_change_percent": 3.0,
+        "take_profit_percent": 15.0,
+        "stop_loss_percent": -7.5,
+        "trailing_stop_percent": 5.0,
+    }
+    logging.warning("Using default configuration values")
+
+# Initialize wallet
+wallet_adapter = SoldersAdapter()
+
+# Check if wallet can be initialized
+wallet_initialized = wallet_adapter.init_wallet(WALLET_PRIVATE_KEY)
+if wallet_initialized:
+    wallet_address = wallet_adapter.get_wallet_address()
+    logging.info(f"Wallet initialized for real trading: {wallet_address}")
+    
+    # Get wallet balance
+    balance_sol = wallet_adapter.get_wallet_balance()
+    sol_price = wallet_adapter.get_sol_price()
+    balance_usd = balance_sol * sol_price
+    logging.info(f"Wallet balance: {balance_sol:.4f} SOL (${balance_usd:.2f})")
+else:
+    logging.warning("Wallet not initialized. Only simulation mode will be available.")
+
+# Setup database - with error handling
+try:
+    init_database()
+    logging.info("Database initialized")
+except Exception as e:
+    logging.error(f"Error initializing database: {e}")
+    logging.warning("Continuing without database initialization")
+
+# Import solana trader adapter with flexible handling
+try:
+    # First try the updated trader adapter
+    try:
+        from SolanaTrader_adapter import SolanaTrader
+        logging.info("Imported SolanaTrader from updated adapter")
+    except ImportError:
+        # Try importing directly if adapter doesn't exist
+        from solana_trader import SolanaTrader
+        logging.info("Imported SolanaTrader directly")
+except ImportError as e:
+    logging.error(f"Failed to import SolanaTrader: {e}")
+    logging.error("Please make sure solana_trader.py or SolanaTrader_adapter.py is available")
+    sys.exit(1)
+
+# Import token scanner class - we import dynamically based on availability
+try:
+    # First try to import the main token scanner
+    from token_scanner import TokenScanner
+    token_scanner = TokenScanner()
+    logging.info("Using TokenScanner")
+except ImportError:
+    # Fall back to birdeye scanner
+    try:
+        from birdeye_api import BirdeyeAPI
+        token_scanner = BirdeyeAPI()
+        logging.info("Using BirdeyeAPI as token scanner")
+    except ImportError:
+        try:
+            from birdeye import BirdeyeAPI
+            token_scanner = BirdeyeAPI()
+            logging.info("Using birdeye.BirdeyeAPI as token scanner")
+        except ImportError:
+            logging.error("No token scanner available. Please install token_scanner or birdeye_api.")
+            sys.exit(1)
+
+# Import the trading bot class with flexible handling
+try:
+    try:
+        from simple_trading_bot import TradingBot
+        logging.info("Imported TradingBot from simple_trading_bot")
+    except ImportError:
+        # Try importing from core directory
+        from core.simple_trading_bot import TradingBot
+        logging.info("Imported TradingBot from core.simple_trading_bot")
+except ImportError as e:
+    logging.error(f"Failed to import TradingBot: {e}")
+    logging.error("Please make sure simple_trading_bot.py is available")
+    sys.exit(1)
+
+def main():
+    """Main entry point for the bot"""
+    # Initialize the solana trader with correct parameters
+    try:
+        solana_trader = SolanaTrader(
+            private_key=WALLET_PRIVATE_KEY,
+            rpc_url=MAINNET_RPC_URL,
+            simulation_mode=SIMULATION_MODE
+        )
+        logging.info("Created SolanaTrader successfully")
+    except Exception as e:
+        logging.error(f"Error creating SolanaTrader: {e}")
+        logging.error("Cannot proceed without SolanaTrader")
+        return
+    
+    try:
+        wallet_address = solana_trader.get_wallet_address()
+        logging.info(f"Wallet initialized with public key: {wallet_address}")
+    except Exception as e:
+        logging.warning(f"Could not get wallet address: {e}")
+        wallet_address = None
+    
+    # Check wallet balance with error handling
+    try:
+        balance = solana_trader.get_wallet_balance()
+        logging.info(f"Initial wallet balance: {balance['sol']:.4f} SOL (${balance['usd']:.2f})")
+    except Exception as e:
+        logging.warning(f"Could not get wallet balance: {e}")
+    
+    # Determine if we should use simulation mode
+    # Force real mode for testing with adequate warning
+    force_real_mode = wallet_initialized
+    if force_real_mode:
+        logging.info("FORCING REAL MODE FOR TESTING - Wallet is initialized")
+    
+    # Log settings
+    logging.info(f"Bot running setting: {BOT_RUNNING}")
+    logging.info(f"Simulation mode setting: {SIMULATION_MODE}")
+    logging.info(f"Wallet initialized: {wallet_initialized}")
+    
+    # Final simulation mode decision
+    simulation_mode = SIMULATION_MODE
+    if not wallet_initialized:
+        simulation_mode = True  # Force simulation if wallet not initialized
+    
+    logging.info(f"Final simulation mode: {simulation_mode}")
+    
+    # Check if token scanner requires a wrapper
+    if not hasattr(token_scanner, 'start') and not hasattr(token_scanner, 'start_scanning'):
+        # Log available methods to diagnose
+        methods = [method for method in dir(token_scanner) 
+                 if callable(getattr(token_scanner, method)) and not method.startswith('_')]
+        logging.info("Available token scanner methods:")
+        for method in methods:
+            logging.info(f"- {method}")
+    
+    # Initialize the trading bot with flexible parameter handling
+    try:
+        # Try the standard initialization first
+        bot = TradingBot(
+            trader=solana_trader,
+            token_scanner=token_scanner,
+            simulation_mode=simulation_mode,
+            params=TRADING_PARAMS,
+        )
+        logging.info("Created TradingBot successfully")
+    except TypeError as e:
+        # If that fails, try with positional arguments
+        logging.warning(f"Error initializing TradingBot with named parameters: {e}")
+        try:
+            bot = TradingBot(
+                solana_trader,
+                token_scanner,
+                simulation_mode,
+                TRADING_PARAMS,
+            )
+            logging.info("Created TradingBot with positional arguments")
+        except Exception as e2:
+            logging.error(f"Failed to initialize TradingBot with positional arguments: {e2}")
+            logging.error("Cannot proceed without TradingBot")
+            return
+    
+    # Start the bot if enabled
+    if BOT_RUNNING:
+        logging.info("Starting bot in active mode")
+        logging.info("Starting token scanner")
+        
+        # Check if token scanner requires a wrapper
+        if not hasattr(token_scanner, 'start') and not hasattr(token_scanner, 'start_scanning'):
+            # Log available methods to diagnose
+            methods = [method for method in dir(token_scanner) 
+                     if callable(getattr(token_scanner, method)) and not method.startswith('_')]
+            logging.info("Available token scanner methods:")
+            for method in methods:
+                logging.info(f"- {method}")
+                
+            # Import and use a wrapper if available
+            try:
+                from token_scanner_wrapper import TokenScannerWrapper
+                wrapped_scanner = TokenScannerWrapper(token_scanner)
+                
+                # Update the bot's scanner with the wrapped one
+                bot.token_scanner = wrapped_scanner
+                logging.info("Applied TokenScannerWrapper to scanner")
+            except ImportError:
+                logging.warning("TokenScannerWrapper not available. Bot may not discover tokens correctly.")
+        
+        # Start the bot with error handling
+        try:
+            bot.start()
+            logging.info("Bot started successfully")
+        except Exception as e:
+            logging.error(f"Error starting bot: {e}")
+            logging.error("Bot will not be started")
+            return
+        
+        # Keep the main thread running
+        try:
+            # Run for a limited time in test mode
+            logging.info("Bot running, press CTRL+C to stop")
+            time.sleep(60)
+        except KeyboardInterrupt:
+            logging.info("Bot stopped by user")
+            try:
+                bot.stop()
+            except Exception as e:
+                logging.error(f"Error stopping bot: {e}")
+    else:
+        logging.info("Bot not started due to configuration setting")
+    
+    logging.info("Bot execution completed")
+
+if __name__ == "__main__":
+    main()

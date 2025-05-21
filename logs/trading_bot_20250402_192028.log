@@ -1,0 +1,28 @@
+2025-04-02 19:20:28,985 - trading_bot.database - INFO - Database tables initialized
+2025-04-02 19:20:28,990 - trading_bot.token_analyzer - DEBUG - Twitter client initialized for token analyzer
+2025-04-02 19:20:28,990 - trading_bot - INFO - Testing trending tokens...
+2025-04-02 19:20:29,317 - trading_bot.token_analyzer - INFO - Found 5 trending tokens
+2025-04-02 19:20:29,321 - trading_bot - INFO - Found 5 trending tokens:
+2025-04-02 19:20:29,321 - trading_bot - INFO - 1.   (BRQfSzKDThYt4sz8jUEgad8UxXGqRq7c5Y4yM952pump) - Score: 1.0, Price: $0.000379, Volume: $7,021,200
+2025-04-02 19:20:29,331 - trading_bot - INFO - 2. Ghibli (4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump) - Score: 2.0, Price: $0.009742, Volume: $18,284,638
+2025-04-02 19:20:29,332 - trading_bot - INFO - 3. House (DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump) - Score: 3.0, Price: $0.003571, Volume: $8,612,348
+2025-04-02 19:20:29,332 - trading_bot - INFO - 4. WBTC (3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh) - Score: 4.0, Price: $82527.887101, Volume: $90,546,202
+2025-04-02 19:20:29,332 - trading_bot - INFO - 5. Gordito (65Ph5GECxYFEtANqBuAxi4eMWcTd4rat5tq6YTgCpump) - Score: 5.0, Price: $0.000112, Volume: $3,213,236
+2025-04-02 19:20:29,332 - trading_bot - INFO - Testing top gainers for 1h...
+2025-04-02 19:20:29,488 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/trader/gainers-losers: 400, message='Bad Request', url='https://public-api.birdeye.so/trader/gainers-losers?type=hour&sort_by=PnL&sort_type=desc&offset=0&limit=5'
+2025-04-02 19:20:31,622 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/trader/gainers-losers: 400, message='Bad Request', url='https://public-api.birdeye.so/trader/gainers-losers?type=hour&sort_by=PnL&sort_type=desc&offset=0&limit=5'
+2025-04-02 19:20:35,773 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/trader/gainers-losers: 400, message='Bad Request', url='https://public-api.birdeye.so/trader/gainers-losers?type=hour&sort_by=PnL&sort_type=desc&offset=0&limit=5'
+2025-04-02 19:20:35,774 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/trader/gainers-losers after 3 attempts
+2025-04-02 19:20:35,774 - trading_bot.token_analyzer - WARNING - No valid Birdeye data for top gainers (1h)
+2025-04-02 19:20:35,775 - trading_bot - INFO - Found 0 top gainers for 1h:
+2025-04-02 19:20:35,775 - trading_bot - INFO - Testing top gainers for 6h...
+2025-04-02 19:20:35,970 - trading_bot.utils - WARNING - Fetch attempt 1/3 failed for https://public-api.birdeye.so/trader/gainers-losers: 400, message='Bad Request', url='https://public-api.birdeye.so/trader/gainers-losers?type=6hour&sort_by=PnL&sort_type=desc&offset=0&limit=5'
+2025-04-02 19:20:38,108 - trading_bot.utils - WARNING - Fetch attempt 2/3 failed for https://public-api.birdeye.so/trader/gainers-losers: 400, message='Bad Request', url='https://public-api.birdeye.so/trader/gainers-losers?type=6hour&sort_by=PnL&sort_type=desc&offset=0&limit=5'
+2025-04-02 19:20:42,318 - trading_bot.utils - WARNING - Fetch attempt 3/3 failed for https://public-api.birdeye.so/trader/gainers-losers: 400, message='Bad Request', url='https://public-api.birdeye.so/trader/gainers-losers?type=6hour&sort_by=PnL&sort_type=desc&offset=0&limit=5'
+2025-04-02 19:20:42,320 - trading_bot.utils - ERROR - Failed to fetch https://public-api.birdeye.so/trader/gainers-losers after 3 attempts
+2025-04-02 19:20:42,321 - trading_bot.token_analyzer - WARNING - No valid Birdeye data for top gainers (6h)
+2025-04-02 19:20:42,322 - trading_bot - INFO - Found 0 top gainers for 6h:
+2025-04-02 19:20:42,323 - trading_bot - INFO - Testing top gainers for 24h...
+2025-04-02 19:20:42,626 - trading_bot.token_analyzer - ERROR - Error fetching top gainers from Birdeye: 'str' object has no attribute 'get'
+2025-04-02 19:20:42,627 - trading_bot - INFO - Found 0 top gainers for 24h:
+2025-04-02 19:20:42,628 - trading_bot.database - INFO - Database connection closed
