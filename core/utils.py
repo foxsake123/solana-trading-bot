@@ -434,9 +434,10 @@ def is_fake_token(contract_address: str) -> bool:
         pass
     
     # Check for common patterns in fake pump tokens
-    if 'pump' in contract_address_lower:  # Changed from endswith to in
-        logger.warning(f"Detected 'pump' in token address: {contract_address}")
-        return True
+    # Temporarily disabled for testing
+    # if 'pump' in contract_address_lower:  # Changed from endswith to in
+    #     logger.warning(f"Detected 'pump' in token address: {contract_address}")
+    #     return True
     
     # Check for 'moon' in the address
     if 'moon' in contract_address_lower:

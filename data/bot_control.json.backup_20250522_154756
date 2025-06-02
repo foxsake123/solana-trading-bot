@@ -1,0 +1,20 @@
+{
+    "running": true,
+    "simulation_mode": false,
+    "filter_fake_tokens": true,
+    "use_birdeye_api": true,
+    "use_machine_learning": true,
+    "take_profit_target": 0.25,
+    "stop_loss_percentage": 0.1,
+    "max_investment_per_token": 0.05,
+    "min_investment_per_token": 0.01,
+    "slippage_tolerance": 0.1,
+    "MIN_SAFETY_SCORE": 50.0,
+    "MIN_VOLUME": 10000.0,
+    "MIN_LIQUIDITY": 10000.0,
+    "MIN_MCAP": 100000.0,
+    "MIN_HOLDERS": 10,
+    "MIN_PRICE_CHANGE_1H": 1.0,
+    "MIN_PRICE_CHANGE_6H": 2.0,
+    "MIN_PRICE_CHANGE_24H": 5.0
+}

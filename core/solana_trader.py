@@ -199,7 +199,7 @@ class SolanaTrader:
         if self.simulation_mode:
             # In simulation mode, we need to calculate the balance from the database
             # Start with the default balance
-            default_balance = 1.0  # Default 1 SOL in simulation mode
+            default_balance = 10.0  # Default 10 SOL in simulation mode
             
             # Calculate spent SOL from active positions
             active_positions = self.db.get_active_orders() if self.db is not None else []

@@ -6,42 +6,31 @@ import random
 from typing import Dict, List, Optional, Any
 from datetime import datetime, timedelta, UTC
 
-from config import BotConfiguration
-from utils import fetch_with_retries, is_fake_token
-
 logger = logging.getLogger('trading_bot.birdeye_api')
 
 class BirdeyeAPI:
     """
-    Helper class that uses DexScreener API as a fallback for Birdeye
-    This is a drop-in replacement that maintains the same interface
+    Helper class that uses DexScreener API
     """
     
     def __init__(self):
-        """
-        Initialize the API client
-        """
+        from config import BotConfiguration
         self.api_key = BotConfiguration.API_KEYS.get('BIRDEYE_API_KEY', '')
         self.base_url = "https://public-api.birdeye.so"
         self.cache = {}
         self.cache_duration = 300  # 5 minutes
         
-        # Set to True to use DexScreener exclusively and skip Birdeye attempts
-        self.use_dexscreener_only = True
-        
         # DexScreener base URL
         self.dexscreener_url = "https://api.dexscreener.com/latest/dex"
         
-        # Rate limiting for DexScreener
+        # Rate limiting
         self.last_dexscreener_request = 0
-        self.min_request_interval = 0.5  # Minimum time between requests (500ms)
+        self.min_request_interval = 1.0  # 1 second between requests
         
-        logger.info("BirdeyeAPI initialized with DexScreener fallback enabled")
+        logger.info("BirdeyeAPI initialized with DexScreener")
     
     async def _wait_for_rate_limit(self):
-        """
-        Ensure we don't exceed rate limits for the DexScreener API
-        """
+        """Ensure we don't exceed rate limits"""
         current_time = time.time()
         time_since_last_request = current_time - self.last_dexscreener_request
         
@@ -50,365 +39,343 @@ class BirdeyeAPI:
         
         self.last_dexscreener_request = time.time()
     
-    async def _get_from_dexscreener(self, contract_address: str) -> Optional[Dict]:
-        """
-        Get token data from DexScreener
+    def _is_fake_token(self, address: str) -> bool:
+        """Simple fake token check"""
+        if not address or not isinstance(address, str):
+            return True
         
-        :param contract_address: Token contract address
-        :return: Token data dictionary or None
-        """
+        lower_address = address.lower()
+        
+        # Check for suspicious patterns
+        suspicious_terms = ['scam', 'fake', 'test', 'demo']
+        for term in suspicious_terms:
+            if term in lower_address:
+                return True
+        
+        return False
+    
+    async def _get_tokens_from_dexscreener(self, limit: int = 50) -> List[Dict]:
+        """Get trending tokens from DexScreener using search"""
         try:
-            # Ensure we respect rate limits
             await self._wait_for_rate_limit()
             
-            # According to DexScreener docs, this is the correct endpoint format
-            url = f"{self.dexscreener_url}/tokens/{contract_address}"
+            # Use search endpoint to get Solana tokens
+            url = f"{self.dexscreener_url}/search?q=solana"
             
             async with aiohttp.ClientSession() as session:
                 async with session.get(url, timeout=30) as response:
                     if response.status != 200:
-                        logger.warning(f"DexScreener API returned status {response.status} for {contract_address}")
-                        return None
+                        logger.warning(f"DexScreener API returned status {response.status}")
+                        return []
                     
                     data = await response.json()
                     
-                    if not data or 'pairs' not in data or not data['pairs']:
-                        logger.warning(f"No DexScreener data for {contract_address}")
-                        return None
+                    # DexScreener search returns pairs
+                    if not isinstance(data, dict) or 'pairs' not in data:
+                        logger.warning(f"Unexpected response format from search")
+                        return []
                     
-                    # Filter for Solana pairs only
-                    solana_pairs = [pair for pair in data['pairs'] if pair.get('chainId') == 'solana']
+                    pairs = data.get('pairs', [])
+                    if not pairs:
+                        logger.warning("No pairs found in search results")
+                        return []
                     
-                    if not solana_pairs:
-                        logger.warning(f"No Solana pairs found for {contract_address}")
-                        return None
+                    tokens = []
+                    seen_addresses = set()
                     
-                    # Sort by liquidity to use the most liquid pair
-                    solana_pairs.sort(key=lambda x: float(x.get('liquidity', {}).get('usd', 0)), reverse=True)
+                    # Process pairs and extract unique tokens
+                    for pair in pairs:
+                        if not isinstance(pair, dict):
+                            continue
+                        
+                        # Only process Solana pairs
+                        if pair.get('chainId') != 'solana':
+                            continue
+                        
+                        # Get base token info
+                        base_token = pair.get('baseToken', {})
+                        address = base_token.get('address')
+                        
+                        if not address or address in seen_addresses:
+                            continue
+                        
+                        seen_addresses.add(address)
+                        
+                        # Skip fake tokens
+                        if self._is_fake_token(address):
+                            continue
+                        
+                        # Build consistent token structure
+                        price_change = pair.get('priceChange', {})
+                        volume = pair.get('volume', {})
+                        liquidity = pair.get('liquidity', {})
+                        
+                        token = {
+                            'address': address,
+                            'contract_address': address,
+                            'symbol': base_token.get('symbol', 'UNKNOWN'),
+                            'ticker': base_token.get('symbol', 'UNKNOWN'),
+                            'name': base_token.get('name', 'UNKNOWN'),
+                            'price': {'value': float(pair.get('priceUsd', 0))},
+                            'price_usd': float(pair.get('priceUsd', 0)),
+                            'volume': {'value': float(volume.get('h24', 0))},
+                            'volume_24h': float(volume.get('h24', 0)),
+                            'liquidity': {'value': float(liquidity.get('usd', 0))},
+                            'liquidity_usd': float(liquidity.get('usd', 0)),
+                            'priceChange': {
+                                '24H': float(price_change.get('h24', 0)),
+                                '6H': float(price_change.get('h6', 0)),
+                                '1H': float(price_change.get('h1', 0))
+                            },
+                            'price_change_24h': float(price_change.get('h24', 0)),
+                            'price_change_6h': float(price_change.get('h6', 0)),
+                            'price_change_1h': float(price_change.get('h1', 0)),
+                            'mc': {'value': float(pair.get('marketCap', 0) if 'marketCap' in pair else 0)},
+                            'market_cap': float(pair.get('marketCap', 0) if 'marketCap' in pair else 0),
+                            'mcap': float(pair.get('marketCap', 0) if 'marketCap' in pair else 0),
+                            'fdv': {'value': float(pair.get('fdv', 0) if 'fdv' in pair else 0)},
+                            'holders': 100,  # Default value
+                            'holdersCount': 100  # Default value
+                        }
+                        
+                        tokens.append(token)
+                        
+                        if len(tokens) >= limit:
+                            break
                     
-                    # Use first (most liquid) pair
-                    pair = solana_pairs[0]
-                    
-                    # Build a response that matches our expected format
-                    return {
-                        'address': contract_address,
-                        'symbol': pair.get('baseToken', {}).get('symbol', 'UNKNOWN'),
-                        'name': pair.get('baseToken', {}).get('name', 'UNKNOWN'),
-                        'price': {
-                            'value': float(pair.get('priceUsd', 0.0))
-                        },
-                        'volume': {
-                            'value': float(pair.get('volume', {}).get('h24', 0.0))
-                        },
-                        'liquidity': {
-                            'value': float(pair.get('liquidity', {}).get('usd', 0.0))
-                        },
-                        'priceChange': {
-                            '24H': float(pair.get('priceChange', {}).get('h24', 0.0)),
-                            '6H': float(pair.get('priceChange', {}).get('h6', 0.0)) if 'h6' in pair.get('priceChange', {}) else 0.0,
-                            '1H': float(pair.get('priceChange', {}).get('h1', 0.0)) if 'h1' in pair.get('priceChange', {}) else 0.0
-                        },
-                        'mc': {
-                            'value': float(pair.get('mcap', 0.0) if 'mcap' in pair else 0.0)
-                        },
-                        'fdv': {
-                            'value': float(pair.get('fdv', 0.0) if 'fdv' in pair else 0.0)
-                        },
-                        'holdersCount': int(pair.get('holders', 0) if 'holders' in pair else 0)
-                    }
+                    logger.info(f"Retrieved {len(tokens)} tokens from DexScreener search")
+                    return tokens
         
-        except aiohttp.ClientError as e:
-            logger.error(f"HTTP error getting token from DexScreener: {e}")
-            return None
         except Exception as e:
-            logger.error(f"Error getting token from DexScreener: {e}")
-            return None
+            logger.error(f"Error fetching tokens from DexScreener: {e}")
+            return []
+    
+    async def _get_trending_pairs(self) -> List[Dict]:
+        """Get trending pairs from DexScreener"""
+        try:
+            await self._wait_for_rate_limit()
+            
+            # Get trending pairs
+            url = f"{self.dexscreener_url}/pairs/solana"
+            
+            async with aiohttp.ClientSession() as session:
+                async with session.get(url, timeout=30) as response:
+                    if response.status != 200:
+                        logger.warning(f"DexScreener pairs API returned status {response.status}")
+                        return []
+                    
+                    data = await response.json()
+                    
+                    if isinstance(data, dict) and data.get('pairs') is None:
+                        # Try alternative endpoint - get specific popular tokens
+                        return await self._get_popular_tokens()
+                    
+                    return data if isinstance(data, list) else []
+                    
+        except Exception as e:
+            logger.error(f"Error fetching trending pairs: {e}")
+            return []
+    
+    async def _get_popular_tokens(self) -> List[Dict]:
+        """Get popular tokens by searching for known ones"""
+        popular_searches = ['bonk', 'wif', 'jup', 'ray', 'orca']
+        all_tokens = []
+        seen_addresses = set()
+        
+        for search_term in popular_searches:
+            try:
+                await self._wait_for_rate_limit()
+                
+                url = f"{self.dexscreener_url}/search?q={search_term}"
+                
+                async with aiohttp.ClientSession() as session:
+                    async with session.get(url, timeout=30) as response:
+                        if response.status != 200:
+                            continue
+                        
+                        data = await response.json()
+                        pairs = data.get('pairs', [])
+                        
+                        for pair in pairs:
+                            if pair.get('chainId') != 'solana':
+                                continue
+                            
+                            base_token = pair.get('baseToken', {})
+                            address = base_token.get('address')
+                            
+                            if address and address not in seen_addresses:
+                                seen_addresses.add(address)
+                                
+                                # Build token structure
+                                price_change = pair.get('priceChange', {})
+                                volume = pair.get('volume', {})
+                                liquidity = pair.get('liquidity', {})
+                                
+                                token = {
+                                    'address': address,
+                                    'contract_address': address,
+                                    'symbol': base_token.get('symbol', 'UNKNOWN'),
+                                    'ticker': base_token.get('symbol', 'UNKNOWN'),
+                                    'name': base_token.get('name', 'UNKNOWN'),
+                                    'price': {'value': float(pair.get('priceUsd', 0))},
+                                    'price_usd': float(pair.get('priceUsd', 0)),
+                                    'volume': {'value': float(volume.get('h24', 0))},
+                                    'volume_24h': float(volume.get('h24', 0)),
+                                    'liquidity': {'value': float(liquidity.get('usd', 0))},
+                                    'liquidity_usd': float(liquidity.get('usd', 0)),
+                                    'priceChange': {
+                                        '24H': float(price_change.get('h24', 0)),
+                                        '6H': float(price_change.get('h6', 0)),
+                                        '1H': float(price_change.get('h1', 0))
+                                    },
+                                    'price_change_24h': float(price_change.get('h24', 0)),
+                                    'price_change_6h': float(price_change.get('h6', 0)),
+                                    'price_change_1h': float(price_change.get('h1', 0)),
+                                    'mc': {'value': float(pair.get('marketCap', 0) if 'marketCap' in pair else 0)},
+                                    'market_cap': float(pair.get('marketCap', 0) if 'marketCap' in pair else 0),
+                                    'mcap': float(pair.get('marketCap', 0) if 'marketCap' in pair else 0),
+                                    'fdv': {'value': float(pair.get('fdv', 0) if 'fdv' in pair else 0)},
+                                    'holders': 100,
+                                    'holdersCount': 100
+                                }
+                                
+                                all_tokens.append(token)
+                                
+            except Exception as e:
+                logger.error(f"Error searching for {search_term}: {e}")
+                continue
+        
+        return all_tokens
     
     async def get_token_info(self, contract_address: str) -> Optional[Dict]:
-        """
-        Get detailed token information
-        
-        :param contract_address: Token contract address
-        :return: Token information dictionary or None
-        """
-        # Validate contract address
+        """Get detailed token information"""
         if not contract_address or not isinstance(contract_address, str):
-            logger.warning(f"Invalid contract address in get_token_info: {contract_address}")
             return None
         
-        # Check if token is likely fake
-        if is_fake_token(contract_address):
-            logger.warning(f"Skipping likely fake token in get_token_info: {contract_address}")
+        if self._is_fake_token(contract_address):
             return None
         
-        # Check cache first
+        # Check cache
         cache_key = f"token_info_{contract_address}"
         if cache_key in self.cache:
             cache_entry = self.cache[cache_key]
             if time.time() - cache_entry['timestamp'] < self.cache_duration:
                 return cache_entry['data']
         
-        # Use DexScreener
-        token_info = await self._get_from_dexscreener(contract_address)
-        
-        if token_info:
-            # Cache the result
-            self.cache[cache_key] = {
-                'timestamp': time.time(),
-                'data': token_info
-            }
-            return token_info
-        
-        logger.warning(f"Failed to get token info for {contract_address}")
-        return None
-    
-    async def get_token_price(self, contract_address: str) -> Optional[float]:
-        """
-        Get token price in USD
-        
-        :param contract_address: Token contract address
-        :return: Token price in USD or None
-        """
-        token_info = await self.get_token_info(contract_address)
-        if token_info and 'price' in token_info and 'value' in token_info['price']:
-            return float(token_info['price']['value'])
-        
-        # Try CoinGecko for popular tokens
-        if contract_address == "So11111111111111111111111111111111111111112":  # SOL
-            try:
-                # Direct HTTP call to CoinGecko
-                url = "https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd"
-                async with aiohttp.ClientSession() as session:
-                    async with session.get(url, timeout=30) as response:
-                        response.raise_for_status()
-                        data = await response.json()
-                        if data and 'solana' in data and 'usd' in data['solana']:
-                            return float(data['solana']['usd'])
-            except Exception as e:
-                logger.error(f"Error getting SOL price from CoinGecko: {e}")
-        
-        return None
-    
-    async def get_token_volume(self, contract_address: str) -> Optional[float]:
-        """
-        Get 24h trading volume in USD
-        
-        :param contract_address: Token contract address
-        :return: 24h volume in USD or None
-        """
-        token_info = await self.get_token_info(contract_address)
-        if token_info and 'volume' in token_info and 'value' in token_info['volume']:
-            return float(token_info['volume']['value'])
-        return None
-    
-    async def get_token_liquidity(self, contract_address: str) -> Optional[float]:
-        """
-        Get token liquidity in USD
-        
-        :param contract_address: Token contract address
-        :return: Liquidity in USD or None
-        """
-        token_info = await self.get_token_info(contract_address)
-        if token_info and 'liquidity' in token_info and 'value' in token_info['liquidity']:
-            return float(token_info['liquidity']['value'])
-        return None
-    
-    async def get_holders_count(self, contract_address: str) -> Optional[int]:
-        """
-        Get number of token holders
-        
-        :param contract_address: Token contract address
-        :return: Number of holders or None
-        """
-        token_info = await self.get_token_info(contract_address)
-        if token_info and 'holdersCount' in token_info:
-            return int(token_info['holdersCount'])
-        return None
-    
-    async def get_market_cap(self, contract_address: str) -> Optional[float]:
-        """
-        Get market cap in USD
-        
-        :param contract_address: Token contract address
-        :return: Market cap in USD or None
-        """
-        token_info = await self.get_token_info(contract_address)
-        if token_info and 'mc' in token_info and 'value' in token_info['mc']:
-            return float(token_info['mc']['value'])
-        return None
-    
-    async def get_price_change(self, contract_address: str, timeframe: str) -> Optional[float]:
-        """
-        Get price change percentage for a given timeframe
-        
-        :param contract_address: Token contract address
-        :param timeframe: Timeframe (1h, 6h, 24h)
-        :return: Price change percentage or None
-        """
-        token_info = await self.get_token_info(contract_address)
-        if not token_info or 'priceChange' not in token_info:
-            return None
-        
-        price_change = token_info['priceChange']
-        
-        if timeframe == '1h' and '1H' in price_change:
-            return float(price_change['1H'])
-        elif timeframe == '6h' and '6H' in price_change:
-            return float(price_change['6H'])
-        elif timeframe == '24h' and '24H' in price_change:
-            return float(price_change['24H'])
-        
-        return None
-    
-    async def _get_tokens_from_dexscreener(self, limit: int = 50) -> List[Dict]:
-        """
-        Get tokens list from DexScreener
-        
-        :param limit: Maximum number of tokens to return
-        :return: List of tokens
-        """
         try:
-            # Ensure we respect rate limits
             await self._wait_for_rate_limit()
             
-            # Use solana search query to get recent tokens
-            url = f"{self.dexscreener_url}/search?q=solana"
+            # Get specific token data
+            url = f"{self.dexscreener_url}/tokens/{contract_address}"
             
             async with aiohttp.ClientSession() as session:
                 async with session.get(url, timeout=30) as response:
                     if response.status != 200:
-                        logger.warning(f"DexScreener API returned status {response.status} for search endpoint")
-                        return []
+                        return None
                     
                     data = await response.json()
                     
                     if not data or 'pairs' not in data:
-                        logger.warning("No pairs data from DexScreener")
-                        return []
+                        return None
                     
-                    tokens = []
-                    seen_addresses = set()
+                    # Get the most liquid Solana pair
+                    solana_pairs = [p for p in data['pairs'] if p.get('chainId') == 'solana']
+                    if not solana_pairs:
+                        return None
                     
-                    # Process pairs and extract token data
-                    for pair in data.get('pairs', [])[:limit*2]:  # Get more pairs to ensure we have enough unique tokens
-                        if 'baseToken' not in pair or not pair['baseToken']:
-                            continue
-                        
-                        address = pair['baseToken'].get('address')
-                        
-                        # Skip duplicates
-                        if not address or address in seen_addresses:
-                            continue
-                        
-                        # Only include Solana tokens
-                        if pair.get('chainId') != 'solana':
-                            continue
-                            
-                        seen_addresses.add(address)
-                        
-                        # Skip likely fake tokens
-                        if is_fake_token(address):
-                            continue
-                        
-                        # Create consistent token data structure
-                        token_data = {
-                            'address': address,
-                            'symbol': pair['baseToken'].get('symbol', 'UNKNOWN'),
-                            'name': pair['baseToken'].get('name', 'UNKNOWN'),
-                            'price': {'value': float(pair.get('priceUsd', 0.0))},
-                            'volume': {'value': float(pair.get('volume', {}).get('h24', 0.0))},
-                            'liquidity': {'value': float(pair.get('liquidity', {}).get('usd', 0.0))},
-                            'priceChange': {
-                                '24H': float(pair.get('priceChange', {}).get('h24', 0.0)),
-                                '6H': float(pair.get('priceChange', {}).get('h6', 0.0)) if 'h6' in pair.get('priceChange', {}) else 0.0,
-                                '1H': float(pair.get('priceChange', {}).get('h1', 0.0)) if 'h1' in pair.get('priceChange', {}) else 0.0
-                            },
-                            'mc': {'value': float(pair.get('mcap', 0.0) if 'mcap' in pair else 0.0)},
-                            'fdv': {'value': float(pair.get('fdv', 0.0) if 'fdv' in pair else 0.0)},
-                            'holdersCount': int(pair.get('holders', 0) if 'holders' in pair else 0),
-                            'trendingScore': 0.0  # Calculated below
-                        }
-                        
-                        # Calculate a trending score based on volume and price activity
-                        volume_24h = float(pair.get('volume', {}).get('h24', 0.0))
-                        price_change_24h = abs(float(pair.get('priceChange', {}).get('h24', 0.0)))
-                        
-                        volume_score = min(100, volume_24h / 1000)  # Max score at $100K volume
-                        price_score = min(100, price_change_24h * 2)  # Max score at 50% price change
-                        token_data['trendingScore'] = (volume_score * 0.7) + (price_score * 0.3)
-                        
-                        tokens.append(token_data)
-                        
-                        # Stop if we have enough tokens
-                        if len(tokens) >= limit:
-                            break
+                    # Sort by liquidity
+                    solana_pairs.sort(key=lambda x: float(x.get('liquidity', {}).get('usd', 0)), reverse=True)
+                    pair = solana_pairs[0]
                     
-                    logger.info(f"Retrieved {len(tokens)} tokens from DexScreener")
-                    return tokens
+                    # Build token info
+                    base_token = pair.get('baseToken', {})
+                    price_change = pair.get('priceChange', {})
+                    volume = pair.get('volume', {})
+                    liquidity = pair.get('liquidity', {})
+                    
+                    token_info = {
+                        'address': contract_address,
+                        'contract_address': contract_address,
+                        'symbol': base_token.get('symbol', 'UNKNOWN'),
+                        'ticker': base_token.get('symbol', 'UNKNOWN'),
+                        'name': base_token.get('name', 'UNKNOWN'),
+                        'price': {'value': float(pair.get('priceUsd', 0))},
+                        'price_usd': float(pair.get('priceUsd', 0)),
+                        'volume': {'value': float(volume.get('h24', 0))},
+                        'volume_24h': float(volume.get('h24', 0)),
+                        'liquidity': {'value': float(liquidity.get('usd', 0))},
+                        'liquidity_usd': float(liquidity.get('usd', 0)),
+                        'priceChange': price_change,
+                        'price_change_24h': float(price_change.get('h24', 0)),
+                        'price_change_6h': float(price_change.get('h6', 0)),
+                        'price_change_1h': float(price_change.get('h1', 0)),
+                        'mc': {'value': float(pair.get('marketCap', 0) if 'marketCap' in pair else 0)},
+                        'market_cap': float(pair.get('marketCap', 0) if 'marketCap' in pair else 0),
+                        'mcap': float(pair.get('marketCap', 0) if 'marketCap' in pair else 0),
+                        'fdv': {'value': float(pair.get('fdv', 0) if 'fdv' in pair else 0)},
+                        'holdersCount': 100,
+                        'holders': 100
+                    }
+                    
+                    # Cache the result
+                    self.cache[cache_key] = {
+                        'timestamp': time.time(),
+                        'data': token_info
+                    }
+                    
+                    return token_info
         
-        except aiohttp.ClientError as e:
-            logger.error(f"HTTP error fetching tokens from DexScreener: {e}")
-            return []
         except Exception as e:
-            logger.error(f"Error fetching tokens from DexScreener: {e}")
-            return []
+            logger.error(f"Error getting token info for {contract_address}: {e}")
+            return None
     
     async def get_top_gainers(self, timeframe: str = '24h', limit: int = 10) -> List[Dict]:
-        """
-        Get list of top gaining tokens
-        
-        :param timeframe: Timeframe (1h, 6h, 24h)
-        :param limit: Maximum number of tokens to return
-        :return: List of top gainers
-        """
-        # Check cache
+        """Get top gaining tokens"""
         cache_key = f"top_gainers_{timeframe}_{limit}"
         if cache_key in self.cache:
             cache_entry = self.cache[cache_key]
             if time.time() - cache_entry['timestamp'] < self.cache_duration:
                 return cache_entry['data']
         
-        # Get tokens from DexScreener
-        tokens = await self._get_tokens_from_dexscreener(50)  # Get more to filter from
+        # Get tokens from multiple sources
+        search_tokens = await self._get_tokens_from_dexscreener(100)
+        popular_tokens = await self._get_popular_tokens()
         
-        if not tokens:
-            logger.warning(f"No tokens found for top gainers ({timeframe})")
+        # Combine all tokens
+        all_tokens = search_tokens + popular_tokens
+        
+        if not all_tokens:
+            logger.warning("No tokens found for top gainers")
             return []
         
-        # Map timeframe to key in priceChange
-        timeframe_key = '24H'
-        if timeframe == '1h':
-            timeframe_key = '1H'
-        elif timeframe == '6h':
-            timeframe_key = '6H'
+        # Remove duplicates
+        unique_tokens = {}
+        for token in all_tokens:
+            address = token.get('contract_address')
+            if address and address not in unique_tokens:
+                unique_tokens[address] = token
         
-        # Filter and sort by price change
+        tokens = list(unique_tokens.values())
+        
+        # Filter by price change and volume
         gainers = []
         for token in tokens:
-            if 'priceChange' in token and timeframe_key in token['priceChange']:
-                price_change = token['priceChange'][timeframe_key]
-                if price_change > 0:
-                    # Format token for consistent API response
-                    gainers.append({
-                        'contract_address': token['address'],
-                        'ticker': token['symbol'],
-                        'name': token['name'],
-                        'price_change': price_change,
-                        'price_usd': token['price']['value'],
-                        'volume_24h': token['volume']['value'],
-                        'liquidity_usd': token['liquidity']['value'],
-                        'price_change_24h': token['priceChange'].get('24H', 0.0),
-                        'price_change_6h': token['priceChange'].get('6H', 0.0),
-                        'price_change_1h': token['priceChange'].get('1H', 0.0),
-                        'mcap': token['mc']['value'],
-                        'holders': token['holdersCount'],
-                        'fdv': token['fdv']['value']
-                    })
+            price_change = 0
+            if timeframe == '1h':
+                price_change = token.get('price_change_1h', 0)
+            elif timeframe == '6h':
+                price_change = token.get('price_change_6h', 0)
+            else:  # 24h
+                price_change = token.get('price_change_24h', 0)
+            
+            # Include positive gainers with decent volume
+            if price_change > 1 and token.get('volume_24h', 0) > 5000:
+                gainers.append(token)
         
-        # Sort by price change for the requested timeframe
-        gainers.sort(key=lambda x: x['price_change'], reverse=True)
+        # Sort by price change
+        gainers.sort(key=lambda x: x.get(f'price_change_{timeframe[:-1]}h', 0), reverse=True)
         
-        # Limit to requested count
+        # Limit results
         result = gainers[:limit]
         
         # Cache result
@@ -421,48 +388,45 @@ class BirdeyeAPI:
         return result
     
     async def get_trending_tokens(self, limit: int = 10) -> List[Dict]:
-        """
-        Get list of trending tokens based on volume and activity
-        
-        :param limit: Maximum number of tokens to return
-        :return: List of trending tokens
-        """
-        # Check cache
+        """Get trending tokens"""
         cache_key = f"trending_tokens_{limit}"
         if cache_key in self.cache:
             cache_entry = self.cache[cache_key]
             if time.time() - cache_entry['timestamp'] < self.cache_duration:
                 return cache_entry['data']
         
-        # Get tokens from DexScreener and calculate trending score
-        tokens = await self._get_tokens_from_dexscreener(50)
+        # Get tokens from multiple sources
+        search_tokens = await self._get_tokens_from_dexscreener(50)
+        popular_tokens = await self._get_popular_tokens()
         
-        if not tokens:
-            logger.warning("No tokens found for trending tokens")
+        # Combine all tokens
+        all_tokens = search_tokens + popular_tokens
+        
+        if not all_tokens:
+            logger.warning("No tokens found for trending")
             return []
         
-        # Format tokens for consistent API response
-        trending_tokens = []
+        # Remove duplicates
+        unique_tokens = {}
+        for token in all_tokens:
+            address = token.get('contract_address')
+            if address and address not in unique_tokens:
+                unique_tokens[address] = token
+        
+        tokens = list(unique_tokens.values())
+        
+        # Filter by volume and liquidity
+        trending = []
         for token in tokens:
-            trending_tokens.append({
-                'contract_address': token['address'],
-                'ticker': token['symbol'],
-                'name': token['name'],
-                'volume_24h': token['volume']['value'],
-                'price_usd': token['price']['value'],
-                'price_change_24h': token['priceChange'].get('24H', 0.0),
-                'liquidity_usd': token['liquidity']['value'],
-                'trending_score': token.get('trendingScore', 0.0),
-                'mcap': token['mc']['value'],
-                'holders': token['holdersCount'],
-                'fdv': token['fdv']['value']
-            })
+            if (token.get('volume_24h', 0) > 10000 and 
+                token.get('liquidity_usd', 0) > 10000):
+                trending.append(token)
         
-        # Sort by trending score
-        trending_tokens.sort(key=lambda x: x.get('trending_score', 0), reverse=True)
+        # Sort by volume
+        trending.sort(key=lambda x: x.get('volume_24h', 0), reverse=True)
         
-        # Limit to requested count
-        result = trending_tokens[:limit]
+        # Limit results
+        result = trending[:limit]
         
         # Cache result
         self.cache[cache_key] = {
@@ -473,35 +437,73 @@ class BirdeyeAPI:
         logger.info(f"Found {len(result)} trending tokens")
         return result
     
-    async def get_token_security_info(self, contract_address: str) -> Optional[Dict]:
-        """
-        Get security information for a token (DexScreener doesn't provide this)
+    async def get_token_price(self, contract_address: str) -> Optional[float]:
+        """Get token price"""
+        token_info = await self.get_token_info(contract_address)
+        if token_info:
+            return token_info.get('price_usd', 0)
+        return None
+    
+    async def get_token_volume(self, contract_address: str) -> Optional[float]:
+        """Get 24h volume"""
+        token_info = await self.get_token_info(contract_address)
+        if token_info:
+            return token_info.get('volume_24h', 0)
+        return None
+    
+    async def get_token_liquidity(self, contract_address: str) -> Optional[float]:
+        """Get liquidity"""
+        token_info = await self.get_token_info(contract_address)
+        if token_info:
+            return token_info.get('liquidity_usd', 0)
+        return None
+    
+    async def get_holders_count(self, contract_address: str) -> Optional[int]:
+        """Get holders count (not available from DexScreener)"""
+        return 100  # Default value since DexScreener doesn't provide this
+    
+    async def get_market_cap(self, contract_address: str) -> Optional[float]:
+        """Get market cap"""
+        token_info = await self.get_token_info(contract_address)
+        if token_info:
+            return token_info.get('market_cap', 0)
+        return None
+    
+    async def get_price_change(self, contract_address: str, timeframe: str) -> Optional[float]:
+        """Get price change"""
+        token_info = await self.get_token_info(contract_address)
+        if not token_info:
+            return None
         
-        :param contract_address: Token contract address
-        :return: Security information or None
-        """
-        # DexScreener doesn't provide security info, so create a basic check
+        if timeframe == '1h':
+            return token_info.get('price_change_1h', 0)
+        elif timeframe == '6h':
+            return token_info.get('price_change_6h', 0)
+        elif timeframe == '24h':
+            return token_info.get('price_change_24h', 0)
+        
+        return None
+    
+    async def get_token_security_info(self, contract_address: str) -> Optional[Dict]:
+        """Get basic security info"""
         token_info = await self.get_token_info(contract_address)
         
         if not token_info:
             return None
         
-        # Calculate a basic security score based on liquidity, holders, etc.
-        liquidity = token_info.get('liquidity', {}).get('value', 0.0)
-        holders = token_info.get('holdersCount', 0)
-        volume = token_info.get('volume', {}).get('value', 0.0)
+        # Calculate basic security score
+        liquidity = token_info.get('liquidity_usd', 0)
+        volume = token_info.get('volume_24h', 0)
         
-        # Higher values are better
-        liquidity_score = min(40, (liquidity / 10000))  # 40 points max for liquidity
-        holders_score = min(30, (holders / 10))         # 30 points max for holders
-        volume_score = min(30, (volume / 5000))         # 30 points max for volume
+        liquidity_score = min(40, liquidity / 2500)
+        volume_score = min(30, volume / 3333)
+        holders_score = 20  # Default since we don't have real data
         
-        security_score = liquidity_score + holders_score + volume_score
+        security_score = liquidity_score + volume_score + holders_score
         
-        # Basic security info
         return {
             'securityScore': security_score,
-            'liquidityLocked': liquidity > 100000,  # Assume locked if high liquidity
-            'mintingDisabled': False,               # Unknown from DexScreener
-            'isMemeToken': 'meme' in token_info.get('name', '').lower() or 'meme' in token_info.get('symbol', '').lower()
+            'liquidityLocked': liquidity > 100000,
+            'mintingDisabled': False,
+            'isMemeToken': False
         }

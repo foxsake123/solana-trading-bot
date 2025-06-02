@@ -1,10 +1,9 @@
-# token_analyzer.py - Updated to implement real token analysis
+# token_analyzer.py - Updated to use only real token analysis
 
 import os
 import json
 import time
 import logging
-import random
 import asyncio
 from datetime import datetime, timezone
 from typing import Dict, List, Any, Optional, Tuple
@@ -33,31 +32,24 @@ class TokenAnalyzer:
         
     def is_simulation_token(self, contract_address: str) -> bool:
         """
-        Check if a token is a simulation token
+        Check if a token is a legacy simulation token (for backward compatibility)
         
         :param contract_address: Token contract address
-        :return: True if it's a simulation token, False otherwise
+        :return: True if it's a legacy simulation token, False otherwise
         """
         if not contract_address:
             return False
             
-        # Check common simulation token patterns
-        sim_patterns = ["sim", "test", "demo", "mock", "fake", "dummy"]
-        lower_address = contract_address.lower()
-        
-        for pattern in sim_patterns:
-            if pattern in lower_address:
-                return True
-                
-        # Check for specific simulation token format
+        # Only identify legacy simulation tokens that might exist in the database
         if contract_address.startswith(("Sim0", "Sim1", "Sim2", "Sim3", "Sim4")) and "TopGainer" in contract_address:
+            logger.warning(f"Legacy simulation token detected: {contract_address}")
             return True
             
         return False
         
     async def fetch_token_data(self, contract_address: str) -> Dict[str, Any]:
         """
-        Fetch token data from various sources
+        Fetch token data from various sources - ALWAYS use real data
         
         :param contract_address: Token contract address
         :return: Dictionary of token data
@@ -68,42 +60,8 @@ class TokenAnalyzer:
             cache_time, cache_data = self.token_data_cache[contract_address]
             if current_time - cache_time < self.cache_expiry:
                 return cache_data
-                
-        # Determine if this is a simulation token
-        is_sim = self.is_simulation_token(contract_address)
         
-        # For simulation tokens, generate simulated data
-        if is_sim:
-            logger.info(f"Creating minimal simulation data for {contract_address}")
-            
-            token_data = {
-                'contract_address': contract_address,
-                'ticker': contract_address.split('TopGainer')[0] if 'TopGainer' in contract_address else contract_address[:8],
-                'name': f"Simulation Token {contract_address[:8]}",
-                'price_usd': random.uniform(0.0000001, 0.001),
-                'volume_24h': 50000.0,  # $50k volume
-                'liquidity_usd': 25000.0,  # $25k liquidity
-                'market_cap': 500000.0,  # $500k market cap
-                'holders': 100,
-                'price_change_1h': random.uniform(5.0, 15.0),
-                'price_change_6h': random.uniform(10.0, 25.0),
-                'price_change_24h': 20.0,  # 20% increase in 24h
-                'total_supply': 1_000_000_000,
-                'circulating_supply': 750_000_000,
-                'is_simulation': True,
-                'last_updated': datetime.now(timezone.utc).isoformat()
-            }
-            
-            # Add to cache
-            self.token_data_cache[contract_address] = (current_time, token_data)
-            
-            # Save to database if available
-            if self.db:
-                self.db.save_token(token_data)
-                
-            return token_data
-            
-        # For real tokens, fetch data from API
+        # ALWAYS fetch real token data from API
         if self.birdeye_api:
             try:
                 # Try to get token data from DexScreener/Birdeye
@@ -112,21 +70,20 @@ class TokenAnalyzer:
                 if token_data:
                     # Update token data with last updated timestamp
                     token_data['last_updated'] = datetime.now(timezone.utc).isoformat()
-                    token_data['is_simulation'] = False
                     
                     # Add to cache
                     self.token_data_cache[contract_address] = (current_time, token_data)
                     
                     # Save to database if available
                     if self.db:
-                        self.db.save_token(token_data)
+                        self.db.store_token(token_data)
                         
                     return token_data
                 else:
                     logger.warning(f"No DexScreener data for {contract_address}")
             except Exception as e:
                 logger.error(f"Error fetching token data for {contract_address}: {e}")
-                
+        
         # Check if we have the token in the database
         if self.db:
             db_token = self.db.get_token(contract_address)
@@ -134,7 +91,7 @@ class TokenAnalyzer:
                 # Update cache
                 self.token_data_cache[contract_address] = (current_time, db_token)
                 return db_token
-                
+        
         # If all else fails, return minimal data
         return {
             'contract_address': contract_address,
@@ -148,7 +105,6 @@ class TokenAnalyzer:
             'price_change_1h': 0.0,
             'price_change_6h': 0.0,
             'price_change_24h': 0.0,
-            'is_simulation': False,
             'last_updated': datetime.now(timezone.utc).isoformat()
         }
         
@@ -159,34 +115,18 @@ class TokenAnalyzer:
         :param contract_address: Token contract address
         :return: Safety score (0-100)
         """
-        # For simulation tokens, generate a simulated safety score
-        if self.is_simulation_token(contract_address):
-            # Generate a random safety score between 50 and 80
-            safety_score = random.uniform(50.0, 80.0)
-            logger.info(f"Generated simulation safety score for {contract_address}: {safety_score}")
-            return safety_score
-            
-        # For real tokens, analyze various factors to determine safety
-        
-        # Fetch token data first
+        # Fetch real token data
         token_data = await self.fetch_token_data(contract_address)
         
-        if not token_data:
+        if not token_data or 'error' in token_data:
             logger.warning(f"No token data for {contract_address}, using default safety score")
             return 0.0
-            
-        # Analyze token data for safety factors
-        # This would be where you implement your safety analysis logic
         
-        # Example simple safety calculation based on liquidity and holders
-        liquidity_usd = token_data.get('liquidity_usd', 0.0)
-        holders = token_data.get('holders', 0)
-        volume_24h = token_data.get('volume_24h', 0.0)
-        
-        # A very basic formula - in a real implementation this would be much more sophisticated
+        # Calculate safety score based on real metrics
         safety_score = 0.0
         
         # Liquidity factor (0-40 points)
+        liquidity_usd = token_data.get('liquidity_usd', 0.0)
         if liquidity_usd >= 100000:
             safety_score += 40
         elif liquidity_usd >= 50000:
@@ -195,8 +135,9 @@ class TokenAnalyzer:
             safety_score += 20
         elif liquidity_usd >= 5000:
             safety_score += 10
-            
+        
         # Holders factor (0-30 points)
+        holders = token_data.get('holders', 0)
         if holders >= 1000:
             safety_score += 30
         elif holders >= 500:
@@ -205,8 +146,9 @@ class TokenAnalyzer:
             safety_score += 10
         elif holders >= 50:
             safety_score += 5
-            
+        
         # Volume factor (0-30 points)
+        volume_24h = token_data.get('volume_24h', 0.0)
         if volume_24h >= 100000:
             safety_score += 30
         elif volume_24h >= 50000:
@@ -215,63 +157,58 @@ class TokenAnalyzer:
             safety_score += 10
         elif volume_24h >= 5000:
             safety_score += 5
-            
+        
+        logger.info(f"Safety score for {contract_address}: {safety_score}")
         return safety_score
         
     async def analyze_token(self, contract_address: str) -> Dict[str, Any]:
         """
-        Perform a comprehensive analysis of a token
+        Perform a comprehensive analysis of a token using real data
         
         :param contract_address: Token contract address
         :return: Dictionary of analysis results
         """
-        # For simulation tokens, return simulated analysis
-        if self.is_simulation_token(contract_address):
-            return {
-                'contract_address': contract_address,
-                'safety_score': await self.get_safety_score(contract_address),
-                'buy_recommendation': True,
-                'price_prediction': {
-                    '1h': random.uniform(5.0, 15.0),
-                    '24h': random.uniform(15.0, 50.0),
-                    '7d': random.uniform(50.0, 200.0)
-                },
-                'risk_level': 'Medium',
-                'is_simulation': True,
-                'analysis_time': datetime.now(timezone.utc).isoformat()
-            }
-            
-        # For real tokens, perform actual analysis
-        
-        # Fetch token data
+        # Fetch real token data
         token_data = await self.fetch_token_data(contract_address)
         
-        if not token_data:
+        if not token_data or 'error' in token_data:
             logger.warning(f"No token data available for analysis of {contract_address}")
             return {
                 'contract_address': contract_address,
                 'safety_score': 0.0,
                 'buy_recommendation': False,
                 'error': 'No token data available',
-                'is_simulation': False,
                 'analysis_time': datetime.now(timezone.utc).isoformat()
             }
-            
+        
         # Calculate safety score
         safety_score = await self.get_safety_score(contract_address)
         
-        # Determine risk level
+        # Determine risk level based on real metrics
         risk_level = 'High'
         if safety_score >= 80:
             risk_level = 'Low'
         elif safety_score >= 60:
             risk_level = 'Medium'
-            
-        # Make buy recommendation
+        
+        # Make buy recommendation based on real data
         buy_recommendation = False
-        if safety_score >= 50 and token_data.get('price_change_24h', 0.0) >= 10.0:
+        
+        # Check multiple factors for buy recommendation
+        price_change_24h = token_data.get('price_change_24h', 0.0)
+        volume_24h = token_data.get('volume_24h', 0.0)
+        liquidity_usd = token_data.get('liquidity_usd', 0.0)
+        
+        # Buy if:
+        # - Safety score is above threshold
+        # - Positive 24h price change
+        # - Decent volume and liquidity
+        if (safety_score >= 30 and 
+            price_change_24h >= 1.0 and 
+            volume_24h >= 5000 and 
+            liquidity_usd >= 10000):
             buy_recommendation = True
-            
+        
         # Create analysis result
         analysis = {
             'contract_address': contract_address,
@@ -282,15 +219,87 @@ class TokenAnalyzer:
             'risk_level': risk_level,
             'metrics': {
                 'price_usd': token_data.get('price_usd', 0.0),
-                'volume_24h': token_data.get('volume_24h', 0.0),
-                'liquidity_usd': token_data.get('liquidity_usd', 0.0),
+                'volume_24h': volume_24h,
+                'liquidity_usd': liquidity_usd,
                 'market_cap': token_data.get('market_cap', 0.0),
                 'holders': token_data.get('holders', 0),
                 'price_change_1h': token_data.get('price_change_1h', 0.0),
-                'price_change_24h': token_data.get('price_change_24h', 0.0)
+                'price_change_6h': token_data.get('price_change_6h', 0.0),
+                'price_change_24h': price_change_24h
             },
-            'is_simulation': False,
+            'reasons': self._get_recommendation_reasons(
+                safety_score, 
+                price_change_24h, 
+                volume_24h, 
+                liquidity_usd,
+                buy_recommendation
+            ),
             'analysis_time': datetime.now(timezone.utc).isoformat()
         }
         
+        logger.info(f"Analysis for {contract_address}: Score={safety_score}, Recommendation={buy_recommendation}")
+        
         return analysis
+    
+    def _get_recommendation_reasons(self, safety_score: float, price_change_24h: float, 
+                                   volume_24h: float, liquidity_usd: float, 
+                                   buy_recommendation: bool) -> List[str]:
+        """
+        Get reasons for the buy/no-buy recommendation
+        
+        :return: List of reasons
+        """
+        reasons = []
+        
+        if buy_recommendation:
+            reasons.append(f"Safety score of {safety_score:.1f} indicates acceptable risk")
+            if price_change_24h >= 10:
+                reasons.append(f"Strong 24h momentum: +{price_change_24h:.1f}%")
+            if volume_24h >= 100000:
+                reasons.append(f"High trading volume: ${volume_24h:,.0f}")
+            if liquidity_usd >= 50000:
+                reasons.append(f"Good liquidity: ${liquidity_usd:,.0f}")
+        else:
+            if safety_score < 50:
+                reasons.append(f"Low safety score: {safety_score:.1f}")
+            if price_change_24h < 10:
+                reasons.append(f"Insufficient momentum: {price_change_24h:.1f}%")
+            if volume_24h < 50000:
+                reasons.append(f"Low trading volume: ${volume_24h:,.0f}")
+            if liquidity_usd < 25000:
+                reasons.append(f"Poor liquidity: ${liquidity_usd:,.0f}")
+        
+        return reasons
+    
+    async def get_token_metrics(self, contract_address: str) -> Dict[str, Any]:
+        """
+        Get simplified token metrics
+        
+        :param contract_address: Token contract address
+        :return: Dictionary of token metrics
+        """
+        token_data = await self.fetch_token_data(contract_address)
+        
+        return {
+            'price': token_data.get('price_usd', 0.0),
+            'volume_24h': token_data.get('volume_24h', 0.0),
+            'liquidity': token_data.get('liquidity_usd', 0.0),
+            'market_cap': token_data.get('market_cap', 0.0),
+            'holders': token_data.get('holders', 0),
+            'price_changes': {
+                '1h': token_data.get('price_change_1h', 0.0),
+                '6h': token_data.get('price_change_6h', 0.0),
+                '24h': token_data.get('price_change_24h', 0.0)
+            }
+        }
+    
+    async def is_token_safe(self, contract_address: str, min_safety_score: float = 50.0) -> bool:
+        """
+        Quick check if a token meets minimum safety requirements
+        
+        :param contract_address: Token contract address
+        :param min_safety_score: Minimum required safety score
+        :return: True if safe, False otherwise
+        """
+        safety_score = await self.get_safety_score(contract_address)
+        return safety_score >= min_safety_score

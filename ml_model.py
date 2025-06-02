@@ -26,9 +26,8 @@ class MLModel:
         self.model = None
         self.scaler = None
         self.features = [
-            'volume_24h', 'liquidity_usd', 'price_change_24h', 
-            'price_change_6h', 'price_change_1h', 'holders',
-            'social_media_score', 'safety_score'
+            'volume_24h', 'liquidity_usd', 'price_usd',
+            'mcap', 'holders', 'safety_score'
         ]
         self.model_path = os.path.join(BotConfiguration.DATA_DIR, 'ml_model.pkl')
         self.performance_stats = {
@@ -100,7 +99,14 @@ class MLModel:
                     value = token_data[feature]
                     features.append(float(value) if value is not None else 0.0)
                 else:
-                    features.append(0.0)
+                    # Try alternative column names
+                    if feature == 'mcap' and 'market_cap' in token_data:
+                        value = token_data['market_cap']
+                    elif feature == 'holders' and 'holder_count' in token_data:
+                        value = token_data['holder_count']
+                    else:
+                        value = 0.0
+                    features.append(float(value) if value is not None else 0.0)
         
         # Convert to numpy array and reshape
         return np.array(features).reshape(1, -1)

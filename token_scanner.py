@@ -192,54 +192,24 @@ class TokenScanner:
                 
     async def get_top_gainers(self) -> List[Dict[str, Any]]:
         """
-        Get top gaining tokens
+        Get top gaining tokens - ALWAYS use real tokens
         
         :return: List of top gaining tokens
         """
         top_gainers = []
         
-        # Check if simulation mode is enabled
-        simulation_mode = True
-        if os.path.exists(self.config.BOT_CONTROL_FILE):
+        # ALWAYS get real tokens from BirdeyeAPI regardless of mode
+        if self.birdeye_api:
             try:
-                with open(self.config.BOT_CONTROL_FILE, 'r') as f:
-                    control = json.load(f)
-                    simulation_mode = control.get('simulation_mode', True)
-            except Exception as e:
-                logger.error(f"Error loading simulation mode setting: {e}")
-                
-        # In simulation mode, generate some simulated top gainers
-        if simulation_mode:
-            # Generate 5 simulation tokens
-            for i in range(5):
-                timestamp = int(time.time())
-                token = {
-                    'contract_address': f"Sim{i}TopGainer{timestamp}",
-                    'ticker': f"SIMSim{i}",
-                    'name': f"Top Gainer {i}",
-                    'price_usd': random.uniform(0.0000001, 0.001),
-                    'volume_24h': 50000.0,  # $50k volume
-                    'liquidity_usd': 25000.0,  # $25k liquidity
-                    'market_cap': 500000.0,  # $500k market cap
-                    'holders': 100,
-                    'price_change_1h': random.uniform(5.0, 15.0),
-                    'price_change_6h': random.uniform(10.0, 25.0),
-                    'price_change_24h': random.uniform(20.0, 50.0)
-                }
-                top_gainers.append(token)
-                
-        # In real mode, get actual top gainers from BirdeyeAPI
-        else:
-            if self.birdeye_api:
                 real_top_gainers = await self.birdeye_api.get_top_gainers()
-                for token in real_top_gainers:
-                    # Skip if it's a simulation token in real mode
-                    if not self.is_simulation_token(token.get('contract_address')):
-                        top_gainers.append(token)
-                    
-        logger.info(f"Found {len(top_gainers)} top gainer tokens")
-        return top_gainers
+                top_gainers.extend(real_top_gainers)
+                logger.info(f"Found {len(top_gainers)} real top gainer tokens")
+            except Exception as e:
+                logger.error(f"Error fetching top gainers: {e}")
+        else:
+            logger.warning("BirdeyeAPI not available - cannot fetch real tokens")
         
+        return top_gainers
     async def get_trending_tokens(self) -> List[Dict[str, Any]]:
         """
         Get trending tokens

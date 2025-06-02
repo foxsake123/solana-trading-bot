@@ -1,0 +1,16 @@
+# Instructions for Using Real Tokens in Simulation Mode
+
+## What was changed:
+1. token_scanner.py - Now fetches real tokens from BirdeyeAPI/DexScreener
+2. bot_control.json - Enabled use_birdeye_api
+3. run_bot_updated.py - Added BirdeyeAPI initialization
+
+## How to verify it's working:
+1. Run your bot in simulation mode
+2. Check logs for 'Found X real top gainer tokens'
+3. Look at trades - no more 'Sim*' addresses
+4. All tokens should have real Solana addresses
+
+## If you need to manually update token_analyzer.py:
+Find the fetch_token_data method and remove the section that creates fake data for simulation tokens.
+Always use self.birdeye_api.get_token_info() to get real data.
